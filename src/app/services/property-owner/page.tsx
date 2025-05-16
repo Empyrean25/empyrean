@@ -1,5 +1,18 @@
 import { ContentCard } from "@/components/content-card";
 import CustomSolutions from "@/components/custom-solutions";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Property Owner Services | Empyrean - Real Estate Solutions",
+  description:
+    "Maximize your property's potential with Empyrean. We offer comprehensive property management services, from maintenance to brokerage, ensuring effective market placement.",
+  openGraph: {
+    title: "Property Owner Services | Empyrean - Real Estate Solutions",
+    description:
+      "Access our extensive network of in-house sellers and incentivized brokers. We provide complete Real Estate Solutions for maintenance, leasing, and sales.",
+    type: "website",
+  },
+};
 
 export default function PropertyOwnerPage() {
   return (
@@ -17,7 +30,7 @@ export default function PropertyOwnerPage() {
           deliver effective service.
         </p>
 
-        <div className="mb-12">
+        <div className="mb-12" aria-label="Property Management Services">
           <ContentCard
             title="ENLIST WITH US."
             description="A true one-stop shop for all things real estate. May it just be
@@ -31,6 +44,39 @@ export default function PropertyOwnerPage() {
 
         <CustomSolutions />
       </div>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            name: "Property Management Services",
+            provider: {
+              "@type": "Organization",
+              name: "Empyrean",
+            },
+            description:
+              "Comprehensive property management services including maintenance, leasing, and sales through our extensive network.",
+            offers: {
+              "@type": "Offer",
+              category: "Property Management",
+              description:
+                "Complete Real Estate Solutions including maintenance, keyholding, leasing, and sales services.",
+            },
+            serviceType: [
+              "Property Management",
+              "Maintenance Services",
+              "Property Sales",
+              "Property Leasing",
+            ],
+            areaServed: {
+              "@type": "Country",
+              name: "Philippines",
+            },
+          }),
+        }}
+      />
     </main>
   );
 }

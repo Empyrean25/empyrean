@@ -4,6 +4,19 @@ import { ServiceCard } from "@/components/service-card";
 import { CoreValueCard } from "@/components/core-value-card";
 import CustomSolutions from "@/components/custom-solutions";
 import { Button } from "@/components/ui/button";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "About Us | Empyrean - Your Trusted Real Estate Partner",
+  description:
+    "Learn about Empyrean's mission, vision, and core values. We are a one-stop gateway to the entire real estate market, offering full access with transparency and accountability.",
+  openGraph: {
+    title: "About Empyrean - Your Trusted Real Estate Partner",
+    description:
+      "Discover Empyrean's mission to become the beacon of quality standards in real estate services. Learn about our core values of simplicity, competency, accountability, and quality.",
+    type: "website",
+  },
+};
 
 export default function AboutPage() {
   const services = [
@@ -50,7 +63,10 @@ export default function AboutPage() {
   return (
     <main className="min-h-screen flex flex-col space-y-20">
       {/* Who We Are Section */}
-      <section className="flex flex-col md:flex-row relative h-[calc(100vh-6rem)]">
+      <section
+        className="flex flex-col md:flex-row relative h-[calc(100vh-6rem)]"
+        aria-label="Who We Are"
+      >
         <div className="flex flex-col items-start justify-center w-full md:w-1/2 p-12 md:p-16 lg:p-20">
           <h2 className="text-3xl md:text-4xl  font-bold mb-6">WHO WE ARE?</h2>
           <p className="text-gray-800 mb-8">
@@ -92,7 +108,10 @@ export default function AboutPage() {
       </section>
 
       {/* Mission and Vision Section */}
-      <section className="flex flex-col md:flex-row py-16 px-8 md:px-16 container mx-auto">
+      <section
+        className="flex flex-col md:flex-row py-16 px-8 md:px-16 container mx-auto"
+        aria-label="Mission and Vision"
+      >
         <div className="w-full md:w-1/2 text-center px-4 md:px-12 mb-12 md:mb-0">
           <h2 className="text-3xl  font-bold mb-6">MISSION</h2>
           <p className="text-gray-800">
@@ -112,7 +131,10 @@ export default function AboutPage() {
       </section>
 
       {/* Core Values Section */}
-      <section className="py-12 px-8 md:px-16 text-center container mx-auto">
+      <section
+        className="py-12 px-8 md:px-16 text-center container mx-auto"
+        aria-label="Core Values"
+      >
         <h2 className="text-3xl  font-bold mb-4">CORE VALUES</h2>
         <h3 className="text-2xl  mb-12">OUR Y&apos;s</h3>
 
@@ -128,7 +150,10 @@ export default function AboutPage() {
       </section>
 
       {/* Our Services Section */}
-      <section className="py-16 px-8 md:px-16 text-center container mx-auto gap-6 flex flex-col items-center">
+      <section
+        className="py-16 px-8 md:px-16 text-center container mx-auto gap-6 flex flex-col items-center"
+        aria-label="Our Services"
+      >
         <h2 className="text-3xl  font-bold mb-6">OUR SERVICES</h2>
         <p className="text-gray-800 max-w-3xl mx-auto mb-12">
           We offer comprehensive real estate management solutions designed to
@@ -147,6 +172,34 @@ export default function AboutPage() {
 
         <CustomSolutions />
       </section>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "AboutPage",
+            name: "About Empyrean",
+            description:
+              "Learn about Empyrean's mission, vision, and core values in real estate services.",
+            mainEntity: {
+              "@type": "Organization",
+              name: "Empyrean",
+              description:
+                "A one-stop gateway to the entire real estate market—offering full access without the limitations of personal agendas, dishonest service, or incompetence.",
+              mission:
+                "To become the beacon of quality standard and centralised system and the quality partner of all licensed practitioners and clients alike in providing Real Estate Services and performing Real Estate Transactions in the country",
+              vision:
+                "To maintain an honest, effective, and centralised system of doing Real Estate in the country.",
+              coreValues: coreValues.map((value) => ({
+                "@type": "Thing",
+                name: value.title,
+                description: value.description,
+              })),
+            },
+          }),
+        }}
+      />
     </main>
   );
 }

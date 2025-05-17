@@ -1,9 +1,7 @@
 import Image from "next/image";
-import Link from "next/link";
 import { ServiceCard } from "@/components/service-card";
 import { CoreValueCard } from "@/components/core-value-card";
 import CustomSolutions from "@/components/custom-solutions";
-import { Button } from "@/components/ui/button";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {

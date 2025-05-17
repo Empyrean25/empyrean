@@ -68,6 +68,13 @@ export default function AboutPage() {
         aria-label="Who We Are"
       >
         <div className="flex flex-col items-start justify-center w-full md:w-1/2 p-12 md:p-16 lg:p-20">
+          <Image
+            src="/assets/empyrean.png"
+            alt="Hands holding real estate model"
+            width={300}
+            height={150}
+            className="object-cover mb-4"
+          />
           <h2 className="text-3xl md:text-4xl  font-bold mb-6">
             What is Empyrean?
           </h2>
@@ -86,12 +93,12 @@ export default function AboutPage() {
             quality relationships, and objectives are achieved with simplicity,
             competency, accountability, quality, and consistency among all.
           </p>
-          <Button
+          {/* <Button
             asChild
             className="inline-block bg-[#494949] text-white px-12 py-2 rounded-full hover:bg-gray-700"
           >
             <Link href="/about/learn-more">Learn more</Link>
-          </Button>
+          </Button> */}
         </div>
         <div className="w-full md:w-1/2 bg-gray-100 relative">
           <div className="absolute inset-0 flex items-center justify-center">

@@ -48,7 +48,7 @@ export default function BrokerAgentDeveloperPage() {
             asChild
             className="bg-[#494949] hover:bg-gray-800 text-white rounded-full py-6 px-12"
           >
-            <Link href="/contact">PARTNER WITH US TODAY!!</Link>
+            <Link href="/contact-us">PARTNER WITH US TODAY!!</Link>
           </Button>
         </div>
       </div>

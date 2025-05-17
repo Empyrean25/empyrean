@@ -90,7 +90,7 @@ export default function HeroSection() {
 
           <motion.div style={{ opacity: buttonOpacity }}>
             <Link
-              href="/discover"
+              href="/about-us"
               className="inline-block bg-white text-gray-800 px-8 py-3 rounded-full font-medium hover:bg-gray-100 transition-colors"
             >
               DISCOVER EMPYREAN

@@ -91,7 +91,7 @@ export default function ContactUsPage() {
                       src="/assets/social/tiktok.png"
                       alt="TikTok"
                       fill
-                      className="object-contain bg-transparent"
+                      className="object-contain bg-white rounded-full"
                     />
                   </div>
                   <span className="sr-only">TikTok</span>

@@ -96,7 +96,7 @@ export default function AboutPage() {
         <div className="w-full md:w-1/2 bg-gray-100 relative">
           <div className="absolute inset-0 flex items-center justify-center">
             <Image
-              src="/assets/about-image.png"
+              src="/assets/about-hero-img.jpg"
               alt="Hands holding real estate model"
               fill
               className="object-cover"

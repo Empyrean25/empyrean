@@ -22,9 +22,8 @@ export default function Footer() {
           {/* Contact Information */}
           <div className="space-y-4">
             <h3 className="text-gray-900 text-lg font-semibold">Contact Us</h3>
-            <div className="space-y-2">
+            <div className="space-y-1">
               <p className="flex items-center gap-2">
-                <span className="text-gray-600">Email:</span>
                 <a
                   href="mailto:info@empyrean.ph"
                   className="text-gray-700 hover:text-gray-900 transition-colors"
@@ -33,7 +32,6 @@ export default function Footer() {
                 </a>
               </p>
               <p className="flex items-center gap-2">
-                <span className="text-gray-600">Phone:</span>
                 <a
                   href="tel:+639338113533"
                   className="text-gray-700 hover:text-gray-900 transition-colors"
@@ -42,7 +40,6 @@ export default function Footer() {
                 </a>
               </p>
               <p className="flex items-center gap-2">
-                <span className="text-gray-600">Address:</span>
                 <span className="text-gray-700">
                   Salcedo Village, Baranggay Bel-Air, Makati City 1227
                 </span>

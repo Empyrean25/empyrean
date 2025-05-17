@@ -61,7 +61,7 @@ export default function AboutPage() {
   ];
 
   return (
-    <main className="min-h-screen flex flex-col space-y-20">
+    <main className="min-h-screen flex flex-col space-y-4">
       {/* Who We Are Section */}
       <section
         className="flex flex-col md:flex-row relative h-[calc(100vh-6rem)]"
@@ -117,7 +117,7 @@ export default function AboutPage() {
 
       {/* Mission and Vision Section */}
       <section
-        className="flex flex-col md:flex-row py-16 px-8 md:px-16 container mx-auto"
+        className="flex flex-col md:flex-row py-12 px-8 md:px-16 container mx-auto"
         aria-label="Mission and Vision"
       >
         <div className="w-full md:w-1/2 text-center px-4 md:px-12 mb-12 md:mb-0">
@@ -159,7 +159,7 @@ export default function AboutPage() {
 
       {/* Our Services Section */}
       <section
-        className="py-16 px-8 md:px-16 text-center container mx-auto gap-6 flex flex-col items-center"
+        className="py-12 px-8 md:px-16 text-center container mx-auto gap-6 flex flex-col items-center"
         aria-label="Our Services"
       >
         <h2 className="text-3xl  font-bold mb-6">OUR SERVICES</h2>

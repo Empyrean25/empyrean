@@ -1,3 +1,5 @@
+"use client";
+
 import ContactForm from "@/components/contact-form";
 import Link from "next/link";
 import Image from "next/image";
@@ -57,7 +59,7 @@ export default function ContactUsPage() {
                       src="/assets/social/facebook.png"
                       alt="Facebook"
                       fill
-                      className="object-contain"
+                      className="object-contain bg-transparent"
                     />
                   </div>
                   <span className="sr-only">Facebook</span>
@@ -73,7 +75,7 @@ export default function ContactUsPage() {
                       src="/assets/social/instagram.png"
                       alt="Instagram"
                       fill
-                      className="object-contain"
+                      className="object-contain bg-transparent"
                     />
                   </div>
                   <span className="sr-only">Instagram</span>
@@ -89,7 +91,7 @@ export default function ContactUsPage() {
                       src="/assets/social/tiktok.png"
                       alt="TikTok"
                       fill
-                      className="object-contain"
+                      className="object-contain bg-transparent"
                     />
                   </div>
                   <span className="sr-only">TikTok</span>

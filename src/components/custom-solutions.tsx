@@ -10,7 +10,7 @@ export default function CustomSolutions() {
         packages to meet your specific requirements.
       </p>
       <Link
-        href="/contact"
+        href="/contact-us"
         className="inline-block bg-white text-[#494949] px-6 py-2 rounded-full font-medium hover:bg-gray-100 transition-colors"
       >
         CONTACT US

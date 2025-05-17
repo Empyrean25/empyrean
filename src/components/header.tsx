@@ -21,6 +21,12 @@ import {
 import { cn } from "@/lib/utils";
 import { Building2, Menu, Users, UserPlus } from "lucide-react";
 import React, { useState } from "react";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 
 const services = [
   {
@@ -76,25 +82,23 @@ ListItem.displayName = "ListItem";
 
 export default function Header() {
   const [open, setOpen] = useState(false);
-  const [servicesOpen, setServicesOpen] = useState(false);
 
   const closeSheet = () => {
     setOpen(false);
-    setServicesOpen(false);
   };
 
   return (
     <header className="w-full bg-white border-b border-gray-200 h-24 px-6 lg:px-12 flex items-center justify-between">
       <div className="flex items-center gap-4">
-        <div className="relative h-16 w-16">
+        <Link href="/" className="relative h-16 w-16">
           <Image
             src="/assets/empyrean-logo.png"
             alt="Empyrean Logo"
             fill
             className="object-contain"
           />
-        </div>
-        <h1 className="text-gray-700 text-lg md:text-xl font-bold hidden lg:block">
+        </Link>
+        <h1 className="text-gray-700 text-lg md:text-xl font-bold">
           Empyrean Real Estate Solutions
         </h1>
       </div>
@@ -180,7 +184,7 @@ export default function Header() {
           <SheetContent side="right" className="w-[300px] sm:w-[350px] p-0">
             <SheetHeader className="p-6 border-b">
               <SheetTitle className="flex items-center justify-between">
-                Empyrean Real Estate Solutions
+                Menu
               </SheetTitle>
             </SheetHeader>
             <div className="py-4">
@@ -200,23 +204,12 @@ export default function Header() {
                   About Us
                 </Link>
 
-                <div className="relative">
-                  <button
-                    onClick={() => setServicesOpen(!servicesOpen)}
-                    className="w-full px-6 py-3 text-left text-gray-700 hover:bg-gray-100 flex items-center justify-between"
-                  >
-                    <span>Services</span>
-                    <span
-                      className={`transition-transform ${
-                        servicesOpen ? "rotate-180" : ""
-                      }`}
-                    >
-                      ▼
-                    </span>
-                  </button>
-
-                  {servicesOpen && (
-                    <div className="bg-gray-50 py-2">
+                <Accordion type="single" collapsible className="w-full">
+                  <AccordionItem value="services" className="border-none">
+                    <AccordionTrigger className="px-6 py-3 text-gray-700 hover:bg-gray-100 hover:no-underline">
+                      Services
+                    </AccordionTrigger>
+                    <AccordionContent className="bg-gray-50">
                       {services.map((service) => (
                         <Link
                           key={service.title}
@@ -227,27 +220,14 @@ export default function Header() {
                           <span>{service.title}</span>
                         </Link>
                       ))}
-                    </div>
-                  )}
-                </div>
+                    </AccordionContent>
+                  </AccordionItem>
 
-                <div className="relative">
-                  <button
-                    onClick={() => setServicesOpen(!servicesOpen)}
-                    className="w-full px-6 py-3 text-left text-gray-700 hover:bg-gray-100 flex items-center justify-between"
-                  >
-                    <span>Partners</span>
-                    <span
-                      className={`transition-transform ${
-                        servicesOpen ? "rotate-180" : ""
-                      }`}
-                    >
-                      ▼
-                    </span>
-                  </button>
-
-                  {servicesOpen && (
-                    <div className="bg-gray-50 py-2">
+                  <AccordionItem value="partners" className="border-none">
+                    <AccordionTrigger className="px-6 py-3 text-gray-700 hover:bg-gray-100 hover:no-underline">
+                      Partners
+                    </AccordionTrigger>
+                    <AccordionContent className="bg-gray-50">
                       {partners.map((partner) => (
                         <Link
                           key={partner.title}
@@ -258,9 +238,9 @@ export default function Header() {
                           <span>{partner.title}</span>
                         </Link>
                       ))}
-                    </div>
-                  )}
-                </div>
+                    </AccordionContent>
+                  </AccordionItem>
+                </Accordion>
 
                 <Link
                   href="/contact-us"

@@ -1,5 +1,6 @@
 import ContactForm from "@/components/contact-form";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function ContactUsPage() {
   return (
@@ -16,21 +17,85 @@ export default function ContactUsPage() {
             Please tell us about yourself and share how we can assist or sort
             things for you.
           </p>
-          <h2 className="font-cinzel text-2xl font-bold mb-2">GET IN TOUCH</h2>
-          <p className="font-lora text-lg mb-4">+63 912 345 6789</p>
-          <div className="flex flex-col gap-2">
-            <Link
-              href="#"
-              className="underline font-lora text-lg hover:text-gray-300"
-            >
-              Facebook
-            </Link>
-            <Link
-              href="#"
-              className="underline font-lora text-lg hover:text-gray-300"
-            >
-              Instagram
-            </Link>
+          <h2 className="font-cinzel text-2xl font-bold mb-4">GET IN TOUCH</h2>
+          <div className="space-y-4">
+            <div>
+              <p className="font-lora text-lg font-semibold mb-1">Phone</p>
+              <a
+                href="tel:+639338113533"
+                className="font-lora text-lg hover:text-gray-300"
+              >
+                +639338113533
+              </a>
+            </div>
+            <div>
+              <p className="font-lora text-lg font-semibold mb-1">Email</p>
+              <a
+                href="mailto:info@empyrean.ph"
+                className="font-lora text-lg hover:text-gray-300"
+              >
+                info@empyrean.ph
+              </a>
+            </div>
+            <div>
+              <p className="font-lora text-lg font-semibold mb-1">Address</p>
+              <p className="font-lora text-lg">
+                Salcedo Village, Baranggay Bel-Air, Makati City 1227
+              </p>
+            </div>
+            <div>
+              <p className="font-lora text-lg font-semibold mb-3">Follow Us</p>
+              <div className="flex items-center gap-6">
+                <Link
+                  href="https://facebook.com/empyreanrealestatesolutions/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:opacity-80 transition-opacity"
+                >
+                  <div className="relative w-8 h-8">
+                    <Image
+                      src="/assets/social/facebook.png"
+                      alt="Facebook"
+                      fill
+                      className="object-contain"
+                    />
+                  </div>
+                  <span className="sr-only">Facebook</span>
+                </Link>
+                <Link
+                  href="https://instagram.com/empyrean.res"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:opacity-80 transition-opacity"
+                >
+                  <div className="relative w-8 h-8">
+                    <Image
+                      src="/assets/social/instagram.png"
+                      alt="Instagram"
+                      fill
+                      className="object-contain"
+                    />
+                  </div>
+                  <span className="sr-only">Instagram</span>
+                </Link>
+                <Link
+                  href="https://tiktok.com/@thegoodproperties"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:opacity-80 transition-opacity"
+                >
+                  <div className="relative w-8 h-8">
+                    <Image
+                      src="/assets/social/tiktok.png"
+                      alt="TikTok"
+                      fill
+                      className="object-contain"
+                    />
+                  </div>
+                  <span className="sr-only">TikTok</span>
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
       </section>

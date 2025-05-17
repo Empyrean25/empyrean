@@ -68,15 +68,23 @@ export default function AboutPage() {
         aria-label="Who We Are"
       >
         <div className="flex flex-col items-start justify-center w-full md:w-1/2 p-12 md:p-16 lg:p-20">
-          <h2 className="text-3xl md:text-4xl  font-bold mb-6">WHO WE ARE?</h2>
+          <h2 className="text-3xl md:text-4xl  font-bold mb-6">
+            What is Empyrean?
+          </h2>
           <p className="text-gray-800 mb-8">
             A one-stop gateway to the entire real estate market—offering full
             access without the limitations of personal agendas, dishonest
-            service, or incompetence. Backed by strong branding, an established
-            system, and accountability, the platform delivers a seamless,
-            transparent, and results- oriented experience. Properties move
-            efficiently, trust is preserved, and objectives are achieved with
-            clarity and consistency.
+            service, or incompetence.
+            <br />
+            <br />
+            Backed by strong branding, an established system, and built-in
+            accountability in its name, the platform delivers a seamless,
+            transparent, and results-oriented experience.
+            <br />
+            <br />
+            Properties move efficiently, trust is preserved through cultivating
+            quality relationships, and objectives are achieved with simplicity,
+            competency, accountability, quality, and consistency among all.
           </p>
           <Button
             asChild

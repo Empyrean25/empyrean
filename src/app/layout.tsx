@@ -1,9 +1,7 @@
 import type { Metadata } from "next";
 import { Cinzel, Lora } from "next/font/google";
 import "./globals.css";
-import Header from "@/components/header";
 import { Toaster } from "@/components/ui/sonner";
-import Footer from "@/components/footer";
 const cinzel = Cinzel({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -54,10 +52,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${cinzel.variable} ${lora.variable} antialiased`}>
-        <Header />
+        {/* <Header /> */}
         {children}
         <Toaster />
-        <Footer />
+        {/* <Footer /> */}
       </body>
     </html>
   );

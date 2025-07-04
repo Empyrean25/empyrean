@@ -71,22 +71,22 @@ export default function LearnMore() {
         real estate firm, or any business related to real estate and providing
         a home, any business, big or small. We&apos;d like you to join us.
       </p>
-      <div className="flex items-center gap-4 self-start mb-4">
-  <div className="relative min-w-[60px] h-[60px]">
-    <div className="bg-gray-200 rounded-full w-full h-full"></div>
-    <div className="absolute top-1/2 left-1/2 -translate-y-1/2 translate-x-0 text-xl font-bold uppercase whitespace-nowrap">
-      LET US REACH YOU.
+    <div className="w-full max-w-3xl">
+  <div className="flex items-center gap-4 mb-4">
+    <div className="relative min-w-[60px] h-[60px]">
+      <div className="bg-gray-200 rounded-full w-full h-full"></div>
+      <div className="absolute top-1/2 left-1/2 -translate-y-1/2 translate-x-0 text-xl font-bold uppercase whitespace-nowrap">
+        LET US REACH YOU.
+      </div>
     </div>
   </div>
-</div>
-
-<br />
-
-<div className="text-sm text-left max-w-3xl mb-8">
-  Kindly send us your information for our contacting. By providing
-  your contact details, you allow us to use your information for
-  legitimate purposes and initiatives by Empyrean such as being added
-  to our network for further contacting or partnerships.
+  <br />
+  <div className="text-sm text-left mb-8">
+    Kindly send us your information for our contacting. By providing
+    your contact details, you allow us to use your information for
+    legitimate purposes and initiatives by Empyrean such as being added
+    to our network for further contacting or partnerships.
+  </div>
 </div>
         <Form {...form}>
           <form

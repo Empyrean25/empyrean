@@ -71,15 +71,17 @@ export default function LearnMore() {
           real estate firm, or any business related to real estate and providing
           a home, any business, big or small. We&apos;d like you to join us.
         </p>
-        <section className="border border-gray-300 rounded-2xl p-6 mb-8 max-w-3xl w-full bg-gray-50">
           <div className="flex items-center gap-4">
-            <div className="bg-gray-200 rounded-full relative min-w-[60px] h-[60px]"></div>
-            <div className="absolute text-xl font-bold uppercase">
-                 LET US REACH YOU.
+            <div className="relative min-w-[60px] h-[60px]">
+            <div className="bg-gray-200 rounded-full w-full h-full"></div>
+            <div className="absolute top-1/2 left-1/2 -translate-x-0 translate-y-[-50%] text-xl font-bold uppercase whitespace-nowrap">
+            LET US REACH YOU.
             </div>
-          </div>
+            </div>
+            </div>
+          <br></br>
           <div className="text-sm">
-            \nKindly send us your information for our contacting. By providing
+            Kindly send us your information for our contacting. By providing
             your contact details, you allow us to use your information for
             legitimate purposes and initiatives by Empyrean such as being added
             to our network for further contacting or partnerships.
@@ -175,7 +177,7 @@ export default function LearnMore() {
                   </FormControl>
                   <FormLabel className="font-normal">
                     I&apos;d like to be added to the official announcement
-                    channel of Empyrean Group of Partners
+                    channel of Empyrean Group of Partners.
                   </FormLabel>
                   <FormMessage />
                 </FormItem>

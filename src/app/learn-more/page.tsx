@@ -71,8 +71,6 @@ export default function LearnMore() {
         real estate firm, or any business related to real estate and providing
         a home, any business, big or small. We&apos;d like you to join us.
       </p>
-
-      {/* Circle with aligned text */}
       <div className="flex items-center gap-4 mb-4">
         <div className="relative min-w-[60px] h-[60px]">
           <div className="bg-gray-200 rounded-full w-full h-full"></div>
@@ -81,17 +79,13 @@ export default function LearnMore() {
           </div>
         </div>
       </div>
-
-      {/* Spacer */}
       <div className="my-4" />
-
       <div className="text-sm text-center max-w-3xl mb-8">
         Kindly send us your information for our contacting. By providing
         your contact details, you allow us to use your information for
         legitimate purposes and initiatives by Empyrean such as being added
         to our network for further contacting or partnerships.
       </div>
-        </section>
         <Form {...form}>
           <form
             onSubmit={form.handleSubmit(onSubmit)}

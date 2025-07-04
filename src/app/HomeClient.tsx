@@ -43,15 +43,15 @@ export default function HomeClient() {
       </motion.div>
 
       <motion.h1
-        className="font-semibold text-lg md:text-xl text-center mb-4 text-[#494949]"
-        variants={fadeInUp}
-      >
-        ACCESS EVERYONE THROUGH EMPYREAN
-      </motion.h1>
+  className="font-semibold text-lg md:text-xl text-center mb-4 text-[#494949]"
+  variants={fadeInUp}
+>
+  ACCESS EVERYONE THROUGH EMPYREAN
+</motion.h1>
 
-      <motion.p className="text-lg text-[#494949] mb-8" variants={fadeInUp}>
-        Soon.
-      </motion.p>
+<motion.p className="text-base text-[#494949] mb-8" variants={fadeInUp}>
+  Soon.
+</motion.p>
 
       <Link href="/learn-more">
         <motion.button

@@ -35,27 +35,30 @@ export default function HomeClient() {
         <Image
           src="/assets/emyprean-logo-II.png"
           alt="Empyrean Logo"
-          width={500}
-          height={300}
-          className=" max-w-[500px] h-auto"
+          width={400}
+          height={240}
+          className="max-w-[400px] h-auto"
           priority
         />
       </motion.div>
+
       <motion.h1
-        className="font-semibold text-2xl md:text-3xl text-center mb-4"
+        className="font-semibold text-xl md:text-2xl text-center mb-4 text-gray-700"
         variants={fadeInUp}
       >
         ACCESS EVERYONE THROUGH EMPYREAN
       </motion.h1>
+
       <motion.p className="text-lg text-gray-700 mb-8" variants={fadeInUp}>
         Soon.
       </motion.p>
+
       <Link href="/learn-more">
         <motion.button
           className="px-8 py-3 bg-[#494949] hover:bg-[#494949]/80 text-sm text-white rounded-full"
           variants={fadeInUp}
         >
-          CLICK HERE TO LEARN MORE
+          Click here to learn more
         </motion.button>
       </Link>
     </motion.main>

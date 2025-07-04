@@ -176,7 +176,7 @@ export default function LearnMore() {
                   </FormControl>
                   <FormLabel className="font-normal">
                     I&apos;d like to be added to the official announcement
-                    channel of Empyrean Group of Partners. <span className="text-gray-500">(Optional)</span>
+                    channel of Empyrean Group of Partners.
                   </FormLabel>
                   <FormMessage />
                 </FormItem>

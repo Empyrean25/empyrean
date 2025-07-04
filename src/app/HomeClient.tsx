@@ -35,21 +35,21 @@ export default function HomeClient() {
         <Image
           src="/assets/emyprean-logo-II.png"
           alt="Empyrean Logo"
-          width={400}
-          height={240}
-          className="max-w-[400px] h-auto"
+          width={360}
+          height={216}
+          className="max-w-[360px] h-auto"
           priority
         />
       </motion.div>
 
       <motion.h1
-        className="font-semibold text-xl md:text-2xl text-center mb-4 text-gray-700"
+        className="font-semibold text-lg md:text-xl text-center mb-4 text-[#494949]"
         variants={fadeInUp}
       >
         ACCESS EVERYONE THROUGH EMPYREAN
       </motion.h1>
 
-      <motion.p className="text-lg text-gray-700 mb-8" variants={fadeInUp}>
+      <motion.p className="text-lg text-[#494949] mb-8" variants={fadeInUp}>
         Soon.
       </motion.p>
 

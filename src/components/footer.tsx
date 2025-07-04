@@ -66,7 +66,7 @@ export default function Footer() {
             </p>
             <div className="flex items-center gap-6">
               <Link
-                href="https://facebook.com/empyreanrealestatesolutions/"
+                href="https://facebook.com/empyreanrealestateph/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-600 hover:text-gray-900 transition-colors"
@@ -82,7 +82,7 @@ export default function Footer() {
                 <span className="sr-only">Facebook</span>
               </Link>
               <Link
-                href="https://instagram.com/empyrean.res"
+                href="https://instagram.com/empyreanrealestate"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-600 hover:text-gray-900 transition-colors"

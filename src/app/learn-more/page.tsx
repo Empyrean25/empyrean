@@ -59,7 +59,7 @@ export default function LearnMore() {
     form.reset();
   }
 
-  return (
+ return (
   <>
     <main className="min-h-screen flex flex-col items-center bg-white px-4 py-20">
       <h1 className="font-bold text-3xl text-center mb-4">
@@ -72,7 +72,7 @@ export default function LearnMore() {
         a home, any business, big or small. We&apos;d like you to join us.
       </p>
 
-      {/* Circle with text aligned from the center */}
+      {/* Circle with aligned text */}
       <div className="flex items-center gap-4 mb-4">
         <div className="relative min-w-[60px] h-[60px]">
           <div className="bg-gray-200 rounded-full w-full h-full"></div>
@@ -81,6 +81,9 @@ export default function LearnMore() {
           </div>
         </div>
       </div>
+
+      {/* Spacer */}
+      <div className="my-4" />
 
       <div className="text-sm text-center max-w-3xl mb-8">
         Kindly send us your information for our contacting. By providing

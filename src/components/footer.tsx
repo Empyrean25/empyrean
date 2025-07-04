@@ -10,13 +10,15 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Company Description */}
           <div className="space-y-4">
-            <Image
-              src="/assets/empyrean.png"
-              alt="Empyrean Real Estate Solutions"
-              width={169}
-              height={100}
-              className="bg-transparent"
-            />
+           <Link href="https://empyrean.ph" target="_blank" rel="noopener noreferrer">
+  <Image
+    src="/assets/empyrean.png"
+    alt="Empyrean Real Estate Solutions"
+    width={169}
+    height={100}
+    className="bg-transparent hover:opacity-80 transition-opacity"
+  />
+</Link>
             <h2 className="text-gray-900 text-xl font-bold">
               Empyrean Real Estate Solutions
             </h2>

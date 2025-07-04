@@ -25,11 +25,7 @@ const formSchema = z.object({
     .min(7, { message: "Phone number must be at least 7 digits." })
     .regex(/^[0-9+\-() ]+$/, { message: "Invalid phone number." }),
   email: z.string().email({ message: "Please enter a valid email address." }),
-  announcement: z.literal(true, {
-    errorMap: () => ({
-      message: "You must agree to be added to the announcement channel.",
-    }),
-  }),
+  announcement: z.boolean().optional(), // ✅ made optional
 });
 
 export default function LearnMore() {
@@ -41,7 +37,7 @@ export default function LearnMore() {
       position: "",
       phone: "",
       email: "",
-      announcement: true,
+      announcement: false,
     },
   });
 
@@ -176,12 +172,11 @@ export default function LearnMore() {
                       className="w-5 h-5 mr-2 accent-gray-700"
                       checked={field.value}
                       onChange={field.onChange}
-                      required
                     />
                   </FormControl>
                   <FormLabel className="font-normal">
                     I&apos;d like to be added to the official announcement
-                    channel of Empyrean Group of Partners.
+                    channel of Empyrean Group of Partners. <span className="text-gray-500">(Optional)</span>
                   </FormLabel>
                   <FormMessage />
                 </FormItem>

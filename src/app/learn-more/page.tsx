@@ -52,7 +52,7 @@ export default function LearnMore() {
       body: JSON.stringify(values),
     });
     if (res.ok) {
-      toast.success("Thank you! We'll be in touch.");
+      toast.success("Thank you! A representative from Empyrean will be in touch.");
     } else {
       toast.error("Something went wrong. Please try again.");
     }
@@ -75,11 +75,11 @@ export default function LearnMore() {
           <div className="flex items-center gap-4">
             <div className="bg-gray-200 rounded-full relative min-w-[60px] h-[60px]"></div>
             <div className="absolute text-xl font-bold uppercase">
-              LET US REACH YOU.
+                 LET US REACH YOU.
             </div>
           </div>
           <div className="text-sm">
-            Kindly send us your information for our contacting. By providing
+            \nKindly send us your information for our contacting. By providing
             your contact details, you allow us to use your information for
             legitimate purposes and initiatives by Empyrean such as being added
             to our network for further contacting or partnerships.
@@ -174,8 +174,8 @@ export default function LearnMore() {
                     />
                   </FormControl>
                   <FormLabel className="font-normal">
-                    I&apos;D LIKE TO BE ADDED TO THE OFFICIAL ANNOUNCEMENT
-                    CHANNEL OF EMPYREAN GROUP OF PARTNERS
+                    I&apos;d like to be added to the official announcement
+                    channel of Empyrean Group of Partners
                   </FormLabel>
                   <FormMessage />
                 </FormItem>

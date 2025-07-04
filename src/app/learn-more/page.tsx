@@ -58,10 +58,10 @@ export default function LearnMore() {
   return (
     <>
       <main className="min-h-screen flex flex-col items-center bg-white px-4 py-20">
-       <h1 className="font-bold text-2xl text-center mb-4">
+     <h1 className="font-bold text-3xl text-center mb-4">
   WE ARE CENTRALISING REAL ESTATE.
 </h1>
-<p className="text-base text-center max-w-3xl mb-8">
+<p className="text-sm text-center max-w-3xl mb-8">
   ...and we&apos;d like you to be part of it. Whether you&apos;re an
   independent broker, working as an agent, a developer representative,
   real estate firm, or any business related to real estate and providing

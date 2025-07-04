@@ -1,0 +1,13 @@
+[33m9d8833d[m[33m ([m[1;36mHEAD[m[33m)[m Revert "Update package dependencies and refactor layout components: add googleapis and nodemailer, adjust layout by commenting out Header and Footer, and replace HeroSection with HomeClient in the Home page for improved structure."
+[33maeec730[m Update package dependencies and refactor layout components: add googleapis and nodemailer, adjust layout by commenting out Header and Footer, and replace HeroSection with HomeClient in the Home page for improved structure.
+[33m926cdfe[m Remove unused imports from About page to streamline code and improve readability.
+[33ma633624[m Add image to About page and update contact link in Broker Agent page
+[33m35394ad[m Update contact links in Developer and Custom Solutions pages: change href from "/contact" to "/contact-us" for consistency in navigation.
+[33mace883f[m Update HeroSection link: change "DISCOVER EMPYREAN" button href from "/discover" to "/about-us" for improved navigation.
+[33m11ea773[m Refactor About page layout: adjust padding and margin for sections to enhance visual consistency and improve overall design.
+[33m5b45514[m Update About and Contact pages: change image source in About page and enhance TikTok icon styling in Contact page.
+[33m093ae0b[m Update About and Contact pages for improved layout and styling; add logo to footer.
+[33mbd3ced8[m Refactor footer contact details and update category section links to reflect new service paths.
+[33md958742[m revisions - 1
+[33m231f5de[m Update metadata and content across multiple pages to reflect Empyrean's branding and services, including new titles, descriptions, and structured data for SEO optimization. Replace favicon with a new design.
+[33m40517b6[m Final

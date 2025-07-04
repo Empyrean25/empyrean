@@ -72,11 +72,9 @@ export default function LearnMore() {
           a home, any business, big or small. We&apos;d like you to join us.
         </p>
 
-        {/* Enclosed Box: Circle + Text + Paragraph + Form */}
-        <div className="border border-gray-300 rounded-2xl p-8 max-w-3xl w-full bg-white flex flex-col gap-4">
-
-          {/* Circle + LET US REACH YOU */}
-          <div className="flex items-center gap-4">
+        {/* Rectangle Box for LET US + Kindly */}
+        <div className="border border-gray-300 rounded-2xl p-6 max-w-3xl w-full bg-white mb-6">
+          <div className="flex items-center gap-4 mb-2">
             <div className="relative min-w-[60px] h-[60px]">
               <div className="bg-gray-200 rounded-full w-full h-full"></div>
               <div className="absolute top-1/2 left-1/2 -translate-y-1/2 translate-x-0 text-xl font-bold uppercase whitespace-nowrap">
@@ -84,125 +82,120 @@ export default function LearnMore() {
               </div>
             </div>
           </div>
-
-          {/* Spacer (1 line only) */}
-          <div className="h-4" />
-
-          {/* Kindly Paragraph */}
           <div className="text-sm text-left">
             Kindly send us your information for our contacting. By providing
             your contact details, you allow us to use your information for
             legitimate purposes and initiatives by Empyrean such as being added
             to our network for further contacting or partnerships.
           </div>
-
-          {/* Form */}
-          <Form {...form}>
-            <form
-              onSubmit={form.handleSubmit(onSubmit)}
-              className="flex flex-col gap-4 mt-4"
-            >
-              <FormField
-                control={form.control}
-                name="name"
-                render={({ field }) => (
-                  <FormItem>
-                    <FormLabel>NAME</FormLabel>
-                    <FormControl>
-                      <Input placeholder="Your name" {...field} />
-                    </FormControl>
-                    <FormMessage />
-                  </FormItem>
-                )}
-              />
-              <FormField
-                control={form.control}
-                name="company"
-                render={({ field }) => (
-                  <FormItem>
-                    <FormLabel>COMPANY</FormLabel>
-                    <FormControl>
-                      <Input placeholder="Company" {...field} />
-                    </FormControl>
-                    <FormMessage />
-                  </FormItem>
-                )}
-              />
-              <FormField
-                control={form.control}
-                name="position"
-                render={({ field }) => (
-                  <FormItem>
-                    <FormLabel>POSITION</FormLabel>
-                    <FormControl>
-                      <Input placeholder="Position" {...field} />
-                    </FormControl>
-                    <FormMessage />
-                  </FormItem>
-                )}
-              />
-              <FormField
-                control={form.control}
-                name="phone"
-                render={({ field }) => (
-                  <FormItem>
-                    <FormLabel>PHONE NUMBER</FormLabel>
-                    <FormControl>
-                      <Input placeholder="Phone number" {...field} />
-                    </FormControl>
-                    <FormMessage />
-                  </FormItem>
-                )}
-              />
-              <FormField
-                control={form.control}
-                name="email"
-                render={({ field }) => (
-                  <FormItem>
-                    <FormLabel>EMAIL ADDRESS</FormLabel>
-                    <FormControl>
-                      <Input
-                        placeholder="Email address"
-                        type="email"
-                        {...field}
-                      />
-                    </FormControl>
-                    <FormMessage />
-                  </FormItem>
-                )}
-              />
-              <FormField
-                control={form.control}
-                name="announcement"
-                render={({ field }) => (
-                  <FormItem className="flex flex-row items-center space-x-3 space-y-0 p-4">
-                    <FormControl>
-                      <input
-                        type="checkbox"
-                        className="w-5 h-5 mr-2 accent-gray-700"
-                        checked={field.value}
-                        onChange={field.onChange}
-                        required
-                      />
-                    </FormControl>
-                    <FormLabel className="font-normal">
-                      I&apos;d like to be added to the official announcement
-                      channel of Empyrean Group of Partners.
-                    </FormLabel>
-                    <FormMessage />
-                  </FormItem>
-                )}
-              />
-              <Button
-                type="submit"
-                disabled={form.formState.isSubmitting}
-                className="bg-[#494949] hover:bg-[#494949]/80 text-white rounded-full py-4 w-full"
-              >
-                {form.formState.isSubmitting ? "Sending..." : "Send"}
-              </Button>
-            </form>
-          </Form>
         </div>
+
+        {/* Contact Form Box */}
+        <Form {...form}>
+          <form
+            onSubmit={form.handleSubmit(onSubmit)}
+            className="border border-gray-300 rounded-2xl p-8 max-w-3xl w-full bg-white flex flex-col gap-4"
+          >
+            <FormField
+              control={form.control}
+              name="name"
+              render={({ field }) => (
+                <FormItem>
+                  <FormLabel>NAME</FormLabel>
+                  <FormControl>
+                    <Input placeholder="Your name" {...field} />
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
+            <FormField
+              control={form.control}
+              name="company"
+              render={({ field }) => (
+                <FormItem>
+                  <FormLabel>COMPANY</FormLabel>
+                  <FormControl>
+                    <Input placeholder="Company" {...field} />
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
+            <FormField
+              control={form.control}
+              name="position"
+              render={({ field }) => (
+                <FormItem>
+                  <FormLabel>POSITION</FormLabel>
+                  <FormControl>
+                    <Input placeholder="Position" {...field} />
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
+            <FormField
+              control={form.control}
+              name="phone"
+              render={({ field }) => (
+                <FormItem>
+                  <FormLabel>PHONE NUMBER</FormLabel>
+                  <FormControl>
+                    <Input placeholder="Phone number" {...field} />
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
+            <FormField
+              control={form.control}
+              name="email"
+              render={({ field }) => (
+                <FormItem>
+                  <FormLabel>EMAIL ADDRESS</FormLabel>
+                  <FormControl>
+                    <Input
+                      placeholder="Email address"
+                      type="email"
+                      {...field}
+                    />
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
+            <FormField
+              control={form.control}
+              name="announcement"
+              render={({ field }) => (
+                <FormItem className="flex flex-row items-center space-x-3 space-y-0 p-4">
+                  <FormControl>
+                    <input
+                      type="checkbox"
+                      className="w-5 h-5 mr-2 accent-gray-700"
+                      checked={field.value}
+                      onChange={field.onChange}
+                      required
+                    />
+                  </FormControl>
+                  <FormLabel className="font-normal">
+                    I&apos;d like to be added to the official announcement
+                    channel of Empyrean Group of Partners.
+                  </FormLabel>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
+            <Button
+              type="submit"
+              disabled={form.formState.isSubmitting}
+              className="bg-[#494949] hover:bg-[#494949]/80 text-white rounded-full py-4 w-full"
+            >
+              {form.formState.isSubmitting ? "Sending..." : "Send"}
+            </Button>
+          </form>
+        </Form>
       </main>
       <Footer />
     </>

@@ -58,17 +58,16 @@ export default function LearnMore() {
   return (
     <>
       <main className="min-h-screen flex flex-col items-center bg-white px-4 py-20">
-        <h1 className="font-bold text-3xl text-center mb-4">
-          WE ARE CENTRALISING REAL ESTATE.
-        </h1>
-        <p className="text-center max-w-3xl mb-8">
-          ...and we&apos;d like you to be part of it. Whether you&apos;re an
-          independent broker, working as an agent, a developer representative,
-          real estate firm, or any business related to real estate and providing
-          a home, any business, big or small. We&apos;d like you to join us.
-        </p>
+       <h1 className="font-bold text-2xl text-center mb-4">
+  WE ARE CENTRALISING REAL ESTATE.
+</h1>
+<p className="text-base text-center max-w-3xl mb-8">
+  ...and we&apos;d like you to be part of it. Whether you&apos;re an
+  independent broker, working as an agent, a developer representative,
+  real estate firm, or any business related to real estate and providing
+  a home, any business, big or small. We&apos;d like you to join us.
+</p>
 
-        {/* Rectangle Box for LET US + Kindly */}
         <div className="border border-gray-300 rounded-2xl p-6 max-w-3xl w-full bg-white mb-6">
           <div className="flex items-center gap-4 mb-2">
             <div className="relative min-w-[60px] h-[60px]">

@@ -2,12 +2,13 @@ import HeroSection from "@/components/hero/hero-section";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Home | Empyrean - Your Trusted Partner in Business Solutions",
-@@ -8,29 +8,5 @@ export const metadata: Metadata = {
+  title: "Empyrean",
+  description:
+    "Empyrean provides innovative business solutions and services to help your company grow.",
 };
 
-export default function Home() {
-return (
+export default function HomeOld() {
+  return (
     <main className="min-h-screen flex flex-col">
       <article>
         <HeroSection />
@@ -18,10 +19,10 @@ return (
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Organization",
-            name: "Empyrean Real Estate Solutions",
-            url: "https://empyrean.ph",
+            name: "Empyrean",
+            url: "https://empyrean.com",
             description:
-              "Empyrean Real Estate Solutions is a One-stop Gateway to the Philippine Real Estate. .",
+              "Empyrean provides innovative business solutions and services to help your company grow.",
             potentialAction: {
               "@type": "SearchAction",
               target: "https://empyrean.com/search?q={search_term_string}",

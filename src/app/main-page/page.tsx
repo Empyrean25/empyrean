@@ -18,10 +18,10 @@ return (
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Organization",
-            name: "Empyrean",
-            url: "https://empyrean.com",
+            name: "Empyrean Real Estate Solutions",
+            url: "https://empyrean.ph",
             description:
-              "Empyrean provides innovative business solutions and services to help your company grow.",
+              "Empyrean Real Estate Solutions is a One-stop Gateway to the Philippine Real Estate. .",
             potentialAction: {
               "@type": "SearchAction",
               target: "https://empyrean.com/search?q={search_term_string}",

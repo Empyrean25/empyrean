@@ -2,9 +2,9 @@ import HeroSection from "@/components/hero/hero-section";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Empyrean",
+  title: "Empyrean Real Estate Solutions - Your all-in-one access to the Philippine Real Estate",
   description:
-    "Empyrean provides innovative business solutions and services to help your company grow.",
+    "Empyrean is a one-stop gateway for all things real estate in the Philippines. Backed by strong branding, an established system, and a built-in accountability in its name, the company delivers a seamless, transparent, and results-oriented service-based experience.",
 };
 
 export default function HomeOld() {
@@ -19,13 +19,13 @@ export default function HomeOld() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Organization",
-            name: "Empyrean",
-            url: "https://empyrean.com",
+            name: "Empyrean Real Estate Solutions",
+            url: "https://empyrean.ph",
             description:
-              "Empyrean provides innovative business solutions and services to help your company grow.",
+              "Empyrean is a one-stop gateway for all things real estate in the Philippines. Backed by strong branding, an established system, and a built-in accountability in its name, the company delivers a seamless, transparent, and results-oriented service-based experience.",
             potentialAction: {
               "@type": "SearchAction",
-              target: "https://empyrean.com/search?q={search_term_string}",
+              target: "https://empyrean.ph/search?q={search_term_string}",
               "query-input": "required name=search_term_string",
             },
           }),

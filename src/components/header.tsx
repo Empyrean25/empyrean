@@ -32,12 +32,12 @@ const services = [
   {
     title: "I am a Property Owner",
     icon: Building2,
-    href: "/services/property-owner",
+    href: "/on-work/services/property-owner",
   },
   {
     title: "I am a Buyer/Tenant/Guest",
     icon: Users,
-    href: "/services/buyer-tenant-guest",
+    href: "/on-work/services/buyer-tenant-guest",
   },
 ];
 
@@ -46,17 +46,17 @@ const partners = [
     title: "I am a Broker/Agent/Realty Firm",
     description: "Partner with us to expand your business",
     icon: UserPlus,
-    href: "/services/broker-agent-realty-firm",
+    href: "/on-work/services/broker-agent",
   },
   {
     title: "I am a Developer Representative",
     icon: Building2,
-    href: "/services/developer",
+    href: "/on-work/services/developer",
   },
-   {
+  {
     title: "I am a Business in Real Estate",
     icon: Building2,
-    href: "/services/business",
+    href: "/on-work/services/business",
   },
 ];
 
@@ -95,7 +95,7 @@ export default function Header() {
   return (
     <header className="w-full bg-white border-b border-gray-200 h-24 px-6 lg:px-12 flex items-center justify-between">
       <div className="flex items-center gap-4">
-        <Link href="/" className="relative h-16 w-16">
+        <Link href="/on-work/home" className="relative h-16 w-16">
           <Image
             src="/assets/empyrean-logo.png"
             alt="Empyrean Logo"
@@ -118,7 +118,7 @@ export default function Header() {
                 className="text-[15px] font-normal text-gray-700 hover:text-gray-900 hover:bg-gray-100"
                 asChild
               >
-                <Link href="/">Home</Link>
+                <Link href="/on-work/home">Home</Link>
               </Button>
             </NavigationMenuItem>
             <NavigationMenuItem>
@@ -127,7 +127,7 @@ export default function Header() {
                 className="text-[15px] font-normal text-gray-700 hover:text-gray-900 hover:bg-gray-100"
                 asChild
               >
-                <Link href="/about-us">About Us</Link>
+                <Link href="/on-work/about-us">About Us</Link>
               </Button>
             </NavigationMenuItem>
             <NavigationMenuItem>
@@ -170,7 +170,7 @@ export default function Header() {
                 className="text-[15px] font-normal text-gray-700 hover:text-gray-900 hover:bg-gray-100"
                 asChild
               >
-                <Link href="/contact-us">Contact Us</Link>
+                <Link href="/on-work/contact-us">Contact Us</Link>
               </Button>
             </NavigationMenuItem>
           </NavigationMenuList>
@@ -195,14 +195,14 @@ export default function Header() {
             <div className="py-4">
               <nav className="flex flex-col">
                 <Link
-                  href="/"
+                  href="/on-work/home"
                   className="px-6 py-3 text-gray-700 hover:bg-gray-100"
                   onClick={closeSheet}
                 >
                   Home
                 </Link>
                 <Link
-                  href="/about-us"
+                  href="/on-work/about-us"
                   className="px-6 py-3 text-gray-700 hover:bg-gray-100"
                   onClick={closeSheet}
                 >
@@ -248,7 +248,7 @@ export default function Header() {
                 </Accordion>
 
                 <Link
-                  href="/contact-us"
+                  href="/on-work/contact-us"
                   className="px-6 py-3 text-gray-700 hover:bg-gray-100"
                   onClick={closeSheet}
                 >

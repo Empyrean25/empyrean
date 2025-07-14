@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   },
 };
 
-export default function BrokerAgentDeveloperPage() {
+export default function BusinessPage() {
   return (
     <main className="min-h-screen flex flex-col">
       <div className="container mx-auto px-4 py-16 max-w-5xl">

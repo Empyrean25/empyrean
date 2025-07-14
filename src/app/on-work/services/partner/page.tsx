@@ -20,11 +20,15 @@ export default function PartnerPage() {
   const partners = [
     {
       name: "Ms. Joy",
-      image: "/assets/partners/msjoyph.png",
+      image: "/assets/partners/msjoyph.jpeg",
     },
     {
       name: "Remax One",
-      image: "/assets/partners/remaxone.png",
+      image: "/assets/partners/remaxone.jpg",
+    },
+    {
+      name: "PHRCS",
+      image: "/assets/partners/remaxone.jpg",
     },
   ];
 

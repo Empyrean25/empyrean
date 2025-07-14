@@ -42,10 +42,10 @@ export default function Footer() {
               </p>
               <p className="flex items-center gap-2">
                 <a
-                  href="tel:+639338113533"
+                  href="tel:+639762444550"
                   className="text-gray-700 hover:text-gray-900 transition-colors"
                 >
-                  +639338113533
+                  +639762444550 (Viber/WhatsApp)
                 </a>
               </p>
               <p className="flex items-center gap-2">

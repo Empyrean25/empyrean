@@ -55,11 +55,11 @@ export default function PartnerPage() {
   return (
     <main className="min-h-[calc(100vh-6rem)] flex flex-col">
       <div className="container mx-auto px-4 py-16 max-w-5xl">
+        {/* First Developer Section */}
         <section className="mb-20" aria-label="Developer Partners">
           <h1 className="text-2xl font-bold text-center mb-12">
             OUR DEVELOPER PARTNERS
           </h1>
-
           <Marquee speed={50}>
             {partners.map((partner) => (
               <Image
@@ -74,6 +74,26 @@ export default function PartnerPage() {
           </Marquee>
         </section>
 
+        {/* Second (Duplicated) Developer Section */}
+        <section className="mb-20" aria-label="Developer Partners Duplicate">
+          <h1 className="text-2xl font-bold text-center mb-12">
+            OUR DEVELOPER PARTNERS
+          </h1>
+          <Marquee speed={50}>
+            {partners.map((partner) => (
+              <Image
+                key={`${partner.name}-duplicate`}
+                src={partner.image}
+                alt={`${partner.name} - Real Estate Developer Partner`}
+                width={300}
+                height={300}
+                className="object-contain"
+              />
+            ))}
+          </Marquee>
+        </section>
+
+        {/* CTA Button */}
         <div className="flex justify-center">
           <Button
             asChild
@@ -84,6 +104,7 @@ export default function PartnerPage() {
         </div>
       </div>
 
+      {/* JSON-LD Structured Data */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{

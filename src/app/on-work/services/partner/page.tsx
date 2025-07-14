@@ -19,36 +19,39 @@ export const metadata: Metadata = {
 export default function PartnerPage() {
   const partners = [
     {
-      name: "Shangri-La",
-      image: "/assets/partners/shang.png",
+      name: "Ms. Joy",
+      image: "/assets/partners/msjoyph.png",
     },
     {
-      name: "APMC",
-      image: "/assets/partners/apmc.png",
+      name: "Remax One",
+      image: "/assets/partners/remaxone.png",
+    },
+  ];
+
+  const morePartners = [
+    {
+      name: "Vista Land",
+      image: "/assets/partners/vistaland.png",
     },
     {
-      name: "SMDC",
-      image: "/assets/partners/smdc.png",
+      name: "DMCI Homes",
+      image: "/assets/partners/dmci.png",
     },
     {
-      name: "Ayala Land",
-      image: "/assets/partners/ayalaland.png",
+      name: "Filinvest",
+      image: "/assets/partners/filinvest.png",
     },
     {
-      name: "Federal Land",
-      image: "/assets/partners/federalland.png",
+      name: "Ortigas Land",
+      image: "/assets/partners/ortigas.png",
     },
     {
-      name: "Megaworld",
-      image: "/assets/partners/megaworld.png",
+      name: "Robinsons Land",
+      image: "/assets/partners/robinsons.png",
     },
     {
-      name: "Century Properties",
-      image: "/assets/partners/century.png",
-    },
-    {
-      name: "Rockwell Land",
-      image: "/assets/partners/rockwell_land.png",
+      name: "SM Prime",
+      image: "/assets/partners/smprime.png",
     },
   ];
 
@@ -74,15 +77,15 @@ export default function PartnerPage() {
           </Marquee>
         </section>
 
-        {/* Second (Duplicated) Developer Section */}
-        <section className="mb-20" aria-label="Developer Partners Duplicate">
+        {/* Second Developer Section with different images */}
+        <section className="mb-20" aria-label="More Developer Partners">
           <h1 className="text-2xl font-bold text-center mb-12">
             OUR DEVELOPER PARTNERS
           </h1>
           <Marquee speed={50}>
-            {partners.map((partner) => (
+            {morePartners.map((partner) => (
               <Image
-                key={`${partner.name}-duplicate`}
+                key={partner.name}
                 src={partner.image}
                 alt={`${partner.name} - Real Estate Developer Partner`}
                 width={300}
@@ -125,14 +128,16 @@ export default function PartnerPage() {
             hasOfferCatalog: {
               "@type": "OfferCatalog",
               name: "Developer Partners",
-              itemListElement: partners.map((partner, index) => ({
-                "@type": "Offer",
-                itemOffered: {
-                  "@type": "Organization",
-                  name: partner.name,
-                },
-                position: index + 1,
-              })),
+              itemListElement: [...partners, ...morePartners].map(
+                (partner, index) => ({
+                  "@type": "Offer",
+                  itemOffered: {
+                    "@type": "Organization",
+                    name: partner.name,
+                  },
+                  position: index + 1,
+                })
+              ),
             },
           }),
         }}

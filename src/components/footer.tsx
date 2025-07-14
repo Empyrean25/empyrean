@@ -24,7 +24,7 @@ export default function Footer() {
             </h2>
             <p className="text-gray-600 max-w-md">
               A one-stop gateway for all things real estate in the Philippines.
-              It doesn&apos;t have to be complicated. Your Real Estate, on us.
+              You access us, you access everyone.
             </p>
           </div>
 

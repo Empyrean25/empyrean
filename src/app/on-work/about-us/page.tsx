@@ -5,11 +5,11 @@ import CustomSolutions from "@/components/custom-solutions";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "About Us | Empyrean - Your Trusted Real Estate Partner",
+  title: "About Us | Empyrean Real Estate Solutions - Your all-in-one access to the Philippine Real Estate",
   description:
     "Learn about Empyrean's mission, vision, and core values. We are a one-stop gateway to the entire real estate market, offering full access with transparency and accountability.",
   openGraph: {
-    title: "About Empyrean - Your Trusted Real Estate Partner",
+    title: "About Empyrean Real Estate Solutions - Your all-in-one access to the Philippine Real Estate",
     description:
       "Discover Empyrean's mission to become the beacon of quality standards in real estate services. Learn about our core values of simplicity, competency, accountability, and quality.",
     type: "website",

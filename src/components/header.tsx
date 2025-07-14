@@ -98,7 +98,7 @@ export default function Header() {
             className="object-contain"
           />
         </Link>
-        <h1 className="text-gray-825 text-lg md:text-xl font-bold">
+        <h1 className="text-gray-800 text-lg md:text-xl font-bold">
           Empyrean Real Estate Solutions
         </h1>
       </div>

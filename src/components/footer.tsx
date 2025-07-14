@@ -19,10 +19,10 @@ export default function Footer() {
     className="bg-transparent hover:opacity-80 transition-opacity"
   />
 </Link>
-            <h2 className="text-gray-900 text-xl font-bold">
+            <h2 className="text-gray-700 text-xl font-bold">
               Empyrean Real Estate Solutions
             </h2>
-            <p className="text-gray-600 max-w-md">
+            <p className="text-gray-700 max-w-md">
               A one-stop gateway for all things real estate in the Philippines.
               You access us, you access everyone.
             </p>

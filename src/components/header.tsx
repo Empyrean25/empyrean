@@ -53,6 +53,11 @@ const partners = [
     icon: Building2,
     href: "/services/developer",
   },
+   {
+    title: "I am a Business",
+    icon: Building2,
+    href: "/services/business",
+  },
 ];
 
 const ListItem = React.forwardRef<

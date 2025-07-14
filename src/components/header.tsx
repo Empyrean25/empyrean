@@ -54,7 +54,7 @@ const partners = [
     href: "/services/developer",
   },
    {
-    title: "I am a Business",
+    title: "I am a Business in Real Estate",
     icon: Building2,
     href: "/services/business",
   },

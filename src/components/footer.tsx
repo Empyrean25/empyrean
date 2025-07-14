@@ -19,7 +19,7 @@ export default function Footer() {
     className="bg-transparent hover:opacity-80 transition-opacity"
   />
 </Link>
-            <h2 className="text-gray-700 text-xl font-bold">
+            <h2 className="text-gray-825 text-xl font-bold">
               Empyrean Real Estate Solutions
             </h2>
             <p className="text-gray-700 max-w-md">

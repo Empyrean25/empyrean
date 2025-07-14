@@ -43,13 +43,13 @@ const services = [
 
 const partners = [
   {
-    title: "I am a Broker/Agent",
+    title: "I am a Broker/Agent/Realty Firm",
     description: "Partner with us to expand your business",
     icon: UserPlus,
-    href: "/services/broker-agent",
+    href: "/services/broker-agent-realty-firm",
   },
   {
-    title: "I am a Developer",
+    title: "I am a Developer Representative",
     icon: Building2,
     href: "/services/developer",
   },

@@ -13,8 +13,8 @@ export default function CategorySection() {
       bgColor: "bg-[#595858]",
     },
     {
-      title: "I AM A BROKER/DEVELOPER",
-      href: "/services/broker-agent",
+      title: "I AM IN THE BUSINESS",
+      href: "/services/partner",
       bgColor: "bg-[#9f9f9f]",
     },
     {

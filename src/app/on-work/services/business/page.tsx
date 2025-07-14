@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Broker Network | Empyrean - Join Our Real Estate Broker Network",
+  title: "Other Businesses | Empyrean - Join Our Real Estate Broker Network",
   description:
     "Join Empyrean's broker network and be part of a centralized real estate platform. Partner with us to provide effective services and achieve faster market turnover.",
   openGraph: {

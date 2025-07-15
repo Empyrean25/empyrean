@@ -77,14 +77,14 @@ export default function AboutPage() {
             What is Empyrean?
           </h2>
           <p className="text-gray-800 mb-8">
-            Empyrean Real Estate Solutions is one-stop gateway to the entire real estate market—offering full
-            access to Philippine Real Estate from Brokerage: Project Selling, Resale and Leasing; 
+            Empyrean Real Estate Solutions is one-stop gateway to the entire Philippine Real Estate—offering full
+            access from Brokerage: Project Selling, Resale and Leasing; 
             Home Improvement: Planning, Construction, and Renovation, and even acquiring your Furnitures and Decorations. 
             <br />
             <br />
             We are a company backed by strong presence and branding, built-in
-            accountability in its name, established system and platform, and an expanding network of professional and business partners
-            built through fostering quality relationships that reflects the Empyrean Mark: delivering quality, service-based, and results-oriented personalised experience.
+            accountability in its name, established system and platform, and an expanding network of business partners
+            built through fostering quality relationships that reflects the <strong>Empyrean Mark</strong> delivering quality, service-based, and results-oriented personalised experience.
             <br />
             <br />
             When you access us, you will access everyone. Your Real Estate, on us here at Empyrean.

@@ -61,34 +61,29 @@ export default function AboutPage() {
   return (
     <main className="min-h-screen flex flex-col">
       {/* Who We Are Section */}
-      <section
-        className="flex flex-col md:flex-row relative h-[calc(100vh-6rem)]"
-        aria-label="Who We Are"
-      >
+      <section className="flex flex-col md:flex-row relative h-[calc(100vh-6rem)]" aria-label="Who We Are">
         <div className="flex flex-col items-start justify-center w-full md:w-1/2 p-12 md:p-16 lg:p-20">
           <Image
             src="/assets/empyrean.png"
             alt="Hands holding real estate model"
             width={275}
             height={125}
-            className="object-cover mt-10 mb-6"
+            className="object-cover mt-6 mb-6"
           />
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            What is Empyrean?
-          </h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">What is Empyrean?</h2>
           <p className="text-gray-800 mb-8">
             Empyrean Real Estate Solutions is one-stop gateway to the entire Philippine Real Estate—offering full
-            access from Brokerage: Project Selling, Resale and Leasing; 
-            Home Improvement: Planning, Construction, and Renovation, and even acquiring your Furnitures and Decorations. 
+            access from Brokerage: Project Selling, Resale and Leasing;
+            Home Improvement: Planning, Construction, and Renovation, and even acquiring your Furnitures and Decorations.
             <br />
             <br />
-            We are a company backed by strong presence and branding, built-in
-            accountability in its name, established system and platform, and an expanding network of business partners
-            built through fostering quality relationships that reflects the <strong>Empyrean Mark</strong> delivering quality, service-based, and results-oriented personalised experience.
+            We are a company backed by strong presence and branding, built-in accountability in its name, established
+            system and platform, and an expanding network of business partners built through fostering quality
+            relationships that reflects the <strong>Empyrean Mark</strong> delivering quality, service-based, and
+            results-oriented personalised experience.
             <br />
             <br />
-            When you access us, you will access everyone. Your Real Estate, on us here at Empyrean.
-            Done with simplicity,
+            When you access us, you will access everyone. Your Real Estate, on us here at Empyrean. Done with simplicity,
             competency, accountability, quality, and consistency above all.
           </p>
         </div>
@@ -102,7 +97,7 @@ export default function AboutPage() {
             />
           </div>
         </div>
-        <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 mb-8">
+        <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 mt-12 mb-4">
           <div className="w-36 h-36 rounded-full flex items-center justify-center">
             <Image
               src="/assets/empyrean-logo.png"
@@ -115,71 +110,51 @@ export default function AboutPage() {
       </section>
 
       {/* Mission and Vision Section */}
-      <section
-        className="flex flex-col md:flex-row py-8 px-8 md:px-16 container mx-auto mt-4"
-        aria-label="Mission and Vision"
-      >
+      <section className="flex flex-col md:flex-row py-8 px-8 md:px-16 container mx-auto mt-4" aria-label="Mission and Vision">
         <div className="w-full md:w-1/2 text-center px-4 md:px-12 mb-12 md:mb-0">
           <h2 className="text-3xl font-bold mb-6">MISSION</h2>
           <p className="text-gray-800">
-            Become a brand of quality standard, centralised system, and
-            the quality partner of all professionals and clients alike
-            in doing Real Estate in the country.
+            Become a brand of quality standard, centralised system, and the quality partner of all professionals and
+            clients alike in doing Real Estate in the country.
           </p>
         </div>
         <div className="w-full md:w-1/2 text-center px-4 md:px-12">
           <h2 className="text-3xl font-bold mb-6">VISION</h2>
           <p className="text-gray-800">
-            A centralised system of doing Real Estate in the country built through quality relationships and commitment to quality and accountable service.
+            A centralised system of doing Real Estate in the country built through quality relationships and commitment
+            to quality and accountable service.
           </p>
         </div>
       </section>
 
       {/* Core Values Section */}
-      <section
-        className="py-6 px-8 md:px-16 text-center container mx-auto"
-        aria-label="Core Values"
-      >
-        <h2 className="text-3xl font-bold mt-4 mb-6">CORE VALUES</h2>
-        
+      <section className="py-8 px-8 md:px-16 text-center container mx-auto" aria-label="Core Values">
+        <h2 className="text-3xl font-bold mt-2 mb-6">CORE VALUES</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {coreValues.map((value) => (
-            <CoreValueCard
-              key={value.title}
-              title={value.title}
-              description={value.description}
-            />
+            <CoreValueCard key={value.title} title={value.title} description={value.description} />
           ))}
         </div>
       </section>
 
-      {/* Our Services Section */}
-      <section
-        className="py-4 px-8 md:px-16 text-center container mx-auto gap-6 flex flex-col items-center"
-        aria-label="Our Services"
-      >
-        <h2 className="text-3xl font-bold mb-4">OUR SERVICES</h2>
-        <p className="text-gray-800 max-w-3xl mx-auto my-4">
-          We offer comprehensive real estate management solutions designed to
-          make property ownership effortless and profitable.
-        </p>
+    {/* Our Services Section */}
+<section className="py-6 px-8 md:px-16 text-center container mx-auto gap-6 flex flex-col items-center" aria-label="Our Services">
+  <h2 className="text-3xl font-bold mb-2">OUR SERVICES</h2>
+  <p className="text-gray-800 max-w-3xl mx-auto my-4">
+    We offer comprehensive real estate management solutions designed to make property ownership effortless and
+    profitable.
+  </p>
+  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    {services.map((service) => (
+      <ServiceCard key={service.title} title={service.title} description={service.description} />
+    ))}
+  </div>
+  
+  <div className="my-8">
+    <CustomSolutions />
+  </div>
+</section>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {services.map((service) => (
-            <ServiceCard
-              key={service.title}
-              title={service.title}
-              description={service.description}
-            />
-          ))}
-        </div>
-
-        <div className="my-12">
-          <CustomSolutions />
-        </div>
-      </section>
-
-      {/* Structured Data */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -187,8 +162,7 @@ export default function AboutPage() {
             "@context": "https://schema.org",
             "@type": "AboutPage",
             name: "About Empyrean",
-            description:
-              "Learn about Empyrean's mission, vision, and core values in real estate services.",
+            description: "Learn about Empyrean's mission, vision, and core values in real estate services.",
             mainEntity: {
               "@type": "Organization",
               name: "Empyrean",

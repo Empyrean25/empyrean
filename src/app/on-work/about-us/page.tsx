@@ -128,17 +128,15 @@ export default function AboutPage() {
         <div className="w-full md:w-1/2 text-center px-4 md:px-12 mb-12 md:mb-0">
           <h2 className="text-3xl  font-bold mb-6">MISSION</h2>
           <p className="text-gray-800">
-            To become the beacon of quality standard and centralised system and
-            the quality partner of all licensed practitioners and clients alike
-            in providing Real Estate Services and performing Real Estate
-            Transactions in the country
+            Become a brand of quality standard, centralised system, and
+            the quality partner of all professionals and clients alike
+            in doing Real Estate in the country.
           </p>
         </div>
         <div className="w-full md:w-1/2 text-center px-4 md:px-12">
           <h2 className="text-3xl  font-bold mb-6">VISION</h2>
           <p className="text-gray-800">
-            To maintain an honest, effective, and centralised system of doing
-            Real Estate in the country.
+            A centralised system of doing Real Estate in the country built through quality relationships and commitment to quality and accountable service.
           </p>
         </div>
       </section>
@@ -149,8 +147,7 @@ export default function AboutPage() {
         aria-label="Core Values"
       >
         <h2 className="text-3xl  font-bold mb-4">CORE VALUES</h2>
-        <h3 className="text-2xl  mb-12">OUR Y&apos;s</h3>
-
+        
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {coreValues.map((value) => (
             <CoreValueCard

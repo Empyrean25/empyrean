@@ -21,7 +21,7 @@ export default function BrokerAgentDeveloperPage() {
     <main className="min-h-screen flex flex-col">
       <div className="container mx-auto px-4 py-16 max-w-5xl">
         <h1 className="text-3xl md:text-4xl font-bold text-center mb-8">
-          BE AN EMPYREAN PARTNER
+          BE AN EMPYREAN BROKER PARTNER
         </h1>
 
         <p className="text-lg text-center mb-16 max-w-4xl mx-auto">

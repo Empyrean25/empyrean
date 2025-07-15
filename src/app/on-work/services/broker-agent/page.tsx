@@ -45,10 +45,10 @@ export default function BrokerAgentDeveloperPage() {
         </section>
 
         {/* WHY JOIN US Section */}
-       <section className="mb-20">
-  <h2 className="text-xl font-bold text-center mb-6">WHY JOIN US</h2>
+ <section className="mb-20">
+  <h2 className="text-2xl font-bold text-center mb-6">WHY JOIN US</h2>
 
-  <div className="bg-gray-200 bg-opacity-50 rounded-lg p-6 text-gray-800">
+  <div className="bg-gray-800 rounded-lg p-6 text-white">
     <p>
       We&rsquo;re aiming to centralise the industry and streamline the process
       of doing real estate in the country; and we&rsquo;d need your help.

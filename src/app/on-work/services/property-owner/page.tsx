@@ -30,25 +30,17 @@ export default function PropertyOwnerPage() {
           deliver effective service.
         </p>
 
-        <div className="border border-gray-300 rounded-2xl p-6 max-w-3xl w-full bg-white mb-12 mx-auto">
-  <div className="flex items-center gap-4 mb-4">
-    <div className="relative min-w-[60px] h-[60px]">
-      <div className="bg-gray-200 rounded-full w-full h-full"></div>
-      <div className="absolute top-1/2 left-1/2 -translate-y-1/2 translate-x-0 text-xl font-bold uppercase whitespace-nowrap">
-        ENLIST WITH US.
-      </div>
-    </div>
-  </div>
-  <p className="text-gray-800 text-start">
-    A true one-stop shop for all things real estate. May it just be
-    for handling your property for maintenance and upkeep or profit
-    and brokering, we can manage your property for you. Our Property
-    Management can start managing your property with keyholding and
-    maintenance services and we'll be ready once you decide to
-    put it up in the market for profit, for short/long term lease or
-    sale.
-  </p>
-</div>
+        <div className="mb-12" aria-label="Property Management Services">
+          <ContentCard
+            title="ENLIST WITH US."
+            description="A true one-stop shop for all things real estate. May it just be
+            for handling your property for maintenance and upkeep or profit
+            and brokering, we can manage your property for you. Our Property
+            Management can start managing your property with keyholding and
+            maintenance services and we'll be ready once you decide to
+            put it up in the market for profit, for short/long term lease or"
+          />
+        </div>
 
         <CustomSolutions />
       </div>

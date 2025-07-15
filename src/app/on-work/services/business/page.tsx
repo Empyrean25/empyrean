@@ -25,14 +25,12 @@ export default function BusinessPage() {
         </h1>
 
         <p className="text-lg text-center mb-16 max-w-4xl mx-auto">
-          Join our Broker Network and be one with us in centralising Real Estate
-          and providing effective services minimising hindrance to smoother and
-          faster market turnover.
+          Regardless of your field or nature of business: products or services, as long as you are related or in the business of real estate, you are invited to partner with us!
         </p>
 
         <section className="mb-20" aria-label="Broker Network">
           <h2 className="text-2xl font-bold text-center mb-12">
-            JOIN OUR BROKER NETWORK
+            Empyrean Business Network
           </h2>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">

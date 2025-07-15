@@ -1,210 +1,91 @@
-import Image from "next/image";
-import { ServiceCard } from "@/components/service-card";
-import { CoreValueCard } from "@/components/core-value-card";
+import { ContentCard } from "@/components/content-card";
 import CustomSolutions from "@/components/custom-solutions";
 import { Metadata } from "next";
-import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "About Us | Empyrean Real Estate Solutions - Your all-in-one access to the Philippine Real Estate",
+  title: "Property Owner Services | Empyrean - Real Estate Solutions",
   description:
-    "Learn about Empyrean's mission, vision, and core values. We are a one-stop gateway to the entire real estate market, offering full access with transparency and accountability.",
+    "Maximize your property's potential with Empyrean. We offer comprehensive property management services, from maintenance to brokerage, ensuring effective market placement.",
   openGraph: {
-    title: "About Empyrean Real Estate Solutions - Your all-in-one access to the Philippine Real Estate",
+    title: "Property Owner Services | Empyrean - Real Estate Solutions",
     description:
-      "Discover Empyrean's mission to become the beacon of quality standards in real estate services. Learn about our core values of simplicity, competency, accountability, and quality.",
+      "Access our extensive network of in-house sellers and incentivized brokers. We provide complete Real Estate Solutions for maintenance, leasing, and sales.",
     type: "website",
   },
 };
 
-export default function AboutPage() {
-  const services = [
-    {
-      title: "PROPERTY MANAGEMENT",
-      description:
-        "Whether you require solutions for maintenance and upkeep or profit and brokerage, we can manage your property for you.",
-    },
-    {
-      title: "BROKERAGE",
-      description:
-        "You cannot go wrong with our service. It's our promise. With the help of our company branding, in-house sellers, and our incentivised broker network. We can sell or lease out your property faster than the usual.",
-    },
-    {
-      title: "MORE COMING SOON...",
-      description:
-        "Our company is excited to centralize the market and put everyone's forte to good work under one name branding for established system and accountability. We will be opening more services available for you",
-    },
-  ];
-
-  const coreValues = [
-    {
-      title: "SIMPLICITY",
-      description:
-        "We believe real estate should be straightforward, not overwhelming. That's why we've built a system that simplifies every step of your property search to closing deals. When you come to us, you won't need to juggle multiple platforms or navigate complex processes. We make the entire experience clear, transparent, and efficient.",
-    },
-    {
-      title: "COMPETENCY",
-      description:
-        "We know deep industry knowledge, sharp market insight, and unwavering professionalism in every interaction matters—whether it's your first home, listing a property, or handling complex negotiations, you can count on our expertise in what we're doing—and that we'll do it well. We're not just here to participate in the industry; we're here to elevate it.",
-    },
-    {
-      title: "ACCOUNTABILITY",
-      description:
-        "We believe in accountability that brings peace of mind—not pressure, finger-pointing, or blame-shifting. When you work with us, you have a steady point of reference—one you can return to anytime for clarity, guidance, and solutions. You know where to turn. We stand behind our work, our people, and our systems—so you can move forward with confidence.",
-    },
-    {
-      title: "QUALITY",
-      description:
-        "Excellence isn't optional—it's our baseline. Every interaction you have with us reflects a high standard of quality that permeates everything we do. Whether it's the quality of our listings, the accuracy of our advice, or the thoroughness of our service, we hold ourselves to a level of performance that builds trust and lasting relationships.",
-    },
-  ];
-
+export default function PropertyOwnerPage() {
   return (
     <main className="min-h-screen flex flex-col">
-      {/* Who We Are Section */}
-      <section
-        className="flex flex-col md:flex-row relative h-[calc(100vh-6rem)]"
-        aria-label="Who We Are"
-      >
-      <div className="flex flex-col items-start justify-center w-full md:w-1/2 p-12 md:p-16 lg:p-20">
-  <Link href="/on-work/home">
-    <Image
-      src="/assets/empyrean.png"
-      alt="Hands holding real estate model"
-      width={275}
-      height={125}
-      className="object-cover mt-12 mb-4 transition-transform duration-300 ease-in-out hover:scale-105 cursor-pointer"
-    />
-  </Link>
-  <h2 className="text-3xl md:text-4xl font-bold mb-6">
-    What is Empyrean?
-  </h2>
-          <p className="text-gray-800 mb-8">
-            Empyrean Real Estate Solutions is one-stop gateway to the entire Philippine Real Estate—offering full
-            access from Brokerage: Project Selling, Resale and Leasing; 
-            Home Improvement: Planning, Construction, and Renovation, and even acquiring your Furnitures and Decorations. 
-            <br />
-            <br />
-            We are a company backed by strong presence and branding, built-in
-            accountability in its name, established system and platform, and an expanding network of business partners
-            built through fostering quality relationships that reflects the <strong>Empyrean Mark</strong> delivering quality, service-based, and results-oriented personalised experience.
-            <br />
-            <br />
-            When you access us, you will access everyone. Your Real Estate, on us here at Empyrean.
-            Done with simplicity,
-            competency, accountability, quality, and consistency above all.
-          </p>
-        </div>
-        <div className="w-full md:w-1/2 bg-gray-100 relative">
-          <div className="absolute inset-0 flex items-center justify-center">
-            <Image
-              src="/assets/about-hero-img.jpg"
-              alt="Hands holding real estate model"
-              fill
-              className="object-cover"
-            />
-          </div>
-        </div>
-        <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 mb-4">
-          <div className="w-36 h-36 rounded-full flex items-center justify-center">
-            <Image
-              src="/assets/empyrean-logo.png"
-              alt="Empyrean Logo"
-              fill
-              className="object-contain"
-            />
-          </div>
-        </div>
-      </section>
+      <div className="container mx-auto px-4 py-16 max-w-5xl">
+        <h1 className="text-3xl md:text-4xl font-bold text-center mb-8">
+          YOU ACCESS US, YOU ACCESS EVERYONE.
+        </h1>
 
-      {/* Mission and Vision Section */}
-      <section
-        className="flex flex-col md:flex-row py-8 px-8 md:px-16 container mx-auto mt-4"
-        aria-label="Mission and Vision"
-      >
-        <div className="w-full md:w-1/2 text-center px-4 md:px-12 mb-12 md:mb-0">
-          <h2 className="text-3xl font-bold mb-6">MISSION</h2>
+        <p className="text-lg text-center mb-16 max-w-4xl mx-auto">
+          In Empyrean, we value the effectiveness of putting your property in
+          the market, we utilise our in-house sellers, and we also tap our
+          incentivised broker network to get you a buyer, tenant, or guest as
+          soon as possible! Regardless of our commission share, as long as we
+          deliver effective service.
+        </p>
+
+        <div className="mb-12" aria-label="Property Management Services">
+          <ContentCard
+            title="ENLIST WITH US."
+            description="A true one-stop shop for all things real estate. May it just be for handling your property for upkeep and maintenance or profit and brokering, we can handle your property for you backed with our brand's core values."
+          />
+        </div>
+
+        {/* OUR APPROACH Section */}
+        <div className="mb-12 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">OUR APPROACH</h2>
+          <img
+            src="/assets/our-approach.png"
+            alt="Empyrean's Approach"
+            className="mx-auto w-full max-w-2xl"
+          />
+        </div>
+
+        <div className="mb-12 border border-gray-300 rounded-lg p-8 md:p-12">
           <p className="text-gray-800">
-            Become a brand of quality standard, centralised system, and
-            the quality partner of all professionals and clients alike
-            in doing Real Estate in the country.
+            With Empyrean, you&rsquo;d have our guarantee that we will reflect our core values in all our transactions: we are simple, we are competent, we are accountable, and we are setting a quality standard.
+            <br /><br />
+            We are centralising Real Estate so it doesn&rsquo;t have to be complicated for you. Your effective Real Estate Solutions, on us.
           </p>
         </div>
-        <div className="w-full md:w-1/2 text-center px-4 md:px-12">
-          <h2 className="text-3xl font-bold mb-6">VISION</h2>
-          <p className="text-gray-800">
-            A centralised system of doing Real Estate in the country built through quality relationships and commitment to quality and accountable service.
-          </p>
-        </div>
-      </section>
 
-      {/* Core Values Section */}
-      <section
-        className="py-6 px-8 md:px-16 text-center container mx-auto"
-        aria-label="Core Values"
-      >
-        <h2 className="text-3xl font-bold mb-8">CORE VALUES</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {coreValues.map((value) => (
-            <CoreValueCard
-              key={value.title}
-              title={value.title}
-              description={value.description}
-            />
-          ))}
-        </div>
-      </section>
+        <CustomSolutions />
+      </div>
 
-      {/* Our Services Section */}
-<section
-  className="py-6 px-8 md:px-16 text-center container mx-auto gap-6 flex flex-col items-center"
-  aria-label="Our Services"
->
-  <h2 className="text-3xl font-bold mb-1">OUR SERVICES</h2>
-  <p className="text-gray-800 max-w-3xl mx-auto mb-6">
-    We offer comprehensive real estate management solutions designed to
-    make property ownership effortless and profitable.
-  </p>
-
-  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-    {services.map((service) => (
-      <ServiceCard
-        key={service.title}
-        title={service.title}
-        description={service.description}
-      />
-    ))}
-  </div>
-
-  <div className="my-6">
-    <CustomSolutions />
-  </div>
-</section>
-
-      {/* Structured Data */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             "@context": "https://schema.org",
-            "@type": "AboutPage",
-            name: "About Empyrean",
-            description:
-              "Learn about Empyrean's mission, vision, and core values in real estate services.",
-            mainEntity: {
+            "@type": "Service",
+            name: "Property Management Services",
+            provider: {
               "@type": "Organization",
               name: "Empyrean",
+            },
+            description:
+              "Comprehensive property management services including maintenance, leasing, and sales through our extensive network.",
+            offers: {
+              "@type": "Offer",
+              category: "Property Management",
               description:
-                "A one-stop gateway to the entire real estate market—offering full access without the limitations of personal agendas, dishonest service, or incompetence.",
-              mission:
-                "To become the beacon of quality standard and centralised system and the quality partner of all licensed practitioners and clients alike in providing Real Estate Services and performing Real Estate Transactions in the country",
-              vision:
-                "To maintain an honest, effective, and centralised system of doing Real Estate in the country.",
-              coreValues: coreValues.map((value) => ({
-                "@type": "Thing",
-                name: value.title,
-                description: value.description,
-              })),
+                "Complete Real Estate Solutions including maintenance, keyholding, leasing, and sales services.",
+            },
+            serviceType: [
+              "Property Management",
+              "Maintenance Services",
+              "Property Sales",
+              "Property Leasing",
+            ],
+            areaServed: {
+              "@type": "Country",
+              name: "Philippines",
             },
           }),
         }}

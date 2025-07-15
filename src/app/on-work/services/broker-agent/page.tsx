@@ -48,7 +48,7 @@ export default function BrokerAgentDeveloperPage() {
  <section className="mb-10">
   <h2 className="text-2xl font-bold text-center mb-6">WHY JOIN US</h2>
 
-  <div className="bg-gray-700 rounded-lg p-6 text-white">
+  <div className="bg-gray-600 rounded-lg p-6 text-white">
     <p>
       We&rsquo;re aiming to centralise the industry and streamline the process
       of doing real estate in the country; and we&rsquo;d need your help.
@@ -81,7 +81,7 @@ export default function BrokerAgentDeveloperPage() {
 </section>
 
         {/* Three Content Cards */}
-        <div className="space-y-12 mb-20">
+        <div className="space-y-12 mb-10">
           <ContentCard
             title="We offer a generous commission structure with our partners"
             description="We are not in it for the commission. For every transaction closed with our generated looking-clients or even on our direct listings and properties our company directly manages, we give up to 70% commission."

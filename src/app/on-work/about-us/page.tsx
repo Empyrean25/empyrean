@@ -30,6 +30,7 @@ export default function PropertyOwnerPage() {
           deliver effective service.
         </p>
 
+        {/* Box 1 */}
         <div className="mb-12" aria-label="Property Management Services">
           <ContentCard
             title="ENLIST WITH US."
@@ -37,15 +38,17 @@ export default function PropertyOwnerPage() {
           />
         </div>
 
-      {/* OUR APPROACH Section */}
-<div className="mb-12 flex flex-col items-center text-center">
-  <h2 className="text-3xl md:text-4xl font-bold mb-6">OUR APPROACH</h2>
- <div className="w-full max-w-2xl h-40 bg-yellow-300 flex items-center justify-center">
-  IMAGE TEST
-</div>
+        {/* OUR APPROACH Section */}
+        <div className="mb-12 flex flex-col items-center text-center">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">OUR APPROACH</h2>
+          <img
+            src="/assets/our-approach.png"
+            alt="Our approach"
+            className="w-full max-w-2xl h-auto"
+          />
+        </div>
 
-</div>
-
+        {/* Box 2 */}
         <div className="mb-12 border border-gray-300 rounded-lg p-8 md:p-12">
           <p className="text-gray-800">
             With Empyrean, you&rsquo;d have our guarantee that we will reflect our core values in all our transactions: we are simple, we are competent, we are accountable, and we are setting a quality standard.

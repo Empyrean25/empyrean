@@ -71,9 +71,9 @@ export default function AboutPage() {
             alt="Hands holding real estate model"
             width={275}
             height={125}
-            className="object-cover mt-6 mb-6"
+            className="object-cover mt-10 mb-6"
           />
-          <h2 className="text-3xl md:text-4xl  font-bold mb-6">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">
             What is Empyrean?
           </h2>
           <p className="text-gray-800 mb-8">
@@ -91,12 +91,6 @@ export default function AboutPage() {
             Done with simplicity,
             competency, accountability, quality, and consistency above all.
           </p>
-          {/* <Button
-            asChild
-            className="inline-block bg-[#494949] text-white px-12 py-2 rounded-full hover:bg-gray-700"
-          >
-            <Link href="/about/learn-more">Learn more</Link>
-          </Button> */}
         </div>
         <div className="w-full md:w-1/2 bg-gray-100 relative">
           <div className="absolute inset-0 flex items-center justify-center">
@@ -126,7 +120,7 @@ export default function AboutPage() {
         aria-label="Mission and Vision"
       >
         <div className="w-full md:w-1/2 text-center px-4 md:px-12 mb-12 md:mb-0">
-          <h2 className="text-3xl  font-bold mb-6">MISSION</h2>
+          <h2 className="text-3xl font-bold mb-6">MISSION</h2>
           <p className="text-gray-800">
             Become a brand of quality standard, centralised system, and
             the quality partner of all professionals and clients alike
@@ -134,7 +128,7 @@ export default function AboutPage() {
           </p>
         </div>
         <div className="w-full md:w-1/2 text-center px-4 md:px-12">
-          <h2 className="text-3xl  font-bold mb-6">VISION</h2>
+          <h2 className="text-3xl font-bold mb-6">VISION</h2>
           <p className="text-gray-800">
             A centralised system of doing Real Estate in the country built through quality relationships and commitment to quality and accountable service.
           </p>
@@ -143,10 +137,10 @@ export default function AboutPage() {
 
       {/* Core Values Section */}
       <section
-        className="py-8 px-8 md:px-16 text-center container mx-auto"
+        className="py-6 px-8 md:px-16 text-center container mx-auto"
         aria-label="Core Values"
       >
-        <h2 className="text-3xl  font-bold mb-10">CORE VALUES</h2>
+        <h2 className="text-3xl font-bold mt-4 mb-6">CORE VALUES</h2>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {coreValues.map((value) => (
@@ -161,11 +155,11 @@ export default function AboutPage() {
 
       {/* Our Services Section */}
       <section
-        className="py-8 px-8 md:px-16 text-center container mx-auto gap-6 flex flex-col items-center"
+        className="py-4 px-8 md:px-16 text-center container mx-auto gap-6 flex flex-col items-center"
         aria-label="Our Services"
       >
-        <h2 className="text-3xl  font-bold mb-4">OUR SERVICES</h2>
-        <p className="text-gray-800 max-w-3xl mx-auto mb-10">
+        <h2 className="text-3xl font-bold mb-4">OUR SERVICES</h2>
+        <p className="text-gray-800 max-w-3xl mx-auto my-4">
           We offer comprehensive real estate management solutions designed to
           make property ownership effortless and profitable.
         </p>
@@ -180,9 +174,12 @@ export default function AboutPage() {
           ))}
         </div>
 
-        <CustomSolutions />
+        <div className="my-12">
+          <CustomSolutions />
+        </div>
       </section>
 
+      {/* Structured Data */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{

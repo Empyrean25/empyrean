@@ -110,7 +110,7 @@ export default function ContactForm() {
                       htmlFor="property-owner"
                       className="text-sm font-medium cursor-pointer"
                     >
-                      Property Owners
+                      Property Owner
                     </label>
                   </div>
 
@@ -118,22 +118,22 @@ export default function ContactForm() {
                     className={`
                     flex items-center space-x-2 rounded-full px-4 py-2 cursor-pointer
                     ${
-                      field.value === "tenant-guest"
+                      field.value === "buyer-tenant-guest"
                         ? "bg-[#494949] text-white"
                         : "border border-gray-300 text-[#494949]"
                     }
                   `}
                   >
                     <RadioGroupItem
-                      value="tenant-guest"
-                      id="tenant-guest"
+                      value="buyer-tenant-guest"
+                      id="buyer-tenant-guest"
                       className="hidden"
                     />
                     <label
-                      htmlFor="tenant-guest"
+                      htmlFor="buyer-tenant-guest"
                       className="text-sm font-medium cursor-pointer"
                     >
-                      Tenants/Guests
+                      Buyer/Tenant/Guest
                     </label>
                   </div>
 
@@ -141,22 +141,22 @@ export default function ContactForm() {
                     className={`
                     flex items-center space-x-2 rounded-full px-4 py-2 cursor-pointer
                     ${
-                      field.value === "broker-agent"
+                      field.value === "broker-agent-realtyfirm"
                         ? "bg-[#494949] text-white"
                         : "border border-gray-300 text-[#494949]"
                     }
                   `}
                   >
                     <RadioGroupItem
-                      value="broker-agent"
-                      id="broker-agent"
+                      value="broker-agent-realtyfirm"
+                      id="broker-agent-realtyfirm"
                       className="hidden"
                     />
                     <label
-                      htmlFor="broker-agent"
+                      htmlFor="broker-agent-realtyfirm"
                       className="text-sm font-medium cursor-pointer"
                     >
-                      Broker/Agent
+                      Broker/Agent/Realty Firm
                     </label>
                   </div>
 
@@ -164,22 +164,45 @@ export default function ContactForm() {
                     className={`
                     flex items-center space-x-2 rounded-full px-4 py-2 cursor-pointer
                     ${
-                      field.value === "developer"
+                      field.value === "developer-representative"
                         ? "bg-[#494949] text-white"
                         : "border border-gray-300 text-[#494949]"
                     }
                   `}
                   >
                     <RadioGroupItem
-                      value="developer"
-                      id="developer"
+                      value="developer-representative"
+                      id="developer-representative"
                       className="hidden"
                     />
                     <label
-                      htmlFor="developer"
+                      htmlFor="developer-representative"
                       className="text-sm font-medium cursor-pointer"
                     >
-                      Developer
+                      Developer Representative
+                    </label>
+                  </div>
+
+                  <div
+                    className={`
+                    flex items-center space-x-2 rounded-full px-4 py-2 cursor-pointer
+                    ${
+                      field.value === "business"
+                        ? "bg-[#494949] text-white"
+                        : "border border-gray-300 text-[#494949]"
+                    }
+                  `}
+                  >
+                    <RadioGroupItem
+                      value="business"
+                      id="business"
+                      className="hidden"
+                    />
+                    <label
+                      htmlFor="business"
+                      className="text-sm font-medium cursor-pointer"
+                    >
+                      Business
                     </label>
                   </div>
                 </RadioGroup>
@@ -210,13 +233,13 @@ export default function ContactForm() {
 
           <FormField
             control={form.control}
-            name="email"
+            name="Phone Number"
             render={({ field }) => (
               <FormItem>
-                <FormLabel>Email</FormLabel>
+                <FormLabel>Phone Number</FormLabel>
                 <FormControl>
                   <Input
-                    placeholder="Your email"
+                    placeholder="Your phone number"
                     {...field}
                     className="rounded-md"
                   />
@@ -226,6 +249,24 @@ export default function ContactForm() {
             )}
           />
         </div>
+
+        <FormField
+          control={form.control}
+          name="email"
+          render={({ field }) => (
+            <FormItem>
+              <FormLabel>Email Address</FormLabel>
+              <FormControl>
+                <Input
+                  placeholder="Your Email Address"
+                  {...field}
+                  className="rounded-md"
+                />
+              </FormControl>
+              <FormMessage />
+            </FormItem>
+          )}
+        />
 
         <FormField
           control={form.control}
@@ -253,7 +294,7 @@ export default function ContactForm() {
               <FormLabel>Message</FormLabel>
               <FormControl>
                 <Textarea
-                  placeholder="Your message and requirements"
+                  placeholder="Your message"
                   {...field}
                   className="rounded-md min-h-[150px]"
                 />

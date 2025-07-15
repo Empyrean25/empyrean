@@ -20,7 +20,13 @@ import { toast } from "sonner";
 
 const formSchema = z.object({
   userType: z.enum(
-    ["property-owner", "tenant-guest", "broker-agent", "developer"],
+    [
+      "property-owner",
+      "buyer-tenant-guest",
+      "broker-agent-realtyfirm",
+      "developer-representative",
+      "business",
+    ],
     {
       required_error: "Please select a user type.",
     }
@@ -57,10 +63,7 @@ export default function ContactForm() {
     setIsSubmitting(true);
 
     try {
-      // In a real application, you would send this data to your API
       console.log(values);
-
-      // Simulate API call
       await new Promise((resolve) => setTimeout(resolve, 1000));
 
       toast("Form submitted successfully!", {
@@ -91,120 +94,49 @@ export default function ContactForm() {
                   defaultValue={field.value}
                   className="flex flex-wrap gap-3 justify-center"
                 >
-                  <div
-                    className={`
-                    flex items-center space-x-2 rounded-full px-4 py-2 cursor-pointer
-                    ${
-                      field.value === "property-owner"
-                        ? "bg-[#494949] text-white"
-                        : "border border-gray-300 text-[#494949]"
-                    }
-                  `}
-                  >
-                    <RadioGroupItem
-                      value="property-owner"
-                      id="property-owner"
-                      className="hidden"
-                    />
-                    <label
-                      htmlFor="property-owner"
-                      className="text-sm font-medium cursor-pointer"
+                  {[
+                    {
+                      value: "property-owner",
+                      label: "Property Owner",
+                    },
+                    {
+                      value: "buyer-tenant-guest",
+                      label: "Buyer/Tenant/Guest",
+                    },
+                    {
+                      value: "broker-agent-realtyfirm",
+                      label: "Broker/Agent/Realty Firm",
+                    },
+                    {
+                      value: "developer-representative",
+                      label: "Developer Representative",
+                    },
+                    {
+                      value: "business",
+                      label: "Business",
+                    },
+                  ].map(({ value, label }) => (
+                    <div
+                      key={value}
+                      className={`flex items-center space-x-2 rounded-full px-4 py-2 cursor-pointer ${
+                        field.value === value
+                          ? "bg-[#494949] text-white"
+                          : "border border-gray-300 text-[#494949]"
+                      }`}
                     >
-                      Property Owner
-                    </label>
-                  </div>
-
-                  <div
-                    className={`
-                    flex items-center space-x-2 rounded-full px-4 py-2 cursor-pointer
-                    ${
-                      field.value === "buyer-tenant-guest"
-                        ? "bg-[#494949] text-white"
-                        : "border border-gray-300 text-[#494949]"
-                    }
-                  `}
-                  >
-                    <RadioGroupItem
-                      value="buyer-tenant-guest"
-                      id="buyer-tenant-guest"
-                      className="hidden"
-                    />
-                    <label
-                      htmlFor="buyer-tenant-guest"
-                      className="text-sm font-medium cursor-pointer"
-                    >
-                      Buyer/Tenant/Guest
-                    </label>
-                  </div>
-
-                  <div
-                    className={`
-                    flex items-center space-x-2 rounded-full px-4 py-2 cursor-pointer
-                    ${
-                      field.value === "broker-agent-realtyfirm"
-                        ? "bg-[#494949] text-white"
-                        : "border border-gray-300 text-[#494949]"
-                    }
-                  `}
-                  >
-                    <RadioGroupItem
-                      value="broker-agent-realtyfirm"
-                      id="broker-agent-realtyfirm"
-                      className="hidden"
-                    />
-                    <label
-                      htmlFor="broker-agent-realtyfirm"
-                      className="text-sm font-medium cursor-pointer"
-                    >
-                      Broker/Agent/Realty Firm
-                    </label>
-                  </div>
-
-                  <div
-                    className={`
-                    flex items-center space-x-2 rounded-full px-4 py-2 cursor-pointer
-                    ${
-                      field.value === "developer-representative"
-                        ? "bg-[#494949] text-white"
-                        : "border border-gray-300 text-[#494949]"
-                    }
-                  `}
-                  >
-                    <RadioGroupItem
-                      value="developer-representative"
-                      id="developer-representative"
-                      className="hidden"
-                    />
-                    <label
-                      htmlFor="developer-representative"
-                      className="text-sm font-medium cursor-pointer"
-                    >
-                      Developer Representative
-                    </label>
-                  </div>
-
-                  <div
-                    className={`
-                    flex items-center space-x-2 rounded-full px-4 py-2 cursor-pointer
-                    ${
-                      field.value === "business"
-                        ? "bg-[#494949] text-white"
-                        : "border border-gray-300 text-[#494949]"
-                    }
-                  `}
-                  >
-                    <RadioGroupItem
-                      value="business"
-                      id="business"
-                      className="hidden"
-                    />
-                    <label
-                      htmlFor="business"
-                      className="text-sm font-medium cursor-pointer"
-                    >
-                      Business
-                    </label>
-                  </div>
+                      <RadioGroupItem
+                        value={value}
+                        id={value}
+                        className="hidden"
+                      />
+                      <label
+                        htmlFor={value}
+                        className="text-sm font-medium cursor-pointer"
+                      >
+                        {label}
+                      </label>
+                    </div>
+                  ))}
                 </RadioGroup>
               </FormControl>
               <FormMessage />
@@ -231,23 +163,12 @@ export default function ContactForm() {
             )}
           />
 
-          <FormField
-            control={form.control}
-            name="Phone Number"
-            render={({ field }) => (
-              <FormItem>
-                <FormLabel>Phone Number</FormLabel>
-                <FormControl>
-                  <Input
-                    placeholder="Your phone number"
-                    {...field}
-                    className="rounded-md"
-                  />
-                </FormControl>
-                <FormMessage />
-              </FormItem>
-            )}
-          />
+          <FormItem>
+            <FormLabel>Phone Number</FormLabel>
+            <FormControl>
+              <Input placeholder="Your phone number" className="rounded-md" />
+            </FormControl>
+          </FormItem>
         </div>
 
         <FormField

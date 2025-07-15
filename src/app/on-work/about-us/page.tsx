@@ -69,8 +69,8 @@ export default function AboutPage() {
           <Image
             src="/assets/empyrean.png"
             alt="Hands holding real estate model"
-            width={300}
-            height={150}
+            width={275}
+            height={125}
             className="object-cover mb-4"
           />
           <h2 className="text-3xl md:text-4xl  font-bold mb-6">

@@ -43,7 +43,7 @@ export default function PropertyOwnerPage() {
   <h2 className="text-3xl md:text-4xl font-bold mb-6">OUR APPROACH</h2>
   <div className="w-full max-w-5xl px-4">
     <img
-      src="/assets/our-approach.png"
+      src="/assets/our-approach-new.png"
       alt="Our approach"
       className="w-full h-auto rounded-lg"
     />

@@ -2,6 +2,7 @@ import Link from "next/link";
 import PartnerLogo from "@/components/partner-logo";
 import { Button } from "@/components/ui/button";
 import { Metadata } from "next";
+import { ContentCard } from "@/components/content-card";
 
 export const metadata: Metadata = {
   title: "Broker Network | Empyrean - Join Our Real Estate Broker Network",
@@ -42,6 +43,38 @@ export default function BrokerAgentDeveloperPage() {
             <PartnerLogo name="Broker Partner 4" />
           </div>
         </section>
+
+        {/* WHY JOIN US Section */}
+        <section className="mb-20 text-center px-4">
+          <h3 className="text-xl font-semibold mb-6">WHY JOIN US?</h3>
+          <p className="text-gray-800 max-w-4xl mx-auto text-base leading-relaxed">
+            We’re aiming to centralise the industry and streamline the process of doing real estate in the country; and we'd need your help.
+            <br /><br />
+            Empyrean Real Estate Solutions will establish a stronger presence in its lifetime. This entails aggressive market penetration and brand awareness. We will make noise locally with plans in taking it internationally to attract and generate leads from targeted overseas locations to the Philippines.
+            <br /><br />
+            We generate leads, you close the deals. That's why we'd like to have you as partner.
+            <br /><br />
+            It's no question, we know you close deals best. Upon generating leads and client requirements are made-known, we will guide and direct these inquiries to the right broker to best fit their needs. Let this broker be you.
+            <br /><br />
+            Join us streamline the process and be our partner in Sales and Leasing.
+          </p>
+        </section>
+
+        {/* Three Content Cards */}
+        <div className="space-y-12 mb-20">
+          <ContentCard
+            title="We Offer a generous commission structure with our partners"
+            description="We are not in it for the commission. For every transaction closed with our generated looking-clients or even on our direct listings and properties our company directly manages, we give up to 70% commission."
+          />
+          <ContentCard
+            title="We Offer our services, not just to our clients, but also to partners"
+            description="We are committed to providing competent real estate service. As we are big on getting connected and our network, what we have to offer to our clients, even our visioned marketing powerhouse, we are also offering you too, with the commission setup also in favour of you! We can assist you in any way or any thing you might need from Empyrean with Empyrean Standards."
+          />
+          <ContentCard
+            title="You are also our clients"
+            description="We are also at your service, inform us of any of your needs, and we’ll tailor a custom solution for you."
+          />
+        </div>
 
         <div className="flex justify-center">
           <Button

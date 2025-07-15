@@ -23,10 +23,6 @@ export default function BrokerAgentDeveloperPage() {
       image: "/assets/partners/shang.png",
     },
     {
-      name: "APMC",
-      image: "/assets/partners/apmc.png",
-    },
-    {
       name: "SMDC",
       image: "/assets/partners/smdc.png",
     },

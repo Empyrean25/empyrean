@@ -52,14 +52,14 @@ export default function BrokerAgentDeveloperPage() {
     <main className="min-h-[calc(100vh-6rem)] flex flex-col">
       <div className="container mx-auto px-4 py-16 max-w-5xl">
         <section className="mb-20" aria-label="Developer Partners">
-          <h1 className="text-2xl font-bold text-center mb-6">
+          <h1 className="text-3xl md:text-4xl font-bold text-center mb-8">
             OUR DEVELOPER PARTNERS
           </h1>
 
           <p className="text-center text-lg max-w-3xl mx-auto mb-12">
             We are also accredited to and have partnered with numerous developers
             to offer our clients explore project selling and direct resale and
-            leasing from developers on ready-for-occupancy units.
+            leasing from developers on ready-for-occupancy (RFO) units.
           </p>
 
           <Marquee speed={50}>

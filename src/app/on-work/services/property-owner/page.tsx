@@ -39,9 +39,9 @@ export default function PropertyOwnerPage() {
 
         <div className="mb-12 border border-gray-300 rounded-lg p-8 md:p-12">
           <p className="text-gray-800">
-            With Empyrean, you'd have our guarantee that we will reflect our core values in all our transactions: we are simple, we are competent, we are accountable, and we are setting a quality standard.
+            With Empyrean, you&rsquo;d have our guarantee that we will reflect our core values in all our transactions: we are simple, we are competent, we are accountable, and we are setting a quality standard.
             <br /><br />
-            We are centralising Real Estate so it doesn't have to be complicated. Your effective Real Estate Solutions, on us.
+            We are centralising Real Estate so it doesn&rsquo;t have to be complicated for you. Your effective Real Estate Solutions, on us.
           </p>
         </div>
 

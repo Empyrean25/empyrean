@@ -153,28 +153,30 @@ export default function AboutPage() {
       </section>
 
       {/* Our Services Section */}
-      <section
-        className="py-6 px-8 md:px-16 text-center container mx-auto gap-6 flex flex-col items-center"
-        aria-label="Our Services"
-      >
-        <h2 className="text-3xl font-bold mb-2">OUR SERVICES</h2>
-        <p className="text-gray-800 max-w-3xl mx-auto my-4">
-          We offer comprehensive real estate management solutions designed to
-          make property ownership effortless and profitable.
-        </p>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {services.map((service) => (
-            <ServiceCard
-              key={service.title}
-              title={service.title}
-              description={service.description}
-            />
-          ))}
-        </div>
-        <div className="my-8">
-          <CustomSolutions />
-        </div>
-      </section>
+<section
+  className="py-6 px-8 md:px-16 text-center container mx-auto gap-6 flex flex-col items-center"
+  aria-label="Our Services"
+>
+  <h2 className="text-3xl font-bold mb-1">OUR SERVICES</h2>
+  <p className="text-gray-800 max-w-3xl mx-auto mb-6">
+    We offer comprehensive real estate management solutions designed to
+    make property ownership effortless and profitable.
+  </p>
+
+  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    {services.map((service) => (
+      <ServiceCard
+        key={service.title}
+        title={service.title}
+        description={service.description}
+      />
+    ))}
+  </div>
+
+  <div className="my-6">
+    <CustomSolutions />
+  </div>
+</section>
 
       {/* Structured Data */}
       <script

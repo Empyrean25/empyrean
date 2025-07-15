@@ -38,15 +38,17 @@ export default function PropertyOwnerPage() {
           />
         </div>
 
-        {/* OUR APPROACH Section */}
-        <div className="mb-12 flex flex-col items-center text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">OUR APPROACH</h2>
-          <img
-            src="/assets/our-approach.png"
-            alt="Our approach"
-            className="w-full max-w-2xl h-auto"
-          />
-        </div>
+   {/* OUR APPROACH Section */}
+<div className="mb-12 flex flex-col items-center text-center">
+  <h2 className="text-3xl md:text-4xl font-bold mb-6">OUR APPROACH</h2>
+  <div className="w-full max-w-5xl px-4">
+    <img
+      src="/assets/our-approach.png"
+      alt="Our approach"
+      className="w-full h-auto rounded-lg"
+    />
+  </div>
+</div>
 
         {/* Box 2 */}
         <div className="mb-12 border border-gray-300 rounded-lg p-8 md:p-12">

@@ -71,7 +71,7 @@ export default function AboutPage() {
             alt="Hands holding real estate model"
             width={275}
             height={125}
-            className="object-cover mt-6 mb-4"
+            className="object-cover mt-6 mb-6"
           />
           <h2 className="text-3xl md:text-4xl  font-bold mb-6">
             What is Empyrean?
@@ -146,7 +146,7 @@ export default function AboutPage() {
         className="py-8 px-8 md:px-16 text-center container mx-auto"
         aria-label="Core Values"
       >
-        <h2 className="text-3xl  font-bold mb-8">CORE VALUES</h2>
+        <h2 className="text-3xl  font-bold mb-10">CORE VALUES</h2>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {coreValues.map((value) => (
@@ -164,8 +164,8 @@ export default function AboutPage() {
         className="py-8 px-8 md:px-16 text-center container mx-auto gap-6 flex flex-col items-center"
         aria-label="Our Services"
       >
-        <h2 className="text-3xl  font-bold mb-6">OUR SERVICES</h2>
-        <p className="text-gray-800 max-w-3xl mx-auto mb-12">
+        <h2 className="text-3xl  font-bold mb-4">OUR SERVICES</h2>
+        <p className="text-gray-800 max-w-3xl mx-auto mb-10">
           We offer comprehensive real estate management solutions designed to
           make property ownership effortless and profitable.
         </p>

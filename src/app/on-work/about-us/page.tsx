@@ -3,6 +3,7 @@ import { ServiceCard } from "@/components/service-card";
 import { CoreValueCard } from "@/components/core-value-card";
 import CustomSolutions from "@/components/custom-solutions";
 import { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "About Us | Empyrean Real Estate Solutions - Your all-in-one access to the Philippine Real Estate",
@@ -65,17 +66,19 @@ export default function AboutPage() {
         className="flex flex-col md:flex-row relative h-[calc(100vh-6rem)]"
         aria-label="Who We Are"
       >
-        <div className="flex flex-col items-start justify-center w-full md:w-1/2 p-12 md:p-16 lg:p-20">
-          <Image
-            src="/assets/empyrean.png"
-            alt="Hands holding real estate model"
-            width={275}
-            height={125}
-            className="object-cover mt-12 mb-4"
-          />
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            What is Empyrean?
-          </h2>
+      <div className="flex flex-col items-start justify-center w-full md:w-1/2 p-12 md:p-16 lg:p-20">
+  <Link href="/on-work/home">
+    <Image
+      src="/assets/empyrean.png"
+      alt="Hands holding real estate model"
+      width={275}
+      height={125}
+      className="object-cover mt-12 mb-4 transition-transform duration-300 ease-in-out hover:scale-105 cursor-pointer"
+    />
+  </Link>
+  <h2 className="text-3xl md:text-4xl font-bold mb-6">
+    What is Empyrean?
+  </h2>
           <p className="text-gray-800 mb-8">
             Empyrean Real Estate Solutions is one-stop gateway to the entire Philippine Real Estate—offering full
             access from Brokerage: Project Selling, Resale and Leasing; 

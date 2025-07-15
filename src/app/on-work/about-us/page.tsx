@@ -146,7 +146,7 @@ export default function AboutPage() {
         className="py-8 px-8 md:px-16 text-center container mx-auto"
         aria-label="Core Values"
       >
-        <h2 className="text-3xl  font-bold mb-4">CORE VALUES</h2>
+        <h2 className="text-3xl  font-bold mb-8">CORE VALUES</h2>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {coreValues.map((value) => (

@@ -17,8 +17,12 @@ export function ContentCard({
     >
       <div className="flex flex-col md:items-start gap-6">
         <div className="flex items-center gap-4">
-          <div className="bg-gray-200 rounded-full relative min-w-[60px] h-[60px]"></div>
-          <h3 className="absolute text-xl font-bold uppercase">{title}</h3>
+          <div className="relative min-w-[60px] h-[60px]">
+            <div className="bg-gray-200 rounded-full w-full h-full"></div>
+            <div className="absolute top-1/2 left-1/2 -translate-y-1/2 text-xl font-bold uppercase whitespace-nowrap">
+              {title}
+            </div>
+          </div>
         </div>
         <p className="text-gray-800">{description}</p>
       </div>

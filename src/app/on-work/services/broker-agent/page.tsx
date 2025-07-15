@@ -38,7 +38,7 @@ export default function BrokerAgentDeveloperPage() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             <PartnerLogo imageSrc="/assets/partners/msjoyph.jpeg" hideName />
             <PartnerLogo imageSrc="/assets/partners/PHRCS.jpg" hideName />
-            <PartnerLogo name="Broker Partner 3" />
+            <PartnerLogo imageSrc="/assets/partners/remaxone-new.png" hideName />
             <PartnerLogo name="Broker Partner 4" />
           </div>
         </section>

@@ -45,20 +45,40 @@ export default function BrokerAgentDeveloperPage() {
         </section>
 
         {/* WHY JOIN US Section */}
-        <section className="mb-20 text-center px-4">
-          <h3 className="text-xl font-semibold mb-6">WHY JOIN US?</h3>
-          <p className="text-gray-800 max-w-4xl mx-auto text-base leading-relaxed">
-            We&apos;re aiming to centralise the industry and streamline the process of doing real estate in the country; and we&apos;d need your help.
-            <br /><br />
-            Empyrean Real Estate Solutions will establish a stronger presence in its lifetime. This entails aggressive market penetration and brand awareness. We will make noise locally with plans in taking it internationally to attract and generate leads from targeted overseas locations to the Philippines.
-            <br /><br />
-            We generate leads, you close the deals. That&apos;s why we&apos;d like to have you as partner.
-            <br /><br />
-            It&apos;s no question, we know you close deals best. Upon generating leads and client requirements are made-known, we will guide and direct these inquiries to the right broker to best fit their needs. Let this broker be you.
-            <br /><br />
-            Join us streamline the process and be our partner in Sales and Leasing.
-          </p>
-        </section>
+       <section className="mb-20">
+  <h2 className="text-xl font-bold text-center mb-6">WHY JOIN US</h2>
+
+  <div className="bg-gray-200 bg-opacity-50 rounded-lg p-6 text-gray-800">
+    <p>
+      We&rsquo;re aiming to centralise the industry and streamline the process
+      of doing real estate in the country; and we&rsquo;d need your help.
+    </p>
+    <br />
+    <p>
+      Empyrean Real Estate Solutions will establish a stronger presence in its
+      lifetime. This entails aggressive market penetration and brand awareness.
+      We will make noise locally with plans in taking it internationally to
+      attract and generate leads from targeted overseas locations to the
+      Philippines.
+    </p>
+    <br />
+    <p>
+      We generate leads, you close the deals. That&rsquo;s why we&rsquo;d like
+      to have you as partner.
+    </p>
+    <br />
+    <p>
+      It&rsquo;s no question, we know you close deals best. Upon generating
+      leads and client requirements are made-known, we will guide and direct
+      these inquiries to the right broker to best fit their needs. Let this
+      broker be you.
+    </p>
+    <br />
+    <p>
+      Join us streamline the process and be our partner in Sales and Leasing.
+    </p>
+  </div>
+</section>
 
         {/* Three Content Cards */}
         <div className="space-y-12 mb-20">

@@ -18,7 +18,7 @@ export default function PropertyOwnerPage() {
   return (
     <main className="min-h-screen flex flex-col">
       <div className="container mx-auto px-4 py-16 max-w-5xl">
-        <h1 className="text-3xl md:text-4xl  font-bold text-center mb-8">
+        <h1 className="text-3xl md:text-4xl font-bold text-center mb-8">
           YOU ACCESS US, YOU ACCESS EVERYONE.
         </h1>
 
@@ -33,12 +33,16 @@ export default function PropertyOwnerPage() {
         <div className="mb-12" aria-label="Property Management Services">
           <ContentCard
             title="ENLIST WITH US."
-            description="A true one-stop shop for all things real estate. May it just be
-            for handling your property for maintenance and upkeep or profit
-            and brokering, we can manage your property for you. Our Property
-            Management can start managing your property with keyholding and
-            maintenance services and we'll be ready once you decide to
-            put it up in the market for profit, for short/long term lease or"
+            description="A true one-stop shop for all things real estate. May it just be for handling your property for upkeep and maintenance or profit and brokering, we can handle your property for you backed with our brand's core values."
+          />
+        </div>
+
+        <div className="mb-12">
+          <ContentCard
+            title="EFFECTIVE REAL ESTATE SOLUTIONS."
+            description="With Empyrean, you'd have our guarantee that we will reflect our core values in all our transactions: we are simple, we are competent, we are accountable, and we are setting a quality standard.
+
+We are centralising Real Estate so it doesn't have to be complicated. Your effective Real Estate Solutions, on us."
           />
         </div>
 

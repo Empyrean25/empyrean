@@ -23,17 +23,17 @@ export default function BuyerTenantGuestPage() {
         </h1>
 
         <p className="text-lg text-center mb-16 max-w-4xl mx-auto">
-          Regardless of the nationality, the location, the type of deal, and
+          Regardless of the nationality, the location, the type of deal, and its price,
           whoever all associated persons are: Property Owner, Broker, or Agent,{" "}
           <span className="font-bold">you deserve accountability</span> and a
-          company that will be with your before, during, and most especially
-          after your Real Estate Transaction.
+          company that will be with you before, during, and most especially
+          after your real estate transaction. 
         </p>
 
         <div className="mb-16" aria-label="Service Benefits">
           <ContentCard
             title="Your Requirements Matter."
-            description="Send us your information and requirements, we'll tap everything we can reach to satisfy your needs!"
+            description="Send us your information and requirements, we'll tap everything we can reach to find a property that matches your budget, personality, lifestyle, and preferences!"
           />
         </div>
 

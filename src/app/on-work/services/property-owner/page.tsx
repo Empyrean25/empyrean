@@ -37,7 +37,7 @@ export default function PropertyOwnerPage() {
           />
         </div>
 
-        <div className="mb-12">
+        <div className="mb-12" aria-label="Empyrean Guarantee">
           <ContentCard
             title="EFFECTIVE REAL ESTATE SOLUTIONS."
             description="With Empyrean, you'd have our guarantee that we will reflect our core values in all our transactions: we are simple, we are competent, we are accountable, and we are setting a quality standard.

@@ -6,12 +6,12 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Other Businesses | Empyrean - Join Our Real Estate Broker Network",
   description:
-    "Join Empyrean's broker network and be part of a centralized real estate platform. Partner with us to provide effective services and achieve faster market turnover.",
+    "Join Empyrean Business Network.",
   openGraph: {
     title:
-      "Join Empyrean's Broker Network - Real Estate Partnership Opportunities",
+      "Join Empyrean Business Network",
     description:
-      "Become an Empyrean broker partner and access our centralized real estate platform. Join our network of professional brokers for better market reach and faster transactions.",
+      "Become an Empyrean partner and access everyone.",
     type: "website",
   },
 };
@@ -21,11 +21,13 @@ export default function BusinessPage() {
     <main className="min-h-screen flex flex-col">
       <div className="container mx-auto px-4 py-16 max-w-5xl">
         <h1 className="text-3xl md:text-4xl font-bold text-center mb-8">
-          BE AN EMPYREAN PARTNER
+          BE PART OF EMPYREAN BUSINESS NETWORK
         </h1>
 
         <p className="text-lg text-center mb-16 max-w-4xl mx-auto">
-          Regardless of your field or nature of business: products or services, as long as you are related or in the business of real estate, you are invited to partner with us!
+          We are committed to fostering quality relationships as a vital part of our identity. That&apos;s why we cultivate <strong>Empyrean Business Network</strong> and well-, <strong>Empyrean Professional Circles</strong>. More opportunities for growth, partnerships, and closing deals!
+<br />
+          You access us, you access everyone.
         </p>
 
         <section className="mb-20" aria-label="Broker Network">

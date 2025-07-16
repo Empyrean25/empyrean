@@ -14,7 +14,7 @@ export default function CategorySection() {
     },
     {
       title: "I AM IN THE BUSINESS OF REAL ESTATE",
-      href: "/on-work/services/partner",
+      href: "/on-work/services/business",
       bgColor: "bg-[#9f9f9f]",
     },
     {

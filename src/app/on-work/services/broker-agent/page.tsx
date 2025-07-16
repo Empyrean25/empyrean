@@ -26,8 +26,8 @@ export default function BrokerAgentDeveloperPage() {
         </h1>
 
         <p className="text-lg text-center mb-16 max-w-4xl mx-auto">
-          Hit two birds with one stone. By joining Empyrean, you become part of our <strong>Empyrean's Broker Network</strong> and be one with us in centralising Real Estate
-          and providing quality services clients plus you become part of <strong>Empyrean Business Network</strong>. As our partner, you'd also be able to access our expanding network of businesses connected with Empyrean. More opportunities of partnerships and closing deals!
+          Hit two birds with one stone. By joining Empyrean, you become part of our <strong>Empyrean&apos;s Broker Network</strong> and be one with us in centralising Real Estate
+          and providing quality services clients plus you become part of <strong>Empyrean Business Network</strong>. As our partner, you&apos;d also be able to access our expanding network of businesses connected with Empyrean. More opportunities of partnerships and closing deals!
 <br />    
           You access us, you access everyone.
 </p>

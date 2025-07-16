@@ -7,7 +7,7 @@ import { ContentCard } from "@/components/content-card";
 export const metadata: Metadata = {
   title: "Broker Network | Empyrean - Join Our Real Estate Broker Network",
   description:
-    "Join Empyrean's broker network and be part of a centralized real estate platform. Partner with us to provide effective services and achieve faster market turnover.",
+    "Join Empyrean's Broker Network and be part of a centralized real estate platform. Partner with us to provide effective services and achieve faster market turnover.",
   openGraph: {
     title:
       "Join Empyrean's Broker Network - Real Estate Partnership Opportunities",
@@ -26,10 +26,11 @@ export default function BrokerAgentDeveloperPage() {
         </h1>
 
         <p className="text-lg text-center mb-16 max-w-4xl mx-auto">
-          Join our Broker Network and be one with us in centralising Real Estate
-          and providing effective services minimising hindrance to smoother and
-          faster market turnover.
-        </p>
+          Hit two birds with one stone. By joining Empyrean, you become part of our <strong>Empyrean's Broker Network</strong> and be one with us in centralising Real Estate
+          and providing quality services clients plus you become part of <strong>Empyrean Business Network</strong>. As our partner, you'd also be able to access our expanding network of businesses connected with Empyrean. More opportunities of partnerships and closing deals!
+<br />    
+          You access us, you access everyone.
+</p>
 
         <section className="mb-10" aria-label="Broker Network">
           <h2 className="text-2xl font-bold text-center mb-12">

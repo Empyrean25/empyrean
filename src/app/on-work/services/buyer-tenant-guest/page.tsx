@@ -18,11 +18,11 @@ export default function BuyerTenantGuestPage() {
   return (
     <main className="min-h-screen flex flex-col">
       <div className="container mx-auto px-4 py-16 max-w-5xl">
-        <h1 className="text-3xl md:text-4xl  font-bold text-center mb-8">
+        <h1 className="text-3xl md:text-4xl font-bold text-center mb-8">
           WHY DEAL WITH AN EMPYREAN?
         </h1>
 
-        <p className="text-lg text-center mb-16 max-w-4xl mx-auto">
+        <p className="text-[14px] md:text-lg text-center mb-16 max-w-4xl mx-auto">
           Regardless of the nationality, the location, the type of deal, and its price,
           whoever all associated persons are: Property Owner, Broker, or Agent,{" "}
           <span className="font-bold">you deserve accountability</span> and a

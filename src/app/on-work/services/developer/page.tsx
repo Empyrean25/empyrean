@@ -56,7 +56,7 @@ export default function BrokerAgentDeveloperPage() {
             OUR DEVELOPER PARTNERS
           </h1>
 
-          <p className="text-center text-lg max-w-3xl mx-auto mb-12">
+        <p className="text-[14px] md:text-lg text-center mb-16 max-w-4xl mx-auto">
             We are also accredited to and have partnered with numerous developers
             to offer our clients explore project selling and direct resale and
             leasing from developers on ready-for-occupancy (RFO) units.

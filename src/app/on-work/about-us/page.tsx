@@ -81,19 +81,34 @@ export default function AboutPage() {
 
     {/* TEXT CONTENT */}
     <h2 className="text-3xl md:text-4xl font-bold mb-6">What is Empyrean?</h2>
-   <p className="text-gray-800 mb-8 text-base md:text-lg leading-relaxed text-justify">
-  Empyrean Real Estate Solutions is one-stop gateway to the entire Philippine Real Estate—offering full
-  access from Brokerage: Project Selling, Resale and Leasing; Home Improvement: Planning, Construction,
-  and Renovation, and even acquiring your Furnitures and Decorations.
-  <br /><br />
-  We are a company backed by strong presence and branding, built-in accountability in its name,
-  established system and platform, and an expanding network of business partners built through fostering
-  quality relationships that reflects the <strong>Empyrean Mark</strong> delivering quality,
-  service-based, and results-oriented personalised experience.
-  <br /><br />
-  When you access us, you will access everyone. Your Real Estate, on us here at Empyrean.
-  Done with simplicity, competency, accountability, quality, and consistency above all.
-</p>
+    <p className="text-gray-800 mb-8 text-base md:text-lg leading-relaxed text-justify">
+      Empyrean Real Estate Solutions is one-stop gateway to the entire Philippine Real Estate—offering full
+      access from Brokerage: Project Selling, Resale and Leasing; Home Improvement: Planning, Construction,
+      and Renovation, and even acquiring your Furnitures and Decorations.
+      <br /><br />
+      We are a company backed by strong presence and branding, built-in accountability in its name,
+      established system and platform, and an expanding network of business partners built through fostering
+      quality relationships that reflects the <strong>Empyrean Mark</strong> delivering quality,
+      service-based, and results-oriented personalised experience.
+      <br /><br />
+      When you access us, you will access everyone. Your Real Estate, on us here at Empyrean.
+      Done with simplicity, competency, accountability, quality, and consistency above all.
+    </p>
+
+    {/* MISSION */}
+    <h3 className="text-xl md:text-2xl font-semibold mb-2">Our Mission</h3>
+    <p className="text-gray-800 mb-6 text-base md:text-lg leading-relaxed text-justify">
+      To deliver simplified, accessible, and high-quality real estate solutions through a fully integrated
+      ecosystem—anchored on trust, innovation, and a culture of excellence that prioritizes client success
+      and satisfaction.
+    </p>
+
+    {/* VISION */}
+    <h3 className="text-xl md:text-2xl font-semibold mb-2">Our Vision</h3>
+    <p className="text-gray-800 text-base md:text-lg leading-relaxed text-justify">
+      To become the most trusted, innovative, and influential real estate solutions brand in the Philippines,
+      known for empowering clients and partners through consistency, community, and exceptional service.
+    </p>
   </div>
 
   {/* RIGHT (Image) */}
@@ -108,7 +123,7 @@ export default function AboutPage() {
   </div>
 
   {/* MOBILE: Logo shown at the bottom */}
-  <div className="md:hidden w-24 h-24 relative mx-auto mt-8 order-3">
+  <div className="md:hidden w-24 h-24 relative mx-auto mt-10 order-3">
     <Image
       src="/assets/empyrean-logo.png"
       alt="Empyrean Logo"

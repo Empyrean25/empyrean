@@ -22,7 +22,7 @@ export default function PropertyOwnerPage() {
           YOU ACCESS US, YOU ACCESS EVERYONE.
         </h1>
 
-<p className="text-lg sm:text-base text-center mb-16 max-w-4xl mx-auto">
+        <p className="text-lg text-center mb-16 max-w-4xl mx-auto">
           In Empyrean, we value the effectiveness of putting your property in
           the market, we utilise our in-house sellers, and we also tap our
           incentivised broker network to get you a buyer, tenant, or guest as

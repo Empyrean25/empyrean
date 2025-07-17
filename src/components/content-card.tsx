@@ -24,7 +24,7 @@ export function ContentCard({
             </div>
           </div>
         </div>
-        <p className="text-gray-800">{description}</p>
+        <p className="text-[14px] md:text-base text-gray-800">{description}</p>
       </div>
     </div>
   );

@@ -25,7 +25,7 @@ export default function BrokerAgentDeveloperPage() {
           BE AN EMPYREAN BROKER PARTNER
         </h1>
 
-        <p className="text-[15px] text-center mb-16 max-w-4xl mx-auto">
+        <p className="text-lg text-center mb-16 max-w-4xl mx-auto">
           Hit two birds with one stone. By joining Empyrean, you become part of our <strong>Empyrean&apos;s Broker Circle</strong> and be one with us in centralising Real Estate
           and providing quality services clients plus you become part of <strong>Empyrean Business Network</strong> and <strong>Empyrean Professional Circles</strong>. As our partner, you&apos;d also be able to access our expanding network of businesses connected with Empyrean. More opportunities of partnerships and closing deals!
 <br />    

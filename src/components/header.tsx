@@ -94,19 +94,22 @@ export default function Header() {
 
   return (
     <header className="w-full bg-white border-b border-gray-200 h-24 px-6 lg:px-12 flex items-center justify-between">
-      <div className="flex items-center gap-4">
-        <Link href="/on-work/home" className="relative h-16 w-16">
-          <Image
-            src="/assets/empyrean-logo.png"
-            alt="Empyrean Logo"
-            fill
-            className="object-contain"
-          />
-        </Link>
-        <h1 className="text-gray-800 text-lg md:text-xl font-bold">
-          Empyrean Real Estate Solutions
-        </h1>
-      </div>
+<div className="flex items-center gap-4">
+  <Link href="/on-work/home" className="relative h-16 w-16">
+    <Image
+      src="/assets/empyrean-logo.png"
+      alt="Empyrean Logo"
+      fill
+      className="object-contain"
+    />
+  </Link>
+  <Link
+    href="https://empyrean.ph/on-work/home"
+    className="text-gray-800 text-lg md:text-xl font-bold no-underline hover:no-underline"
+  >
+    Empyrean Real Estate Solutions
+  </Link>
+</div>
 
       {/* Desktop Navigation */}
       <nav className="hidden md:flex items-center">

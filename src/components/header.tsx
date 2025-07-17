@@ -104,7 +104,7 @@ export default function Header() {
     />
   </Link>
   <Link href="https://empyrean.ph/on-work/home" className="no-underline hover:no-underline">
-    <h1 className="text-gray-800 text-lg md:text-xl font-bold">
+    <h1 className="text-gray-800 text-base sm:text-lg md:text-xl font-bold">
       Empyrean Real Estate Solutions
     </h1>
   </Link>

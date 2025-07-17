@@ -41,7 +41,7 @@ export default function PropertyOwnerPage() {
 {/* OUR APPROACH Section */}
 <div className="mb-12 flex flex-col items-center text-center">
   <h2 className="text-3xl md:text-4xl font-bold mb-6">OUR APPROACH</h2>
-  <div className="w-full max-w-4xl px-0 sm:px-4">
+  <div className="w-full">
     <img
       src="/assets/our-approach-new.png"
       alt="Our approach"

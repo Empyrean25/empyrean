@@ -94,21 +94,6 @@ export default function AboutPage() {
       When you access us, you will access everyone. Your Real Estate, on us here at Empyrean.
       Done with simplicity, competency, accountability, quality, and consistency above all.
     </p>
-
-    {/* MISSION */}
-    <h3 className="text-xl md:text-2xl font-semibold mb-2">Our Mission</h3>
-    <p className="text-gray-800 mb-6 text-base md:text-lg leading-relaxed text-justify">
-      To deliver simplified, accessible, and high-quality real estate solutions through a fully integrated
-      ecosystem—anchored on trust, innovation, and a culture of excellence that prioritizes client success
-      and satisfaction.
-    </p>
-
-    {/* VISION */}
-    <h3 className="text-xl md:text-2xl font-semibold mb-2">Our Vision</h3>
-    <p className="text-gray-800 text-base md:text-lg leading-relaxed text-justify">
-      To become the most trusted, innovative, and influential real estate solutions brand in the Philippines,
-      known for empowering clients and partners through consistency, community, and exceptional service.
-    </p>
   </div>
 
   {/* RIGHT (Image) */}
@@ -143,6 +128,27 @@ export default function AboutPage() {
   </div>
 </section>
 
+ {/* Mission and Vision Section */}
+      <section
+        className="flex flex-col md:flex-row py-8 px-8 md:px-16 container mx-auto mt-4"
+        aria-label="Mission and Vision"
+      >
+        <div className="w-full md:w-1/2 text-center px-4 md:px-12 mb-12 md:mb-0">
+          <h2 className="text-3xl font-bold mb-6">MISSION</h2>
+          <p className="text-gray-800">
+            Become a brand of quality standard, centralised system, and
+            the quality partner of all professionals and clients alike
+            in doing Real Estate in the country.
+          </p>
+        </div>
+        <div className="w-full md:w-1/2 text-center px-4 md:px-12">
+          <h2 className="text-3xl font-bold mb-6">VISION</h2>
+          <p className="text-gray-800">
+            A centralised system of doing Real Estate in the country built through quality relationships and commitment to quality and accountable service.
+          </p>
+        </div>
+      </section>
+      
       {/* Core Values Section */}
       <section
         className="py-6 px-8 md:px-16 text-center container mx-auto"

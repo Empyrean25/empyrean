@@ -213,9 +213,10 @@ export default function Header() {
 
                 <Accordion type="single" collapsible className="w-full">
                   <AccordionItem value="services" className="border-none">
-                    <AccordionTrigger className="px-6 py-3 text-gray-700 hover:bg-gray-100 hover:no-underline">
-                      Services
-                    </AccordionTrigger>
+                 <AccordionTrigger className="px-6 py-3 text-gray-700 hover:bg-gray-100 hover:no-underline normal-case">
+  Services
+</AccordionTrigger>
+                    
                     <AccordionContent className="bg-gray-50">
                       {services.map((service) => (
                         <Link
@@ -231,9 +232,9 @@ export default function Header() {
                   </AccordionItem>
 
                   <AccordionItem value="partners" className="border-none">
-                    <AccordionTrigger className="px-6 py-3 text-gray-700 hover:bg-gray-100 hover:no-underline">
-                      Partners
-                    </AccordionTrigger>
+               <AccordionTrigger className="px-6 py-3 text-gray-700 hover:bg-gray-100 hover:no-underline normal-case">
+  Partners
+</AccordionTrigger>
                     <AccordionContent className="bg-gray-50">
                       {partners.map((partner) => (
                         <Link

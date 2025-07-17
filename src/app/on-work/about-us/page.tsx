@@ -62,12 +62,13 @@ export default function AboutPage() {
   return (
     <main className="min-h-screen flex flex-col">
       {/* Who We Are Section */}
-      <section
+    <section
   className="flex flex-col md:flex-row min-h-fit md:min-h-[calc(100vh-6rem)] relative overflow-hidden"
   aria-label="Who We Are"
 >
-  {/* LEFT: Logo + Description */}
-  <div className="flex flex-col items-start justify-center w-full md:w-1/2 px-6 pt-8 md:pt-2 pb-8 md:pb-16 lg:pb-20 md:pl-16 md:pr-16 lg:pl-20 lg:pr-20 z-10 bg-white">
+  {/* LEFT (Mobile: Banner + Text) */}
+  <div className="flex flex-col items-start justify-center w-full md:w-1/2 px-6 pt-8 md:pt-2 pb-8 md:pb-16 lg:pb-20 md:pl-16 md:pr-16 lg:pl-20 lg:pr-20 z-10 bg-white order-1 md:order-1">
+    {/* BANNER */}
     <Link href="/on-work/home">
       <Image
         src="/assets/empyrean.png"
@@ -77,6 +78,8 @@ export default function AboutPage() {
         className="object-contain mb-4 transition-transform duration-300 ease-in-out hover:scale-105 cursor-pointer"
       />
     </Link>
+
+    {/* TEXT CONTENT */}
     <h2 className="text-3xl md:text-4xl font-bold mb-6">What is Empyrean?</h2>
     <p className="text-gray-800 mb-8 text-sm md:text-base leading-relaxed">
       Empyrean Real Estate Solutions is one-stop gateway to the entire Philippine Real Estate—offering full
@@ -91,20 +94,10 @@ export default function AboutPage() {
       When you access us, you will access everyone. Your Real Estate, on us here at Empyrean.
       Done with simplicity, competency, accountability, quality, and consistency above all.
     </p>
-
-    {/* Centered logo for mobile only */}
-    <div className="md:hidden w-24 h-24 relative mx-auto">
-      <Image
-        src="/assets/empyrean-logo.png"
-        alt="Empyrean Logo"
-        fill
-        className="object-contain"
-      />
-    </div>
   </div>
 
-  {/* RIGHT: Background Image */}
-  <div className="w-full md:w-1/2 relative h-64 md:h-auto">
+  {/* RIGHT (Image) */}
+  <div className="w-full md:w-1/2 relative h-64 md:h-auto order-2 md:order-2">
     <Image
       src="/assets/about-hero-img.jpg"
       alt="Real estate illustration"
@@ -114,7 +107,17 @@ export default function AboutPage() {
     />
   </div>
 
-  {/* Absolute centered logo for desktop only */}
+  {/* MOBILE: Logo shown at the bottom */}
+  <div className="md:hidden w-24 h-24 relative mx-auto mt-4 order-3">
+    <Image
+      src="/assets/empyrean-logo.png"
+      alt="Empyrean Logo"
+      fill
+      className="object-contain"
+    />
+  </div>
+
+  {/* DESKTOP: Fixed logo centered at bottom */}
   <div className="hidden md:flex absolute bottom-4 left-1/2 transform -translate-x-1/2 w-36 h-36 z-20">
     <Image
       src="/assets/empyrean-logo.png"

@@ -22,7 +22,7 @@ export default function BuyerTenantGuestPage() {
           WHY DEAL WITH AN EMPYREAN?
         </h1>
 
-<p className="text-[12px] sm:text-base text-center mb-16 max-w-4xl mx-auto">
+<p className="text-[14px] sm:text-base text-center mb-16 max-w-4xl mx-auto">
           Regardless of the nationality, the location, the type of deal, and its price,
           whoever all associated persons are: Property Owner, Broker, or Agent,{" "}
           <span className="font-bold">you deserve accountability</span> and a

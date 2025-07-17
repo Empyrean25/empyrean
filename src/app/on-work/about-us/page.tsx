@@ -81,19 +81,19 @@ export default function AboutPage() {
 
     {/* TEXT CONTENT */}
     <h2 className="text-3xl md:text-4xl font-bold mb-6">What is Empyrean?</h2>
-    <p className="text-gray-800 mb-8 text-sm md:text-base leading-relaxed text-justify">
-      Empyrean Real Estate Solutions is one-stop gateway to the entire Philippine Real Estate—offering full
-      access from Brokerage: Project Selling, Resale and Leasing; Home Improvement: Planning, Construction,
-      and Renovation, and even acquiring your Furnitures and Decorations.
-      <br /><br />
-      We are a company backed by strong presence and branding, built-in accountability in its name,
-      established system and platform, and an expanding network of business partners built through fostering
-      quality relationships that reflects the <strong>Empyrean Mark</strong> delivering quality,
-      service-based, and results-oriented personalised experience.
-      <br /><br />
-      When you access us, you will access everyone. Your Real Estate, on us here at Empyrean.
-      Done with simplicity, competency, accountability, quality, and consistency above all.
-    </p>
+   <p className="text-gray-800 mb-8 text-base md:text-lg leading-relaxed text-justify">
+  Empyrean Real Estate Solutions is one-stop gateway to the entire Philippine Real Estate—offering full
+  access from Brokerage: Project Selling, Resale and Leasing; Home Improvement: Planning, Construction,
+  and Renovation, and even acquiring your Furnitures and Decorations.
+  <br /><br />
+  We are a company backed by strong presence and branding, built-in accountability in its name,
+  established system and platform, and an expanding network of business partners built through fostering
+  quality relationships that reflects the <strong>Empyrean Mark</strong> delivering quality,
+  service-based, and results-oriented personalised experience.
+  <br /><br />
+  When you access us, you will access everyone. Your Real Estate, on us here at Empyrean.
+  Done with simplicity, competency, accountability, quality, and consistency above all.
+</p>
   </div>
 
   {/* RIGHT (Image) */}

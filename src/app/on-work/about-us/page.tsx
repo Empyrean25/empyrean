@@ -67,7 +67,7 @@ export default function AboutPage() {
         aria-label="Who We Are"
       >
         {/* LEFT: Logo + Description */}
-        <div className="flex flex-col items-start justify-center w-full md:w-1/2 px-6 py-12 md:p-16 lg:p-20 z-10 bg-white">
+        <div className="flex flex-col items-start justify-center w-full md:w-1/2 px-6 py-8 md:p-16 lg:p-20 z-10 bg-white">
           <Link href="/on-work/home">
             <Image
               src="/assets/empyrean.png"
@@ -92,8 +92,8 @@ export default function AboutPage() {
             Done with simplicity, competency, accountability, quality, and consistency above all.
           </p>
 
-          {/* Bottom Center Logo: Moved here from absolute */}
-          <div className="w-24 h-24 md:w-36 md:h-36 relative mx-auto md:mx-0">
+          {/* Mobile version logo */}
+          <div className="md:hidden w-24 h-24 relative mx-auto">
             <Image
               src="/assets/empyrean-logo.png"
               alt="Empyrean Logo"
@@ -111,6 +111,16 @@ export default function AboutPage() {
             fill
             className="object-cover"
             sizes="(max-width: 768px) 100vw, 50vw"
+          />
+        </div>
+
+        {/* Desktop version centered logo */}
+        <div className="hidden md:flex absolute bottom-6 left-1/2 transform -translate-x-1/2 w-36 h-36 z-20">
+          <Image
+            src="/assets/empyrean-logo.png"
+            alt="Empyrean Logo"
+            fill
+            className="object-contain"
           />
         </div>
       </section>

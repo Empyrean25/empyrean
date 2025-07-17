@@ -22,7 +22,7 @@ export default function PropertyOwnerPage() {
           YOU ACCESS US, YOU ACCESS EVERYONE.
         </h1>
 
-        <p className="text-lg text-center mb-16 max-w-4xl mx-auto">
+        <p className="text-[14px] md:text-base text-center mb-16 max-w-4xl mx-auto">
           In Empyrean, we value the effectiveness of putting your property in
           the market, we utilise our in-house sellers, and we also tap our
           incentivised broker network to get you a buyer, tenant, or guest as
@@ -38,21 +38,21 @@ export default function PropertyOwnerPage() {
           />
         </div>
 
-{/* OUR APPROACH Section */}
-<div className="mb-12 flex flex-col items-center text-center">
-  <h2 className="text-3xl md:text-4xl font-bold mb-6">OUR APPROACH</h2>
-  <div className="w-full">
-    <img
-      src="/assets/our-approach-new.png"
-      alt="Our approach"
-      className="w-full h-auto rounded-lg shadow-md"
-    />
-  </div>
-</div>
+        {/* OUR APPROACH Section */}
+        <div className="mb-12 flex flex-col items-center text-center">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">OUR APPROACH</h2>
+          <div className="w-full">
+            <img
+              src="/assets/our-approach-new.png"
+              alt="Our approach"
+              className="w-full h-auto rounded-lg shadow-md"
+            />
+          </div>
+        </div>
 
         {/* Box 2 */}
         <div className="mb-12 border border-gray-300 rounded-lg p-8 md:p-12">
-          <p className="text-gray-800">
+          <p className="text-[14px] md:text-base text-gray-800">
             With Empyrean, you&rsquo;d have our guarantee that we will reflect our core values in all our transactions: we are simple, we are competent, we are accountable, and we are setting a quality standard.
             <br /><br />
             We are centralising Real Estate so it doesn&rsquo;t have to be complicated for you. Your effective Real Estate Solutions, on us.

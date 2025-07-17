@@ -5,12 +5,12 @@ import { Metadata } from "next";
 import { ContentCard } from "@/components/content-card";
 
 export const metadata: Metadata = {
-  title: "Broker Network | Empyrean - Join Our Real Estate Broker Network",
+  title: "Broker Network | Empyrean - Join Our Real Estate Broker Circle",
   description:
-    "Join Empyrean's Broker Network and be part of a centralized real estate platform. Partner with us to provide effective services and achieve faster market turnover.",
+    "Join Empyrean's Broker Circle and be part of a centralized real estate platform. Partner with us to provide effective services and achieve faster market turnover.",
   openGraph: {
     title:
-      "Join Empyrean's Broker Network - Real Estate Partnership Opportunities",
+      "Join Empyrean's Broker Circle - Real Estate Partnership Opportunities",
     description:
       "Become an Empyrean broker partner and access our centralized real estate platform. Join our network of professional brokers for better market reach and faster transactions.",
     type: "website",
@@ -26,16 +26,16 @@ export default function BrokerAgentDeveloperPage() {
         </h1>
 
         <p className="text-lg text-center mb-16 max-w-4xl mx-auto">
-          Hit two birds with one stone. By joining Empyrean, you become part of our <strong>Empyrean&apos;s Broker Network</strong> and be one with us in centralising Real Estate
-          and providing quality services clients plus you become part of <strong>Empyrean Business Network</strong>. As our partner, you&apos;d also be able to access our expanding network of businesses connected with Empyrean. More opportunities of partnerships and closing deals!
+          Hit two birds with one stone. By joining Empyrean, you become part of our <strong>Empyrean&apos;s Broker Circle</strong> and be one with us in centralising Real Estate
+          and providing quality services clients plus you become part of <strong>Empyrean Business Circle</strong>. As our partner, you&apos;d also be able to access our expanding network of businesses connected with Empyrean. More opportunities of partnerships and closing deals!
 <br />    
           <br />
           You access us, you access everyone.
 </p>
 
-        <section className="mb-10" aria-label="Broker Network">
+        <section className="mb-10" aria-label="Broker Circle">
           <h2 className="text-2xl font-bold text-center mb-12">
-            JOIN OUR BROKER NETWORK
+            JOIN OUR BROKER Circle
           </h2>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
@@ -114,18 +114,18 @@ export default function BrokerAgentDeveloperPage() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Service",
-            name: "Real Estate Broker Network",
+            name: "Real Estate Broker Circle",
             provider: {
               "@type": "Organization",
               name: "Empyrean",
             },
             description:
-              "Join Empyrean's broker network and be part of a centralized real estate platform. Partner with us to provide effective services and achieve faster market turnover.",
+              "Join Empyrean's broker circle and be part of a centralized real estate platform. Partner with us to provide effective services and achieve faster market turnover.",
             offers: {
               "@type": "Offer",
               category: "Real Estate Brokerage",
               description:
-                "Join our Broker Network and be one with us in centralising Real Estate and providing effective services minimising hindrance to smoother and faster market turnover.",
+                "Join our Broker Circle and be one with us in centralising Real Estate and providing effective services minimising hindrance to smoother and faster market turnover.",
             },
             areaServed: {
               "@type": "Country",

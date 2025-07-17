@@ -13,7 +13,7 @@ export function ContentCard({
 }: ContentCardProps) {
   return (
     <div
-      className={border border-gray-300 rounded-lg p-8 md:p-12 ${className}}
+      className={`border border-gray-300 rounded-lg p-8 md:p-12 ${className}`}
     >
       <div className="flex flex-col md:items-start gap-6">
         <div className="flex items-center gap-4">
@@ -24,7 +24,7 @@ export function ContentCard({
             </div>
           </div>
         </div>
-        <p className="text-gray-800">{description}</p>
+        <p className="text-[14px] md:text-base text-gray-800">{description}</p>
       </div>
     </div>
   );

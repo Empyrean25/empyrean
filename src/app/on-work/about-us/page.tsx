@@ -81,7 +81,7 @@ export default function AboutPage() {
 
     {/* TEXT CONTENT */}
     <h2 className="text-3xl md:text-4xl font-bold mb-6">What is Empyrean?</h2>
-    <p className="text-gray-800 mb-8 text-sm md:text-base leading-relaxed">
+    <p className="text-gray-800 mb-8 text-sm md:text-base leading-relaxed text-justify">
       Empyrean Real Estate Solutions is one-stop gateway to the entire Philippine Real Estate—offering full
       access from Brokerage: Project Selling, Resale and Leasing; Home Improvement: Planning, Construction,
       and Renovation, and even acquiring your Furnitures and Decorations.
@@ -108,7 +108,7 @@ export default function AboutPage() {
   </div>
 
   {/* MOBILE: Logo shown at the bottom */}
-  <div className="md:hidden w-24 h-24 relative mx-auto mt-4 order-3">
+  <div className="md:hidden w-24 h-24 relative mx-auto mt-8 order-3">
     <Image
       src="/assets/empyrean-logo.png"
       alt="Empyrean Logo"
@@ -118,7 +118,7 @@ export default function AboutPage() {
   </div>
 
   {/* DESKTOP: Fixed logo centered at bottom */}
-  <div className="hidden md:flex absolute bottom-4 left-1/2 transform -translate-x-1/2 w-36 h-36 z-20">
+  <div className="hidden md:flex absolute bottom-12 left-1/2 transform -translate-x-1/2 w-36 h-36 z-20">
     <Image
       src="/assets/empyrean-logo.png"
       alt="Empyrean Logo"
@@ -127,27 +127,6 @@ export default function AboutPage() {
     />
   </div>
 </section>
-      
-      {/* Mission and Vision Section */}
-      <section
-        className="flex flex-col md:flex-row py-8 px-8 md:px-16 container mx-auto mt-4"
-        aria-label="Mission and Vision"
-      >
-        <div className="w-full md:w-1/2 text-center px-4 md:px-12 mb-12 md:mb-0">
-          <h2 className="text-3xl font-bold mb-6">MISSION</h2>
-          <p className="text-gray-800">
-            Become a brand of quality standard, centralised system, and
-            the quality partner of all professionals and clients alike
-            in doing Real Estate in the country.
-          </p>
-        </div>
-        <div className="w-full md:w-1/2 text-center px-4 md:px-12">
-          <h2 className="text-3xl font-bold mb-6">VISION</h2>
-          <p className="text-gray-800">
-            A centralised system of doing Real Estate in the country built through quality relationships and commitment to quality and accountable service.
-          </p>
-        </div>
-      </section>
 
       {/* Core Values Section */}
       <section

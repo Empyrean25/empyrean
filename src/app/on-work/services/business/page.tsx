@@ -29,10 +29,9 @@ export default function BusinessPage() {
           <br /> <br / >
           You will be assigned an <strong>Empyrean Relationship Manager</strong> to attend to all your inquiries 
           in accessing our Business Network and Professional Circles. More opportunities of partnerships and closing deals!
-          <br /><br /> More opportunities for growth, partnerships, and closing deals!
-<br />
+          <br />   
           <br />
-          You access us, you access everyone.
+          More opportunities of partnerships and closing deals! You access us, you access everyone.
         </p>
 
         <section className="mb-20" aria-label="Broker Network">

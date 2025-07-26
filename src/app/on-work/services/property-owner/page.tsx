@@ -30,7 +30,7 @@ export default function PropertyOwnerPage() {
           deliver effective service.
           <br />
           <br />
-        You will be assigned with an <span className="font-bold">Empyrean Relationship Manager</span> to keep track of your properties' performance with us. They shall be the one responsible in handling your account with us and attend to all your inquiries in accessing our Business Network and Professional Circles or any concerns regarding your properties.</p>
+        You will be assigned with an <span className="font-bold">Empyrean Relationship Manager</span> to keep track of your properties&rsquo; performance with us. They shall be the one responsible in handling your account with us and attend to all your inquiries in accessing our Business Network and Professional Circles or any concerns regarding your properties.</p>
   
 
         {/* Box 1 */}

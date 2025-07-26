@@ -30,10 +30,10 @@ export default function BrokerAgentDeveloperPage() {
           and providing quality services clients plus you become part of <strong>Empyrean Business Network</strong> and <strong>Empyrean Professional Circles</strong>. 
           <br /> <br /> As our partner, you&apos;d also be able to access our expanding network of businesses connected with Empyrean. 
           You will be assigned an <strong>Empyrean Relationship Manager</strong> to attend to all your inquiries 
-          in accessing our Business Network and Professional Circles. More opportunities of partnerships and closing deals!
-<br />   
+          in accessing our Business Network and Professional Circles. 
+          <br />   
           <br />
-          You access us, you access everyone.
+          More opportunities of partnerships and closing deals! You access us, you access everyone.
 </p>
 
         <section className="mb-10" aria-label="Broker Circle">

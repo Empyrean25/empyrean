@@ -28,7 +28,10 @@ export default function PropertyOwnerPage() {
           incentivised broker network to get you a buyer, tenant, or guest as
           soon as possible! Regardless of our commission share, as long as we
           deliver effective service.
-        </p>
+          <br />
+          <br />
+        You will be assigned with an <span className="font-bold">Empyrean Relationship Manager</span> to keep track of your properties' performance with us. They shall be the one responsible in handling your account with us and attend to all your inquiries in accessing our Business Network and Professional Circles or any concerns regarding your properties.</p>
+  
 
         {/* Box 1 */}
         <div className="mb-12" aria-label="Property Management Services">

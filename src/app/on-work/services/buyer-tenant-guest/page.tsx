@@ -30,7 +30,7 @@ export default function BuyerTenantGuestPage() {
           after your real estate transaction. 
         <br />
           <br />
-        You will be assigned with a <span className="font-bold">Relationship Manager</span> to search the market for you with our In-House Sellers and our Broker Circle to get started. They shall also be the one who will handle your account with us and attend to all your inquiries in accessing our Empyrean Business Network and Professional Circles or concerns regarding your properties.</p>
+        You will be assigned with an <span className="font-bold">Empyrean Relationship Manager</span> to search the market for you with our In-House Sellers and our Broker Circle to get started. They shall also be the one responsible in handling your account with us and attend to all your inquiries in accessing our Business Network and Professional Circles or any concerns regarding your properties.</p>
   
 
         <div className="mb-16" aria-label="Service Benefits">

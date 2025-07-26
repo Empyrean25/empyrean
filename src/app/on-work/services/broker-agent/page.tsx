@@ -30,8 +30,7 @@ export default function BrokerAgentDeveloperPage() {
            <strong>Empyrean&apos;s Broker Circle</strong> and be one with us in centralising Real Estate
           and providing quality services clients plus you become part of 
            <strong>Empyrean Business Network</strong> and <strong>Empyrean Professional Circles</strong>. 
-          <br />
-          <br /> As our partner, you&apos;d also be able to access our expanding network of businesses connected with Empyrean. 
+          <br /> <br /> As our partner, you&apos;d also be able to access our expanding network of businesses connected with Empyrean. 
           You will be assigned an <strong>Empyrean Relationship Manager</strong> to attend to all your inquiries 
           in accessing our Business Network and Professional Circles. More opportunities of partnerships and closing deals!
 <br />   

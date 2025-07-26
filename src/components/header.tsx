@@ -49,14 +49,14 @@ const partners = [
     href: "/on-work/services/broker-agent",
   },
   {
-    title: "I am a Developer Representative",
-    icon: Building2,
-    href: "/on-work/services/developer",
-  },
-  {
     title: "I am a Business in Real Estate",
     icon: Building2,
     href: "/on-work/services/business",
+  },
+  {
+    title: "I am a Developer Representative",
+    icon: Building2,
+    href: "/on-work/services/developer",
   },
 ];
 

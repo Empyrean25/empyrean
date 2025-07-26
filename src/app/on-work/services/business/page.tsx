@@ -25,7 +25,7 @@ export default function BusinessPage() {
         </h1>
 
         <p className="text-[14px] md:text-lg text-center mb-16 max-w-4xl mx-auto">
-          We are committed to fostering quality relationships as a vital part of our identity. That&apos;s why we cultivate <strong>Empyrean Business Network</strong> and well <strong>Empyrean Professional Circles</strong>. As our partner, you&apos;d be referred to by Empyrean for any fitting active leads looking to avail respective services your business offers. Not just this, you'll also be able to access our expanding network of businesses connected with Empyrean. 
+          We are committed to fostering quality relationships as a vital part of our identity. That&apos;s why we cultivate <strong>Empyrean Business Network</strong> and well <strong>Empyrean Professional Circles</strong>. As our partner, you&apos;d be referred to by Empyrean for any fitting active leads looking to avail respective services your business offers. Not just this, you&apos;ll also be able to access our expanding network of businesses connected with Empyrean. 
           <br />
 <br / >
           You will be assigned an <strong>Empyrean Relationship Manager</strong> to attend to all your inquiries 

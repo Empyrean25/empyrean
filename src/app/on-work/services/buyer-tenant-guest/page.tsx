@@ -28,8 +28,7 @@ export default function BuyerTenantGuestPage() {
           <span className="font-bold">you deserve accountability</span> and a
           company that will be with you before, during, and most especially
           after your real estate transaction. </p>
-          <br />
-          <p className="text-[14px] md:text-lg text-center mb-16 max-w-4xl mx-auto"> You will be assigned with a <span className="font-bold">Relationship Manager</span> to search the market for you with our In-House Sellers and our Broker Circle to get started. They shall also be the one who will handle your account with us and attend to all your inquiries in accessing our Empyrean Business Network and Professional Circles or concerns regarding your properties.
+          <p className="text-[12px] md:text-lg text-center mb-16 max-w-4xl mx-auto"> You will be assigned with a <span className="font-bold">Relationship Manager</span> to search the market for you with our In-House Sellers and our Broker Circle to get started. They shall also be the one who will handle your account with us and attend to all your inquiries in accessing our Empyrean Business Network and Professional Circles or concerns regarding your properties.
         </p>
 
         <div className="mb-16" aria-label="Service Benefits">

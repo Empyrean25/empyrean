@@ -2,13 +2,15 @@ import React from "react";
 
 interface ContentCardProps {
   title: string;
-  description: string;
+  description?: string;
+  children?: React.ReactNode;
   className?: string;
 }
 
 export function ContentCard({
   title,
   description,
+  children,
   className,
 }: ContentCardProps) {
   return (
@@ -24,7 +26,9 @@ export function ContentCard({
             {title}
           </div>
         </div>
-        <p className="text-[14px] md:text-base text-gray-800">{description}</p>
+        <div className="text-[14px] md:text-base text-gray-800">
+          {children ? children : description}
+        </div>
       </div>
     </div>
   );

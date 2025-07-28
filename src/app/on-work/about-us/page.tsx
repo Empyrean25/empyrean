@@ -188,6 +188,20 @@ export default function AboutPage() {
         </div>
 
         <div className="my-6">
+
+<section
+        className="py-6 px-8 md:px-16 text-center container mx-auto gap-6 flex flex-col items-center"
+        aria-label="Our Brands"
+  >
+        <h2 className="text-3xl font-bold mb-1">OUR BRANDS</h2>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+            <PartnerLogo name="Broker Partner 1" />
+            <PartnerLogo name="Broker Partner 2" />
+            <PartnerLogo name="Broker Partner 3" />
+            <PartnerLogo name="Broker Partner 4" />
+          </div>
+        </section>
+          
           <CustomSolutions />
         </div>
       </section>

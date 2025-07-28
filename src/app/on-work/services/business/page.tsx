@@ -34,7 +34,7 @@ export default function BusinessPage() {
         <div className="w-full md:w-1/2 text-center px-4 md:px-12 mb-12 md:mb-0">
           <h2 className="text-3xl font-bold mb-6">Empyrean Business Network</h2>
           <p className="text-gray-800">
-            Consists of eligible businesses that Empyrean have formed official partnerships with which the brand sees to also embody the company's core values and trusts to also deliver Empyrean-grade standard for outputs and results.
+            Consists of eligible businesses that Empyrean have formed official partnerships with which the brand sees to also embody the company&apos;s core values and trusts to also deliver Empyrean-grade standard for outputs and results.
           </p>
         </div>
         <div className="w-full md:w-1/2 text-center px-4 md:px-12">

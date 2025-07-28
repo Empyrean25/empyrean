@@ -53,6 +53,17 @@ export default function PropertyOwnerPage() {
           </div>
         </div>
 
+ <div className="space-y-12 mb-10">
+          <ContentCard
+            title="Complementary and Add-On Empyrean Professional Services"
+            description="We are dedicated to being your one-stop gateway to the Real Estate Industry. We cultivate <strong>Empyrean Business Network</strong> and strong>Empyrean Professional Circles</strong> should you need any more related services pertaining to your property.
+            <br />
+            Empyrean also offers in-house and partner services that also delivers an Empyrean-grade standard. From deep cleaning, regular cleaning and maintenance, repairs, and even home renovations and improvements. We got your back!
+            <br />
+            You will be assigned an <strong>Empyrean Relationship Manager</strong> to attend to all your inquiries in accessing our Business Network and Professional Circles."</ContentCard>
+          />
+        </div>
+        
         {/* Box 2 */}
         <div className="mb-12 border border-gray-300 rounded-lg p-8 md:p-12">
           <p className="text-[14px] md:text-base text-gray-800">

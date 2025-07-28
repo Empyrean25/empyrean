@@ -4,6 +4,7 @@ import { CoreValueCard } from "@/components/core-value-card";
 import CustomSolutions from "@/components/custom-solutions";
 import { Metadata } from "next";
 import Link from "next/link";
+import PartnerLogo from "@/components/partner-logo";
 
 export const metadata: Metadata = {
   title: "About Us | Empyrean Real Estate Solutions - Your all-in-one access to the Philippine Real Estate",

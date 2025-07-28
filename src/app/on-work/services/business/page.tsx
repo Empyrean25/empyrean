@@ -5,13 +5,10 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Business | Empyrean - Join Empyrean Business Network",
-  description:
-    "Join Empyrean Business Network.",
+  description: "Join Empyrean Business Network.",
   openGraph: {
-    title:
-      "Join Empyrean Business Network",
-    description:
-      "Become an Empyrean partner and access everyone.",
+    title: "Join Empyrean Business Network",
+    description: "Become an Empyrean partner and access everyone.",
     type: "website",
   },
 };
@@ -25,34 +22,31 @@ export default function BusinessPage() {
         </h1>
 
         <p className="text-[14px] md:text-lg text-center mb-16 max-w-4xl mx-auto">
-          We are committed to fostering quality relationships as a vital part of our identity. That&apos;s why we cultivate <strong>Empyrean Business Network</strong> and <strong>Empyrean Professional Circles</strong>.</p> 
+          We are committed to fostering quality relationships as a vital part of our identity. That&apos;s why we cultivate <strong>Empyrean Business Network</strong> and <strong>Empyrean Professional Circles</strong>.
+        </p>
 
-          <section
-        className="flex flex-col md:flex-row py-8 px-8 md:px-16 container mx-auto mt-4"
-        aria-label="Business Network and Professional Circles"
-      >
-        <div className="w-full md:w-1/2 text-center px-4 md:px-12 mb-12 md:mb-0">
-          <h2 className="text-3xl font-bold mb-6">Empyrean Business Network</h2>
-          <p className="text-gray-800">
-            Consists of eligible businesses that Empyrean have formed official partnerships with which the brand sees to also embody the company&apos;s core values and trusts to also deliver Empyrean-grade standard for outputs and results.
-          </p>
-        </div>
-        <div className="w-full md:w-1/2 text-center px-4 md:px-12 mb-12 md:mb-0">
-          <h2 className="text-3xl font-bold mb-6">Empyrean Professional Circle.</h2>
-          <p className="text-gray-800">
-          These are the friends we meet along the way. People and individuals from different industries and varying fields, fortes, and focus, which competencies we can tap for possible partnerships and collaborations.
-          </p>
-        </div>
-      </section>
-          
-          <p className="text-[14px] md:text-lg text-center mb-16 max-w-4xl mx-auto">
-          As our official partner and a potential connection, you&apos;d be referred to by Empyrean for any fitting active leads looking to avail respective services you or your business offers (subject to review and eligibility). 
-          <br /> Not just this, you&apos;ll also be able to access our expanding network of businesses connected with Empyrean. 
-          <br /> <br / >
-          You will be assigned an <strong>Empyrean Relationship Manager</strong> to attend to all your inquiries 
-          in accessing our Business Network and Professional Circles. More opportunities of partnerships and closing deals!
-          <br />   
-          <br />
+        <section
+          className="flex flex-col md:flex-row py-4 px-4 md:px-12 lg:px-20 gap-12"
+          aria-label="Business Network and Professional Circles"
+        >
+          <div className="w-full md:w-1/2 text-center px-4">
+            <h2 className="text-3xl font-bold mb-6">Empyrean Business Network</h2>
+            <p className="text-gray-800">
+              Consists of eligible businesses that Empyrean have formed official partnerships with which the brand sees to also embody the company&apos;s core values and trusts to also deliver Empyrean-grade standard for outputs and results.
+            </p>
+          </div>
+          <div className="w-full md:w-1/2 text-center px-4">
+            <h2 className="text-3xl font-bold mb-6">Empyrean Professional Circle</h2>
+            <p className="text-gray-800">
+              These are the friends we meet along the way. People and individuals from different industries and varying fields, fortes, and focus, which competencies we can tap for possible partnerships and collaborations.
+            </p>
+          </div>
+        </section>
+
+        <p className="text-[14px] md:text-lg text-center my-16 max-w-4xl mx-auto">
+          As our official partner and a potential connection, you&apos;d be referred to by Empyrean for any fitting active leads looking to avail respective services you or your business offers (subject to review and eligibility).<br />
+          Not just this, you&apos;ll also be able to access our expanding network of businesses connected with Empyrean.<br /><br />
+          You will be assigned an <strong>Empyrean Relationship Manager</strong> to attend to all your inquiries in accessing our Business Network and Professional Circles.<br /><br />
           More opportunities of partnerships and closing deals! You access us, you access everyone.
         </p>
 
@@ -60,7 +54,6 @@ export default function BusinessPage() {
           <h2 className="text-2xl font-bold text-center mb-12">
             Empyrean Business Network
           </h2>
-
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             <PartnerLogo name="Broker Partner 1" />
             <PartnerLogo name="Broker Partner 2" />

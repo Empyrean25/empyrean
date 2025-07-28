@@ -47,8 +47,9 @@ export default function BuyerTenantGuestPage() {
           <ContactForm />
         </div>
 
- <div className="space-y-12 mb-10">
-          <ContentCard title="Empyrean Professional Services (Complementary and Add-On)">
+       <div
+          className="border border-gray-300 rounded-lg p-8 md:p-12"
+   <ContentCard title="Empyrean Professional Services (Complementary and Add-On)">
             <>
               We are dedicated to being your one-stop gateway to the Real Estate Industry. We cultivate{" "}
               <strong>Empyrean Business Network</strong> and{" "}

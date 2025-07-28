@@ -60,7 +60,7 @@ export default function PropertyOwnerPage() {
 
         {/* Box with JSX content */}
         <div className="space-y-12 mb-10">
-          <ContentCard title="Complementary and Add-On Empyrean Professional Services">
+          <ContentCard title="Empyrean Professional Services (Complementary and Add-On)">
             <>
               We are dedicated to being your one-stop gateway to the Real Estate Industry. We cultivate{" "}
               <strong>Empyrean Business Network</strong> and{" "}

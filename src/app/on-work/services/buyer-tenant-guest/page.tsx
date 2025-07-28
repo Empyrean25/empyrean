@@ -40,14 +40,7 @@ export default function BuyerTenantGuestPage() {
           />
         </div>
 
-        <div
-          className="border border-gray-300 rounded-lg p-8 md:p-12 mb-16"
-          aria-label="Contact Form"
-        >
-          <ContactForm />
-        </div>
-
-        <ContentCard
+      <ContentCard
           title="Empyrean Professional Services (Complementary and Add-On)"
           description="We are dedicated to being your one-stop gateway to the Real Estate Industry. We cultivate Empyrean Business Network and Empyrean Professional Circles should you need any more related services pertaining to your property. 
 
@@ -56,6 +49,13 @@ Empyrean also offers in-house and partner services that deliver an Empyrean-grad
 You will be assigned an Empyrean Relationship Manager to attend to all your inquiries in accessing our Business Network and Professional Circles."
         />
       </div>
+        
+        <div
+          className="border border-gray-300 rounded-lg p-8 md:p-12 mb-16"
+          aria-label="Contact Form"
+        >
+          <ContactForm />
+        </div>
 
       <script
         type="application/ld+json"

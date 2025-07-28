@@ -46,7 +46,6 @@ export default function BuyerTenantGuestPage() {
         >
           <ContactForm />
         </div>
-      </div>
 
  <div className="space-y-12 mb-10">
           <ContentCard title="Empyrean Professional Services (Complementary and Add-On)">
@@ -65,6 +64,8 @@ export default function BuyerTenantGuestPage() {
             </>
           </ContentCard>
         </div>
+        
+      </div>
       
       <script
         type="application/ld+json"

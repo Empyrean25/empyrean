@@ -29,7 +29,7 @@ export default function BrokerAgentDeveloperPage() {
           Hit two birds with one stone. By joining Empyrean, you become part of our <strong>Empyrean&apos;s Broker Circle</strong> and be one with us in centralising Real Estate
           and providing quality services clients plus you become part of <strong>Empyrean Business Network</strong> and <strong>Empyrean Professional Circles</strong>. 
           <br /> <br /> As our partner, you&apos;d also be able to access our expanding network of businesses connected with Empyrean. 
-          You will be assigned an <strong>Empyrean Relationship Manager</strong> to attend to all your inquiries 
+          You will be assigned an <strong>Empyrean Broker Manager</strong> to attend to all your inquiries 
           in accessing our Business Network and Professional Circles. 
           <br />   
           <br />
@@ -38,7 +38,7 @@ export default function BrokerAgentDeveloperPage() {
 
         <section className="mb-10" aria-label="Broker Circle">
           <h2 className="text-2xl font-bold text-center mb-12">
-            JOIN OUR BROKER Circle
+            JOIN OUR BROKER CIRCLE
           </h2>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">

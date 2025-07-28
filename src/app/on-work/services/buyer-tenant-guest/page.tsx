@@ -48,6 +48,24 @@ export default function BuyerTenantGuestPage() {
         </div>
       </div>
 
+ <div className="space-y-12 mb-10">
+          <ContentCard title="Empyrean Professional Services (Complementary and Add-On)">
+            <>
+              We are dedicated to being your one-stop gateway to the Real Estate Industry. We cultivate{" "}
+              <strong>Empyrean Business Network</strong> and{" "}
+              <strong>Empyrean Professional Circles</strong> should you need any more related services
+              pertaining to your property.
+              <br />
+              <br />
+              Empyrean also offers in-house and partner services that deliver an Empyrean-grade standard—from
+              deep cleaning, regular maintenance, repairs, and even home renovations and improvements. We got your back!
+              <br />
+              <br />
+              You will be assigned an <strong>Empyrean Relationship Manager</strong> to attend to all your inquiries in accessing our Business Network and Professional Circles.
+            </>
+          </ContentCard>
+        </div>
+      
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{

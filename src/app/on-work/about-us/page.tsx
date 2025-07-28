@@ -195,9 +195,9 @@ export default function AboutPage() {
   >
         <h2 className="text-3xl font-bold mb-1">OUR BRANDS</h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            <PartnerLogo name="Broker Partner 1" />
-            <PartnerLogo name="Broker Partner 2" />
-            <PartnerLogo name="Broker Partner 3" />
+            <PartnerLogo imageSrc="/assets/partners/msjoyph.jpeg" hideName />
+            <PartnerLogo imageSrc="/assets/partners/msjoyph.jpeg" hideName />
+            <PartnerLogo imageSrc="/assets/partners/msjoyph.jpeg" hideName />
             <PartnerLogo name="Broker Partner 4" />
           </div>
         </section>

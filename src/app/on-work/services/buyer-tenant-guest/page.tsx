@@ -28,10 +28,10 @@ export default function BuyerTenantGuestPage() {
           <span className="font-bold">you deserve accountability</span> and a
           company that will be with you before, during, and most especially
           after your real estate transaction. 
-        <br />
           <br />
-        You will be assigned an <span className="font-bold">Empyrean Relationship Manager</span> to search the market for you with our In-House Sellers and our Broker Circle to get started. They shall also be the one responsible in handling your account with us and attend to all your inquiries in accessing our Business Network and Professional Circles or any concerns regarding your properties.</p>
-  
+          <br />
+          You will be assigned an <span className="font-bold">Empyrean Relationship Manager</span> to search the market for you with our In-House Sellers and our Broker Circle to get started. They shall also be the one responsible in handling your account with us and attend to all your inquiries in accessing our Business Network and Professional Circles or any concerns regarding your properties.
+        </p>
 
         <div className="mb-16" aria-label="Service Benefits">
           <ContentCard
@@ -41,33 +41,22 @@ export default function BuyerTenantGuestPage() {
         </div>
 
         <div
-          className="border border-gray-300 rounded-lg p-8 md:p-12"
+          className="border border-gray-300 rounded-lg p-8 md:p-12 mb-16"
           aria-label="Contact Form"
         >
           <ContactForm />
         </div>
 
-       <div
-          className="border border-gray-300 rounded-lg p-8 md:p-12"
-   <ContentCard title="Empyrean Professional Services (Complementary and Add-On)">
-            <>
-              We are dedicated to being your one-stop gateway to the Real Estate Industry. We cultivate{" "}
-              <strong>Empyrean Business Network</strong> and{" "}
-              <strong>Empyrean Professional Circles</strong> should you need any more related services
-              pertaining to your property.
-              <br />
-              <br />
-              Empyrean also offers in-house and partner services that deliver an Empyrean-grade standard—from
-              deep cleaning, regular maintenance, repairs, and even home renovations and improvements. We got your back!
-              <br />
-              <br />
-              You will be assigned an <strong>Empyrean Relationship Manager</strong> to attend to all your inquiries in accessing our Business Network and Professional Circles.
-            </>
-          </ContentCard>
-        </div>
-        
+        <ContentCard
+          title="Empyrean Professional Services (Complementary and Add-On)"
+          description="We are dedicated to being your one-stop gateway to the Real Estate Industry. We cultivate Empyrean Business Network and Empyrean Professional Circles should you need any more related services pertaining to your property. 
+
+Empyrean also offers in-house and partner services that deliver an Empyrean-grade standard—from deep cleaning, regular maintenance, repairs, and even home renovations and improvements. We got your back!
+
+You will be assigned an Empyrean Relationship Manager to attend to all your inquiries in accessing our Business Network and Professional Circles."
+        />
       </div>
-      
+
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{

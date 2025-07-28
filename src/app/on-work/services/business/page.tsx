@@ -30,7 +30,7 @@ export default function BusinessPage() {
           aria-label="Business Network and Professional Circles"
         >
           <div className="w-full md:w-1/2 text-center mb-12 md:mb-0">
-            <div className="mb-4 flex justify-center">
+            <div className="mb-6 flex justify-center">
               <div className="grid grid-cols-1 gap-4 max-w-[100px]">
                 <PartnerLogo imageSrc="/assets/partners/msjoyph.jpeg" hideName />
               </div>
@@ -42,7 +42,7 @@ export default function BusinessPage() {
           </div>
 
           <div className="w-full md:w-1/2 text-center">
-            <div className="mb-4 flex justify-center">
+            <div className="mb-6 flex justify-center">
               <div className="grid grid-cols-1 gap-4 max-w-[100px]">
                 <PartnerLogo imageSrc="/assets/partners/msjoyph.jpeg" hideName />
               </div>

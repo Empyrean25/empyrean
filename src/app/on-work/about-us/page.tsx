@@ -189,18 +189,22 @@ export default function AboutPage() {
         </div>
 
         <div className="my-6">
-          <section
-            className="py-6 px-8 md:px-16 text-center container mx-auto gap-6 flex flex-col items-center"
-            aria-label="Our Brands"
-          >
-            <h2 className="text-3xl font-bold mb-1">OUR BRANDS</h2>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-              <PartnerLogo imageSrc="/assets/partners/empyreancommunities.png" name="Empyrean Communities" />
-              <PartnerLogo imageSrc="/assets/partners/empyreanbusinessnetwork.png" name="Empyrean Business Network" />
-              <PartnerLogo imageSrc="/assets/partners/empyreanprofessionalcircles.png" name="Empyrean Professional Circles" />
-              <PartnerLogo imageSrc="/assets/partners/empyreanservices.png" name="Empyrean Services" />
-            </div>
-          </section>
+      
+          {/* OUR BRANDS SECTION */}
+<div className="mb-12 bg-gray-100 border border-gray-300 rounded-lg p-8 md:p-12 w-full">
+  <section
+    className="text-center container mx-auto gap-6 flex flex-col items-center"
+    aria-label="Our Brands"
+  >
+    <h2 className="text-3xl font-bold mb-6">OUR BRANDS</h2>
+    <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+      <PartnerLogo imageSrc="/assets/partners/empyreancommunities.png" name="Empyrean Communities" />
+      <PartnerLogo imageSrc="/assets/partners/empyreanbusinessnetwork.png" name="Empyrean Business Network" />
+      <PartnerLogo imageSrc="/assets/partners/empyreanprofessionalcircles.png" name="Empyrean Professional Circles" />
+      <PartnerLogo imageSrc="/assets/partners/empyreanservices.png" name="Empyrean Services" />
+    </div>
+  </section>
+</div>
 
           {/* Added spacing above CustomSolutions */}
           <div className="mt-12 w-full">

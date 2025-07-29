@@ -1,107 +1,33 @@
-import ContactForm from "@/components/contact-form";
-import { ContentCard } from "@/components/content-card";
-import PartnerLogo from "@/components/partner-logo"; // make sure this path is correct
-import { Metadata } from "next";
+import Image from "next/image";
 
-export const metadata: Metadata = {
-  title: "Buyer & Tenant Services | Empyrean - Your Real Estate Partner",
-  description:
-    "Find your perfect property with Empyrean. We provide comprehensive real estate services for buyers and tenants, ensuring accountability throughout your transaction.",
-  openGraph: {
-    title: "Buyer & Tenant Services | Empyrean - Your Real Estate Partner",
-    description:
-      "Experience exceptional real estate services with Empyrean. We're with you before, during, and after your transaction, ensuring your requirements are met.",
-    type: "website",
-  },
-};
+interface PartnerLogoProps {
+  name?: string;
+  imageSrc?: string;
+  hideName?: boolean;
+}
 
-export default function BuyerTenantGuestPage() {
+export default function PartnerLogo({ name, imageSrc, hideName }: PartnerLogoProps) {
   return (
-    <main className="min-h-screen flex flex-col">
-      <div className="container mx-auto px-4 py-16 max-w-5xl">
-        <h1 className="text-3xl md:text-4xl font-bold text-center mb-8">
-          WHY DEAL WITH AN EMPYREAN?
-        </h1>
-
-        <p className="text-[14px] md:text-lg text-center mb-16 max-w-4xl mx-auto">
-          Regardless of the nationality, the location, the type of deal, and its price,
-          whoever all associated persons are: Property Owner, Broker, or Agent,{" "}
-          <span className="font-bold">you deserve accountability</span> and a
-          company that will be with you before, during, and most especially
-          after your real estate transaction. 
-          <br />
-          <br />
-          You will be assigned an <span className="font-bold">Empyrean Relationship Manager</span> to search the market for you with our In-House Sellers and our Broker Circle to get started. They shall also be the one responsible in handling your account with us and attend to all your inquiries in accessing our Business Network and Professional Circles or any concerns regarding your properties.
-        </p>
-
-        <div className="mb-16" aria-label="Service Benefits">
-          <ContentCard
-            title="Your Requirements Matter."
-            description="Send us your information and requirements, we'll tap everything we can reach to find a property that matches your budget, personality, lifestyle, and preferences!"
+    <div className="flex flex-col items-center">
+      {imageSrc ? (
+        <div className="rounded-full overflow-hidden w-36 h-36 md:w-44 md:h-44 flex items-center justify-center">
+          <Image
+            src={imageSrc}
+            alt={name || "Partner Logo"}
+            width={176}
+            height={176}
+            className="object-cover w-full h-full"
           />
         </div>
-
-        <ContentCard
-          title="Empyrean Professional Services (Complementary and Add-On)"
-          description="We are dedicated to being your one-stop gateway to the Real Estate Industry. We cultivate Empyrean Business Network and Empyrean Professional Circles should you need any more related services pertaining to your property. 
-
-Empyrean also offers in-house and partner services that deliver an Empyrean-grade standard—from deep cleaning, regular maintenance, repairs, and even home renovations and improvements. We got your back!
-
-You will be assigned an Empyrean Relationship Manager to attend to all your inquiries in accessing our Business Network and Professional Circles."
-        />
-
-        {/* Partner Logos Section */}
-        <div className="my-16">
-          <h2 className="text-2xl font-semibold text-center mb-8">Our Professional Circles</h2>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            <PartnerLogo name="Cleaning Co." imageSrc="/logos/cleaningco.png" />
-            <PartnerLogo name="FixIt Team" imageSrc="/logos/fixit.png" />
-            <PartnerLogo name="HomeStyle" imageSrc="/logos/homestyle.png" />
-            <PartnerLogo name="SafeGuard" imageSrc="/logos/safeguard.png" />
-          </div>
+      ) : (
+        <div className="bg-gray-300 rounded-full w-36 h-36 md:w-44 md:h-44 flex items-center justify-center">
+          <span className="text-xl font-bold">LOGO</span>
         </div>
+      )}
 
-        {/* Contact Form */}
-        <div
-          className="border border-gray-300 rounded-lg p-8 md:p-12 mb-16 max-w-3xl mx-auto"
-          aria-label="Contact Form"
-        >
-          <ContactForm />
-        </div>
-      </div>
-
-      {/* Schema Markup */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Service",
-            name: "Real Estate Buyer and Tenant Services",
-            provider: {
-              "@type": "Organization",
-              name: "Empyrean",
-            },
-            description:
-              "Comprehensive real estate services for buyers and tenants, ensuring accountability throughout your transaction.",
-            offers: {
-              "@type": "Offer",
-              category: "Real Estate Services",
-              description:
-                "We provide end-to-end support for buyers and tenants, from property search to transaction completion and beyond.",
-            },
-            serviceType: [
-              "Property Search",
-              "Real Estate Consultation",
-              "Transaction Support",
-            ],
-            areaServed: {
-              "@type": "Country",
-              name: "Philippines",
-            },
-          }),
-        }}
-      />
-    </main>
+      {!hideName && name && (
+        <span className="mt-2 text-sm font-medium text-center">{name}</span>
+      )}
+    </div>
   );
 }

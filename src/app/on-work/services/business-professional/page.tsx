@@ -47,7 +47,7 @@ export default function BusinessPage() {
                 <PartnerLogo imageSrc="/assets/partners/empyreanprofessionalcircles.png" hideName />
               </div>
             </div>
-            <h2 className="text-2xl font-bold mb-6">Empyrean Professional Circle</h2>
+            <h2 className="text-2xl font-bold mb-6">Empyrean Professional Circles</h2>
             <p className="text-gray-800">
               These are the friends we meet along the way—individuals from various industries and disciplines whose competencies we can tap for partnerships and collaborations.
             </p>

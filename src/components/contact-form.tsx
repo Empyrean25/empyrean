@@ -25,7 +25,7 @@ const formSchema = z.object({
       "buyer-tenant-guest",
       "broker-agent-realtyfirm",
       "developer-representative",
-      "business",
+      "business-professional",
     ],
     {
       required_error: "Please select a user type.",
@@ -112,8 +112,8 @@ export default function ContactForm() {
                       label: "Developer Representative",
                     },
                     {
-                      value: "business",
-                      label: "Business",
+                      value: "business-professional",
+                      label: "Business/Professional",
                     },
                   ].map(({ value, label }) => (
                     <div

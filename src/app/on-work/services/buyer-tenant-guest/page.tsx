@@ -40,21 +40,25 @@ export default function BuyerTenantGuestPage() {
           />
         </div>
 
-      <ContentCard
-          title="Empyrean Professional Services (Complementary and Add-On)"
-          description="We are dedicated to being your one-stop gateway to the Real Estate Industry. We cultivate Empyrean Business Network and Empyrean Professional Circles should you need any more related services pertaining to your property. 
+        <div className="mb-16">
+          <ContentCard
+            title="Empyrean Professional Services (Complementary and Add-On)"
+            description="We are dedicated to being your one-stop gateway to the Real Estate Industry. We cultivate Empyrean Business Network and Empyrean Professional Circles should you need any more related services pertaining to your property. 
 
 Empyrean also offers in-house and partner services that deliver an Empyrean-grade standard—from deep cleaning, regular maintenance, repairs, and even home renovations and improvements. We got your back!
 
 You will be assigned an Empyrean Relationship Manager to attend to all your inquiries in accessing our Business Network and Professional Circles."
-        />
+          />
+        </div>
+
+        {/* Fixed width contact form container */}
         <div
-          className="border border-gray-300 rounded-lg p-8 md:p-12 mb-16"
+          className="border border-gray-300 rounded-lg p-8 md:p-12 mb-16 max-w-5xl mx-auto"
           aria-label="Contact Form"
         >
           <ContactForm />
-      </div>
         </div>
+      </div>
 
       <script
         type="application/ld+json"

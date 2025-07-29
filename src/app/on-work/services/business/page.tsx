@@ -32,10 +32,10 @@ export default function BusinessPage() {
           <div className="w-full md:w-1/2 text-center mb-12 md:mb-0">
             <div className="mb-6 flex justify-center">
               <div className="grid grid-cols-1 gap-4 max-w-[100px]">
-                <PartnerLogo imageSrc="/assets/partners/msjoyph.jpeg" hideName />
+                <PartnerLogo imageSrc="/assets/partners/empyreanbusinessnetwork.png" hideName />
               </div>
             </div>
-            <h2 className="text-3xl font-bold mb-6">Empyrean Business Network</h2>
+            <h2 className="text-2xl font-bold mb-6">Empyrean Business Network</h2>
             <p className="text-gray-800">
               Consists of eligible businesses that Empyrean has formed official partnerships with—businesses that embody the company&apos;s core values and deliver Empyrean-grade standards in output and results.
             </p>
@@ -44,10 +44,10 @@ export default function BusinessPage() {
           <div className="w-full md:w-1/2 text-center">
             <div className="mb-6 flex justify-center">
               <div className="grid grid-cols-1 gap-4 max-w-[100px]">
-                <PartnerLogo imageSrc="/assets/partners/msjoyph.jpeg" hideName />
+                <PartnerLogo imageSrc="/assets/partners/empyreanprofessionalcircles.png" hideName />
               </div>
             </div>
-            <h2 className="text-3xl font-bold mb-6">Empyrean Professional Circle.</h2>
+            <h2 className="text-2xl font-bold mb-6">Empyrean Professional Circle</h2>
             <p className="text-gray-800">
               These are the friends we meet along the way—individuals from various industries and disciplines whose competencies we can tap for partnerships and collaborations.
             </p>
@@ -64,16 +64,6 @@ export default function BusinessPage() {
           <br />
           More opportunities for partnerships and closing deals! You access us, you access everyone.
         </p>
-
-        <section className="mb-20" aria-label="Broker Network">
-          <h2 className="text-2xl font-bold text-center mb-12">Empyrean Business Network</h2>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            <PartnerLogo name="Broker Partner 1" />
-            <PartnerLogo name="Broker Partner 2" />
-            <PartnerLogo name="Broker Partner 3" />
-            <PartnerLogo name="Broker Partner 4" />
-          </div>
-        </section>
 
         <div className="flex justify-center">
           <Button

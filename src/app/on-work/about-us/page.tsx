@@ -130,8 +130,8 @@ export default function AboutPage() {
           <div className="text-center">
             <h2 className="text-3xl font-bold mb-6">OUR BRANDS</h2>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 justify-items-center">
-              <PartnerLogo imageSrc="/assets/partners/empyreanrealestate.png" name="Empyrean Brokerage Arm" />
-              <PartnerLogo imageSrc="/assets/partners/empyreanpropertymanagement.png" name="Empyrean Property Management Arm" />
+              <PartnerLogo imageSrc="/assets/partners/empyreanpropertymanagement.png" name="Empyrean Brokerage Arm" />
+              <PartnerLogo imageSrc="/assets/partners/empyreanrealestate.png" name="Empyrean Property Management Arm" />
               <PartnerLogo imageSrc="/assets/partners/empyreancommunities.png" name="Empyrean Communities" />
               <PartnerLogo imageSrc="/assets/partners/empyreanbusinessnetwork.png" name="Empyrean Business Network" />
               <PartnerLogo imageSrc="/assets/partners/empyreanprofessionalcircles.png" name="Empyrean Professional Circles" />

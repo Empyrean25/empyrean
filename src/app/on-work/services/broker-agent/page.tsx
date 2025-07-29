@@ -45,7 +45,7 @@ export default function BrokerAgentDeveloperPage() {
             <PartnerLogo imageSrc="/assets/partners/msjoyph.jpeg" hideName />
             <PartnerLogo imageSrc="/assets/partners/PHRCS.jpg" hideName />
             <PartnerLogo imageSrc="/assets/partners/remaxone-new.png" hideName />
-            <PartnerLogo name="Broker Partner 4" />
+            <PartnerLogo imageSrc="/assets/partners/hippohomes.png" hideName />
           </div>
         </section>
 

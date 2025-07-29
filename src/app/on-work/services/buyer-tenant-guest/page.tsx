@@ -27,7 +27,7 @@ export default function BuyerTenantGuestPage() {
           whoever all associated persons are: Property Owner, Broker, or Agent,{" "}
           <span className="font-bold">you deserve accountability</span> and a
           company that will be with you before, during, and most especially
-          after your real estate transaction. 
+          after your real estate transaction.
           <br />
           <br />
           You will be assigned an <span className="font-bold">Empyrean Relationship Manager</span> to search the market for you with our In-House Sellers and our Broker Circle to get started. They shall also be the one responsible in handling your account with us and attend to all your inquiries in accessing our Business Network and Professional Circles or any concerns regarding your properties.
@@ -51,12 +51,10 @@ You will be assigned an Empyrean Relationship Manager to attend to all your inqu
           />
         </div>
 
-        {/* Fixed width contact form container */}
-        <div
-          className="border border-gray-300 rounded-lg p-8 md:p-12 mb-16 max-w-5xl mx-auto"
-          aria-label="Contact Form"
-        >
-          <ContactForm />
+        <div className="mb-16" aria-label="Contact Form Section">
+          <div className="border border-gray-300 rounded-lg p-8 md:p-12 max-w-5xl mx-auto">
+            <ContactForm />
+          </div>
         </div>
       </div>
 

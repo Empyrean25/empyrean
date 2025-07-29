@@ -196,10 +196,10 @@ export default function AboutPage() {
   >
         <h2 className="text-3xl font-bold mb-1">OUR BRANDS</h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+            <PartnerLogo imageSrc="/assets/partners/empyreancommunities.png" name="Empyrean Communities" />
             <PartnerLogo imageSrc="/assets/partners/empyreanbusinessnetwork.png" name="Empyrean Business Network" />
             <PartnerLogo imageSrc="/assets/partners/empyreanprofessionalcircles.png" name="Empyrean Professional Circles" />
-            <PartnerLogo imageSrc="/assets/partners/msjoyph.jpeg" hideName />
-            <PartnerLogo name="Broker Partner 4" />
+            <PartnerLogo imageSrc="/assets/partners/empyreanservices.png" name="Empyrean Services" />
           </div>
         </section>
           

@@ -27,7 +27,7 @@ export default function ContactUsPage() {
                 href="tel:+639762444550"
                 className="font-lora text-lg hover:text-gray-300"
               >
-                +639338113533
+                +639762444550
               </a>
             </div>
             <div>

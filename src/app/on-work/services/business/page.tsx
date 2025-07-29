@@ -71,7 +71,7 @@ export default function BusinessPage() {
           </h2>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            <PartnerLogo imageSrc="/assets/partners/washaton.jpg" hideName />
+      <PartnerLogo imageSrc="/assets/partners/washaton.jpg" name="Wash-a-Ton Laundry House" />
           </div>
         </section>
         

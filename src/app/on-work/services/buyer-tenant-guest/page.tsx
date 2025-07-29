@@ -48,13 +48,12 @@ Empyrean also offers in-house and partner services that deliver an Empyrean-grad
 
 You will be assigned an Empyrean Relationship Manager to attend to all your inquiries in accessing our Business Network and Professional Circles."
         />
-      </div>
-        
         <div
           className="border border-gray-300 rounded-lg p-8 md:p-12 mb-16"
           aria-label="Contact Form"
         >
           <ContactForm />
+      </div>
         </div>
 
       <script

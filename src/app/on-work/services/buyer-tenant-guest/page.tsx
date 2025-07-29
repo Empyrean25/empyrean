@@ -42,8 +42,9 @@ export default function BuyerTenantGuestPage() {
 
         <div className="mb-16">
           <ContentCard
-            title="Empyrean Professional Services (Complementary and Add-On)"
-            description="We are dedicated to being your one-stop gateway to the Real Estate Industry. We cultivate Empyrean Business Network and Empyrean Professional Circles should you need any more related services pertaining to your property. 
+            title="Empyrean Services (Complementary and Add-On)"
+            description="We are dedicated to being your one-stop gateway to the Real Estate Industry. We are commited to providing you real estate solutions.
+           We cultivate Empyrean Business Network and Empyrean Professional Circles should you need any more related services pertaining to your property. 
 
 Empyrean also offers in-house and partner services that deliver an Empyrean-grade standard—from deep cleaning, regular maintenance, repairs, and even home renovations and improvements. We got your back!
 

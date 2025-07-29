@@ -205,7 +205,7 @@ export default function AboutPage() {
       <PartnerLogo imageSrc="/assets/partners/empyreanprofessionalcircles.png" name="Empyrean Professional Circles" />
       <PartnerLogo imageSrc="/assets/partners/empyreanservices.png" name="Empyrean Services" />
       <PartnerLogo imageSrc="/assets/partners/thegoodproperties.png" name="TikTok: Manila Luxury Real Estate" />
-      <PartnerLogo imageSrc="/assets/partners/empyreanservices.png" name="TikTok: Budget Real Estate" />
+      <PartnerLogo imageSrc="/assets/partners/budgetrealestate.png" name="TikTok: Budget Real Estate" />
 
     </div>
   </section>

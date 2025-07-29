@@ -14,7 +14,7 @@ export default function CategorySection() {
     },
     {
       title: "I AM A BUSINESS/PROFESSIONAL",
-      href: "/on-work/services/business",
+      href: "/on-work/services/business-professional",
       bgColor: "bg-[#9f9f9f]",
     },
     {

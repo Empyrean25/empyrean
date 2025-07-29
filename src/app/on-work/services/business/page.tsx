@@ -31,7 +31,7 @@ export default function BusinessPage() {
         >
           <div className="w-full md:w-1/2 text-center mb-12 md:mb-0">
             <div className="mb-6 flex justify-center">
-              <div className="grid grid-cols-1 gap-4 max-w-[100px]">
+              <div className="grid grid-cols-1 gap-4 max-w-[150px]">
                 <PartnerLogo imageSrc="/assets/partners/empyreanbusinessnetwork.png" hideName />
               </div>
             </div>
@@ -43,7 +43,7 @@ export default function BusinessPage() {
 
           <div className="w-full md:w-1/2 text-center">
             <div className="mb-6 flex justify-center">
-              <div className="grid grid-cols-1 gap-4 max-w-[100px]">
+              <div className="grid grid-cols-1 gap-4 max-w-[150px]">
                 <PartnerLogo imageSrc="/assets/partners/empyreanprofessionalcircles.png" hideName />
               </div>
             </div>

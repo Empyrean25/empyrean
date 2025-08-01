@@ -24,31 +24,11 @@ export default function PropertyOwnerPage() {
         </h1>
 
         <p className="text-[14px] md:text-lg text-center mb-16 max-w-4xl mx-auto">
-          In Empyrean, we value the effectiveness of putting your property in
-          the market, we utilise our in-house sellers, and we also tap our
-          incentivised broker network to get you a buyer, tenant, or guest as
-          soon as possible! Regardless of our commission share, as long as we
-          deliver effective service.
-          <br />
-          <br />
-          You will be assigned an{" "}
-          <span className="font-bold">Empyrean Relationship Manager</span> to
-          keep track of your properties&apos; performance with us. They shall
-          be the one responsible in handling your account with us and attend to
-          all your inquiries in accessing our Business Network and Professional
-          Circles or any concerns regarding your properties.
-        </p>
-
-        <div className="mb-12" aria-label="What We Do">
-          <ContentCard title="What We Do">
-            <>
-              A true one-stop shop for all things real estate. May it just be
+          A true one-stop shop for all things real estate. May it just be
               for handling your property just for upkeep and maintenance or
               profit and brokering, we can handle your property for you backed
               with our brand&apos;s core values.
-            </>
-          </ContentCard>
-        </div>
+        </p>
 
         <div className="mb-12" aria-label="Empyrean Property Management Services">
           <ContentCard title="Property Management Services">
@@ -87,7 +67,7 @@ export default function PropertyOwnerPage() {
                 href="https://www.airbnb.co.uk/users/show/370722533"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="underline text-blue-600"
+                className="underline text-gray-800"
               >
                 Airbnb Website
               </a>

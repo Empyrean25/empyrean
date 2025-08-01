@@ -135,10 +135,7 @@ export default function PropertyOwnerPage() {
           keep track of your properties&apos; performance with us. They shall
           be the one responsible in handling your account with us and attend to
           all your inquiries in accessing our Business Network and Professional
-          Circles or any concerns regarding your properties.
-          <br />
-          <br />
-          With Empyrean, you&apos;d have our guarantee that we will reflect our
+          Circles or any concerns regarding your properties. With Empyrean, you&apos;d have our guarantee that we will reflect our
           core values in all our transactions: we are simple, we are competent,
           we are accountable, and we are setting a quality standard.
           <br />

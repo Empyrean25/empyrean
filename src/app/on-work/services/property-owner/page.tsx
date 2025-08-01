@@ -24,10 +24,8 @@ export default function PropertyOwnerPage() {
         </h1>
 
         <p className="text-[14px] md:text-lg text-center mb-16 max-w-4xl mx-auto">
-          A true one-stop shop for all things real estate. May it just be
-              for handling your property just for upkeep and maintenance or
-              profit and brokering, we can handle your property for you backed
-              with our brand&apos;s core values.
+          A true one-stop shop for all things real estate. More than just handling your property, maintenance, profit and brokering, from legal and compliances with relevant authorities, 
+          Empyrean Real Estate Solutions can be your access to everyone, backed with our brand&apos;s core values.
         </p>
 
         <div className="mb-12" aria-label="Empyrean Property Management Services">
@@ -95,7 +93,7 @@ export default function PropertyOwnerPage() {
 
         {/* OUR APPROACH Section */}
         <div className="mb-12 flex flex-col items-center text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">OUR APPROACH</h2>
+        <h2 className="text-2xl md:text-3xl font-bold mb-6">OUR APPROACH</h2>
           <div className="w-full">
             <Image
               src="/assets/our-approach-new.png"

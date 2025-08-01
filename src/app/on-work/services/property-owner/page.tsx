@@ -81,12 +81,29 @@ export default function PropertyOwnerPage() {
               can utilise our <strong>In-House Agents</strong> as well as our{" "}
               <strong>Sales Partners</strong>. These Sales Partners are not
               within Empyrean but have partnered with us to market your property
-              more effectively!
-              <br />
-              <br />
-              When you enlist with Empyrean,{" "}
+              more effectively! When you enlist with Empyrean,{" "}
               <strong>You get to enlist with everyone</strong> through our
               Incentivised Broker Network.
+               <br />
+              <br />
+              Upon eligibility and with your approval, your property may also be feature in our {" "}
+              <a
+                href="https://www.tiktok.com/@thegoodproperties"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline text-gray-800"
+              >
+                Manila Luxury Real Estate
+              </a> and
+              <a
+                href="https://www.tiktok.com/@budgetrealestate"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline text-gray-800"
+              >
+                Budget Real Estate on TikTok
+              </a>
+              .
             </>
           </ContentCard>
         </div>

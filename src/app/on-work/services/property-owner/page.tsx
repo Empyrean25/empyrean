@@ -97,16 +97,13 @@ export default function PropertyOwnerPage() {
                 className="underline text-gray-800"
               >
                 Manila Luxury Real Estate
-              </a> and 
-              <a
+              </a> and <a
                 href="https://www.tiktok.com/@budgetrealestate"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="underline text-gray-800"
-              >
-                Budget Real Estate
-              </a>
-              on TikTok.
+              >Budget Real Estate
+              </a> on TikTok.
             </>
           </ContentCard>
         </div>

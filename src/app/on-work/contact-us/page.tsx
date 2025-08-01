@@ -24,10 +24,10 @@ export default function ContactUsPage() {
             <div>
               <p className="font-lora text-lg font-semibold mb-1">Phone</p>
               <a
-                href="tel:+639762444550"
+                href="tel:+639565648765"
                 className="font-lora text-lg hover:text-gray-300"
               >
-                +639762444550
+                +639565648765
               </a>
             </div>
             <div>

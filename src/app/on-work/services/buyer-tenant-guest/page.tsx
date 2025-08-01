@@ -27,11 +27,7 @@ export default function BuyerTenantGuestPage() {
           whoever all associated persons are: Property Owner, Broker, or Agent,{" "}
           <span className="font-bold">you deserve accountability</span> and a
           company that will be with you before, during, and most especially
-          after your real estate transaction.
-          <br />
-          <br />
-          You will be assigned an <span className="font-bold">Empyrean Relationship Manager</span> to search the market for you with our In-House Sellers and our Broker Circle to get started. They shall also be the one responsible in handling your account with us and attend to all your inquiries in accessing our Business Network and Professional Circles or any concerns regarding your properties.
-        </p>
+          after your real estate transaction.</p>
 
         <div className="mb-16" aria-label="Service Benefits">
           <ContentCard
@@ -39,19 +35,7 @@ export default function BuyerTenantGuestPage() {
             description="Send us your information and requirements, we'll tap everything we can reach to find a property that matches your budget, personality, lifestyle, and preferences!"
           />
         </div>
-
-        <div className="mb-16">
-          <ContentCard
-            title="Empyrean Services (Complementary and Add-On)"
-            description="We are dedicated to being your one-stop gateway to the Real Estate Industry. We are commited to providing you real estate solutions.
-           We cultivate Empyrean Business Network and Empyrean Professional Circles should you need any more related services pertaining to your property. 
-
-Empyrean also offers in-house and partner services that deliver an Empyrean-grade standard—from deep cleaning, regular maintenance, repairs, and even home renovations and improvements. We got your back!
-
-You will be assigned an Empyrean Relationship Manager to attend to all your inquiries in accessing our Business Network and Professional Circles."
-          />
-        </div>
-
+        
         <div className="mb-16" aria-label="Contact Form Section">
           <div className="border border-gray-300 rounded-lg p-8 md:p-12 max-w-5xl mx-auto">
             <ContactForm />
@@ -59,6 +43,18 @@ You will be assigned an Empyrean Relationship Manager to attend to all your inqu
         </div>
       </div>
 
+        <div className="mb-16">
+          <ContentCard
+            title="Empyrean Services (Complementary and Add-On)"
+            description="We are dedicated to being your one-stop gateway to the Real Estate Industry. We are commited to providing you real estate solutions.
+           We cultivate Empyrean Business Network and Empyrean Professional Circles should you need any more related services pertaining to your property. Empyrean offers in-house and partner services that deliver an Empyrean-grade standard—from deep cleaning, regular maintenance, repairs, and even home renovations and improvements. We got your back!
+          />
+        </div>
+
+<p className="text-[14px] md:text-lg text-center mb-16 max-w-4xl mx-auto">
+          You will be assigned an <span className="font-bold">Empyrean Relationship Manager</span> to search the market for you with our In-House Sellers and our Broker Circle to get started. They shall also be the one responsible in handling your account with us and attend to all your inquiries in accessing our Business Network and Professional Circles or any concerns regarding your properties.
+        </p>
+      
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{

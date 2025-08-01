@@ -41,35 +41,69 @@ export default function PropertyOwnerPage() {
         <div className="mb-12" aria-label="What We Do">
           <ContentCard
             title="What We Do"
-            description="A true one-stop shop for all things real estate. May it just be for handling your property just for upkeep and maintenance or profit and brokering, we can handle your property for you backed with our brand's core values."
+          >
+            <>
+              A true one-stop shop for all things real estate. May it just be for handling
+              your property just for upkeep and maintenance or profit and brokering, we can
+              handle your property for you backed with our brand's core values.
+            </>
           </ContentCard>
         </div>
 
-         <div className="mb-12" aria-label="Empyrean Property Management Services">
-          <ContentCard
-            title="Property Management Services"
-            description="You can authorise us as your SPA to hold they key of the unit for you <strong>for free.</strong> Plus, you get to make sure that your property will be maintained.  You don&apos;t have to worry about anuthing! With our <strong>Empyrean Professional Services</strong> below, any of your legal and compliances, cleaning, maintenance and repair needs.
-            You can tap us for an inquiry or a quote, and we&apos;ll assign a fitting partner for you according to your background, requirements, and needs. You just access us, you will access everyone."
+        <div className="mb-12" aria-label="Empyrean Property Management Services">
+          <ContentCard title="Property Management Services">
+            <>
+              You can authorise us as your SPA to hold the key of the unit for you{" "}
+              <strong>for free.</strong> Plus, you get to make sure that your property
+              will be maintained. You don&apos;t have to worry about anything! With our{" "}
+              <strong>Empyrean Professional Services</strong> below, any of your legal and
+              compliances, cleaning, maintenance and repair needs are covered.
+              <br />
+              <br />
+              You can tap us for an inquiry or a quote, and we&apos;ll assign a fitting
+              partner for you according to your background, requirements, and needs.
+              You just access us, you will access everyone.
+            </>
           </ContentCard>
         </div>
 
-          <div className="mb-12" aria-label="Empyrean Hospitality Services">
-          <ContentCard
-            title="Empyrean Hospitality Services"
-            description="When you partner with us. With our strong branding and strategic approaches, we can put up your property open for short-term leasing. Not just <strong>Airbnb<strong> We will also put up your property to several booking platforms
-            like <strong>Agoda, and Booking.com, etc.</strong> to maximise Property Profitability in an attractive profit-sharing setup.
-            <br />
-            You may visit our Empyrean Hospitality Page at the <a href="https://www.airbnb.co.uk/users/show/370722533">Airbnb Website</a>."
+        <div className="mb-12" aria-label="Empyrean Hospitality Services">
+          <ContentCard title="Empyrean Hospitality Services">
+            <>
+              When you partner with us. With our strong branding and strategic approaches,
+              we can put up your property open for short-term leasing. Not just{" "}
+              <strong>Airbnb</strong>. We will also put up your property to several
+              booking platforms like <strong>Agoda</strong> and{" "}
+              <strong>Booking.com</strong>, etc. to maximise Property Profitability
+              in an attractive profit-sharing setup.
+              <br />
+              <br />
+              You may visit our Empyrean Hospitality Page at the{" "}
+              <a
+                href="https://www.airbnb.co.uk/users/show/370722533"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline text-blue-600"
+              >
+                Airbnb Website
+              </a>.
+            </>
           </ContentCard>
         </div>
 
-      <div className="mb-12" aria-label="Brokerage Services">
-          <ContentCard
-            title="Brokerage Services"
-            description="When you decided to put up your property for lease or for sale. You can utilise our <strong>In-House Agents<strong> as well as our <strong>Sales Partners</strong>. These Sales Partners are not within Empyrean but has partnered with us to market your property more effectivelty!
-            <br />
-            When you enlist with Empyrean, <strong>You get to enlist with everyone</strong> through our Incentivised Broker Network."
-           </ContentCard>
+        <div className="mb-12" aria-label="Brokerage Services">
+          <ContentCard title="Brokerage Services">
+            <>
+              When you decide to put up your property for lease or for sale, you can utilise
+              our <strong>In-House Agents</strong> as well as our{" "}
+              <strong>Sales Partners</strong>. These Sales Partners are not within Empyrean
+              but have partnered with us to market your property more effectively!
+              <br />
+              <br />
+              When you enlist with Empyrean, <strong>You get to enlist with everyone</strong>{" "}
+              through our Incentivised Broker Network.
+            </>
+          </ContentCard>
         </div>
 
         {/* OUR APPROACH Section */}
@@ -83,26 +117,29 @@ export default function PropertyOwnerPage() {
             />
           </div>
         </div>
-        
+
         <div className="space-y-12 mb-10">
-          <ContentCard title="Empyrean Professional Services as an Add-On)">
+          <ContentCard title="Empyrean Professional Services as an Add-On">
             <>
-              We are dedicated to being your one-stop gateway to the Real Estate Industry. We are committed to providing you real estate solutions. We cultivate{" "}
+              We are dedicated to being your one-stop gateway to the Real Estate Industry.
+              We are committed to providing you real estate solutions. We cultivate{" "}
               <strong>Empyrean Business Network</strong> and{" "}
-              <strong>Empyrean Professional Circles</strong> should you need any more related services
-              pertaining to your property.
+              <strong>Empyrean Professional Circles</strong> should you need any more related
+              services pertaining to your property.
               <br />
               <br />
-              Empyrean also offers in-house and partner services that deliver an Empyrean-grade standard—from
-              deep cleaning, regular maintenance, repairs, and even home renovations and improvements. We got your back!
+              Empyrean also offers in-house and partner services that deliver an
+              Empyrean-grade standard—from deep cleaning, regular maintenance, repairs,
+              and even home renovations and improvements. We got your back!
               <br />
               <br />
-              You will be assigned an <strong>Empyrean Relationship Manager</strong> to attend to all your inquiries in accessing our Business Network and Professional Circles.
+              You will be assigned an <strong>Empyrean Relationship Manager</strong> to attend
+              to all your inquiries in accessing our Business Network and Professional Circles.
             </>
           </ContentCard>
         </div>
 
-<p className="text-[14px] md:text-lg text-center mb-16 max-w-4xl mx-auto">
+        <p className="text-[14px] md:text-lg text-center mb-16 max-w-4xl mx-auto">
           You will be assigned an{" "}
           <span className="font-bold">Empyrean Relationship Manager</span> to
           keep track of your properties&rsquo; performance with us. They shall
@@ -111,17 +148,16 @@ export default function PropertyOwnerPage() {
           Circles or any concerns regarding your properties.
           <br />
           <br />
-
-  With Empyrean, you&rsquo;d have our guarantee that we will reflect
-            our core values in all our transactions: we are simple, we are
-            competent, we are accountable, and we are setting a quality
-            standard.
-            <br />
-            <br />
-            We are centralising Real Estate so it doesn&apos;t have to be
-            complicated for you. Your effective Real Estate Solutions, on us.
+          With Empyrean, you&rsquo;d have our guarantee that we will reflect
+          our core values in all our transactions: we are simple, we are
+          competent, we are accountable, and we are setting a quality
+          standard.
+          <br />
+          <br />
+          We are centralising Real Estate so it doesn&apos;t have to be
+          complicated for you. Your effective Real Estate Solutions, on us.
         </p>
-        
+
         <CustomSolutions />
       </div>
 

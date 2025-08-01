@@ -42,10 +42,10 @@ export default function Footer() {
               </p>
               <p className="flex items-center gap-2">
                 <a
-                  href="tel:+639762444550"
+                  href="tel:+639565648765"
                   className="text-gray-800 hover:text-gray-900 transition-colors"
                 >
-                  +639762444550 (Viber/WhatsApp)
+                  +639565648765 (Viber/WhatsApp/Telegram)
                 </a>
               </p>
               <p className="flex items-center gap-2">
@@ -61,7 +61,7 @@ export default function Footer() {
         <div className="mt-8 pt-8 border-t border-gray-400">
           <div className="flex items-center justify-between">
             <p className="text-gray-800 text-sm">
-              © {new Date().getFullYear()} Empyrean Real Estate Solutions. All
+              © {new Date().getFullYear()} Empyrean Real Estate Corporation. All
               rights reserved.
             </p>
             <div className="flex items-center gap-6">

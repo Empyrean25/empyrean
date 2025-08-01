@@ -104,9 +104,9 @@ export default function PropertyOwnerPage() {
                 rel="noopener noreferrer"
                 className="underline text-gray-800"
               >
-                Budget Real Estate on TikTok
+                Budget Real Estate
               </a>
-              .
+              on TikTok.
             </>
           </ContentCard>
         </div>

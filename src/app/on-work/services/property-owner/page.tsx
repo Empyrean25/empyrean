@@ -86,7 +86,10 @@ export default function PropertyOwnerPage() {
               Incentivised Broker Network.
                <br />
               <br />
-              Upon eligibility and with your approval, your property may also be feature in our {" "}
+              Upon eligibility and with your approval, your property may also be feature in our following organic lead generation channels (among others we also utilise): 
+<br />
+              <br />
+              {" "}
               <a
                 href="https://www.tiktok.com/@thegoodproperties"
                 target="_blank"
@@ -94,7 +97,7 @@ export default function PropertyOwnerPage() {
                 className="underline text-gray-800"
               >
                 Manila Luxury Real Estate
-              </a> and
+              </a> and 
               <a
                 href="https://www.tiktok.com/@budgetrealestate"
                 target="_blank"

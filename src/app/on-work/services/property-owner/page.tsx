@@ -142,13 +142,13 @@ export default function PropertyOwnerPage() {
         <p className="text-[14px] md:text-lg text-center mb-16 max-w-4xl mx-auto">
           You will be assigned an{" "}
           <span className="font-bold">Empyrean Relationship Manager</span> to
-          keep track of your properties&rsquo; performance with us. They shall
+          keep track of your properties&apos; performance with us. They shall
           be the one responsible in handling your account with us and attend to
           all your inquiries in accessing our Business Network and Professional
           Circles or any concerns regarding your properties.
           <br />
           <br />
-          With Empyrean, you&rsquo;d have our guarantee that we will reflect
+          With Empyrean, you&apos;d have our guarantee that we will reflect
           our core values in all our transactions: we are simple, we are
           competent, we are accountable, and we are setting a quality
           standard.

@@ -119,12 +119,6 @@ export default function PropertyOwnerPage() {
               fitting partner for you according to your background,
               requirements, and needs. You just access us, you will access
               everyone.
-              <br />
-              <br />
-              You will be assigned an{" "}
-              <strong>Empyrean Relationship Manager</strong> to attend to all
-              your inquiries in accessing our Business Network and Professional
-              Circles.
             </>
           </ContentCard>
         </div>

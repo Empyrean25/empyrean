@@ -5,25 +5,19 @@ interface ServiceCardProps {
 
 export function ServiceCard({ title, description }: ServiceCardProps) {
   return (
-  <div
-      className={`border border-gray-300 rounded-lg p-8 md:p-12 ${className}`}
-    >
-      <div className="flex flex-col md:items-start gap-6">
-        <div className="flex relative items-center justify-start gap-4 w-full">
+    <div className="border border-gray-300 rounded-lg p-8 hover:border-gray-400 transition-colors">
+      <div className="flex flex-col items-start justify-center gap-6">
+        <div className="flex relative items-center justify-start gap-4 w-full mb-2">
           <div>
             <div className="bg-gray-200 rounded-full min-w-[60px] h-[60px]"></div>
           </div>
-          <div className="absolute left-[20px] md:text-xl font-bold uppercase text-wrap w-full">
+          <div className="absolute left-[20px] md:text-xl font-bold uppercase text-wrap w-full text-left">
             {title}
           </div>
         </div>
-        <div className="text-[14px] md:text-base text-gray-800">
-          {children ? children : description}
-        </div>
+
+        <p className="text-gray-700 text-start">{description}</p>
       </div>
     </div>
   );
 }
-
-
-

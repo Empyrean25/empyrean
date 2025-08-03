@@ -103,7 +103,7 @@ export default function PropertyOwnerPage() {
         </div>
 
         <div className="space-y-12 mb-10">
-          <ContentCard title="Empyrean Professional Services">
+          <ContentCard title="Empyrean Professional Services (Complementary or Add-On)">
             <>
               We are dedicated to being your one-stop gateway to the Real Estate
               Industry. We are committed to providing you real estate solutions.

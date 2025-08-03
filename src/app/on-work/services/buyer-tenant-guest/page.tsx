@@ -58,15 +58,15 @@ export default function BuyerTenantGuestPage() {
           </ContentCard>
         </div>
 
+   <p className="text-[14px] md:text-lg text-center mb-16 max-w-4xl mx-auto">
+          You will be assigned an <span className="font-bold">Empyrean Relationship Manager</span> to search the market for you with our In-House Sellers and our Broker Circle to get started. They shall also be the one responsible in handling your account with us and attend to all your inquiries in accessing our Business Network and Professional Circles or any concerns regarding your properties.
+        </p>
+        
         <div className="mb-16" aria-label="Contact Form Section">
           <div className="border border-gray-300 rounded-lg p-8 md:p-12 max-w-5xl mx-auto">
             <ContactForm />
           </div>
         </div>
-
-        <p className="text-[14px] md:text-lg text-center mb-16 max-w-4xl mx-auto">
-          You will be assigned an <span className="font-bold">Empyrean Relationship Manager</span> to search the market for you with our In-House Sellers and our Broker Circle to get started. They shall also be the one responsible in handling your account with us and attend to all your inquiries in accessing our Business Network and Professional Circles or any concerns regarding your properties.
-        </p>
       </div>
 
       <script

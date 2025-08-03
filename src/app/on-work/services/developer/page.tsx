@@ -15,7 +15,6 @@ export const metadata: Metadata = {
   },
 };
 
-  return (
     <main className="min-h-[calc(100vh-6rem)] flex flex-col">
       <div className="container mx-auto px-4 py-16 max-w-5xl">
         <section className="mb-20" aria-label="Developer Partners">
@@ -74,5 +73,4 @@ export const metadata: Metadata = {
         }}
       />
     </main>
-  );
 }

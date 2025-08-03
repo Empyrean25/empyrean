@@ -29,7 +29,7 @@ export default function PropertyOwnerPage() {
         </p>
 
         <div className="mb-12" aria-label="Empyrean Property Management Services">
-          <ContentCard title="Property Management Services">
+          <ContentCard title="Empyrean Property Management Services">
             <>
               You can authorise us as your SPA to hold the key of the unit for
               you <strong>for free.</strong> Plus, you get to make sure that
@@ -38,12 +38,6 @@ export default function PropertyOwnerPage() {
               <strong>Empyrean Professional Services</strong> below, any of your
               legal and compliance, cleaning, maintenance and repair needs are
               covered.
-              <br />
-              <br />
-              You can tap us for an inquiry or a quote, and we&apos;ll assign a
-              fitting partner for you according to your background,
-              requirements, and needs. You just access us, you will access
-              everyone.
             </>
           </ContentCard>
         </div>
@@ -75,7 +69,7 @@ export default function PropertyOwnerPage() {
         </div>
 
         <div className="mb-12" aria-label="Brokerage Services">
-          <ContentCard title="Brokerage Services">
+          <ContentCard title="Empyrean Brokerage Services and the Empyrean Broker Circle">
             <>
               When you decide to put up your property for lease or for sale, you
               can utilise our <strong>In-House Agents</strong> as well as our{" "}
@@ -83,7 +77,7 @@ export default function PropertyOwnerPage() {
               within Empyrean but have partnered with us to market your property
               more effectively! When you enlist with Empyrean,{" "}
               <strong>You get to enlist with everyone</strong> through our
-              Incentivised Broker Network.
+              Incentivised Broker Circle.
                <br />
               <br />
               Upon eligibility and with your approval, your property may also be feature in our following organic lead generation channels (among others we also utilise): 
@@ -108,6 +102,33 @@ export default function PropertyOwnerPage() {
           </ContentCard>
         </div>
 
+        <div className="space-y-12 mb-10">
+          <ContentCard title="Empyrean Professional Services">
+            <>
+              We are dedicated to being your one-stop gateway to the Real Estate
+              Industry. We are committed to providing you real estate solutions.
+              We cultivate <strong>Empyrean Business Network</strong> and{" "}
+              <strong>Empyrean Professional Circles</strong> should you need any
+              more related services pertaining to your property. Empyrean offers in-house and partner services that deliver an
+              Empyrean-grade standard—from deep cleaning, regular maintenance,
+              repairs, and even home renovations and improvements. We got your
+              back!
+              <br />
+              <br />
+              You can tap us for an inquiry or a quote, and we&apos;ll assign a
+              fitting partner for you according to your background,
+              requirements, and needs. You just access us, you will access
+              everyone.
+              <br />
+              <br />
+              You will be assigned an{" "}
+              <strong>Empyrean Relationship Manager</strong> to attend to all
+              your inquiries in accessing our Business Network and Professional
+              Circles.
+            </>
+          </ContentCard>
+        </div>
+        
         {/* OUR APPROACH Section */}
         <div className="mb-12 flex flex-col items-center text-center">
         <h2 className="text-2xl md:text-3xl font-bold mb-6">OUR APPROACH</h2>
@@ -120,30 +141,6 @@ export default function PropertyOwnerPage() {
               className="w-full h-auto rounded-lg shadow-md"
             />
           </div>
-        </div>
-
-        <div className="space-y-12 mb-10">
-          <ContentCard title="Empyrean Professional Services as an Add-On">
-            <>
-              We are dedicated to being your one-stop gateway to the Real Estate
-              Industry. We are committed to providing you real estate solutions.
-              We cultivate <strong>Empyrean Business Network</strong> and{" "}
-              <strong>Empyrean Professional Circles</strong> should you need any
-              more related services pertaining to your property.
-              <br />
-              <br />
-              Empyrean also offers in-house and partner services that deliver an
-              Empyrean-grade standard—from deep cleaning, regular maintenance,
-              repairs, and even home renovations and improvements. We got your
-              back!
-              <br />
-              <br />
-              You will be assigned an{" "}
-              <strong>Empyrean Relationship Manager</strong> to attend to all
-              your inquiries in accessing our Business Network and Professional
-              Circles.
-            </>
-          </ContentCard>
         </div>
 
         <p className="text-[14px] md:text-lg text-center mb-16 max-w-4xl mx-auto">

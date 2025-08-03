@@ -159,7 +159,7 @@ export default function PropertyOwnerPage() {
             asChild
             className="bg-[#494949] hover:bg-[#494949]/80 text-white rounded-full py-6 px-12"
           >
-            <Link href="/on-work/contact-us">Enlist your property.</Link>
+            <Link href="/on-work/contact-us">Enlist your property</Link>
           </Button>
         </div>
       </div>

@@ -22,7 +22,7 @@ export default function BrokerAgentDeveloperPage() {
     <main className="min-h-screen flex flex-col">
       <div className="container mx-auto px-4 py-16 max-w-5xl">
         <h1 className="text-3xl md:text-4xl font-bold text-center mb-8">
-          BE AN EMPYREAN BROKER PARTNER
+          JOIN OUR BROKER CIRCLE
         </h1>
 
         <p className="text-[14px] md:text-lg text-center mb-16 max-w-4xl mx-auto">
@@ -35,19 +35,6 @@ export default function BrokerAgentDeveloperPage() {
           <br />
           More opportunities of partnerships and closing deals! You access us, you access everyone.
 </p>
-
-        <section className="mb-10" aria-label="Broker Circle">
-          <h2 className="text-2xl font-bold text-center mb-12">
-            JOIN OUR BROKER CIRCLE
-          </h2>
-
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            <PartnerLogo imageSrc="/assets/partners/msjoyph.jpeg" hideName />
-            <PartnerLogo imageSrc="/assets/partners/PHRCS.jpg" hideName />
-            <PartnerLogo imageSrc="/assets/partners/remaxone-new.png" hideName />
-            <PartnerLogo imageSrc="/assets/partners/hippohomes.jpg" hideName />
-          </div>
-        </section>
 
         {/* WHY JOIN US Section */}
  <section className="mb-10">

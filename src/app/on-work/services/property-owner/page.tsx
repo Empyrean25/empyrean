@@ -3,7 +3,7 @@ import { ContentCard } from "@/components/content-card";
 import { Button } from "@/components/ui/button";
 import CustomSolutions from "@/components/custom-solutions";
 import { Metadata } from "next";
-import Image from "next/image"; // ✅ For optimized images
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Property Owner Services | Empyrean - Real Estate Solutions",
@@ -80,12 +80,11 @@ export default function PropertyOwnerPage() {
               more effectively! When you enlist with Empyrean,{" "}
               <strong>You get to enlist with everyone</strong> through our
               Incentivised Broker Circle.
-               <br />
               <br />
-              Upon eligibility and with your approval, your property may also be feature in our following organic lead generation channels (among others we also utilise): 
-<br />
               <br />
-              {" "}
+              Upon eligibility and with your approval, your property may also be featured in our following organic lead generation channels (among others we also utilise): 
+              <br />
+              <br />
               <a
                 href="https://www.tiktok.com/@thegoodproperties"
                 target="_blank"
@@ -93,13 +92,17 @@ export default function PropertyOwnerPage() {
                 className="underline text-gray-800"
               >
                 Manila Luxury Real Estate
-              </a> and <a
+              </a>{" "}
+              and{" "}
+              <a
                 href="https://www.tiktok.com/@budgetrealestate"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="underline text-gray-800"
-              >Budget Real Estate
-              </a> on TikTok.
+              >
+                Budget Real Estate
+              </a>{" "}
+              on TikTok.
             </>
           </ContentCard>
         </div>
@@ -124,10 +127,10 @@ export default function PropertyOwnerPage() {
             </>
           </ContentCard>
         </div>
-        
+
         {/* OUR APPROACH Section */}
         <div className="mb-12 flex flex-col items-center text-center">
-        <h2 className="text-2xl md:text-3xl font-bold mb-6">OUR APPROACH</h2>
+          <h2 className="text-2xl md:text-3xl font-bold mb-6">OUR APPROACH</h2>
           <div className="w-full">
             <Image
               src="/assets/our-approach-new.png"
@@ -145,7 +148,7 @@ export default function PropertyOwnerPage() {
           keep track of your properties&apos; performance with us. They shall
           be the one responsible in handling your account with us and attend to
           all your inquiries in accessing our Business Network and Professional
-          Circles or any concerns regarding your properties. 
+          Circles or any concerns regarding your properties.
           <br />
           <br />
           With Empyrean, you&apos;d have our guarantee that we will reflect our
@@ -154,7 +157,8 @@ export default function PropertyOwnerPage() {
           complicated for you. Your effective Real Estate Solutions, on us.
         </p>
 
-  <div className="flex justify-center">
+        {/* Button with adjusted spacing */}
+        <div className="flex justify-center my-12">
           <Button
             asChild
             className="bg-[#494949] hover:bg-[#494949]/80 text-white rounded-full py-6 px-12"
@@ -162,8 +166,10 @@ export default function PropertyOwnerPage() {
             <Link href="/on-work/contact-us">Become a Broker Partner</Link>
           </Button>
         </div>
-        
-        <CustomSolutions />
+
+        <div className="mt-12">
+          <CustomSolutions />
+        </div>
       </div>
 
       <script

@@ -153,6 +153,17 @@ export default function PropertyOwnerPage() {
         </p>
 
         <CustomSolutions />
+
+      <div className="flex justify-center">
+          <Button
+            asChild
+            className="bg-[#494949] hover:bg-[#494949]/80 text-white rounded-full py-6 px-12"
+          >
+            <Link href="/on-work/contact-us">Enlist your property.</Link>
+          </Button>
+        </div>
+      </div>
+        
       </div>
 
       <script

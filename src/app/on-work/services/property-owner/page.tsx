@@ -152,6 +152,15 @@ export default function PropertyOwnerPage() {
           complicated for you. Your effective Real Estate Solutions, on us.
         </p>
 
+  <div className="flex justify-center">
+          <Button
+            asChild
+            className="bg-[#494949] hover:bg-[#494949]/80 text-white rounded-full py-6 px-12"
+          >
+            <Link href="/on-work/contact-us">Become a Broker Partner</Link>
+          </Button>
+        </div>
+        
         <CustomSolutions />
       </div>
 

@@ -1,5 +1,4 @@
 import Link from "next/link";
-import PartnerLogo from "@/components/partner-logo";
 import { Button } from "@/components/ui/button";
 import { Metadata } from "next";
 import { ContentCard } from "@/components/content-card";

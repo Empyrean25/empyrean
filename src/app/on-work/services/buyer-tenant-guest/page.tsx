@@ -37,21 +37,31 @@ export default function BuyerTenantGuestPage() {
           />
         </div>
 
+                <div className="space-y-12 mb-10">
+          <ContentCard title="Empyrean Professional Services (Complementary and Add-On)">
+            <>
+              We are dedicated to being your one-stop gateway to the Real Estate
+              Industry. We are committed to providing you real estate solutions.
+              We cultivate <strong>Empyrean Business Network</strong> and{" "}
+              <strong>Empyrean Professional Circles</strong> should you need any
+              more related services pertaining to your property. Empyrean offers in-house and partner services that deliver an
+              Empyrean-grade standard—from deep cleaning, regular maintenance,
+              repairs, and even home renovations and improvements. We got your
+              back!
+              <br />
+              <br />
+              You can tap us for an inquiry or a quote, and we&apos;ll assign a
+              fitting partner for you according to your background,
+              requirements, and needs. You just access us, you will access
+              everyone.
+            </>
+          </ContentCard>
+        </div>
+
         <div className="mb-16" aria-label="Contact Form Section">
           <div className="border border-gray-300 rounded-lg p-8 md:p-12 max-w-5xl mx-auto">
             <ContactForm />
           </div>
-        </div>
-
-        <div className="mb-16">
-          <ContentCard
-            title="Empyrean Professional Services (Complementary and Add-On)"
-            description={`We are dedicated to being your one-stop gateway to the Real Estate Industry. 
-We are committed to providing you real estate solutions. 
-We cultivate Empyrean Business Network and Empyrean Professional Circles should you need any more related services pertaining to your property. 
-Empyrean offers in-house and partner services that deliver an Empyrean-grade standard—from deep cleaning, regular maintenance, repairs, and even home renovations and improvements. 
-We got your back!`}
-          />
         </div>
 
         <p className="text-[14px] md:text-lg text-center mb-16 max-w-4xl mx-auto">

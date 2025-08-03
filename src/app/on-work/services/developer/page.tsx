@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
+import Marquee from "@/components/Marquee";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -15,6 +16,39 @@ export const metadata: Metadata = {
   },
 };
 
+export default function BrokerAgentDeveloperPage() {
+  const partners = [
+    {
+      name: "Shangri-La",
+      image: "/assets/partners/shang.png",
+    },
+    {
+      name: "SMDC",
+      image: "/assets/partners/smdc.png",
+    },
+    {
+      name: "Ayala Land",
+      image: "/assets/partners/ayalaland.png",
+    },
+    {
+      name: "Federal Land",
+      image: "/assets/partners/federalland.png",
+    },
+    {
+      name: "Megaworld",
+      image: "/assets/partners/megaworld.png",
+    },
+    {
+      name: "Century Properties",
+      image: "/assets/partners/century.png",
+    },
+    {
+      name: "Rockwell Land",
+      image: "/assets/partners/rockwell_land.png",
+    },
+  ];
+
+  return (
     <main className="min-h-[calc(100vh-6rem)] flex flex-col">
       <div className="container mx-auto px-4 py-16 max-w-5xl">
         <section className="mb-20" aria-label="Developer Partners">
@@ -28,6 +62,18 @@ export const metadata: Metadata = {
             leasing from developers on ready-for-occupancy (RFO) units.
           </p>
 
+          <Marquee speed={50}>
+            {partners.map((partner) => (
+              <Image
+                key={partner.name}
+                src={partner.image}
+                alt={`${partner.name} - Real Estate Developer Partner`}
+                width={300}
+                height={300}
+                className="object-contain"
+              />
+            ))}
+          </Marquee>
         </section>
 
         <div className="flex justify-center">
@@ -73,4 +119,5 @@ export const metadata: Metadata = {
         }}
       />
     </main>
+  );
 }

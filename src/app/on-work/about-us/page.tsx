@@ -21,19 +21,19 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   const services = [
     {
-      title: "PROPERTY MANAGEMENT",
+      title: "FOR PROPERTY OWNERS",
       description:
-        "Whether you require solutions for maintenance and upkeep or profit and brokerage, we can manage your property for you.",
+        "We can take care of your real estate needs. From property management, selling, leasing, or open for booking, respective handling and maintenance, and even other real estate related or non-related needs for professional services, we can be your partner. Your effective real estate solutions, on us.",
     },
     {
-      title: "BROKERAGE",
+      title: "FOR LOOKING CLIENTS",
       description:
-        "You cannot go wrong with our service. It's our promise. With the help of our company branding, in-house sellers, and our incentivised broker network. We can sell or lease out your property faster than the usual.",
+        "Whether you're looking to buy, lease, or book, needing a contact professional to trust, and even other real estate related or non-related needs for professional services, we can be your partner. Your effective real estate solutions, on us.",
     },
     {
-      title: "MORE COMING SOON...",
+      title: "BROKER, AGENTS, FIRMS, & OTHER BUSINESSES",
       description:
-        "Our company is excited to centralize the market and put everyone's forte to good work under one name branding for established system and accountability. We will be opening more services available for you",
+        "Our company is committed to centralising the market and put everyone's forte to good work behind one name branding for established system and accountability. Become an Empyrean Partner and we will connect our leads and clients to you.",
     },
   ];
 

@@ -25,51 +25,59 @@ export default function BrokerAgentDeveloperPage() {
         </h1>
 
         <p className="text-[14px] md:text-lg text-center mb-16 max-w-4xl mx-auto">
-          Hit two birds with one stone. By joining Empyrean, you become part of our <strong>Empyrean&apos;s Broker Circle</strong> and be one with us in centralising Real Estate
-          and providing quality services clients plus you become part of <strong>Empyrean Business Network</strong> and <strong>Empyrean Professional Circles</strong>. 
-          <br /> <br /> As our partner, you&apos;d also be able to access our expanding network of businesses connected with Empyrean. 
-          You will be assigned an <strong>Empyrean Broker Manager</strong> to attend to all your inquiries 
-          in accessing our Business Network and Professional Circles. 
-          <br />   
+          Hit two birds with one stone. By joining Empyrean, you become part of
+          our <strong>Empyrean&apos;s Broker Circle</strong> and be one with us
+          in centralising Real Estate and providing quality services clients
+          plus you become part of <strong>Empyrean Business Network</strong> and{" "}
+          <strong>Empyrean Professional Circles</strong>.
+          <br /> <br /> As our partner, you&apos;d also be able to access our
+          expanding network of businesses connected with Empyrean. You will be
+          assigned an <strong>Empyrean Broker Manager</strong> to attend to all
+          your inquiries in accessing our Business Network and Professional
+          Circles.
           <br />
-          More opportunities of partnerships and closing deals! You access us, you access everyone.
-</p>
+          <br />
+          More opportunities of partnerships and closing deals! You access us,
+          you access everyone.
+        </p>
 
         {/* WHY JOIN US Section */}
- <section className="mb-10">
-  <h2 className="text-2xl font-bold text-center mb-6">WHY JOIN US</h2>
+        <section className="mb-10">
+          <h2 className="text-2xl font-bold text-center mb-6">WHY JOIN US</h2>
 
-  <div className="bg-[#808080] rounded-lg p-6 text-white">
-    <p>
-      We&rsquo;re aiming to centralise the industry and streamline the process
-      of doing real estate in the country; and we&rsquo;d need your help.
-    </p>
-    <br />
-    <p>
-      Empyrean Real Estate Solutions will establish a stronger presence in its
-      lifetime. This entails aggressive market penetration and brand awareness.
-      We will make noise locally with plans in taking it internationally to
-      attract and generate leads from targeted overseas locations to the
-      Philippines.
-    </p>
-    <br />
-    <p>
-      We generate leads, you close the deals. That&rsquo;s why we&rsquo;d like
-      to have you as partner.
-    </p>
-    <br />
-    <p>
-      It&rsquo;s no question, we know you close deals best. Upon generating
-      leads and client requirements are made-known, we will guide and direct
-      these inquiries to the right broker to best fit their needs. Let this
-      broker be you.
-    </p>
-    <br />
-    <p>
-      Join us streamline the process and be our partner in Sales and Leasing.
-    </p>
-  </div>
-</section>
+          <div className="bg-[#808080] rounded-lg p-6 text-white">
+            <p>
+              We&rsquo;re aiming to centralise the industry and streamline the
+              process of doing real estate in the country; and we&rsquo;d need
+              your help.
+            </p>
+            <br />
+            <p>
+              Empyrean Real Estate Solutions will establish a stronger presence
+              in its lifetime. This entails aggressive market penetration and
+              brand awareness. We will make noise locally with plans in taking
+              it internationally to attract and generate leads from targeted
+              overseas locations to the Philippines.
+            </p>
+            <br />
+            <p>
+              We generate leads, you close the deals. That&rsquo;s why
+              we&rsquo;d like to have you as partner.
+            </p>
+            <br />
+            <p>
+              It&rsquo;s no question, we know you close deals best. Upon
+              generating leads and client requirements are made-known, we will
+              guide and direct these inquiries to the right broker to best fit
+              their needs. Let this broker be you.
+            </p>
+            <br />
+            <p>
+              Join us streamline the process and be our partner in Sales and
+              Leasing.
+            </p>
+          </div>
+        </section>
 
         {/* Three Content Cards */}
         <div className="space-y-12 mb-10">
@@ -83,7 +91,7 @@ export default function BrokerAgentDeveloperPage() {
           />
           <ContentCard
             title="You are also our clients"
-            description="We are also at your service, inform us of any of your needs, and we&apos;ll tailor a custom solution for you."
+            description="We are also at your service, inform us of any of your needs, and we'll tailor a custom solution for you."
           />
         </div>
 
@@ -92,7 +100,7 @@ export default function BrokerAgentDeveloperPage() {
             asChild
             className="bg-[#494949] hover:bg-[#494949]/80 text-white rounded-full py-6 px-12"
           >
-            <Link href="/on-work/contact-us">Become a Broker Partner</Link>
+            <Link href="/contact-us">Become a Broker Partner</Link>
           </Button>
         </div>
       </div>

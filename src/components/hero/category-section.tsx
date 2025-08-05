@@ -4,22 +4,22 @@ export default function CategorySection() {
   const categories = [
     {
       title: "I AM A PROPERTY OWNER",
-      href: "/on-work/services/property-owner",
+      href: "/services/property-owner",
       bgColor: "bg-[#494949]",
     },
     {
       title: "I AM A BUYER/TENANT/GUEST",
-      href: "/on-work/services/buyer-tenant-guest",
+      href: "/services/buyer-tenant-guest",
       bgColor: "bg-[#595858]",
     },
     {
       title: "I AM A BUSINESS/PROFESSIONAL",
-      href: "/on-work/services/business-professional",
+      href: "/services/business-professional",
       bgColor: "bg-[#9f9f9f]",
     },
     {
       title: "I NEED MORE HELP",
-      href: "/on-work/contact-us",
+      href: "/contact-us",
       bgColor: "bg-[#cfcfcf]",
     },
   ];

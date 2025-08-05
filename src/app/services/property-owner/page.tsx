@@ -26,11 +26,17 @@ export default function PropertyOwnerPage() {
         </h1>
 
         <p className="text-[14px] md:text-lg text-center mb-16 max-w-4xl mx-auto">
-          A true one-stop shop for all things real estate. More than just handling your property, maintenance, profit and brokering, from legal and compliances with relevant authorities, 
-          Empyrean Real Estate Solutions can be your access to everyone, backed with our brand&apos;s core values.
+          A true one-stop shop for all things real estate. More than just
+          handling your property, maintenance, profit and brokering, from legal
+          and compliances with relevant authorities, Empyrean Real Estate
+          Solutions can be your access to everyone, backed with our brand&apos;s
+          core values.
         </p>
 
-        <div className="mb-12" aria-label="Empyrean Property Management Services">
+        <div
+          className="mb-12"
+          aria-label="Empyrean Property Management Services"
+        >
           <ContentCard title="Empyrean Property Management Services">
             <>
               You can authorise us as your SPA to hold the key of the unit for
@@ -82,7 +88,9 @@ export default function PropertyOwnerPage() {
               Incentivised Broker Circle.
               <br />
               <br />
-              Upon eligibility and with your approval, your property may also be featured in our following organic lead generation channels (among others we also utilise): 
+              Upon eligibility and with your approval, your property may also be
+              featured in our following organic lead generation channels (among
+              others we also utilise):
               <br />
               <br />
               <a
@@ -114,10 +122,10 @@ export default function PropertyOwnerPage() {
               Industry. We are committed to providing you real estate solutions.
               We cultivate <strong>Empyrean Business Network</strong> and{" "}
               <strong>Empyrean Professional Circles</strong> should you need any
-              more related services pertaining to your property. Empyrean offers in-house and partner services that deliver an
-              Empyrean-grade standard—from deep cleaning, regular maintenance,
-              repairs, and even home renovations and improvements. We got your
-              back!
+              more related services pertaining to your property. Empyrean offers
+              in-house and partner services that deliver an Empyrean-grade
+              standard—from deep cleaning, regular maintenance, repairs, and
+              even home renovations and improvements. We got your back!
               <br />
               <br />
               You can tap us for an inquiry or a quote, and we&apos;ll assign a
@@ -145,16 +153,17 @@ export default function PropertyOwnerPage() {
         <p className="text-[14px] md:text-lg text-center mb-16 max-w-4xl mx-auto">
           You will be assigned an{" "}
           <span className="font-bold">Empyrean Relationship Manager</span> to
-          keep track of your properties&apos; performance with us. They shall
-          be the one responsible in handling your account with us and attend to
-          all your inquiries in accessing our Business Network and Professional
+          keep track of your properties&apos; performance with us. They shall be
+          the one responsible in handling your account with us and attend to all
+          your inquiries in accessing our Business Network and Professional
           Circles or any concerns regarding your properties.
           <br />
           <br />
           With Empyrean, you&apos;d have our guarantee that we will reflect our
           core values in all our transactions: we are simple, we are competent,
-          we are accountable, and we are setting a quality standard. We are centralising Real Estate so it doesn&apos;t have to be
-          complicated for you. Your effective Real Estate Solutions, on us.
+          we are accountable, and we are setting a quality standard. We are
+          centralising Real Estate so it doesn&apos;t have to be complicated for
+          you. Your effective Real Estate Solutions, on us.
         </p>
 
         {/* Button with adjusted spacing */}
@@ -163,7 +172,7 @@ export default function PropertyOwnerPage() {
             asChild
             className="bg-[#494949] hover:bg-[#494949]/80 text-white rounded-full py-6 px-12"
           >
-            <Link href="/on-work/contact-us">Enlist with Empyrean</Link>
+            <Link href="/contact-us">Enlist with Empyrean</Link>
           </Button>
         </div>
 

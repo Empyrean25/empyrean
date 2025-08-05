@@ -22,7 +22,9 @@ export async function POST(req: NextRequest) {
       GMAIL_CLIENT_SECRET,
       "https://developers.google.com/oauthplayground"
     );
+
     oauth2Client.setCredentials({ refresh_token: GMAIL_REFRESH_TOKEN });
+
     const accessToken = await new Promise<string>((resolve, reject) => {
       oauth2Client.getAccessToken(
         (
@@ -70,7 +72,6 @@ export async function POST(req: NextRequest) {
     const mailOptions: Mail.Options = {
       from: GMAIL_SENDER,
       to: GMAIL_RECEIVER,
-      replyTo: email,
       subject: `New Empyrean Contact Form Submission from ${name}`,
       html: messageBody,
     };

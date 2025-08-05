@@ -56,10 +56,11 @@ export default function BrokerAgentDeveloperPage() {
             OUR DEVELOPER PARTNERS
           </h1>
 
-        <p className="text-[14px] md:text-lg text-center mb-16 max-w-4xl mx-auto">
-            To help our in-house sellers, we also accredit and partner with several developers
-            to offer our clients explore project selling and direct resale and
-            leasing from developers on ready-for-occupancy (RFO) units.
+          <p className="text-[14px] md:text-lg text-center mb-16 max-w-4xl mx-auto">
+            To help our in-house sellers, we also accredit and partner with
+            several developers to offer our clients explore project selling and
+            direct resale and leasing from developers on ready-for-occupancy
+            (RFO) units.
           </p>
 
           <Marquee speed={50}>
@@ -81,7 +82,7 @@ export default function BrokerAgentDeveloperPage() {
             asChild
             className="bg-[#494949] hover:bg-[#494949]/80 text-white rounded-full py-6 px-12"
           >
-            <Link href="/on-work/contact-us">Connect with us</Link>
+            <Link href="/contact-us">Connect with us</Link>
           </Button>
         </div>
       </div>

@@ -7,12 +7,15 @@ export default function CustomSolutions() {
         <h2 className="text-2xl font-bold mb-4">NEED A CUSTOM SOLUTION?</h2>
 
         <p className="text-[14px] md:text-base text-justify mb-8">
-          Let&rsquo;s talk! Our company is built on fostering quality relationships to observe the <strong>Empyrean Mark</strong>.
-          We&rsquo;d love to get to know you better so we can assess and evaluate how can we work together and tailor up arrangements personalised for you!
+          Let&rsquo;s talk! Our company is built on fostering quality
+          relationships to observe the <strong>Empyrean Mark</strong>.
+          We&rsquo;d love to get to know you better so we can assess and
+          evaluate how can we work together and tailor up arrangements
+          personalised for you!
         </p>
 
         <Link
-          href="/on-work/contact-us"
+          href="/contact-us"
           className="inline-block bg-white text-[#494949] px-6 py-2 rounded-full font-medium hover:bg-gray-100 transition-colors"
         >
           CONTACT US

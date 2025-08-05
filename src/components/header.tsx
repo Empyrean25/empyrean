@@ -32,12 +32,12 @@ const services = [
   {
     title: "I am a Property Owner",
     icon: Building2,
-    href: "/on-work/services/property-owner",
+    href: "/services/property-owner",
   },
   {
     title: "I am a Buyer/Tenant/Guest",
     icon: Users,
-    href: "/on-work/services/buyer-tenant-guest",
+    href: "/services/buyer-tenant-guest",
   },
 ];
 
@@ -46,17 +46,17 @@ const partners = [
     title: "I am a Broker/Agent/Realty Firm",
     description: "Partner with us to expand your business",
     icon: UserPlus,
-    href: "/on-work/services/broker-agent",
+    href: "/services/broker-agent",
   },
   {
     title: "I am a Developer Representative",
     icon: Building2,
-    href: "/on-work/services/developer",
+    href: "/services/developer",
   },
   {
     title: "I am a Business/Professional",
     icon: Building2,
-    href: "/on-work/services/business-professional",
+    href: "/services/business-professional",
   },
 ];
 
@@ -94,21 +94,24 @@ export default function Header() {
 
   return (
     <header className="w-full bg-white border-b border-gray-200 h-24 px-6 lg:px-12 flex items-center justify-between">
-<div className="flex items-center gap-4">
-  <Link href="/on-work/home" className="relative h-16 w-16">
-    <Image
-      src="/assets/empyrean-logo.png"
-      alt="Empyrean Logo"
-      fill
-      className="object-contain"
-    />
-  </Link>
-  <Link href="https://empyrean.ph/on-work/home" className="no-underline hover:no-underline">
-    <h1 className="text-gray-800 text-base sm:text-lg md:text-xl font-bold">
-      Empyrean Real Estate Solutions
-    </h1>
-  </Link>
-</div>
+      <div className="flex items-center gap-4">
+        <Link href="/home" className="relative h-16 w-16">
+          <Image
+            src="/assets/empyrean-logo.png"
+            alt="Empyrean Logo"
+            fill
+            className="object-contain"
+          />
+        </Link>
+        <Link
+          href="https://empyrean.ph/home"
+          className="no-underline hover:no-underline"
+        >
+          <h1 className="text-gray-800 text-base sm:text-lg md:text-xl font-bold">
+            Empyrean Real Estate Solutions
+          </h1>
+        </Link>
+      </div>
 
       {/* Desktop Navigation */}
       <nav className="hidden md:flex items-center">
@@ -120,7 +123,7 @@ export default function Header() {
                 className="text-[15px] font-normal text-gray-700 hover:text-gray-900 hover:bg-gray-100"
                 asChild
               >
-                <Link href="/on-work/home">Home</Link>
+                <Link href="/home">Home</Link>
               </Button>
             </NavigationMenuItem>
             <NavigationMenuItem>
@@ -129,7 +132,7 @@ export default function Header() {
                 className="text-[15px] font-normal text-gray-700 hover:text-gray-900 hover:bg-gray-100"
                 asChild
               >
-                <Link href="/on-work/about-us">About Us</Link>
+                <Link href="/about-us">About Us</Link>
               </Button>
             </NavigationMenuItem>
             <NavigationMenuItem>
@@ -172,7 +175,7 @@ export default function Header() {
                 className="text-[15px] font-normal text-gray-700 hover:text-gray-900 hover:bg-gray-100"
                 asChild
               >
-                <Link href="/on-work/contact-us">Contact Us</Link>
+                <Link href="/contact-us">Contact Us</Link>
               </Button>
             </NavigationMenuItem>
           </NavigationMenuList>
@@ -197,14 +200,14 @@ export default function Header() {
             <div className="py-4">
               <nav className="flex flex-col">
                 <Link
-                  href="/on-work/home"
+                  href="/home"
                   className="px-6 py-3 text-gray-700 hover:bg-gray-100"
                   onClick={closeSheet}
                 >
                   Home
                 </Link>
                 <Link
-                  href="/on-work/about-us"
+                  href="/about-us"
                   className="px-6 py-3 text-gray-700 hover:bg-gray-100"
                   onClick={closeSheet}
                 >
@@ -213,10 +216,10 @@ export default function Header() {
 
                 <Accordion type="single" collapsible className="w-full">
                   <AccordionItem value="services" className="border-none">
-                 <AccordionTrigger className="px-6 py-3 text-gray-700 hover:bg-gray-100 hover:no-underline normal-case">
-  Services
-</AccordionTrigger>
-                    
+                    <AccordionTrigger className="px-6 py-3 text-gray-700 hover:bg-gray-100 hover:no-underline normal-case">
+                      Services
+                    </AccordionTrigger>
+
                     <AccordionContent className="bg-gray-50">
                       {services.map((service) => (
                         <Link
@@ -232,9 +235,9 @@ export default function Header() {
                   </AccordionItem>
 
                   <AccordionItem value="partners" className="border-none">
-               <AccordionTrigger className="px-6 py-3 text-gray-700 hover:bg-gray-100 hover:no-underline normal-case">
-  Partners
-</AccordionTrigger>
+                    <AccordionTrigger className="px-6 py-3 text-gray-700 hover:bg-gray-100 hover:no-underline normal-case">
+                      Partners
+                    </AccordionTrigger>
                     <AccordionContent className="bg-gray-50">
                       {partners.map((partner) => (
                         <Link
@@ -251,7 +254,7 @@ export default function Header() {
                 </Accordion>
 
                 <Link
-                  href="/on-work/contact-us"
+                  href="/contact-us"
                   className="px-6 py-3 text-gray-700 hover:bg-gray-100"
                   onClick={closeSheet}
                 >

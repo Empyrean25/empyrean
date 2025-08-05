@@ -7,11 +7,13 @@ import Link from "next/link";
 import PartnerLogo from "@/components/partner-logo";
 
 export const metadata: Metadata = {
-  title: "About Us | Empyrean Real Estate Solutions - Your all-in-one access to the Philippine Real Estate",
+  title:
+    "About Us | Empyrean Real Estate Solutions - Your all-in-one access to the Philippine Real Estate",
   description:
     "Learn about Empyrean's mission, vision, and core values. We are a one-stop gateway to the entire real estate market, offering full access with transparency and accountability.",
   openGraph: {
-    title: "About Empyrean Real Estate Solutions - Your all-in-one access to the Philippine Real Estate",
+    title:
+      "About Empyrean Real Estate Solutions - Your all-in-one access to the Philippine Real Estate",
     description:
       "Discover Empyrean's mission to become the beacon of quality standards in real estate services. Learn about our core values of simplicity, competency, accountability, and quality.",
     type: "website",
@@ -66,7 +68,7 @@ export default function AboutPage() {
       <section className="flex flex-col md:flex-row min-h-fit md:min-h-[calc(100vh-6rem)] relative overflow-hidden">
         {/* LEFT: Text */}
         <div className="flex flex-col items-start justify-center w-full md:w-1/2 px-6 pt-8 md:pt-2 pb-8 md:pb-16 lg:pb-20 md:pl-16 md:pr-16 lg:pl-20 lg:pr-20 z-10 bg-white order-1 md:order-1">
-          <Link href="/on-work/home">
+          <Link href="/home">
             <Image
               src="/assets/empyrean.png"
               alt="Empyrean Banner"
@@ -76,19 +78,28 @@ export default function AboutPage() {
             />
           </Link>
 
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">What is Empyrean?</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">
+            What is Empyrean?
+          </h2>
           <p className="text-gray-800 mb-8 text-base md:text-lg leading-relaxed text-justify">
-            Empyrean Real Estate Solutions is one-stop gateway to the entire Philippine Real Estate—offering full
-            access from Brokerage: Project Selling, Resale and Leasing; Home Improvement: Planning, Construction,
-            and Renovation, and even acquiring your Furnitures and Decorations.
-            <br /><br />
-            We are a company backed by strong presence and branding, built-in accountability in its name,
-            established system and platform, and an expanding network of business partners built through fostering
-            quality relationships that reflects the <strong>Empyrean Mark</strong> delivering quality,
-            service-based, and results-oriented personalised experience.
-            <br /><br />
-            When you access us, you will access everyone. Your Real Estate, on us here at Empyrean.
-            Done with simplicity, competency, accountability, quality, and consistency above all.
+            Empyrean Real Estate Solutions is one-stop gateway to the entire
+            Philippine Real Estate—offering full access from Brokerage: Project
+            Selling, Resale and Leasing; Home Improvement: Planning,
+            Construction, and Renovation, and even acquiring your Furnitures and
+            Decorations.
+            <br />
+            <br />
+            We are a company backed by strong presence and branding, built-in
+            accountability in its name, established system and platform, and an
+            expanding network of business partners built through fostering
+            quality relationships that reflects the{" "}
+            <strong>Empyrean Mark</strong> delivering quality, service-based,
+            and results-oriented personalised experience.
+            <br />
+            <br />
+            When you access us, you will access everyone. Your Real Estate, on
+            us here at Empyrean. Done with simplicity, competency,
+            accountability, quality, and consistency above all.
           </p>
         </div>
 
@@ -130,34 +141,63 @@ export default function AboutPage() {
           <div className="text-center">
             <h2 className="text-3xl font-bold mb-6">OUR BRANDS</h2>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 justify-items-center">
-              <PartnerLogo imageSrc="/assets/partners/empyreanrealestatearm.png" name="Empyrean Brokerage Arm" />
-              <PartnerLogo imageSrc="/assets/partners/empyreanpropertymanagementandhospitality.png" name="Empyrean Property Management Arm" />
-              <PartnerLogo imageSrc="/assets/partners/empyreancommunities.png" name="Empyrean Communities" />
-              <PartnerLogo imageSrc="/assets/partners/empyreanbusinessnetwork.png" name="Empyrean Business Network" />
-              <PartnerLogo imageSrc="/assets/partners/empyreanprofessionalcircles.png" name="Empyrean Professional Circles" />
-              <PartnerLogo imageSrc="/assets/partners/empyreanprofessionalservices.png" name="Empyrean Professional Services" />
-              <PartnerLogo imageSrc="/assets/partners/thegoodproperties.png" name="TikTok: Manila Luxury Real Estate" />
-              <PartnerLogo imageSrc="/assets/partners/budgetrealestate.png" name="TikTok: Budget Real Estate" />
+              <PartnerLogo
+                imageSrc="/assets/partners/empyreanrealestatearm.png"
+                name="Empyrean Brokerage Arm"
+              />
+              <PartnerLogo
+                imageSrc="/assets/partners/empyreanpropertymanagementandhospitality.png"
+                name="Empyrean Property Management Arm"
+              />
+              <PartnerLogo
+                imageSrc="/assets/partners/empyreancommunities.png"
+                name="Empyrean Communities"
+              />
+              <PartnerLogo
+                imageSrc="/assets/partners/empyreanbusinessnetwork.png"
+                name="Empyrean Business Network"
+              />
+              <PartnerLogo
+                imageSrc="/assets/partners/empyreanprofessionalcircles.png"
+                name="Empyrean Professional Circles"
+              />
+              <PartnerLogo
+                imageSrc="/assets/partners/empyreanprofessionalservices.png"
+                name="Empyrean Professional Services"
+              />
+              <PartnerLogo
+                imageSrc="/assets/partners/thegoodproperties.png"
+                name="TikTok: Manila Luxury Real Estate"
+              />
+              <PartnerLogo
+                imageSrc="/assets/partners/budgetrealestate.png"
+                name="TikTok: Budget Real Estate"
+              />
             </div>
           </div>
         </div>
       </section>
 
       {/* Mission and Vision Section */}
-      <section className="py-16 px-8 md:px-16 container mx-auto" aria-label="Mission and Vision">
+      <section
+        className="py-16 px-8 md:px-16 container mx-auto"
+        aria-label="Mission and Vision"
+      >
         <div className="flex flex-col md:flex-row gap-12 text-center">
           <div className="w-full md:w-1/2 px-4 md:px-12">
             <h2 className="text-3xl font-bold mb-6">MISSION</h2>
             <p className="text-gray-800">
-              Become a brand of quality standard, centralised system, and
-              the quality partner of all professionals and clients alike
-              in doing Real Estate in the country.
+              Become a brand of quality standard, centralised system, and the
+              quality partner of all professionals and clients alike in doing
+              Real Estate in the country.
             </p>
           </div>
           <div className="w-full md:w-1/2 px-4 md:px-12">
             <h2 className="text-3xl font-bold mb-6">VISION</h2>
             <p className="text-gray-800">
-              A centralised system of doing Real Estate in the country built through quality relationships and commitment to quality and accountable service.
+              A centralised system of doing Real Estate in the country built
+              through quality relationships and commitment to quality and
+              accountable service.
             </p>
           </div>
         </div>
@@ -168,7 +208,11 @@ export default function AboutPage() {
         <h2 className="text-3xl font-bold mb-8">CORE VALUES</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {coreValues.map((value) => (
-            <CoreValueCard key={value.title} title={value.title} description={value.description} />
+            <CoreValueCard
+              key={value.title}
+              title={value.title}
+              description={value.description}
+            />
           ))}
         </div>
       </section>
@@ -183,7 +227,11 @@ export default function AboutPage() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
           {services.map((service) => (
-            <ServiceCard key={service.title} title={service.title} description={service.description} />
+            <ServiceCard
+              key={service.title}
+              title={service.title}
+              description={service.description}
+            />
           ))}
         </div>
 

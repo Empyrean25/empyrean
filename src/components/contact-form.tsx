@@ -1,6 +1,5 @@
 "use client";
 
-import { useState } from "react";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import * as z from "zod";
@@ -46,8 +45,6 @@ const formSchema = z.object({
 });
 
 export default function ContactForm() {
-  const [isSubmitting, setIsSubmitting] = useState(false);
-
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -60,24 +57,19 @@ export default function ContactForm() {
   });
 
   async function onSubmit(values: z.infer<typeof formSchema>) {
-    setIsSubmitting(true);
-
-    try {
-      console.log(values);
-      await new Promise((resolve) => setTimeout(resolve, 1000));
-
-      toast("Form submitted successfully!", {
-        description: "We'll get back to you as soon as possible.",
-      });
-
-      form.reset();
-    } catch {
-      toast("Something went wrong.", {
-        description: "Your form was not submitted. Please try again.",
-      });
-    } finally {
-      setIsSubmitting(false);
+    const res = await fetch("/api/contact", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(values),
+    });
+    if (res.ok) {
+      toast.success(
+        "Thank you! A representative from Empyrean will be in touch."
+      );
+    } else {
+      toast.error("Something went wrong. Please try again.");
     }
+    form.reset();
   }
 
   return (
@@ -228,10 +220,10 @@ export default function ContactForm() {
         <div className="flex justify-start">
           <Button
             type="submit"
-            disabled={isSubmitting}
+            disabled={form.formState.isSubmitting}
             className="bg-[#494949] hover:bg-[#494949]/80 text-white rounded-full py-4 w-full"
           >
-            {isSubmitting ? "Sending..." : "Send"}
+            {form.formState.isSubmitting ? "Sending..." : "Send"}
           </Button>
         </div>
       </form>

@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function CustomSolutions() {
   return (
     <div className="bg-[#494949] text-white py-12 px-8 w-full md:px-16 rounded-lg text-start flex flex-col items-start justify-start">
-      <div className="w-full max-w-3xl">
+      <div className="w-full">
         <h2 className="text-2xl font-bold mb-4">NEED A CUSTOM SOLUTION?</h2>
 
         <p className="text-[14px] md:text-base text-justify mb-8">

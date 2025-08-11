@@ -5,7 +5,7 @@ import Marquee from "@/components/Marquee";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Developer Services | Empyrean - Real Estate Development Partners",
+  title: "Developer Partnership | Empyrean Real Estate Corporation",
   description:
     "Partner with Empyrean for real estate development. We work with leading developers including Shangri-La, APMC, SMDC, Ayala Land, and more to bring quality properties to market.",
   openGraph: {

@@ -23,7 +23,7 @@ export default function Footer() {
               Empyrean Real Estate Solutions
             </h2>
             <p className="text-gray-800 max-w-md">
-              A one-stop gateway for all things real estate in the Philippines.
+              Your all-in-one access, a one-stop gateway for all things real estate in the Philippines.
               You access us, you access everyone.
             </p>
           </div>

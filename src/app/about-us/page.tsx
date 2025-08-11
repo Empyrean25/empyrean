@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     "Learn about Empyrean's mission, vision, and core values. We are a one-stop gateway to the entire real estate market, offering full access with transparency and accountability.",
   openGraph: {
     title:
-      "About Empyrean Real Estate Solutions - Your all-in-one access to the Philippine Real Estate",
+      "About Us | Empyrean Real Estate Solutions",
     description:
       "Discover Empyrean's mission to become the beacon of quality standards in real estate services. Learn about our core values of simplicity, competency, accountability, and quality.",
     type: "website",

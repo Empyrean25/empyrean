@@ -4,7 +4,7 @@ import { Metadata } from "next";
 import { ContentCard } from "@/components/content-card";
 
 export const metadata: Metadata = {
-  title: "Broker Network | Empyrean - Join Our Real Estate Broker Circle",
+  title: "Join Our Broker Circle | Empyrean Real Estate Solutions",
   description:
     "Join Empyrean's Broker Circle and be part of a centralized real estate platform. Partner with us to provide effective services and achieve faster market turnover.",
   openGraph: {

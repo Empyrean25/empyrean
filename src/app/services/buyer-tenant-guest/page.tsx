@@ -3,7 +3,7 @@ import { ContentCard } from "@/components/content-card";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Buyer & Tenant Services | Empyrean - Your Real Estate Partner",
+  title: "Looking Client Services | Empyrean Real Estate Solutions",
   description:
     "Find your perfect property with Empyrean. We provide comprehensive real estate services for buyers and tenants, ensuring accountability throughout your transaction.",
   openGraph: {

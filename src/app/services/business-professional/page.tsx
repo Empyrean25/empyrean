@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "Join Our Business Network | Empyrean Real Estate Solutions",
   description: "Join Empyrean Business Network.",
   openGraph: {
-    title: "Join Empyrean Business Network",
+    title: "Join Our Business Network | Empyrean Real Estate Solutions",
     description: "Become an Empyrean partner and access everyone.",
     type: "website",
   },

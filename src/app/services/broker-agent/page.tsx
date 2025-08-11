@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     "Join Empyrean's Broker Circle and be part of a centralized real estate platform. Partner with us to provide effective services and achieve faster market turnover.",
   openGraph: {
     title:
-      "Join Empyrean's Broker Circle - Real Estate Partnership Opportunities",
+      "Join Our Broker Circle | Empyrean Real Estate Solutions",
     description:
       "Become an Empyrean broker partner and access our centralized real estate platform. Join our network of professional brokers for better market reach and faster transactions.",
     type: "website",

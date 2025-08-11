@@ -8,7 +8,7 @@ import PartnerLogo from "@/components/partner-logo";
 
 export const metadata: Metadata = {
   title:
-    "About Us | Empyrean Real Estate Solutions - Your all-in-one access to the Philippine Real Estate",
+    "About Us | Empyrean Real Estate Solutions",
   description:
     "Learn about Empyrean's mission, vision, and core values. We are a one-stop gateway to the entire real estate market, offering full access with transparency and accountability.",
   openGraph: {

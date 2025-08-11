@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   description:
     "Maximize your property's potential with Empyrean. We offer comprehensive property management services, from maintenance to brokerage, ensuring effective market placement.",
   openGraph: {
-    title: "Property Owner Services | Empyrean - Real Estate Solutions",
+    title: "Property Owner Services | Empyrean Real Estate Solutions",
     description:
       "Access our extensive network of in-house sellers and incentivized brokers. We provide complete Real Estate Solutions for maintenance, leasing, and sales.",
     type: "website",

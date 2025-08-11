@@ -34,7 +34,7 @@ export default function BusinessPage() {
               <br />
               <br />
           Visit us <a
-                href="https://www.tiktok.com/@empyreanprofessionalcircles"
+                href="https://www.instagram.com/@empyreanprofessionalcircles"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="underline text-gray-800"

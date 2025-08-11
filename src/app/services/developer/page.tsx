@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   description:
     "Partner with Empyrean for real estate development. We work with leading developers including Shangri-La, APMC, SMDC, Ayala Land, and more to bring quality properties to market.",
   openGraph: {
-    title: "Developer Services | Empyrean - Real Estate Development Partners",
+    title: "Developer Partnership | Empyrean Real Estate Solutions",
     description:
       "Connect with Empyrean's network of premium real estate developers. We partner with industry leaders to deliver exceptional properties and development opportunities.",
     type: "website",

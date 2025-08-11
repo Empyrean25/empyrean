@@ -6,7 +6,7 @@ import { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "Property Owner Services | Empyrean - Real Estate Solutions",
+  title: "Property Owner Services | Empyrean Real Estate Solutions",
   description:
     "Maximize your property's potential with Empyrean. We offer comprehensive property management services, from maintenance to brokerage, ensuring effective market placement.",
   openGraph: {

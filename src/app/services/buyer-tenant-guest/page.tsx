@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description:
     "Find your perfect property with Empyrean. We provide comprehensive real estate services for buyers and tenants, ensuring accountability throughout your transaction.",
   openGraph: {
-    title: "Buyer & Tenant Services | Empyrean - Your Real Estate Partner",
+    title: "Looking Client Services | Empyrean Real Estate Solutions",
     description:
       "Experience exceptional real estate services with Empyrean. We're with you before, during, and after your transaction, ensuring your requirements are met.",
     type: "website",

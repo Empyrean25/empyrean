@@ -26,6 +26,22 @@ export default function BusinessPage() {
           our identity. That&apos;s why we cultivate{" "}
           <strong>Empyrean Business Network</strong> and{" "}
           <strong>Empyrean Professional Circles</strong>.
+
+          <br />
+          <br />
+          With {" "}<strong>Empyrean Communities</strong>, we organise several events in the Metro for our constituents to meet new 
+          people, expand their network, form partnerships and collaborate for personal, career, or business growth.
+              <br />
+              <br />
+          Visit us <a
+                href="https://www.tiktok.com/@empyreanprofessionalcircles"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline text-gray-800"
+              >
+                @empyreanprofessionalcircles
+              </a>{" "}
+          on Instagram.
         </p>
 
         <section

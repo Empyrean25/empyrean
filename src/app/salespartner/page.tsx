@@ -1,6 +1,7 @@
 import { ContentCard } from "@/components/content-card";
 import CustomSolutions from "@/components/custom-solutions";
 import { Metadata } from "next";
+import Script from "next/script";
 
 export const metadata: Metadata = {
   title: "Sales Partner | Empyrean Real Estate Solutions",
@@ -24,23 +25,20 @@ export default function BrokerAgentDeveloperPage() {
 
         <p className="text-[14px] md:text-lg text-center mb-14 max-w-4xl mx-auto">
           We are glad to have your interests in joining us at Empyrean as a Sales Partner whether
-          an In-House or under a separate Broker Partner.
-          By having access to this page, you have expressed your interests and you have been invited
-          to form partnership. We should have your full contact details
-          by now. If you haven&apos;t yet, please make sure to formally sign up through our{" "}
-              <a
-                href="https://www.empyrean.ph/contact-us"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="underline text-gray-800"
-              >
-                contact form
-              </a>
-              .
+          an In-House or under a separate Broker Partner. By having access to this page, you have
+          expressed your interest and you have been invited to form a partnership. We should have
+          your full contact details by now. If you haven&apos;t yet, please make sure to formally sign up through our{" "}
+          <a
+            href="https://www.empyrean.ph/contact-us"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline text-gray-800"
+          >
+            contact form
+          </a>.
           <br />
           <br />
-          This page shall serve as your <strong>Sales Partner Primer</strong> to help you navigate our system at Empyrean better. It shall contain FAQs, link directories, and everything you need to
-              know as a Sales Partner here at Empyrean..
+          This page shall serve as your <strong>Sales Partner Primer</strong> to help you navigate our system at Empyrean better. It contains FAQs, link directories, and everything you need to know as a Sales Partner here at Empyrean.
         </p>
 
         {/* Your First Steps Section */}
@@ -52,11 +50,11 @@ export default function BrokerAgentDeveloperPage() {
           <ContentCard title="Join Empyrean Partner Announcements in Viber">
             <>
               While your email address is automatically added to our mailing list, joining our
-                Announcement channel ensures you receive realtime updates for any of our opportunities,
-                system improvements, and events.
-                <br />
-                <br />
-              You may join Empyrean Parner Announcement by clicking {" "}
+              Announcement channel ensures you receive realtime updates for any of our opportunities,
+              system improvements, and events.
+              <br />
+              <br />
+              You may join Empyrean Partner Announcements by clicking{" "}
               <a
                 href="https://invite.viber.com/?g2=AQBuDuOs8ZakelU1VdhF1fsQyuyf9PWwqRG2%2FtfJjnjrMG8X%2BaGMrHnbBzjOu5rx"
                 target="_blank"
@@ -64,8 +62,7 @@ export default function BrokerAgentDeveloperPage() {
                 className="underline text-gray-800"
               >
                 here
-              </a>
-              .
+              </a>.
             </>
           </ContentCard>
         </div>
@@ -73,13 +70,13 @@ export default function BrokerAgentDeveloperPage() {
         <div className="mb-12" aria-label="Join Empyrean Sales Partner Platform in WhatsApp">
           <ContentCard title="Join Empyrean Sales Partner Platform in WhatsApp">
             <>
-              While we are working on our very own Empyrean One-stop Platform as Application, we are currently using WhatsApp as our main medium of correspondence and coordination for any requests.
-                <br />
-                <br />
-                Here you will see subgroups where Sales Partners discuss, and there&apos;s also subgroups to request for Property Listings and requests for Listing Availability and Schedules.
+              While we are working on our very own Empyrean One-stop Platform as an application, we are currently using WhatsApp as our main medium of correspondence and coordination for any requests.
               <br />
               <br />
-          Join the Sales Partner Platform on {" "}
+              Here you will see subgroups where Sales Partners discuss, and there&apos;s also subgroups to request for Property Listings and requests for Listing Availability and Schedules.
+              <br />
+              <br />
+              Join the Sales Partner Platform on{" "}
               <a
                 href="https://chat.whatsapp.com/B5Ni4SDNXm60QZ7JXnlPVr"
                 target="_blank"
@@ -98,7 +95,7 @@ export default function BrokerAgentDeveloperPage() {
               For your convenience, we have prepared a directory at your disposal when you get lost in our system.
               <br />
               <br />
-          Visit our {" "}
+              Visit our{" "}
               <a
                 href="https://empyreanrealestate.carrd.co"
                 target="_blank"
@@ -111,62 +108,46 @@ export default function BrokerAgentDeveloperPage() {
           </ContentCard>
         </div>
 
-         {/* FAQs Section */}
+        {/* FAQs Section */}
         <section className="mb-10">
           <h2 className="text-2xl font-bold text-center mb-6">Frequently Asked Questions</h2>
-          
-<section className="max-w-5xl mx-auto my-8">
-  <div className="bg-white border border-gray-300 rounded-lg p-8 md:p-12 text-gray-700">
-    <p>
-      <strong>
-        I am a freelancer, a broker, an agent under a broker, or a Real Estate firm, isn&apos;t Empyrean a competitor?
-      </strong>
-      <br /><br />
-      No. Although Empyrean would be having in-house sellers to accommodate any influx of
-      leads, we do not aim to compete with our partner professionals and experts in the
-      industry. Instead, we aim to collaborate and partner with them to provide our primary
-      service, which is providing support to all key players in the industry as our primary
-      service thereby cultivating a centralised system of conducting real estate.
-      <br /><br />
-      This is why we incentivise our broker partners with an attractive commission-split setups
-      up to 75/25 splits in favour of the partner to support our partners in closing the leads
-      our company has generated.
-      <br /><br />
-      
-      <strong>How do I avail better commission-splits as a partner.</strong>
-      <br /><br />
-      Better commission-splits are offered to our Official Broker Partners offered by invite-
-      only subject to Empyrean&apos;s Eligibility Requirements.
-      <br /><br />
-      
-      <strong>I have a client looking to lease/buy. How can I avail your services?</strong>
-      <br /><br />
-      Please go through our public listing database if one of our listings fit your clint&apos;s requirements. If yes, you may ask for availability and viewing schedule accordingly. If no, you have the option to request assistance from Empyrean to explore the market for you by submitting a listing request.
-      <br /><br />
-      
-      <strong>How do I submit a request?</strong>
-      <br /><br />
-      Simply message a corresponding subgroup within our Sales Partner Platform to be acknolwedged by our dedicated team.
-      <br /><br />
-    </p>
-  </div>
-</section>
-
+          <div className="bg-white border border-gray-300 rounded-lg p-8 md:p-12 text-gray-700">
+            <p>
+              <strong>I am a freelancer, a broker, an agent under a broker, or a Real Estate firm, isn&apos;t Empyrean a competitor?</strong>
+              <br /><br />
+              No. Although Empyrean has in-house sellers to accommodate any influx of leads, we do not aim to compete with our partner professionals and experts in the industry. Instead, we aim to collaborate and partner with them to provide our primary service, which is supporting all key players in the industry, cultivating a centralised real estate system.
+              <br /><br />
+              This is why we incentivise our broker partners with attractive commission-split setups up to 75/25 in favour of the partner to support them in closing the leads our company generates.
+              <br /><br />
+              <strong>How do I avail better commission-splits as a partner?</strong>
+              <br /><br />
+              Better commission-splits are offered to our Official Broker Partners by invite-only, subject to Empyrean&apos;s Eligibility Requirements.
+              <br /><br />
+              <strong>I have a client looking to lease/buy. How can I avail your services?</strong>
+              <br /><br />
+              Please check our public listing database to see if one of our listings fits your client&apos;s requirements. If yes, you may request availability and viewing schedules. If not, you can request assistance from Empyrean by submitting a listing request.
+              <br /><br />
+              <strong>How do I submit a request?</strong>
+              <br /><br />
+              Simply message a corresponding subgroup within our Sales Partner Platform to be acknowledged by our dedicated team.
+            </p>
+          </div>
+        </section>
 
         <p className="text-[14px] md:text-lg text-center mb-16 max-w-4xl mx-auto">
-      Again, we are very glad to have you with us. Should you have any questions or feedback, please feel free to let us know by contacting your Relationship Manager or contacting us through our available channels.
-              <br />
-              <br />
-              Upwards and onwards, flying high to the sky, through the clouds, Empyreans!
+          Again, we are very glad to have you with us. Should you have any questions or feedback, please contact your Relationship Manager or reach out through our available channels.
+          <br />
+          <br />
+          Upwards and onwards, flying high to the sky, through the clouds, Empyreans!
         </p>
 
-        
         <div className="mt-12">
           <CustomSolutions />
         </div>
       </div>
 
-      <script
+      <Script
+        id="structured-data"
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({

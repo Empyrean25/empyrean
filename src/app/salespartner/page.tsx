@@ -27,47 +27,21 @@ export default function BrokerAgentDeveloperPage() {
         <p className="text-[14px] md:text-lg text-center mb-16 max-w-4xl mx-auto">
           We are glad to have your interests in joining us at Empyrean as a Sales Partner whether
           an In-House or under a separate Broker Partner.
-          By seeing this page, you have expressed your interests and you have been invited 
+          <br /><br />By having access to this page, you have expressed your interests and you have been invited 
           to be part of our Professional Circles. We should have your full contact deails
           by now. If you haven&apos;t yet, please make sure to formally sign up through our contact form.
-          <br />
+          <br /><br />
           This page shall serve as your <strong>Sales Partner Primer</strong> to help you navigate our system at Empyrean better. 
         </p>
 
-        {/* WHY JOIN US Section */}
+        {/* BEGIN HERE Section */}
         <section className="mb-10">
-          <h2 className="text-2xl font-bold text-center mb-6">WHY JOIN US</h2>
+          <h2 className="text-2xl font-bold text-center mb-6">BEGIN HERE</h2>
 
           <div className="bg-[#808080] rounded-lg p-6 text-white">
             <p>
-              We&rsquo;re aiming to centralise the industry and streamline the
-              process of doing real estate in the country; and we&rsquo;d need
-              your help.
-            </p>
-            <br />
-            <p>
-              Empyrean Real Estate Solutions will establish a stronger presence
-              in its lifetime. This entails aggressive market penetration and
-              brand awareness. We will make noise locally with plans in taking
-              it internationally to attract and generate leads from targeted
-              overseas locations to the Philippines.
-            </p>
-            <br />
-            <p>
-              We generate leads, you close the deals. That&rsquo;s why
-              we&rsquo;d like to have you as partner.
-            </p>
-            <br />
-            <p>
-              It&rsquo;s no question, we know you close deals best. Upon
-              generating leads and client requirements are made-known, we will
-              guide and direct these inquiries to the right broker to best fit
-              their needs. Let this broker be you.
-            </p>
-            <br />
-            <p>
-              Join us streamline the process and be our partner in Sales and
-              Leasing.
+              This page contains FAQs, link directories, and everything you need to
+know as a Sales Partner here at Empyrean.
             </p>
           </div>
         </section>

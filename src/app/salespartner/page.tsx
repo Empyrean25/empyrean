@@ -116,8 +116,7 @@ export default function BrokerAgentDeveloperPage() {
          {/* FAQs Section */}
         <section className="mb-10">
           <h2 className="text-2xl font-bold text-center mb-6">Frequently Asked Questions</h2>
-        </section>
-
+          
 <div className="bg-[#808080] rounded-lg p-6 text-white">
         <p><strong>I am a freelancer, a broker, an agent under a broker, or a Real Estate firm, isn&apos;t
 Empyrean a competitor?</strong><br /><br />
@@ -150,7 +149,8 @@ only subject to Empyrean&apos;s Eligibility Requirements.<br /><br />
               <br />
               <br />
               Upwards and onwards, flying high to the sky, through the clouds, Empyreans!
-        </p></div>
+        </p></div></section>
+
         
         <div className="mt-12">
           <CustomSolutions />

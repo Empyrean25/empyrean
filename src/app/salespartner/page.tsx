@@ -115,32 +115,43 @@ export default function BrokerAgentDeveloperPage() {
         <section className="mb-10">
           <h2 className="text-2xl font-bold text-center mb-6">Frequently Asked Questions</h2>
           
-<div className="bg-[#FFFFFF] border-gray-300 rounded-lg p-8 md:p-12 text-gray">
-        <p><strong>I am a freelancer, a broker, an agent under a broker, or a Real Estate firm, isn&apos;t
-Empyrean a competitor?</strong><br /><br />
-          No. Although Empyrean would be having in-house sellers to accommodate any influx of
-leads, we do not aim to compete with our partner professionals and experts in the
-industry. Instead, we aim to collaborate and partner with them to provide our primary
-service, which is providing support to all key players in the industry as our primary
-service thereby cultivating a centralised system of conducting real estate.<br /><br />
-This is why we incentivise our broker partners with an attractive commission-split setups
-up to 75/25 splits in favour of the partner to support our partners in closing the leads
-our company has generated.<br /><br />
+<section className="max-w-5xl mx-auto my-8">
+  <div className="bg-white border border-gray-300 rounded-lg p-8 md:p-12 text-gray-700">
+    <p>
+      <strong>
+        I am a freelancer, a broker, an agent under a broker, or a Real Estate firm, isn&apos;t Empyrean a competitor?
+      </strong>
+      <br /><br />
+      No. Although Empyrean would be having in-house sellers to accommodate any influx of
+      leads, we do not aim to compete with our partner professionals and experts in the
+      industry. Instead, we aim to collaborate and partner with them to provide our primary
+      service, which is providing support to all key players in the industry as our primary
+      service thereby cultivating a centralised system of conducting real estate.
+      <br /><br />
+      This is why we incentivise our broker partners with an attractive commission-split setups
+      up to 75/25 splits in favour of the partner to support our partners in closing the leads
+      our company has generated.
+      <br /><br />
+      
+      <strong>How do I avail better commission-splits as a partner.</strong>
+      <br /><br />
+      Better commission-splits are offered to our Official Broker Partners offered by invite-
+      only subject to Empyrean&apos;s Eligibility Requirements.
+      <br /><br />
+      
+      <strong>I have a client looking to lease/buy. How can I avail your services?</strong>
+      <br /><br />
+      Please go through our public listing database if one of our listings fit your clint&apos;s requirements. If yes, you may ask for availability and viewing schedule accordingly. If no, you have the option to request assistance from Empyrean to explore the market for you by submitting a listing request.
+      <br /><br />
+      
+      <strong>How do I submit a request?</strong>
+      <br /><br />
+      Simply message a corresponding subgroup within our Sales Partner Platform to be acknolwedged by our dedicated team.
+      <br /><br />
+    </p>
+  </div>
+</section>
 
-          <strong>How do I avail better commission-splits as a partner.</strong><br /><br />
-
-          Better commission-splits are offered to our Official Broker Partners offered by invite-
-only subject to Empyrean&apos;s Eligibility Requirements.<br /><br />
-
-           <strong>I have a client looking to lease/buy. How can I avail your services?</strong><br /><br />
-
-          Please go through our public listing database if one of our listings fit your clint&apos;s requirements. If yes, you may ask for availability and viewing schedule accordingly. If no, you have the option to request assistance from Empyrean to explore the market for you by submitting a listing request. 
-        <br /><br />
-
-           <strong>How do I submit a request?</strong><br /><br />
-
-        Simply message a corresponding subgroup within our Sales Partner Platform to be acknolwedged by our dedicated team.<br /><br />
-        </p></div></section>
 
         <p className="text-[14px] md:text-lg text-center mb-16 max-w-4xl mx-auto">
       Again, we are very glad to have you with us. Should you have any questions or feedback, please feel free to let us know by contacting your Relationship Manager or contacting us through our available channels.

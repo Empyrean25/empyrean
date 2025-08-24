@@ -1,7 +1,3 @@
-import { Metadata } from "next";
-import { ContentCard } from "@/components/content-card";
-import Script from "next/script";
-
 export const metadata: Metadata = {
   title: "Sales Partner | Empyrean Real Estate Solutions",
   description:
@@ -46,86 +42,104 @@ export default function BrokerAgentDeveloperPage() {
           </div>
         </section>
 
-        {/* Three Content Cards */}
-        <div className="space-y-12 mb-10">
-          <ContentCard
-            title="Join Empyrean Partner Announcements in Viber"
-            description={
-              <>
-                While your email address is automatically added to our mailing list, joining our
+        <div className="mb-12" aria-label="Join Empyrean Partner Announcements in Viber">
+          <ContentCard title="Join Empyrean Partner Announcements in Viber">
+            <>
+              While your email address is automatically added to our mailing list, joining our
                 Announcement channel ensures you receive realtime updates for any of our opportunities,
                 system improvements, and events.
                 <br />
                 <br />
-                You may visit our Empyrean Hospitality Page at the{" "}
-                <a
-                  href="https://www.airbnb.co.uk/users/show/370722533"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="underline text-gray-800"
-                >
-                  Airbnb Website
-                </a>
-                .
-              </>
-            }
-          />
+              You may visit our Empyrean Hospitality Page at the{" "}
+              <a
+                href="https://www.airbnb.co.uk/users/show/370722533"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline text-gray-800"
+              >
+                Airbnb Website
+              </a>
+              .
+            </>
+          </ContentCard>
+        </div>
 
-          <ContentCard
-            title="Join Empyrean Sales Partner Platform in WhatsApp"
-            description={
-              <>
-                While we are working on our very own Empyrean One-stop Platform as Application, we are currently using WhatsApp as our main medium of correspondence and coordination for any requests.
+        <div className="mb-12" aria-label="Join Empyrean Sales Partner Platform in WhatsApp">
+          <ContentCard title="Join Empyrean Sales Partner Platform in WhatsApp">
+            <>
+              While we are working on our very own Empyrean One-stop Platform as Application, we are currently using WhatsApp as our main medium of correspondence and coordination for any requests.
                 <br />
                 <br />
                 Here you will see subgroups where Sales Partners discuss, and there&apos;s also subgroups to request for Property Listings and requests for Listing Availability and Schedules.
-              </>
-            }
-          />
-
-          <ContentCard
-            title="Take note of our Link Directory"
-            description={
-              <>
-                For your convenience, we have prepared a directory at your disposal when you get lost in our system.
-              </>
-            }
-          />
+              <br />
+              <br />
+              <a
+                href="https://www.tiktok.com/@thegoodproperties"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline text-gray-800"
+              >
+                Manila Luxury Real Estate
+              </a>{" "}
+              and{" "}
+              <a
+                href="https://www.tiktok.com/@budgetrealestate"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline text-gray-800"
+              >
+                Budget Real Estate
+              </a>{" "}
+              on TikTok.
+            </>
+          </ContentCard>
         </div>
 
-        <section className="mb-10">
-          <div className="bg-[#808080] rounded-lg p-6 text-white">
-            <p>
+        <div className="space-y-12 mb-10">
+          <ContentCard title="Take note of our Link Directory">
+            <>
+              For your convenience, we have prepared a directory at your disposal when you get lost in our system.
+            </>
+          </ContentCard>
+        </div>
+      
+        <p>
               Again, we are very glad to have you with us. Should you have any questions or feedback, please feel free to let us know by contacting your Relationship Manager or contacting us through our available channels.
               <br />
               <br />
               Upwards and onwards, flying high to the sky, through the clouds, Empyreans!
             </p>
-          </div>
-        </section>
+
+        <div className="mt-12">
+          <CustomSolutions />
+        </div>
       </div>
 
-      {/* Structured Data */}
-      <Script
-        id="structured-data"
+      <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Service",
-            name: "Real Estate Broker Circle",
+            name: "Property Management Services",
             provider: {
               "@type": "Organization",
               name: "Empyrean",
             },
             description:
-              "Join Empyrean's broker circle and be part of a centralized real estate platform. Partner with us to provide effective services and achieve faster market turnover.",
+              "Comprehensive property management services including maintenance, leasing, and sales through our extensive network.",
             offers: {
               "@type": "Offer",
-              category: "Real Estate Brokerage",
+              category: "Property Management",
               description:
-                "Join our Broker Circle and be one with us in centralising Real Estate and providing effective services minimising hindrance to smoother and faster market turnover.",
+                "Complete Real Estate Solutions including maintenance, keyholding, leasing, and sales services.",
             },
+            serviceType: [
+              "Property Management",
+              "Maintenance Services",
+              "Property Sales",
+              "Property Leasing",
+            ],
             areaServed: {
               "@type": "Country",
               name: "Philippines",

@@ -22,11 +22,9 @@ export default function BrokerAgentDeveloperPage() {
           WELCOME TO EMPYREAN, SALES PARTNER!
         </h1>
 
-        <p className="text-[14px] md:text-lg text-center mb-16 max-w-4xl mx-auto">
+        <p className="text-[14px] md:text-lg text-center mb-14 max-w-4xl mx-auto">
           We are glad to have your interests in joining us at Empyrean as a Sales Partner whether
           an In-House or under a separate Broker Partner.
-          <br />
-          <br />
           By having access to this page, you have expressed your interests and you have been invited
           to form partnership. We should have your full contact details
           by now. If you haven&apos;t yet, please make sure to formally sign up through our{" "}
@@ -117,7 +115,7 @@ export default function BrokerAgentDeveloperPage() {
         <section className="mb-10">
           <h2 className="text-2xl font-bold text-center mb-6">Frequently Asked Questions</h2>
           
-<div className="bg-[#808080] rounded-lg p-6 text-white">
+<div className="bg-[#FFFFFF] rounded-lg p-6 text-white">
         <p><strong>I am a freelancer, a broker, an agent under a broker, or a Real Estate firm, isn&apos;t
 Empyrean a competitor?</strong><br /><br />
           No. Although Empyrean would be having in-house sellers to accommodate any influx of
@@ -142,14 +140,14 @@ only subject to Empyrean&apos;s Eligibility Requirements.<br /><br />
            <strong>How do I submit a request?</strong><br /><br />
 
         Simply message a corresponding subgroup within our Sales Partner Platform to be acknolwedged by our dedicated team.<br /><br />
-        </p>
+        </p></div></section>
 
         <p className="text-[14px] md:text-lg text-center mb-16 max-w-4xl mx-auto">
       Again, we are very glad to have you with us. Should you have any questions or feedback, please feel free to let us know by contacting your Relationship Manager or contacting us through our available channels.
               <br />
               <br />
               Upwards and onwards, flying high to the sky, through the clouds, Empyreans!
-        </p></div></section>
+        </p>
 
         
         <div className="mt-12">

@@ -4,12 +4,12 @@ import { Metadata } from "next";
 import { ContentCard } from "@/components/content-card";
 
 export const metadata: Metadata = {
-  title: "Join Our Broker Circle | Empyrean Real Estate Solutions",
+  title: "Sales Partner | Empyrean Real Estate Solutions",
   description:
     "Join Empyrean's Broker Circle and be part of a centralized real estate platform. Partner with us to provide effective services and achieve faster market turnover.",
   openGraph: {
     title:
-      "Join Our Broker Circle | Empyrean Real Estate Solutions",
+      "Sales Partner | Empyrean Real Estate Solutions",
     description:
       "Become an Empyrean broker partner and access our centralized real estate platform. Join our network of professional brokers for better market reach and faster transactions.",
     type: "website",
@@ -21,24 +21,17 @@ export default function BrokerAgentDeveloperPage() {
     <main className="min-h-screen flex flex-col">
       <div className="container mx-auto px-4 py-16 max-w-5xl">
         <h1 className="text-3xl md:text-4xl font-bold text-center mb-8">
-          JOIN OUR BROKER CIRCLE
+          WELCOME TO EMPYREAN, SALES PARTNER!
         </h1>
 
         <p className="text-[14px] md:text-lg text-center mb-16 max-w-4xl mx-auto">
-          Hit two birds with one stone. By joining Empyrean, you become part of
-          our <strong>Empyrean&apos;s Broker Circle</strong> and be one with us
-          in centralising Real Estate and providing quality services clients
-          plus you become part of <strong>Empyrean Business Network</strong> and{" "}
-          <strong>Empyrean Professional Circles</strong>.
-          <br /> <br /> As our partner, you&apos;d also be able to access our
-          expanding network of businesses connected with Empyrean. You will be
-          assigned an <strong>Empyrean Broker Manager</strong> to attend to all
-          your inquiries in accessing our Business Network and Professional
-          Circles.
+          We are glad to have your interests in joining us at Empyrean as a Sales Partner whether
+          an In-House or under a separate Broker Partner.
+          By seeing this page, you have expressed your interests and you have been invited 
+          to be part of our Professional Circles. We should have your full contact deails
+          by now. If you haven&apos;t yet, please make sure to formally sign up through our contact form.
           <br />
-          <br />
-          More opportunities of partnerships and closing deals! You access us,
-          you access everyone.
+          This page shall serve as your <strong>Sales Partner Primer</strong> to help you navigate our system at Empyrean better. 
         </p>
 
         {/* WHY JOIN US Section */}

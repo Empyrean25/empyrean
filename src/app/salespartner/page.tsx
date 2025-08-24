@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { Metadata } from "next";
 import { ContentCard } from "@/components/content-card";
 import Script from "next/script";

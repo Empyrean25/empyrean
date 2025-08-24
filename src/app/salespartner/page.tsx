@@ -115,7 +115,7 @@ export default function BrokerAgentDeveloperPage() {
         <section className="mb-10">
           <h2 className="text-2xl font-bold text-center mb-6">Frequently Asked Questions</h2>
           
-<div className="bg-[#FFFFFF] rounded-lg p-6 text-white">
+<div className="bg-[#FFFFFF] rounded-lg p-6 text-gray">
         <p><strong>I am a freelancer, a broker, an agent under a broker, or a Real Estate firm, isn&apos;t
 Empyrean a competitor?</strong><br /><br />
           No. Although Empyrean would be having in-house sellers to accommodate any influx of

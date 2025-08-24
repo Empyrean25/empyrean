@@ -75,16 +75,16 @@ export default function HeroSection() {
             style={{ opacity: headerOpacity }}
             className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4"
           >
-            YOU ACCESS US, YOU ACCESS EVERYONE
+            ACCESS EVERYONE, THROUGH EMPYREAN
           </motion.h2>
 
           <motion.p
             style={{ opacity: subheaderOpacity }}
             className="md:text-lg mb-18 max-w-3xl mx-auto"
           >
-            Centralising Real Estate, streamlining the process.
+            Centralising all-things Real Estate, brokerage, maintenance, improvement to renovation, we're streamlining the process.
             <br />
-            Access everyone, through Empyrean.
+            You access us, you access everyone.
           </motion.p>
 
           <motion.div style={{ opacity: buttonOpacity }}>

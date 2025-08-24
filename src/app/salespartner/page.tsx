@@ -52,7 +52,18 @@ export default function BrokerAgentDeveloperPage() {
         <div className="space-y-12 mb-10">
           <ContentCard
             title="Join Empyrean Partner Announcements in Viber"
-            description="While your email address are automatically added to our mailing list, joining our Announcement channel ensures you receive realtime updates for any of our opportunities, system improvements, and events."
+            description="While your email address are automatically added to our mailing list, joining our Announcement channel ensures you receive realtime updates for any of our opportunities, system improvements, and events.
+            <br />
+              <br />
+              You may visit our Empyrean Hospitality Page at the{" "}
+              <a
+                href="https://www.airbnb.co.uk/users/show/370722533"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline text-gray-800"
+              >
+                Airbnb Website
+              </a>"
           />
           <ContentCard
             title="Join Empyrean Sales Partner Platform in WhatsApp"

@@ -83,7 +83,7 @@ export default function HeroSection() {
             className="md:text-lg mb-18 max-w-3xl mx-auto"
           >
             Centralising all-things Real Estate in the Philippines.
-            <br /> From brokerage, maintenance, improvement to renovation and construction; streamlining the process.
+            <br /> From brokerage, maintenance, improvement to renovation; streamlining the process.
             <br />
             You access us, you access everyone.
           </motion.p>

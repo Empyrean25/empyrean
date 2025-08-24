@@ -82,7 +82,7 @@ export default function HeroSection() {
             style={{ opacity: subheaderOpacity }}
             className="md:text-lg mb-18 max-w-3xl mx-auto"
           >
-            Centralising all-things Real Estate, brokerage, maintenance, improvement to renovation, we're streamlining the process.
+            Centralising all-things Real Estate, brokerage, maintenance, improvement to renovation; streamlining the process.
             <br />
             You access us, you access everyone.
           </motion.p>

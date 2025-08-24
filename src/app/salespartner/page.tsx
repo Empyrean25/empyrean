@@ -111,18 +111,25 @@ export default function BrokerAgentDeveloperPage() {
           </ContentCard>
         </div>
       
-        <p>
-              Again, we are very glad to have you with us. Should you have any questions or feedback, please feel free to let us know by contacting your Relationship Manager or contacting us through our available channels.
+        <p className="text-[14px] md:text-lg text-center mb-16 max-w-4xl mx-auto">
+      Again, we are very glad to have you with us. Should you have any questions or feedback, please feel free to let us know by contacting your Relationship Manager or contacting us through our available channels.
               <br />
               <br />
               Upwards and onwards, flying high to the sky, through the clouds, Empyreans!
-            </p>
+        </p>
 
          {/* FAQs Section */}
         <section className="mb-10">
           <h2 className="text-2xl font-bold text-center mb-6">Frequently Asked Questions</h2>
         </section>
 
+        <p>Again, we are very glad to have you with us. Should you have any questions or feedback, please feel free to let us know by contacting your Relationship Manager or contacting us through our available channels.
+          <br />
+          <br />
+          Upwards and onwards, flying high to the sky, through the clouds, Empyreans!
+        </p>
+
+        
         <div className="mt-12">
           <CustomSolutions />
         </div>

@@ -58,14 +58,14 @@ export default function BrokerAgentDeveloperPage() {
                 system improvements, and events.
                 <br />
                 <br />
-              You may visit our Empyrean Hospitality Page at the{" "}
+              You may join Empyrean Parner Announcement by clicking {" "}
               <a
-                href="https://www.airbnb.co.uk/users/show/370722533"
+                href="https://invite.viber.com/?g2=AQBuDuOs8ZakelU1VdhF1fsQyuyf9PWwqRG2%2FtfJjnjrMG8X%2BaGMrHnbBzjOu5rx"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="underline text-gray-800"
               >
-                Airbnb Website
+                here
               </a>
               .
             </>
@@ -81,24 +81,16 @@ export default function BrokerAgentDeveloperPage() {
                 Here you will see subgroups where Sales Partners discuss, and there&apos;s also subgroups to request for Property Listings and requests for Listing Availability and Schedules.
               <br />
               <br />
+          Join the Sales Partner Platform on {" "}
               <a
-                href="https://www.tiktok.com/@thegoodproperties"
+                href="https://chat.whatsapp.com/B5Ni4SDNXm60QZ7JXnlPVr"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="underline text-gray-800"
               >
-                Manila Luxury Real Estate
+                WhatsApp
               </a>{" "}
-              and{" "}
-              <a
-                href="https://www.tiktok.com/@budgetrealestate"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="underline text-gray-800"
-              >
-                Budget Real Estate
-              </a>{" "}
-              on TikTok.
+              .
             </>
           </ContentCard>
         </div>
@@ -107,6 +99,18 @@ export default function BrokerAgentDeveloperPage() {
           <ContentCard title="Take note of our Link Directory">
             <>
               For your convenience, we have prepared a directory at your disposal when you get lost in our system.
+              <br />
+              <br />
+          Visit our {" "}
+              <a
+                href="empyreanrealestate.carrd.co"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline text-gray-800"
+              >
+                link directory
+              </a>{" "}
+              .
             </>
           </ContentCard>
         </div>

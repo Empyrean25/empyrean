@@ -36,7 +36,7 @@ export default function BrokerAgentDeveloperPage() {
 
         {/* BEGIN HERE Section */}
         <section className="mb-10">
-          <h2 className="text-2xl font-bold text-center mb-6">BEGIN HERE</h2>
+          <h2 className="text-2xl font-bold text-center mb-6">Your First Steps</h2>
 
           <div className="bg-[#808080] rounded-lg p-6 text-white">
             <p>
@@ -49,28 +49,26 @@ know as a Sales Partner here at Empyrean.
         {/* Three Content Cards */}
         <div className="space-y-12 mb-10">
           <ContentCard
-            title="We offer a generous commission structure with our partners"
-            description="We are not in it for the commission. For every transaction closed with our generated looking-clients or even on our direct listings and properties our company directly manages, we give up to 70% commission."
+            title="Join Empyrean Partner Announcements in Viber"
+            description="While your email address are automatically added to our mailing list, joining our Announcement channel ensures you receive realtime updates for any of our opportynities, system improvements, and events."
           />
           <ContentCard
-            title="We offer our services, not just to our clients, but also to partners"
-            description="We are committed to providing competent real estate service. As we are big on getting connected and our network, what we have to offer to our clients, even our visioned marketing powerhouse, we are also offering you too, with the commission setup also in favour of you! We can assist you in any way or any thing you might need from Empyrean with Empyrean Standards."
+            title="Join Empyrean Sales Partner Platform in WhatsApp"
+            description="While we are working on our very own Empyrean One-stop Platform as Application, we are currently using WhatsApp as our main medium of correspondence and coordination for any requests. <br /><br /> Here you will see subgroups where Sales Partners discuss, and there&apos;s also subgroups to request for Property Listings and requests for Listing Availaibility and Schedules."
           />
           <ContentCard
-            title="You are also our clients"
-            description="We are also at your service, inform us of any of your needs, and we'll tailor a custom solution for you."
+            title="Take note of our Link Directory"
+            description="For your convenience, we have prepared a directory at your disposal when you get lost in our system."
           />
         </div>
 
-        <div className="flex justify-center">
-          <Button
-            asChild
-            className="bg-[#494949] hover:bg-[#494949]/80 text-white rounded-full py-6 px-12"
-          >
-            <Link href="/contact-us">Become a Broker Partner</Link>
-          </Button>
-        </div>
-      </div>
+    <section className="mb-10">
+          <div className="bg-[#808080] rounded-lg p-6 text-white">
+            <p> Again, we are very glad to have you with us. Should you have any questions or feedback, please feel free to let us know by contacting your Relationship Manager or contacting us through our available channels. 
+              <br /><br /> Upwards and onwards, flying high to the sky, through the clouds, Empyreans!
+            </p>
+          </div>
+        </section>
 
       <script
         type="application/ld+json"

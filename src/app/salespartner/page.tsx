@@ -51,26 +51,46 @@ export default function BrokerAgentDeveloperPage() {
         <div className="space-y-12 mb-10">
           <ContentCard
             title="Join Empyrean Partner Announcements in Viber"
-            description="While your email address are automatically added to our mailing list, joining our Announcement channel ensures you receive realtime updates for any of our opportunities, system improvements, and events.
-            <br />
-              <br />
-              You may visit our Empyrean Hospitality Page at the{" "}
-              <a
-                href="https://www.airbnb.co.uk/users/show/370722533"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="underline text-gray-800"
-              >
-                Airbnb Website
-              </a>"
+            description={
+              <>
+                While your email address is automatically added to our mailing list, joining our
+                Announcement channel ensures you receive realtime updates for any of our opportunities,
+                system improvements, and events.
+                <br />
+                <br />
+                You may visit our Empyrean Hospitality Page at the{" "}
+                <a
+                  href="https://www.airbnb.co.uk/users/show/370722533"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline text-gray-800"
+                >
+                  Airbnb Website
+                </a>
+                .
+              </>
+            }
           />
+
           <ContentCard
             title="Join Empyrean Sales Partner Platform in WhatsApp"
-            description="While we are working on our very own Empyrean One-stop Platform as Application, we are currently using WhatsApp as our main medium of correspondence and coordination for any requests. <br /><br /> Here you will see subgroups where Sales Partners discuss, and there&apos;s also subgroups to request for Property Listings and requests for Listing Availability and Schedules."
+            description={
+              <>
+                While we are working on our very own Empyrean One-stop Platform as Application, we are currently using WhatsApp as our main medium of correspondence and coordination for any requests.
+                <br />
+                <br />
+                Here you will see subgroups where Sales Partners discuss, and there&apos;s also subgroups to request for Property Listings and requests for Listing Availability and Schedules.
+              </>
+            }
           />
+
           <ContentCard
             title="Take note of our Link Directory"
-            description="For your convenience, we have prepared a directory at your disposal when you get lost in our system."
+            description={
+              <>
+                For your convenience, we have prepared a directory at your disposal when you get lost in our system.
+              </>
+            }
           />
         </div>
 

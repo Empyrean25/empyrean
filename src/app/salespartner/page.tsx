@@ -75,7 +75,7 @@ export default function BrokerAgentDeveloperPage() {
               While we are working on our very own Empyrean One-stop Platform as an application, we are currently using WhatsApp as our main medium of correspondence and coordination for any requests.
               <br />
               <br />
-              Here you will see subgroups where Sales Partners discuss, and there&apos;s also subgroups to request for Property Listings and requests for Listing Availability and Schedules.
+              Here you will see subgroups where Sales Partners discuss, and there&apos;s also subgroups to request for Property Listings and requests for Listing Availability and Schedules for viewing.
               <br />
               <br />
               Join the Sales Partner Platform by clicking below.
@@ -93,10 +93,11 @@ export default function BrokerAgentDeveloperPage() {
           </ContentCard>
         </div>
 
-        <div className="space-y-12 mb-10">
+        <div className="mb-12" aria-label="Take note of our Link Directory">
           <ContentCard title="Take note of our Link Directory">
             <>
-              For your convenience, we have prepared a directory at your disposal when you get lost in our system.
+              For your convenience, we have prepared a link directory at your disposal when you get lost in our system. In there, you shall see all links that may be helpful to you.
+              Including the links for our Announcement Channels, Platforms, Property Listings Support Links, as well as other links related to Empyreal Real Estate Solutions like this website, Empyrean Hospitality, and Empyrean Communities.
               <br />
               <br />
               <div className="flex justify-end mt-4">

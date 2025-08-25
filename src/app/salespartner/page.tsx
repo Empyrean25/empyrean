@@ -54,15 +54,17 @@ export default function BrokerAgentDeveloperPage() {
               system improvements, and events.
               <br />
               <br />
-              You may join Empyrean Partner Announcements by clicking{" "}
-              <a
-                href="https://invite.viber.com/?g2=AQBuDuOs8ZakelU1VdhF1fsQyuyf9PWwqRG2%2FtfJjnjrMG8X%2BaGMrHnbBzjOu5rx"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="underline text-gray-800"
-              >
-                here
-              </a>.
+              You may join Empyrean Partner Announcements by clicking the button below.
+              <div className="flex justify-end mt-4">
+                <a
+                  href="https://invite.viber.com/?g2=AQBuDuOs8ZakelU1VdhF1fsQyuyf9PWwqRG2%2FtfJjnjrMG8X%2BaGMrHnbBzjOu5rx"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-4 py-2 rounded-lg bg-gray-200 text-gray-800 text-sm hover:bg-gray-300 transition"
+                >
+                  Join Viber
+                </a>
+              </div>
             </>
           </ContentCard>
         </div>
@@ -76,15 +78,17 @@ export default function BrokerAgentDeveloperPage() {
               Here you will see subgroups where Sales Partners discuss, and there&apos;s also subgroups to request for Property Listings and requests for Listing Availability and Schedules.
               <br />
               <br />
-              Join the Sales Partner Platform on{" "}
-              <a
-                href="https://chat.whatsapp.com/B5Ni4SDNXm60QZ7JXnlPVr"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="underline text-gray-800"
-              >
-                WhatsApp
-              </a>.
+              Join the Sales Partner Platform by clicking below.
+              <div className="flex justify-end mt-4">
+                <a
+                  href="https://chat.whatsapp.com/B5Ni4SDNXm60QZ7JXnlPVr"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-4 py-2 rounded-lg bg-gray-200 text-gray-800 text-sm hover:bg-gray-300 transition"
+                >
+                  Join WhatsApp
+                </a>
+              </div>
             </>
           </ContentCard>
         </div>
@@ -95,15 +99,16 @@ export default function BrokerAgentDeveloperPage() {
               For your convenience, we have prepared a directory at your disposal when you get lost in our system.
               <br />
               <br />
-              Visit our{" "}
-              <a
-                href="https://empyreanrealestate.carrd.co"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="underline text-gray-800"
-              >
-                link directory
-              </a>.
+              <div className="flex justify-end mt-4">
+                <a
+                  href="https://empyreanrealestate.carrd.co"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-4 py-2 rounded-lg bg-gray-200 text-gray-800 text-sm hover:bg-gray-300 transition"
+                >
+                  View Directory
+                </a>
+              </div>
             </>
           </ContentCard>
         </div>

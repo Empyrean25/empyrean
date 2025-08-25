@@ -133,9 +133,19 @@ export default function BrokerAgentDeveloperPage() {
               <br /><br />
               Please check our public listing database to see if one of our listings fits your client&apos;s requirements. If yes, you may request availability and viewing schedules. If not, you can request assistance from Empyrean by submitting a listing request.
               <br /><br />
-              <strong>How do I submit a request?</strong>
+              <strong>I have a property listing I want Empyrean to help market. How can I enlist the listing?</strong>
               <br /><br />
-              Simply message a corresponding subgroup within our Sales Partner Platform to be acknowledged by our dedicated team.
+              For now, we only accept listings from partners who are direct to owners only. Please submit the full details and maximum ten (10) photos of the property through our link {" "}
+          <a
+            href="https://www.empyrean.ph/contact-us"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline text-gray-800"
+          >here</a> or the submit listing option in our link directory with you as the listing contact.
+              <br /><br />
+              <strong>How do I submit a request for more listings or request property availability and/or viewing?</strong>
+              <br /><br />
+              Simply message the corresponding subgroup within our Sales Partner Platform in WhatsApp to be acknowledged and accomodated by a dedicated person from our team.
             </p>
           </div>
         </section>

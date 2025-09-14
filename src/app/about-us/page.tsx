@@ -142,7 +142,7 @@ export default function AboutPage() {
             style={{ paddingTop: "56.25%" }} // 16:9 aspect ratio
           >
             <iframe
-              src="https://youtu.be/AvRj-6bnhjo"
+              src="https://www.youtube.com/embed/AvRj-6bnhjo?si=_F-XC-k6DXQx-lPh"
               title="Empyrean Introduction Corporate Video"
               className="absolute top-0 left-0 w-full h-full"
               frameBorder="0"

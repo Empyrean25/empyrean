@@ -136,7 +136,7 @@ export default function AboutPage() {
       {/* Intro Video Section */}
       <section className="mt-16 px-6 md:px-16">
         <div className="w-full max-w-5xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-6">OUR STORY</h2>
+          <h2 className="text-3xl font-bold text-center mb-6">INTRODUCTION TO EMPYREAN</h2>
           <div
             className="relative overflow-hidden rounded-xl shadow-lg"
             style={{ paddingTop: "56.25%" }} // 16:9 aspect ratio

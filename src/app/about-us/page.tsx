@@ -7,13 +7,11 @@ import Link from "next/link";
 import PartnerLogo from "@/components/partner-logo";
 
 export const metadata: Metadata = {
-  title:
-    "About Us | Empyrean Real Estate Solutions",
+  title: "About Us | Empyrean Real Estate Solutions",
   description:
     "Learn about Empyrean's mission, vision, and core values. We are a one-stop gateway to the entire real estate market, offering full access with transparency and accountability.",
   openGraph: {
-    title:
-      "About Us | Empyrean Real Estate Solutions",
+    title: "About Us | Empyrean Real Estate Solutions",
     description:
       "Discover Empyrean's mission to become the beacon of quality standards in real estate services. Learn about our core values of simplicity, competency, accountability, and quality.",
     type: "website",
@@ -132,6 +130,26 @@ export default function AboutPage() {
             fill
             className="object-contain"
           />
+        </div>
+      </section>
+
+      {/* Intro Video Section */}
+      <section className="mt-16 px-6 md:px-16">
+        <div className="w-full max-w-5xl mx-auto">
+          <h2 className="text-3xl font-bold text-center mb-6">OUR STORY</h2>
+          <div
+            className="relative overflow-hidden rounded-xl shadow-lg"
+            style={{ paddingTop: "56.25%" }} // 16:9 aspect ratio
+          >
+            <iframe
+              src="https://youtu.be/AvRj-6bnhjo"
+              title="Empyrean Introduction Corporate Video"
+              className="absolute top-0 left-0 w-full h-full"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            />
+          </div>
         </div>
       </section>
 

@@ -141,14 +141,7 @@ export default function AboutPage() {
             className="relative overflow-hidden rounded-xl shadow-lg"
             style={{ paddingTop: "56.25%" }} // 16:9 aspect ratio
           >
-            <iframe
-              src="https://www.youtube.com/embed/AvRj-6bnhjo?si=_F-XC-k6DXQx-lPh"
-              title="Empyrean Introduction Corporate Video"
-              className="absolute top-0 left-0 w-full h-full"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            />
+            <iframe width="907" height="510" src="https://www.youtube.com/embed/ePhVU5FtkM8" title="Empyrean Introduction Corporate Video 2.1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
           </div>
         </div>
       </section>

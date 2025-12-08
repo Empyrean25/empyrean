@@ -4,13 +4,13 @@ import { Metadata } from "next";
 import Script from "next/script";
 
 export const metadata: Metadata = {
-  title: "Sales Partner | Empyrean Real Estate Solutions",
+  title: "Hospitality Partner | Empyrean Real Estate Solutions",
   description:
-    "Join Empyrean's Broker Circle and be part of a centralized real estate platform. Partner with us to provide effective services and achieve faster market turnover.",
+    "Join Empyrean's Hospitality Circle and be part of a centralized real estate platform. Partner with us to provide accomodation across the metro!",
   openGraph: {
-    title: "Sales Partner | Empyrean Real Estate Solutions",
+    title: "Hospitality Partner | Empyrean Real Estate Solutions",
     description:
-      "Become an Empyrean broker partner and access our centralized real estate platform. Join our network of professional brokers for better market reach and faster transactions.",
+      "Join Empyrean's Hospitality Circle and be part of a centralized real estate platform. Partner with us to provide accomodation across the metro!",
     type: "website",
   },
 };
@@ -20,7 +20,7 @@ export default function BrokerAgentDeveloperPage() {
     <main className="min-h-screen flex flex-col">
       <div className="container mx-auto px-4 py-16 max-w-5xl">
         <h1 className="text-3xl md:text-4xl font-bold text-center mb-8">
-          WELCOME TO EMPYREAN, SALES PARTNER!
+          Become a Hospitality Partner!
         </h1>
 
         <p className="text-[14px] md:text-lg text-center mb-14 max-w-4xl mx-auto">

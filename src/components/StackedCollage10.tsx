@@ -38,8 +38,8 @@ export default function StackedCollage10({
           className="absolute inset-0 flex items-center justify-center"
           initial={false}
         >
-          {stack.map((img, i) => {
-            const offset = i * 12;
+          {stack.slice(0, 5).map((img, i) => {
+            const offset = i * 8;
             const rotate = i === 0 ? 0 : i % 2 === 0 ? -2 : 2;
 
             return (
@@ -49,7 +49,7 @@ export default function StackedCollage10({
                 dragConstraints={{ left: 0, right: 0 }}
                 whileDrag={{ scale: 1.02, rotate: 0 }}
                 onDragEnd={(e, info) => {
-                  if (info.offset.x < -120 && i === 0) cycleStack();
+                  if (info.offset.x < -60 && i === 0) cycleStack();
                 }}
                 style={{ zIndex: stack.length - i }}
                 className="absolute w-[300px] h-[450px] rounded-2xl shadow-xl overflow-hidden bg-black/10"

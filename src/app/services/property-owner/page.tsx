@@ -62,16 +62,17 @@ export default function PropertyOwnerPage() {
               setup.
               <br />
               <br />
-              You may visit our Empyrean Hospitality Page at the{" "}
-              <a
-                href="https://www.airbnb.co.uk/users/show/370722533"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="underline text-gray-800"
-              >
-                Airbnb Website
-              </a>
-              .
+              You may visit our Empyrean Hospitality Page at the below.
+              
+<div className="flex justify-end mt-4">
+                <a
+                  href="https://empyrean.ph/hospitality-partner"
+                  rel="noopener noreferrer"
+                  className="px-4 py-2 rounded-lg bg-gray-200 text-gray-800 text-sm hover:bg-gray-300 transition"
+                >
+                  Become a Hospitality Business Partner
+                </a>
+              </div>
             </>
           </ContentCard>
         </div>

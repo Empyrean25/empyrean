@@ -1,5 +1,6 @@
 import { ContentCard } from "@/components/content-card";
 import CustomSolutions from "@/components/custom-solutions";
+import TenImageCollage from "@/components/TenImageCollage";
 import { Metadata } from "next";
 import Script from "next/script";
 
@@ -33,8 +34,26 @@ export default function BrokerAgentDeveloperPage() {
 
         {/* Your First Steps Section */}
         <section className="mb-10">
-          <h2 className="text-2xl font-bold text-center mb-6">The Empyrean Hospitality Branding</h2>
+          <h2 className="text-2xl font-bold text-center mb-6">
+            The Empyrean Hospitality Branding
+          </h2>
         </section>
+
+        {/* 🔥 Inserted collage */}
+        <TenImageCollage
+          images={[
+            "/assets/gallery/airbnb 1.jpeg",
+            "/assets/gallery/airbnb 2.jpeg",
+            "/assets/gallery/airbnb 3.jpeg",
+            "/assets/gallery/airbnb 4.jpeg",
+            "/assets/gallery/airbnb 5.jpeg",
+            "/assets/gallery/airbnb 6.jpeg",
+            "/assets/gallery/airbnb 7.jpeg",
+            "/assets/gallery/airbnb 8.jpeg",
+            "/assets/gallery/airbnb 9.jpeg",
+            "/assets/gallery/airbnb 10.jpeg",
+          ]}
+        />
 
         <div className="mb-12" aria-label="Join Empyrean Partner Announcements in Viber">
           <ContentCard title="Join Empyrean Partner Announcements in Viber">
@@ -125,13 +144,16 @@ export default function BrokerAgentDeveloperPage() {
               <br /><br />
               <strong>I have a property listing I want Empyrean to help market. How can I enlist the listing?</strong>
               <br /><br />
-              For now, we only accept listings from partners who are direct to owners only. Please submit the full details and maximum ten (10) photos of the property through our link {" "}
-          <a
-            href="https://www.empyrean.ph/contact-us"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="underline text-gray-800"
-          >here</a> or the submit listing option in our link directory with you as the listing contact.
+              For now, we only accept listings from partners who are direct to owners only. Please submit the full details and maximum ten (10) photos of the property through our link{" "}
+              <a
+                href="https://www.empyrean.ph/contact-us"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline text-gray-800"
+              >
+                here
+              </a>{" "}
+              or the submit listing option in our link directory with you as the listing contact.
               <br /><br />
               <strong>How do I submit a request for more listings or request property availability and/or viewing?</strong>
               <br /><br />

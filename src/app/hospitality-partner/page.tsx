@@ -1,6 +1,6 @@
 import { ContentCard } from "@/components/content-card";
 import CustomSolutions from "@/components/custom-solutions";
-import TenImageCollage from "@/components/TenImageCollage";
+import StackedCollage10 from "@/components/StackedCollage10";
 import { Metadata } from "next";
 import Script from "next/script";
 
@@ -33,27 +33,28 @@ export default function BrokerAgentDeveloperPage() {
         </p>
 
         {/* Your First Steps Section */}
-        <section className="mb-10">
-          <h2 className="text-2xl font-bold text-center mb-6">
+        <section className="mb-4">
+          <h2 className="text-2xl font-bold text-center mb-3">
             The Empyrean Hospitality Branding
           </h2>
-        </section>
 
-        {/* 🔥 Inserted collage */}
-        <TenImageCollage
-          images={[
-            "/assets/airbnb 1.jpeg",
-            "/assets/airbnb 2.jpeg",
-            "/assets/airbnb 3.jpeg",
-            "/assets/airbnb 4.jpeg",
-            "/assets/airbnb 5.jpeg",
-            "/assets/airbnb 6.jpeg",
-            "/assets/airbnb 7.jpeg",
-            "/assets/airbnb 8.jpeg",
-            "/assets/airbnb 9.jpeg",
-            "/assets/airbnb 10.jpeg",
-          ]}
-        />
+          {/* stacked collage placed close under the heading */}
+          <StackedCollage10
+            spacingClass="mt-4"
+            images={[
+              "/assets/airbnb 1.jpeg",
+              "/assets/airbnb 2.jpeg",
+              "/assets/airbnb 3.jpeg",
+              "/assets/airbnb 4.jpeg",
+              "/assets/airbnb 5.jpeg",
+              "/assets/airbnb 6.jpeg",
+              "/assets/airbnb 7.jpeg",
+              "/assets/airbnb 8.jpeg",
+              "/assets/airbnb 9.jpeg",
+              "/assets/airbnb 10.jpeg",
+            ]}
+          />
+        </section>
 
         <div className="mb-12" aria-label="Documents Needed">
           <ContentCard title="Documents Needed">

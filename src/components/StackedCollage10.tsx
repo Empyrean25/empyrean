@@ -39,27 +39,28 @@ export default function StackedCollage10({
           initial={false}
         >
           {stack.slice(0, 5).map((img, i) => {
-            const offset = i * 8;
-            const rotate = i === 0 ? 0 : i % 2 === 0 ? -2 : 2;
+            const y = i * 10; // clean vertical spacing
+            const scale = 1 - i * 0.04; // subtle scaling like iMessage
+            const rotate = i === 0 ? 0 : i === 1 ? -1 : 1; // subtle tilt
 
             return (
               <motion.div
                 key={i}
                 drag="x"
                 dragConstraints={{ left: 0, right: 0 }}
-                whileDrag={{ scale: 1.02, rotate: 0 }}
+                whileDrag={{ scale: 1.03, rotate: 0 }}
                 onDragEnd={(e, info) => {
-                  if (info.offset.x < -60 && i === 0) cycleStack();
+                  if (info.offset.x < -50 && i === 0) cycleStack();
                 }}
-                style={{ zIndex: stack.length - i }}
-                className="absolute w-[300px] h-[450px] rounded-2xl shadow-xl overflow-hidden bg-black/10"
+                style={{ zIndex: 100 - i }}
+                className="absolute w-[300px] h-[450px] rounded-2xl shadow-2xl overflow-hidden bg-black/10 backdrop-blur-sm"
                 animate={{
-                  x: offset,
-                  y: offset * 0.2,
-                  rotate: rotate,
-                  scale: i === 0 ? 1 : 0.96,
+                  x: 0,
+                  y,
+                  scale,
+                  rotate,
                 }}
-                transition={{ type: "spring", stiffness: 260, damping: 22 }}
+                transition={{ type: "spring", stiffness: 200, damping: 24 }}
               >
                 <Image
                   src={img}

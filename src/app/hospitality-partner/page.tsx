@@ -63,8 +63,6 @@ export default function BrokerAgentDeveloperPage() {
 <div className="mb-12" aria-label="Empyrean Hospitality: The Business Partnership Offer">
           <ContentCard title="Empyrean Hospitality: The Business Partnership Offer">
             <>
-              <br />
-              <br />
               Empyrean Hospitality will be managing your property as your Official Property Manager. We would be maintaining and taking care of your property while maximising its profitability at the same time.
               Your property will be fixed, courtesy of both the owner and Empyrean, according to Empyrean Branding and standards. Empyrean shall also be responsible in securing decorations and essentials for the property should it deem necessary and better.
                </>

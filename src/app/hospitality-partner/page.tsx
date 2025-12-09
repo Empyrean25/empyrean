@@ -55,55 +55,34 @@ export default function BrokerAgentDeveloperPage() {
           ]}
         />
 
-        <div className="mb-12" aria-label="Join Empyrean Partner Announcements in Viber">
-          <ContentCard title="Join Empyrean Partner Announcements in Viber">
+        <div className="mb-12" aria-label="Documents Needed">
+          <ContentCard title="Documents Needed">
             <>
-              While your email address is automatically added to our mailing list, joining our
-              Announcement channel ensures you receive realtime updates for any of our opportunities,
-              system improvements, and events.
+              Empyrean Real Estate Corporation and the owner as its business partner shall execute two (2) douments namely: The SPA Document and the Memorandum of Agreement for Property Management
               <br />
               <br />
-              You may join Empyrean Partner Announcements by clicking the button below.
-              <div className="flex justify-end mt-4">
-                <a
-                  href="https://invite.viber.com/?g2=AQBuDuOs8ZakelU1VdhF1fsQyuyf9PWwqRG2%2FtfJjnjrMG8X%2BaGMrHnbBzjOu5rx"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="px-4 py-2 rounded-lg bg-gray-200 text-gray-800 text-sm hover:bg-gray-300 transition"
-                >
-                  Join Viber
-                </a>
-              </div>
+              The SPA Document shall serve as our official autorisation from the owner that Empyrean Real Estate Corporation
+              shall from the date of execution become the official Property Manager of the owner for the property and can perform
+              actions allowed by the owner strictly only to property managent and leasing; Meanwhile the Memorandum of Agreement for Property Managment shall serve as the document detailing the business partnership and its specifics.
             </>
           </ContentCard>
         </div>
 
-        <div className="mb-12" aria-label="Join Empyrean Sales Partner Platform in WhatsApp">
-          <ContentCard title="Join Empyrean Sales Partner Platform in WhatsApp">
+        <div className="mb-12" aria-label="The Setups">
+          <ContentCard title="The Setups">
             <>
-              While we are working on our very own Empyrean One-stop Platform as an application, we are currently using WhatsApp as our main medium of correspondence and coordination for any requests.
+              At Empyrean, we study each property accordingly and offer a business partnership setup according to the propety&apos;s location, potential demographics, among many others.
               <br />
               <br />
-              Here you will see subgroups where Sales Partners discuss, and there&apos;s also subgroups to request for Property Listings and requests for Listing Availability and Schedules for viewing.
+              We offer three setups: subleasing, 70/30 setup (utilities excluded), or 65/35 (utilities excluded).
               <br />
               <br />
-              Join the Sales Partner Platform by clicking below.
-              <div className="flex justify-end mt-4">
-                <a
-                  href="https://chat.whatsapp.com/B5Ni4SDNXm60QZ7JXnlPVr"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="px-4 py-2 rounded-lg bg-gray-200 text-gray-800 text-sm hover:bg-gray-300 transition"
-                >
-                  Join WhatsApp
-                </a>
-              </div>
             </>
           </ContentCard>
         </div>
 
-        <div className="mb-12" aria-label="Take note of our Link Directory">
-          <ContentCard title="Take note of our Link Directory">
+        <div className="mb-12" aria-label="Ongoing Business Partnerships">
+          <ContentCard title="Ongoing Business Partnerships">
             <>
               For your convenience, we have prepared a link directory at your disposal when you get lost in our system. In there, you shall see all links that may be helpful to you.
               Including the links for our Announcement Channels, Platforms, Property Listings Support Links, as well as other links related to Empyreal Real Estate Solutions like this website, Empyrean Hospitality, and Empyrean Communities.

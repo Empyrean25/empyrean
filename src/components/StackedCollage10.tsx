@@ -39,42 +39,43 @@ export default function StackedCollage10({
           initial={false}
         >
           {stack.slice(0, 5).map((img, i) => {
-            // Fan-out effect but clean and aligned to top
-            const x = i * 10; // slight horizontal fan
-            const y = i * 14; // reveals top part more, bottom less
-            const rotate = (i - 2) * 2; // symmetrical subtle fan (-4, -2, 0, 2, 4)
-            const scale = 1 - i * 0.03; // small depth scaling
+  const isTop = i === 0;
+  const offset = i * 14; // wider, cleaner fan
+  const rotate = i === 0 ? 0 : i % 2 === 0 ? -3 : 3;
 
-            return (
-              <motion.div
-                key={i}
-                drag="x"
-                dragConstraints={{ left: 0, right: 0 }}
-                whileDrag={{ scale: 1.04, rotate: 0 }}
-                onDragEnd={(e, info) => {
-                  if (info.offset.x < -60 && i === 0) cycleStack();
-                }}
-                style={{ zIndex: 100 - i }}
-                className="absolute w-[300px] h-[450px] rounded-2xl shadow-2xl overflow-hidden bg-black/10 backdrop-blur-sm"
-                animate={{
-                  x,
-                  y,
-                  scale,
-                  rotate,
-                }}
-                transition={{ type: "spring", stiffness: 220, damping: 24 }}
-              >
-                <Image
-                  src={img}
-                  alt={`${alt} ${i + 1}`}
-                  fill
-                  className="object-cover select-none"
-                  draggable={false}
-                  unoptimized
-                />
-              </motion.div>
-            );
-          })}
+  // NEW: previous card peeking on the right
+  const showRightPeek = i === 1; // the second card becomes the “previous” after swipe
+
+  return (
+    <motion.div
+      key={i}
+      drag={isTop ? "x" : false}
+      dragConstraints={{ left: 0, right: 0 }}
+      whileDrag={{ scale: 1.03, rotate: 0 }}
+      onDragEnd={(e, info) => {
+        if (info.offset.x < -60 && isTop) cycleStack();
+      }}
+      style={{ zIndex: stack.length - i }}
+      className="absolute w-[300px] h-[450px] rounded-2xl shadow-xl overflow-hidden bg-black/10"
+      animate={{
+        x: showRightPeek ? 70 : offset,     // push previous pic to the right
+        y: showRightPeek ? -10 : offset * 0.15,
+        rotate: showRightPeek ? 6 : rotate, // slight right tilt
+        scale: isTop ? 1 : 0.95,
+      }}
+      transition={{ type: "spring", stiffness: 260, damping: 24 }}
+    >
+      <Image
+        src={img}
+        alt={`${alt} ${i + 1}`}
+        fill
+        className="object-cover select-none"
+        draggable={false}
+        unoptimized
+      />
+    </motion.div>
+  );
+})}
         </motion.div>
       </div>
     </div>

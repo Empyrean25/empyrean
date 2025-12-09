@@ -56,6 +56,21 @@ export default function BrokerAgentDeveloperPage() {
           />
         </section>
 
+<p className="text-[10px] md:text-lg text-center mb-14 max-w-4xl mx-auto">
+          Empyrean&apos;s branding rests on two of its core values: simplicity and quality. For all our designs, we strive to deliever simple yet elegant display and delievery of services. In this case, comfort, serenity, and beauty.
+        </p>
+        
+<div className="mb-12" aria-label="Empyrean Hospitality: The Business Partnership Offer">
+          <ContentCard title="Empyrean Hospitality: The Business Partnership Offer">
+            <>
+              <br />
+              <br />
+              Empyrean Hospitality will be managing your property as your Official Property Manager. We would be maintaining and taking care of your property while maximising its profitability at the same time.
+              Your property will be fixed, courtesy of both the owner and Empyrean, according to Empyrean Branding and standards. Empyrean shall also be responsible in securing decorations and essentials for the property should it deem necessary and better.
+               </>
+          </ContentCard>
+        </div>
+              
         <div className="mb-12" aria-label="Documents Needed">
           <ContentCard title="Documents Needed">
             <>
@@ -69,36 +84,24 @@ export default function BrokerAgentDeveloperPage() {
           </ContentCard>
         </div>
 
-        <div className="mb-12" aria-label="The Setups">
+        <div className="mb-12" aria-label="The Partnership Setups">
           <ContentCard title="The Setups">
             <>
               At Empyrean, we study each property accordingly and offer a business partnership setup according to the propety&apos;s location, potential demographics, among many others.
               <br />
               <br />
-              We offer three setups: subleasing, 70/30 setup (utilities excluded), or 65/35 (utilities excluded).
-              <br />
-              <br />
+              We offer three setups: subleasing, 70/30 setup (utilities excluded), or 65/35 (utilities excluded). Setup is upon agreement of both business partner and the company.
             </>
           </ContentCard>
         </div>
 
-        <div className="mb-12" aria-label="Ongoing Business Partnerships">
-          <ContentCard title="Ongoing Business Partnerships">
+        <div className="mb-12" aria-label="Transparency and Reporting">
+          <ContentCard title="Transparency and Reporting">
             <>
-              For your convenience, we have prepared a link directory at your disposal when you get lost in our system. In there, you shall see all links that may be helpful to you.
-              Including the links for our Announcement Channels, Platforms, Property Listings Support Links, as well as other links related to Empyreal Real Estate Solutions like this website, Empyrean Hospitality, and Empyrean Communities.
+              At Empyrean, we value competency and accountability. In every step of our partnership, we will strive to always display these in all instances.
               <br />
               <br />
-              <div className="flex justify-end mt-4">
-                <a
-                  href="https://empyreanrealestate.carrd.co"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="px-4 py-2 rounded-lg bg-gray-200 text-gray-800 text-sm hover:bg-gray-300 transition"
-                >
-                  View Directory
-                </a>
-              </div>
+              We will be providing a Google Sheet for you to view your bookings and when to expect your next payout!
             </>
           </ContentCard>
         </div>

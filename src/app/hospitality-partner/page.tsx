@@ -24,26 +24,16 @@ export default function BrokerAgentDeveloperPage() {
         </h1>
 
         <p className="text-[14px] md:text-lg text-center mb-14 max-w-4xl mx-auto">
-          We are glad to have your interests in joining us at Empyrean as a Sales Partner whether
-          an In-House or under a separate Broker Partner. By having access to this page, you have
-          expressed your interest and you have been invited to form a partnership. We should have
-          your full contact details by now. If you haven&apos;t yet, please make sure to formally sign up through our{" "}
-          <a
-            href="https://www.empyrean.ph/contact-us"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="underline text-gray-800"
-          >
-            contact form
-          </a>.
+          We are glad to have your interests in joining us at Empyrean as a Hospitality Hosting Partner. By having access to this page, you have
+          expressed your interest and you have been invited to form a business partnership with Empyrean.
           <br />
           <br />
-          This page shall serve as your <strong>Sales Partner Primer</strong> to help you navigate our system at Empyrean better. It contains FAQs, link directories, and everything you need to know as a Sales Partner here at Empyrean.
+          This page shall serve as your <strong>Hospitality Partner Primer</strong> to help you navigate our system at Empyrean better. It contains FAQs, link directories, and everything you need to know about being a Hospitality Partner here at Empyrean.
         </p>
 
         {/* Your First Steps Section */}
         <section className="mb-10">
-          <h2 className="text-2xl font-bold text-center mb-6">Your First Steps</h2>
+          <h2 className="text-2xl font-bold text-center mb-6">The Empyrean Hospitality Branding</h2>
         </section>
 
         <div className="mb-12" aria-label="Join Empyrean Partner Announcements in Viber">

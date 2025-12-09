@@ -39,15 +39,15 @@ export default function StackedCollage10({
           initial={false}
         >
           {stack.map((img, i) => {
-            const offset = i * 20;
-            const rotate = i === 0 ? 0 : i % 2 === 0 ? -4 : 4;
+            const offset = i * 12;
+            const rotate = i === 0 ? 0 : i % 2 === 0 ? -2 : 2;
 
             return (
               <motion.div
                 key={i}
                 drag="x"
                 dragConstraints={{ left: 0, right: 0 }}
-                whileDrag={{ scale: 1.04, rotate: 0 }}
+                whileDrag={{ scale: 1.02, rotate: 0 }}
                 onDragEnd={(e, info) => {
                   if (info.offset.x < -120 && i === 0) cycleStack();
                 }}

@@ -62,7 +62,7 @@ export default function PropertyOwnerPage() {
               setup.
               <br />
               <br />
-              You may visit our Empyrean Hospitality Page at the below.
+              You may visit our Empyrean Hospitality Page below.
               
 <div className="flex justify-end mt-4">
                 <a

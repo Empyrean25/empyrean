@@ -42,16 +42,16 @@ export default function BrokerAgentDeveloperPage() {
         {/* 🔥 Inserted collage */}
         <TenImageCollage
           images={[
-            "/assets/gallery/airbnb 1.jpeg",
-            "/assets/gallery/airbnb 2.jpeg",
-            "/assets/gallery/airbnb 3.jpeg",
-            "/assets/gallery/airbnb 4.jpeg",
-            "/assets/gallery/airbnb 5.jpeg",
-            "/assets/gallery/airbnb 6.jpeg",
-            "/assets/gallery/airbnb 7.jpeg",
-            "/assets/gallery/airbnb 8.jpeg",
-            "/assets/gallery/airbnb 9.jpeg",
-            "/assets/gallery/airbnb 10.jpeg",
+            "/assets/airbnb 1.jpeg",
+            "/assets/airbnb 2.jpeg",
+            "/assets/airbnb 3.jpeg",
+            "/assets/airbnb 4.jpeg",
+            "/assets/airbnb 5.jpeg",
+            "/assets/airbnb 6.jpeg",
+            "/assets/airbnb 7.jpeg",
+            "/assets/airbnb 8.jpeg",
+            "/assets/airbnb 9.jpeg",
+            "/assets/airbnb 10.jpeg",
           ]}
         />
 

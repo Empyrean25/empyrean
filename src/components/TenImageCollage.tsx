@@ -4,7 +4,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 
 type Props = {
-  images: string[]; // expects 10 image paths
+  images: string[];
   alt?: string;
 };
 

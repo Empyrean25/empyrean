@@ -16,12 +16,14 @@ export default function StackedCollage10({
   spacingClass = "mt-6",
 }: Props) {
   const placeholder = "/assets/placeholder.jpg";
-  const initialImgs = Array.from({ length: 10 }).map(
+  // ensure at least 5 entries so the stacked layout stays stable
+  const initialImgs = Array.from({ length: Math.max(5, images.length || 5) }).map(
     (_, i) => images[i] || images[images.length - 1] || placeholder
   );
 
   const [stack, setStack] = useState(initialImgs);
-  const [peekLeft, setPeekLeft] = useState(false);
+  // peekSide controls the tucked peek animation: 'left' | 'right' | null
+  const [peekSide, setPeekSide] = useState<null | "left" | "right">(null);
   const timeoutRef = useRef<number | null>(null);
   const containerRef = useRef<HTMLDivElement | null>(null);
 
@@ -38,9 +40,10 @@ export default function StackedCollage10({
       if (first) updated.push(first);
       return updated;
     });
-    setPeekLeft(true);
+
+    setPeekSide("left");
     if (timeoutRef.current) window.clearTimeout(timeoutRef.current);
-    timeoutRef.current = window.setTimeout(() => setPeekLeft(false), 700);
+    timeoutRef.current = window.setTimeout(() => setPeekSide(null), 700);
   };
 
   const cycleBackward = () => {
@@ -50,12 +53,13 @@ export default function StackedCollage10({
       if (last) updated.unshift(last);
       return updated;
     });
-    setPeekLeft(false);
+
+    setPeekSide("right");
     if (timeoutRef.current) window.clearTimeout(timeoutRef.current);
-    timeoutRef.current = window.setTimeout(() => setPeekLeft(false), 700);
+    timeoutRef.current = window.setTimeout(() => setPeekSide(null), 700);
   };
 
-  // keyboard navigation for desktop
+  // keyboard navigation
   useEffect(() => {
     const el = containerRef.current;
     if (!el) return;
@@ -67,69 +71,67 @@ export default function StackedCollage10({
     return () => el.removeEventListener("keydown", onKey);
   }, [containerRef.current, stack]);
 
-  const main = stack[0];
-  const peek = stack[1];
+  // render up to 5 stacked cards so you see a small deck
+  const visible = stack.slice(0, 5);
 
   return (
     <div
       ref={containerRef}
-      tabIndex={0} // allow keyboard focus
+      tabIndex={0}
       className={`relative w-full flex justify-center ${spacingClass}`}
     >
       <div className="relative w-[350px] h-[550px] overflow-visible">
-        {peek && (
-          <motion.div
-            key={`peek-${peek}`}
-            className="absolute w-[300px] h-[450px] rounded-2xl shadow-lg overflow-hidden bg-black/8 backdrop-blur-sm"
-            initial={false}
-            animate={
-              peekLeft
+        {visible
+          .slice()
+          .reverse() // render from back -> front so z-index stacking follows DOM order
+          .map((img, revIndex) => {
+            // revIndex: 0 = farthest back, 4 = front (if 5 visible)
+            const i = visible.length - 1 - revIndex; // i: 0 front, 1 next, ...
+            const isTop = i === 0;
+
+            // default fan values (when no peek animation is active)
+            const baseX = i * 10; // small right offset for cards behind the main
+            const baseY = i * 14;
+            const baseRotate = (i - 2) * 2;
+            const baseScale = 1 - i * 0.03;
+
+            // when peekSide is active, we want the SECOND card (i===1) to tuck left or right
+            const special = i === 1 && peekSide !== null;
+
+            const animate = special
+              ? peekSide === "left"
                 ? { x: -72, y: 12, scale: 0.92, rotate: -4 }
                 : { x: 72, y: 12, scale: 0.92, rotate: 4 }
-            }
-            transition={{ type: "spring", stiffness: 260, damping: 28 }}
-            style={{ zIndex: 90 }}
-          >
-            <Image
-              src={peek}
-              alt={`${alt} peek`}
-              fill
-              className="object-cover select-none"
-              draggable={false}
-              unoptimized
-            />
-          </motion.div>
-        )}
+              : { x: baseX, y: baseY, scale: baseScale, rotate: baseRotate };
 
-        {main && (
-          <motion.div
-            key={`main-${main}`}
-            drag="x"
-            // allow mouse dragging by providing a range; card width is ~300 so +/-320 is safe
-            dragConstraints={{ left: -320, right: 320 }}
-            dragElastic={0.18}
-            whileDrag={{ scale: 1.02, rotate: 0 }}
-            whileTap={{ cursor: "grabbing" }}
-            onDragEnd={(_e, info) => {
-              if (info.offset.x < -60) cycleForward();
-              else if (info.offset.x > 60) cycleBackward();
-            }}
-            className="absolute w-[300px] h-[450px] rounded-2xl shadow-2xl overflow-hidden bg-white cursor-grab active:cursor-grab"
-            initial={false}
-            animate={{ x: 0, y: 0, scale: 1, rotate: 0 }}
-            transition={{ type: "spring", stiffness: 220, damping: 24 }}
-            style={{ zIndex: 100 }}
-          >
-            <Image
-              src={main}
-              alt={`${alt} main`}
-              fill
-              className="object-cover select-none"
-              draggable={false}
-              unoptimized
-            />
-          </motion.div>
-        )}
+            return (
+              <motion.div
+                key={`${img}-${i}`}
+                drag={isTop ? "x" : false}
+                dragConstraints={{ left: -320, right: 320 }}
+                dragElastic={isTop ? 0.18 : 0}
+                whileDrag={isTop ? { scale: 1.02, rotate: 0 } : undefined}
+                onDragEnd={isTop ? (_e, info) => {
+                  if (info.offset.x < -60) cycleForward();
+                  else if (info.offset.x > 60) cycleBackward();
+                } : undefined}
+                className={`absolute w-[300px] h-[450px] rounded-2xl shadow-2xl overflow-hidden bg-black/8 backdrop-blur-sm ${isTop ? 'cursor-grab active:cursor-grab' : ''}`}
+                animate={animate}
+                initial={false}
+                transition={{ type: "spring", stiffness: 220, damping: 24 }}
+                style={{ zIndex: 100 + i }}
+              >
+                <Image
+                  src={img}
+                  alt={`${alt} ${i + 1}`}
+                  fill
+                  className="object-cover select-none"
+                  draggable={false}
+                  unoptimized
+                />
+              </motion.div>
+            );
+          })}
       </div>
     </div>
   );

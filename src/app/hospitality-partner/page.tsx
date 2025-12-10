@@ -109,21 +109,15 @@ export default function BrokerAgentDeveloperPage() {
             <p>
               <strong>What is Empyrean Hospitality?</strong>
               <br /><br />
-              Empyrean Hospitality is our tradename for accommodation services utilising platforms like Airbnb, Agoda, Booking, among others for short-term leasing.
+              Empyrean Hospitality is our tradename for accommodation services utilising platforms like Airbnb, Agoda, Booking, among others for short-term leasing. It is associated with our Property Management Service, only with a separate branding since the service becomes a partnership with our client to accomodate guests.
               <br /><br />
-              This is why we incentivise our broker partners with attractive commission-split setups up to 75/25 in favour of the partner to support them in closing the leads our company generates.
+              <strong>What does Empyrean Hospitality do?</strong>
               <br /><br />
-              <strong>How do I avail better commission-splits as a partner?</strong>
+              We partner up with property owners to put their properties up for short-term leasing for guest accomodations. Availing of our Property Management Service is a requisite for this.
               <br /><br />
-              Better commission-splits are offered to our Official Broker Partners by invite-only, subject to Empyrean&apos;s Eligibility Requirements.
+              <strong>What is Empyrean Property Management Service?</strong>
               <br /><br />
-              <strong>I have a client looking to lease/buy. How can I avail your services?</strong>
-              <br /><br />
-              Please check our public listing database to see if one of our listings fits your client&apos;s requirements. If yes, you may request availability and viewing schedules. If not, you can request assistance from Empyrean by submitting a listing request.
-              <br /><br />
-              <strong>How do I submit a request for more listings or request property availability and/or viewing?</strong>
-              <br /><br />
-              Simply message the corresponding subgroup within our Sales Partner Platform in WhatsApp to be acknowledged and accommodated by a dedicated person from our team.
+              Our Property Management Service is a free-of-charge service we offer to our clients that designates our company to be their Official Property Manager for their property and authorise us to market their properties for both long-term, short-term leasing, or selling, whichever the property owner prefers.
             </p>
           </div>
         </section>

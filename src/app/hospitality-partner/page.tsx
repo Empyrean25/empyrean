@@ -7,11 +7,11 @@ import Script from "next/script";
 export const metadata: Metadata = {
   title: "Hospitality Partner | Empyrean Real Estate Solutions",
   description:
-    "Join Empyrean's Hospitality Circle and be part of a centralized real estate platform. Partner with us to provide accomodation across the metro!",
+    "Join Empyrean&apos;s Hospitality Circle and be part of a centralized real estate platform. Partner with us to provide accomodation across the metro!",
   openGraph: {
     title: "Hospitality Partner | Empyrean Real Estate Solutions",
     description:
-      "Join Empyrean's Hospitality Circle and be part of a centralized real estate platform. Partner with us to provide accomodation across the metro!",
+      "Join Empyrean&apos;s Hospitality Circle and be part of a centralized real estate platform. Partner with us to provide accomodation across the metro!",
     type: "website",
   },
 };
@@ -37,7 +37,7 @@ export default function BrokerAgentDeveloperPage() {
           {/* stacked collage with spacing and centered on all screens */}
           <div className="flex justify-center">
             <StackedCollage10
-              spacingClass="mt-6" // spacing between heading and gallery
+              spacingClass="mt-6"
               images={[
                 "/assets/airbnb 1.jpeg",
                 "/assets/airbnb 2.jpeg",
@@ -83,7 +83,7 @@ export default function BrokerAgentDeveloperPage() {
         <div className="mb-12" aria-label="The Partnership Setups">
           <ContentCard title="The Partnership Setups">
             <>
-              At Empyrean, we study each property accordingly and offer a business partnership setup according to the property's location, potential demographics, among many others.
+              At Empyrean, we study each property accordingly and offer a business partnership setup according to the property&apos;s location, potential demographics, among many others.
               <br />
               <br />
               We offer three setups: subleasing, 70/30 setup (utilities excluded), or 65/35 (utilities included). Setup is upon agreement of both business partner and the company.

@@ -13,7 +13,7 @@ type Props = {
 export default function StackedCollage10({
   images = [],
   alt = "Empyrean gallery image",
-  spacingClass = "mt-6",
+  spacingClass = "mt-8 sm:mt-12", // Default spacing above gallery
 }: Props) {
   const placeholder = "/assets/placeholder.jpg";
   const imgList = Array.from({ length: 10 }).map(
@@ -21,7 +21,6 @@ export default function StackedCollage10({
   );
 
   const [activeIndex, setActiveIndex] = useState(0);
-
   const MAX_PEEK = 4;
 
   const handleSwipe = (direction: "left" | "right") => {
@@ -35,15 +34,16 @@ export default function StackedCollage10({
   };
 
   return (
-    <div className={`relative w-full flex flex-col items-center ${spacingClass}`}>
-      <div className="relative w-[350px] h-[550px] overflow-visible">
+    <div className={`w-full flex flex-col items-center ${spacingClass}`}>
+      {/* Gallery container */}
+      <div className="relative w-[350px] sm:w-[380px] h-[550px] overflow-visible flex justify-center">
         {imgList.map((img, i) => {
           const relative = i - activeIndex;
 
           // Only render max 4 left and 4 right cards
           if (Math.abs(relative) > MAX_PEEK) return null;
 
-          const offsetX = 16; // increased for more obvious fan
+          const offsetX = 16; // more obvious peeks
           const offsetY = 14;
           const rotateOffset = 2;
           const scaleOffset = 0.03;
@@ -59,7 +59,7 @@ export default function StackedCollage10({
             x = 0;
             y = 18; // lowered to cover peeks
             rotate = 0;
-            scale = 1.07; // smaller than before
+            scale = 1.07; // smaller than previous version
             zIndex = 200;
           } else if (relative > 0) {
             // Right side

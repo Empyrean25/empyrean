@@ -40,8 +40,8 @@ export default function StackedCollage10({
         {imgList.map((img, i) => {
           const relative = i - activeIndex;
 
-          // Only render max 4 left and 4 right peeking cards
-          if (relative < -MAX_PEEK || relative > MAX_PEEK) return null;
+          // Only render max 4 left and 4 right cards
+          if (Math.abs(relative) > MAX_PEEK) return null;
 
           const offsetX = 12;
           const offsetY = 14;
@@ -55,27 +55,28 @@ export default function StackedCollage10({
             zIndex = 0;
 
           if (relative === 0) {
-            // Main card
+            // Main card slightly larger
             x = 0;
             y = 0;
             rotate = 0;
-            scale = 1;
+            scale = 1.05; // slightly bigger than left/right
             zIndex = 200;
           } else if (relative > 0) {
-            // Cards to the right
-            x = offsetX * relative;
-            y = offsetY * relative;
-            rotate = (relative - 2) * rotateOffset;
-            scale = 1 - scaleOffset * relative;
-            zIndex = 200 - relative;
+            // Right side
+            const i2 = relative;
+            x = offsetX * i2;
+            y = offsetY * i2;
+            rotate = (i2 - 2) * rotateOffset;
+            scale = 1 - scaleOffset * i2;
+            zIndex = 200 - i2;
           } else if (relative < 0) {
-            // Cards to the left (mirrored)
-            const absR = Math.abs(relative);
-            x = -offsetX * absR;
-            y = offsetY * absR;
-            rotate = -(absR - 2) * rotateOffset;
-            scale = 1 - scaleOffset * absR;
-            zIndex = 200 - absR;
+            // Left side mirrored
+            const i2 = Math.abs(relative);
+            x = -offsetX * i2;
+            y = offsetY * i2;
+            rotate = -(i2 - 2) * rotateOffset;
+            scale = 1 - scaleOffset * i2;
+            zIndex = 200 - i2;
           }
 
           return (
@@ -83,7 +84,7 @@ export default function StackedCollage10({
               key={i}
               drag={relative === 0 ? "x" : false}
               dragConstraints={{ left: 0, right: 0 }}
-              whileDrag={relative === 0 ? { scale: 1.04, rotate: 0 } : {}}
+              whileDrag={relative === 0 ? { scale: 1.08, rotate: 0 } : {}}
               onDragEnd={(e, info) => {
                 if (info.offset.x < -60) handleSwipe("right");
                 if (info.offset.x > 60) handleSwipe("left");

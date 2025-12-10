@@ -94,10 +94,7 @@ export default function BrokerAgentDeveloperPage() {
         <div className="mb-12" aria-label="Transparency and Reporting">
           <ContentCard title="Transparency and Reporting">
             <>
-              At Empyrean, we value competency and accountability. In every step of our partnership, we will strive to always display these in all instances.
-              <br />
-              <br />
-              We will be providing a Google Sheet for you to view your bookings and when to expect your next payout!
+              At Empyrean, we value competency and accountability. In every step of our partnership, we will strive to always display these in all instances. We will be providing a Google Sheet for you to view your bookings and when to expect your next payout!
             </>
           </ContentCard>
         </div>

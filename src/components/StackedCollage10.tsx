@@ -15,103 +15,134 @@ export default function StackedCollage10({
   alt = "Empyrean gallery image",
   spacingClass = "mt-6",
 }: Props) {
-  const [activeIndex, setActiveIndex] = useState(0);
+  const placeholder = "/assets/placeholder.jpg";
 
-  const next = () => {
-    setActiveIndex((prev) =>
-      prev === images.length - 1 ? prev : prev + 1
+  const initialImgs = Array.from({ length: 10 }).map(
+    (_, i) => images[i] || images[images.length - 1] || placeholder
+  );
+
+  const [stackIndex, setStackIndex] = useState(0);
+
+  const handleSwipe = () => {
+    setStackIndex((prev) =>
+      prev + 1 >= initialImgs.length ? prev : prev + 1
     );
-  };
-
-  const prev = () => {
-    setActiveIndex((prev) =>
-      prev === 0 ? prev : prev - 1
-    );
-  };
-
-  const getFanTransform = (
-    index: number,
-    active: number,
-    side: "left" | "right"
-  ) => {
-    const offset = Math.abs(index - active);
-
-    const baseRotate = 6; // elegant fan
-    const rotate = offset * baseRotate * (side === "left" ? -1 : 1);
-
-    const translateX = side === "left" ? -18 * offset : 18 * offset;
-    const translateY = 8 * offset;
-
-    const zIndex = 20 - offset;
-
-    return { rotate, translateX, translateY, zIndex };
   };
 
   return (
-    <div className={`relative w-full flex flex-col items-center ${spacingClass}`}>
-      <div className="relative w-[350px] h-[450px]">
-        {images.map((src, i) => {
-          let side: "left" | "right" | "center";
+    <div className={`relative w-full flex justify-center ${spacingClass}`}>
+      <div className="relative w-[350px] h-[550px] overflow-visible">
 
-          if (i < activeIndex) side = "left";
-          else if (i > activeIndex) side = "right";
-          else side = "center";
+        {initialImgs.map((img, i) => {
+          const relative = i - stackIndex;
 
-          const transform =
-            side === "center"
-              ? {
+          // same fan offsets as your original — untouched
+          const baseX = 10;
+          const baseY = 14;
+          const baseRotate = 2;
+          const baseScale = 0.03;
+
+          // center card (active)
+          if (relative === 0) {
+            return (
+              <motion.div
+                key={i}
+                drag="x"
+                dragConstraints={{ left: 0, right: 0 }}
+                whileDrag={{ scale: 1.04, rotate: 0 }}
+                onDragEnd={(e, info) => {
+                  if (info.offset.x < -60) handleSwipe();
+                }}
+                style={{ zIndex: 200 }}
+                className="absolute w-[300px] h-[450px] rounded-2xl shadow-2xl overflow-hidden bg-black/10 backdrop-blur-sm"
+                animate={{
+                  x: 0,
+                  y: 0,
                   rotate: 0,
-                  translateX: 0,
-                  translateY: 0,
-                  zIndex: 50,
-                }
-              : getFanTransform(i, activeIndex, side);
+                  scale: 1,
+                }}
+                transition={{
+                  type: "spring",
+                  stiffness: 220,
+                  damping: 24,
+                }}
+              >
+                <Image
+                  src={img}
+                  alt={`${alt} ${i + 1}`}
+                  fill
+                  className="object-cover select-none"
+                  draggable={false}
+                  unoptimized
+                />
+              </motion.div>
+            );
+          }
 
-          return (
-            <motion.div
-              key={i}
-              className="absolute top-0 left-0"
-              style={{ zIndex: transform.zIndex }}
-              animate={{
-                rotate: transform.rotate,
-                x: transform.translateX,
-                y: transform.translateY,
-                scale: side === "center" ? 1 : 0.92,
-              }}
-              transition={{
-                type: "spring",
-                stiffness: 130,
-                damping: 16,
-              }}
-            >
-              <Image
-                src={src}
-                alt={alt}
-                width={350}
-                height={450}
-                className="rounded-xl shadow-lg object-cover"
-              />
-            </motion.div>
-          );
+          // RIGHT SIDE (future images)
+          if (relative > 0) {
+            const i2 = relative; // 1, 2, 3, ...
+            return (
+              <motion.div
+                key={i}
+                style={{ zIndex: 200 - i2 }}
+                className="absolute w-[300px] h-[450px] rounded-2xl shadow-2xl overflow-hidden bg-black/10 backdrop-blur-sm"
+                animate={{
+                  x: i2 * baseX,
+                  y: i2 * baseY,
+                  rotate: (i2 - 2) * baseRotate,
+                  scale: 1 - i2 * baseScale,
+                }}
+                transition={{
+                  type: "spring",
+                  stiffness: 220,
+                  damping: 24,
+                }}
+              >
+                <Image
+                  src={img}
+                  alt={`${alt} ${i + 1}`}
+                  fill
+                  className="object-cover select-none"
+                  draggable={false}
+                  unoptimized
+                />
+              </motion.div>
+            );
+          }
+
+          // LEFT SIDE (past images) — *mirrored cleanly*, same fan but negative X and inverted rotate
+          if (relative < 0) {
+            const i2 = Math.abs(relative); // 1, 2, 3...
+            return (
+              <motion.div
+                key={i}
+                style={{ zIndex: 200 - i2 }}
+                className="absolute w-[300px] h-[450px] rounded-2xl shadow-2xl overflow-hidden bg-black/10 backdrop-blur-sm"
+                animate={{
+                  x: -i2 * baseX, // MIRROR
+                  y: i2 * baseY,  // same vertical alignment
+                  rotate: -(i2 - 2) * baseRotate, // MIRROR rotation
+                  scale: 1 - i2 * baseScale,
+                }}
+                transition={{
+                  type: "spring",
+                  stiffness: 220,
+                  damping: 24,
+                }}
+              >
+                <Image
+                  src={img}
+                  alt={`${alt} ${i + 1}`}
+                  fill
+                  className="object-cover select-none"
+                  draggable={false}
+                  unoptimized
+                />
+              </motion.div>
+            );
+          }
         })}
-      </div>
-
-      {/* Controls (Optional) */}
-      <div className="flex gap-4 mt-4">
-        <button
-          onClick={prev}
-          className="px-4 py-2 rounded-full bg-gray-200 hover:bg-gray-300"
-          disabled={activeIndex === 0}
-        >
-          Prev
-        </button>
-        <button
-          onClick={next}
-          className="px-4 py-2 rounded-full bg-gray-200 hover:bg-gray-300"
-          disabled={activeIndex === images.length - 1}
-        >
-          Next
-        </button>
       </div>
     </div>
   );

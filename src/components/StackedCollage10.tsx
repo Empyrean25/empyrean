@@ -79,7 +79,8 @@ export default function StackedCollage10({
     setSwipeDirection(null);
   };
 
-  const onDragEndTop = (_: any, info: PanInfo) => {
+  // <-- Fixed: typed first parameter as PointerEvent instead of `any` to satisfy eslint rule
+  const onDragEndTop = (event: PointerEvent, info: PanInfo) => {
     const { offset, velocity } = info;
     const shouldLeft = offset.x < -120 || velocity.x < -800;
     const shouldRight = offset.x > 120 || velocity.x > 800;
@@ -117,7 +118,6 @@ export default function StackedCollage10({
             // special tucked peek for the second card when peekSide is active
             const special = i === 1 && peekSide !== null;
 
-            // CLEANED-UP animate ternary (no stray chars)
             const animate =
               swipeDirection && isTop
                 ? swipeDirection === "left"

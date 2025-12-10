@@ -60,8 +60,8 @@ export default function BrokerAgentDeveloperPage() {
           Empyrean&apos;s branding rests on two of its core values: simplicity and quality. For all our designs, we strive to deliever simple yet elegant display and delievery of services. In this case, comfort, serenity, and beauty.
         </p>
         
-<div className="mb-12" aria-label="Empyrean Hospitality: The Business Partnership Offer">
-          <ContentCard title="Empyrean Hospitality: The Business Partnership Offer">
+<div className="mb-12" aria-label="The Business Partnership Offer">
+          <ContentCard title="The Business Partnership Offer">
             <>
               Empyrean Hospitality will be managing your property as your Official Property Manager. We would be maintaining and taking care of your property while maximising its profitability at the same time.
               Your property will be fixed, courtesy of both the owner and Empyrean, according to Empyrean Branding and standards. Empyrean shall also be responsible in securing decorations and essentials for the property should it deem necessary and better.

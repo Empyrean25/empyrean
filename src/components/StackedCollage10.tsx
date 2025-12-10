@@ -29,6 +29,9 @@ export default function StackedCollage10({
     );
   };
 
+  // ⭐ SHOW ONLY 5 CARDS (2 left, 1 center, 2 right)
+  const VISIBLE_RANGE = 2;
+
   return (
     <div className={`relative w-full flex justify-center ${spacingClass}`}>
       <div className="relative w-[350px] h-[550px] overflow-visible">
@@ -36,13 +39,16 @@ export default function StackedCollage10({
         {initialImgs.map((img, i) => {
           const relative = i - stackIndex;
 
-          // same fan offsets as your original — untouched
+          // Skip cards outside the ±2 range
+          if (Math.abs(relative) > VISIBLE_RANGE) return null;
+
+          // Your original spacing constants
           const baseX = 10;
           const baseY = 14;
           const baseRotate = 2;
           const baseScale = 0.03;
 
-          // center card (active)
+          // ACTIVE CARD
           if (relative === 0) {
             return (
               <motion.div
@@ -55,12 +61,7 @@ export default function StackedCollage10({
                 }}
                 style={{ zIndex: 200 }}
                 className="absolute w-[300px] h-[450px] rounded-2xl shadow-2xl overflow-hidden bg-black/10 backdrop-blur-sm"
-                animate={{
-                  x: 0,
-                  y: 0,
-                  rotate: 0,
-                  scale: 1,
-                }}
+                animate={{ x: 0, y: 0, rotate: 0, scale: 1 }}
                 transition={{
                   type: "spring",
                   stiffness: 220,
@@ -79,9 +80,9 @@ export default function StackedCollage10({
             );
           }
 
-          // RIGHT SIDE (future images)
+          // FUTURE CARDS (right side)
           if (relative > 0) {
-            const i2 = relative; // 1, 2, 3, ...
+            const i2 = relative;
             return (
               <motion.div
                 key={i}
@@ -111,18 +112,18 @@ export default function StackedCollage10({
             );
           }
 
-          // LEFT SIDE (past images) — *mirrored cleanly*, same fan but negative X and inverted rotate
+          // PAST CARDS (left side, mirrored)
           if (relative < 0) {
-            const i2 = Math.abs(relative); // 1, 2, 3...
+            const i2 = Math.abs(relative);
             return (
               <motion.div
                 key={i}
                 style={{ zIndex: 200 - i2 }}
                 className="absolute w-[300px] h-[450px] rounded-2xl shadow-2xl overflow-hidden bg-black/10 backdrop-blur-sm"
                 animate={{
-                  x: -i2 * baseX, // MIRROR
-                  y: i2 * baseY,  // same vertical alignment
-                  rotate: -(i2 - 2) * baseRotate, // MIRROR rotation
+                  x: -i2 * baseX,
+                  y: i2 * baseY,
+                  rotate: -(i2 - 2) * baseRotate,
                   scale: 1 - i2 * baseScale,
                 }}
                 transition={{

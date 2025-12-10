@@ -2,15 +2,14 @@
 
 import Image from "next/image";
 import React, { useEffect, useRef, useState } from "react";
-import { motion } from "framer-motion";
+import { motion, PanInfo } from "framer-motion";
 
 type Props = {
   images?: string[];
   alt?: string;
   spacingClass?: string;
-  // optional props to tweak layout quickly
-  visibleCount?: number; // how many cards to show in the stack (default 5)
-  tuckX?: number; // how far the tucked card moves when peeking
+  visibleCount?: number;
+  tuckX?: number;
 };
 
 export default function StackedCollage10({
@@ -27,8 +26,21 @@ export default function StackedCollage10({
 
   const [stack, setStack] = useState(initialImgs);
   const [peekSide, setPeekSide] = useState<null | "left" | "right">(null);
+  const [swipeDirection, setSwipeDirection] = useState<null | "left" | "right">(null);
   const timeoutRef = useRef<number | null>(null);
   const containerRef = useRef<HTMLDivElement | null>(null);
+  const [dragLimit, setDragLimit] = useState(320);
+
+  useEffect(() => {
+    // measure available width to set a sensible drag limit for desktop
+    const measure = () => {
+      const w = containerRef.current?.offsetWidth || 700;
+      setDragLimit(Math.max(280, Math.floor(w / 2)));
+    };
+    measure();
+    window.addEventListener("resize", measure);
+    return () => window.removeEventListener("resize", measure);
+  }, []);
 
   useEffect(() => {
     return () => {
@@ -37,6 +49,7 @@ export default function StackedCollage10({
   }, []);
 
   const cycleForward = () => {
+    // rotate stack: first -> end
     setStack((prev) => {
       const updated = [...prev];
       const first = updated.shift();
@@ -46,10 +59,11 @@ export default function StackedCollage10({
 
     setPeekSide("left");
     if (timeoutRef.current) window.clearTimeout(timeoutRef.current);
-    timeoutRef.current = window.setTimeout(() => setPeekSide(null), 700);
+    timeoutRef.current = window.setTimeout(() => setPeekSide(null), 650);
   };
 
   const cycleBackward = () => {
+    // rotate stack backward: last -> front
     setStack((prev) => {
       const updated = [...prev];
       const last = updated.pop();
@@ -59,80 +73,97 @@ export default function StackedCollage10({
 
     setPeekSide("right");
     if (timeoutRef.current) window.clearTimeout(timeoutRef.current);
-    timeoutRef.current = window.setTimeout(() => setPeekSide(null), 700);
+    timeoutRef.current = window.setTimeout(() => setPeekSide(null), 650);
   };
 
-  // keyboard navigation
-  useEffect(() => {
-    const el = containerRef.current;
-    if (!el) return;
-    const onKey = (e: KeyboardEvent) => {
-      if (e.key === "ArrowLeft") cycleBackward();
-      else if (e.key === "ArrowRight") cycleForward();
-    };
-    el.addEventListener("keydown", onKey);
-    return () => el.removeEventListener("keydown", onKey);
-  }, [containerRef.current, stack]);
+  // Called after top-card finish animating off-screen
+  const onTopCardExited = (dir: "left" | "right") => {
+    if (dir === "left") cycleForward();
+    else cycleBackward();
+    setSwipeDirection(null);
+  };
 
-  // pick visible part of stack (front = index 0)
+  const onDragEndTop = (_: any, info: PanInfo) => {
+    const { offset, velocity } = info;
+    // use both offset and velocity for a more forgiving swipe detection
+    const shouldLeft = offset.x < -120 || velocity.x < -800;
+    const shouldRight = offset.x > 120 || velocity.x > 800;
+
+    if (shouldLeft) {
+      setSwipeDirection("left");
+      // after a short delay let animation run then update stack
+      // framer will call onAnimationComplete - we'll use a timeout as fallback
+      window.setTimeout(() => onTopCardExited("left"), 300);
+    } else if (shouldRight) {
+      setSwipeDirection("right");
+      window.setTimeout(() => onTopCardExited("right"), 300);
+    } else {
+      // no swipe — reset peek state (if any) so second card returns to normal
+      setPeekSide(null);
+    }
+  };
+
+  // visible slice (front = index 0)
   const visible = stack.slice(0, visibleCount);
 
   return (
-    <div
-      ref={containerRef}
-      tabIndex={0}
-      className={`relative w-full flex justify-center ${spacingClass}`}
-    >
+    <div ref={containerRef} className={`relative w-full flex justify-center ${spacingClass}`}>
       <div className="relative w-[350px] h-[550px] overflow-visible">
-        {visible.map((img, i) => {
-          // i === 0 is the front (main) card
-          const isTop = i === 0;
+        {visible
+          .slice()
+          .reverse()
+          .map((img, revIndex) => {
+            const i = visible.length - 1 - revIndex; // i: 0 = front
+            const isTop = i === 0;
 
-          // Default fan to the RIGHT: positive x for cards behind the main
-          const baseX = i * 18; // spacing to the right
-          const baseY = i * 12;
-          const baseRotate = (i - 2) * 2; // small symmetric rotation
-          const baseScale = 1 - i * 0.03;
+            // original fan to the RIGHT for the stacked look
+            const baseX = i * 18;
+            const baseY = i * 12;
+            const baseRotate = (i - 2) * 2;
+            const baseScale = 1 - i * 0.03;
 
-          // When peeking, the SECOND card (i===1) should tuck left or right
-          const special = i === 1 && peekSide !== null;
-          const animate = special
-            ? peekSide === "left"
-              ? { x: -tuckX, y: 12, scale: 0.92, rotate: -4 }
-              : { x: tuckX, y: 12, scale: 0.92, rotate: 4 }
-            : { x: baseX, y: baseY, scale: baseScale, rotate: baseRotate };
+            // special tucked peek for the second card when peekSide is active
+            const special = i === 1 && peekSide !== null;
+            const animate = swipeDirection && isTop
+              ? swipeDirection === "left"
+                ? { x: -Math.max(dragLimit, 800), rotate: -8, scale: 0.98 }
+                : { x: Math.max(dragLimit, 800), rotate: 8, scale: 0.98 }
+              : special
+                ? peekSide === "left"\                  ? { x: -tuckX, y: 12, scale: 0.92, rotate: -4 }
+                  : { x: tuckX, y: 12, scale: 0.92, rotate: 4 }
+                : { x: baseX, y: baseY, scale: baseScale, rotate: baseRotate };
 
-          // ensure only top card receives pointer events so dragging is reliable
-          const pointerEvents = isTop ? "auto" : "none";
-
-          return (
-            <motion.div
-              key={`${img}-${i}`}
-              drag={isTop ? "x" : false}
-              dragConstraints={{ left: -400, right: 400 }}
-              dragElastic={isTop ? 0.18 : 0}
-              whileDrag={isTop ? { scale: 1.02, rotate: 0 } : undefined}
-              onDragEnd={isTop ? (_e, info) => {
-                if (info.offset.x < -60) cycleForward();
-                else if (info.offset.x > 60) cycleBackward();
-              } : undefined}
-              className={`absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] h-[450px] rounded-2xl shadow-2xl overflow-hidden bg-black/8 backdrop-blur-sm ${isTop ? 'cursor-grab active:cursor-grab' : ''}`}
-              animate={animate}
-              initial={false}
-              transition={{ type: "spring", stiffness: 220, damping: 24 }}
-              style={{ zIndex: 100 + i, pointerEvents }}
-            >
-              <Image
-                src={img}
-                alt={`${alt} ${i + 1}`}
-                fill
-                className="object-cover select-none"
-                draggable={false}
-                unoptimized
-              />
-            </motion.div>
-          );
-        })}
+            return (
+              <motion.div
+                key={`${img}-${i}`}
+                drag={isTop ? "x" : false}
+                dragConstraints={{ left: -dragLimit, right: dragLimit }}
+                dragElastic={isTop ? 0.12 : 0}
+                whileDrag={isTop ? { scale: 1.02, rotate: 0 } : undefined}
+                onDragEnd={isTop ? onDragEndTop : undefined}
+                className={`absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] h-[450px] rounded-2xl overflow-hidden bg-black/6 ${isTop ? 'cursor-grab active:cursor-grabbing shadow-2xl' : 'shadow-lg'}`}
+                animate={animate}
+                initial={false}
+                transition={{ type: "spring", stiffness: 260, damping: 28 }}
+                style={{ zIndex: 100 + i, pointerEvents: isTop ? 'auto' : 'none' }}
+                // when top-card animates off-screen, the onAnimationComplete will fire and we can cycle
+                onAnimationComplete={() => {
+                  if (swipeDirection && isTop) {
+                    onTopCardExited(swipeDirection);
+                  }
+                }}
+              >
+                <Image
+                  src={img}
+                  alt={`${alt} ${i + 1}`}
+                  fill
+                  className="object-cover select-none"
+                  draggable={false}
+                  unoptimized
+                />
+              </motion.div>
+            );
+          })}
       </div>
     </div>
   );

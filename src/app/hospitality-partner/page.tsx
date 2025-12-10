@@ -24,56 +24,58 @@ export default function BrokerAgentDeveloperPage() {
           Become a Hospitality Partner!
         </h1>
 
-        <p className="text-[14px] md:text-lg text-center mb-14 max-w-4xl mx-auto">
+        <p className="text-sm md:text-base text-center mb-14 max-w-4xl mx-auto">
           We are glad to have your interests in joining us at Empyrean as a Hospitality Hosting Partner. This page shall serve as your <strong>Hospitality Partner Primer</strong> to help you understand our services, partnership offer, and navigate our system at Empyrean better. It contains FAQs, link directories, and everything you need to know about being a Hospitality Partner here at Empyrean.
         </p>
 
         {/* Your First Steps Section */}
         <section className="mb-4">
-          <h2 className="text-2xl font-bold text-center mb-3">
+          <h2 className="text-2xl md:text-3xl font-bold text-center mb-6">
             The Empyrean Hospitality Branding
           </h2>
 
-          {/* stacked collage placed close under the heading */}
-          <StackedCollage10
-            spacingClass="mt-4"
-            images={[
-              "/assets/airbnb 1.jpeg",
-              "/assets/airbnb 2.jpeg",
-              "/assets/airbnb 3.jpeg",
-              "/assets/airbnb 4.jpeg",
-              "/assets/airbnb 5.jpeg",
-              "/assets/airbnb 6.jpeg",
-              "/assets/airbnb 7.jpeg",
-              "/assets/airbnb 8.jpeg",
-              "/assets/airbnb 9.jpeg",
-              "/assets/airbnb 10.jpeg",
-            ]}
-          />
+          {/* stacked collage with spacing and centered on all screens */}
+          <div className="flex justify-center">
+            <StackedCollage10
+              spacingClass="mt-6" // spacing between heading and gallery
+              images={[
+                "/assets/airbnb 1.jpeg",
+                "/assets/airbnb 2.jpeg",
+                "/assets/airbnb 3.jpeg",
+                "/assets/airbnb 4.jpeg",
+                "/assets/airbnb 5.jpeg",
+                "/assets/airbnb 6.jpeg",
+                "/assets/airbnb 7.jpeg",
+                "/assets/airbnb 8.jpeg",
+                "/assets/airbnb 9.jpeg",
+                "/assets/airbnb 10.jpeg",
+              ]}
+            />
+          </div>
         </section>
 
-<p className="text-[10px] md:text-lg text-center mb-14 max-w-4xl mx-auto">
-          Empyrean&apos;s branding rests on two of its core values: simplicity and quality. For all our designs, we strive to deliever simple yet elegant display and delievery of services. In this case, comfort, serenity, and beauty.
+        <p className="text-sm md:text-base text-center mb-14 max-w-4xl mx-auto">
+          Empyrean&apos;s branding rests on two of its core values: simplicity and quality. For all our designs, we strive to deliver simple yet elegant display and delivery of services. In this case, comfort, serenity, and beauty.
         </p>
-        
-<div className="mb-12" aria-label="The Business Partnership Offer">
+
+        <div className="mb-12" aria-label="The Business Partnership Offer">
           <ContentCard title="The Business Partnership Offer">
             <>
               Empyrean Hospitality will be managing your property as your Official Property Manager. We would be maintaining and taking care of your property while maximising its profitability at the same time.
               Your property will be fixed, courtesy of both the owner and Empyrean, according to Empyrean Branding and standards. Empyrean shall also be responsible in securing decorations and essentials for the property should it deem necessary and better.
-               </>
+            </>
           </ContentCard>
         </div>
               
         <div className="mb-12" aria-label="Documents Needed">
           <ContentCard title="Documents Needed">
             <>
-              Empyrean Real Estate Corporation and the owner as its business partner shall execute two (2) douments namely: The SPA Document and the Memorandum of Agreement for Property Management
+              Empyrean Real Estate Corporation and the owner as its business partner shall execute two (2) documents namely: The SPA Document and the Memorandum of Agreement for Property Management
               <br />
               <br />
-              The SPA Document shall serve as our official autorisation from the owner that Empyrean Real Estate Corporation
+              The SPA Document shall serve as our official authorization from the owner that Empyrean Real Estate Corporation
               shall from the date of execution become the official Property Manager of the owner for the property and can perform
-              actions allowed by the owner strictly only to property managent and leasing; Meanwhile the Memorandum of Agreement for Property Managment shall serve as the document detailing the business partnership and its specifics.
+              actions allowed by the owner strictly only to property management and leasing; Meanwhile the Memorandum of Agreement for Property Management shall serve as the document detailing the business partnership and its specifics.
             </>
           </ContentCard>
         </div>
@@ -81,7 +83,7 @@ export default function BrokerAgentDeveloperPage() {
         <div className="mb-12" aria-label="The Partnership Setups">
           <ContentCard title="The Partnership Setups">
             <>
-              At Empyrean, we study each property accordingly and offer a business partnership setup according to the propety&apos;s location, potential demographics, among many others.
+              At Empyrean, we study each property accordingly and offer a business partnership setup according to the property's location, potential demographics, among many others.
               <br />
               <br />
               We offer three setups: subleasing, 70/30 setup (utilities excluded), or 65/35 (utilities included). Setup is upon agreement of both business partner and the company.
@@ -107,7 +109,7 @@ export default function BrokerAgentDeveloperPage() {
             <p>
               <strong>What is Empyrean Hospitality?</strong>
               <br /><br />
-              Empyrean Hospitality is our tradename for accomodation services utilising platforms like Airbnb, Agoda, Booking, among others for short-term leasing.
+              Empyrean Hospitality is our tradename for accommodation services utilising platforms like Airbnb, Agoda, Booking, among others for short-term leasing.
               <br /><br />
               This is why we incentivise our broker partners with attractive commission-split setups up to 75/25 in favour of the partner to support them in closing the leads our company generates.
               <br /><br />
@@ -119,27 +121,14 @@ export default function BrokerAgentDeveloperPage() {
               <br /><br />
               Please check our public listing database to see if one of our listings fits your client&apos;s requirements. If yes, you may request availability and viewing schedules. If not, you can request assistance from Empyrean by submitting a listing request.
               <br /><br />
-              <strong>I have a property listing I want Empyrean to help market. How can I enlist the listing?</strong>
-              <br /><br />
-              For now, we only accept listings from partners who are direct to owners only. Please submit the full details and maximum ten (10) photos of the property through our link{" "}
-              <a
-                href="https://www.empyrean.ph/contact-us"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="underline text-gray-800"
-              >
-                here
-              </a>{" "}
-              or the submit listing option in our link directory with you as the listing contact.
-              <br /><br />
               <strong>How do I submit a request for more listings or request property availability and/or viewing?</strong>
               <br /><br />
-              Simply message the corresponding subgroup within our Sales Partner Platform in WhatsApp to be acknowledged and accomodated by a dedicated person from our team.
+              Simply message the corresponding subgroup within our Sales Partner Platform in WhatsApp to be acknowledged and accommodated by a dedicated person from our team.
             </p>
           </div>
         </section>
 
-        <p className="text-[14px] md:text-lg text-center mb-16 max-w-4xl mx-auto">
+        <p className="text-sm md:text-base text-center mb-16 max-w-4xl mx-auto">
           Again, we are very glad to have you with us. Should you have any questions or feedback, please contact your Relationship Manager or reach out through our available channels.
           <br />
           <br />

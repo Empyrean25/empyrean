@@ -20,9 +20,9 @@ export default function StackedCollage10({
   tuckX = 72,
 }: Props) {
   const placeholder = "/assets/placeholder.jpg";
-  const initialImgs = Array.from({ length: Math.max(visibleCount, images.length || visibleCount) }).map(
-    (_, i) => images[i] || images[images.length - 1] || placeholder
-  );
+  const initialImgs = Array.from({
+    length: Math.max(visibleCount, images.length || visibleCount),
+  }).map((_, i) => images[i] || images[images.length - 1] || placeholder);
 
   const [stack, setStack] = useState(initialImgs);
   const [peekSide, setPeekSide] = useState<null | "left" | "right">(null);
@@ -32,7 +32,6 @@ export default function StackedCollage10({
   const [dragLimit, setDragLimit] = useState(320);
 
   useEffect(() => {
-    // measure available width to set a sensible drag limit for desktop
     const measure = () => {
       const w = containerRef.current?.offsetWidth || 700;
       setDragLimit(Math.max(280, Math.floor(w / 2)));
@@ -49,7 +48,6 @@ export default function StackedCollage10({
   }, []);
 
   const cycleForward = () => {
-    // rotate stack: first -> end
     setStack((prev) => {
       const updated = [...prev];
       const first = updated.shift();
@@ -63,7 +61,6 @@ export default function StackedCollage10({
   };
 
   const cycleBackward = () => {
-    // rotate stack backward: last -> front
     setStack((prev) => {
       const updated = [...prev];
       const last = updated.pop();
@@ -76,7 +73,6 @@ export default function StackedCollage10({
     timeoutRef.current = window.setTimeout(() => setPeekSide(null), 650);
   };
 
-  // Called after top-card finish animating off-screen
   const onTopCardExited = (dir: "left" | "right") => {
     if (dir === "left") cycleForward();
     else cycleBackward();
@@ -85,20 +81,16 @@ export default function StackedCollage10({
 
   const onDragEndTop = (_: any, info: PanInfo) => {
     const { offset, velocity } = info;
-    // use both offset and velocity for a more forgiving swipe detection
     const shouldLeft = offset.x < -120 || velocity.x < -800;
     const shouldRight = offset.x > 120 || velocity.x > 800;
 
     if (shouldLeft) {
       setSwipeDirection("left");
-      // after a short delay let animation run then update stack
-      // framer will call onAnimationComplete - we'll use a timeout as fallback
       window.setTimeout(() => onTopCardExited("left"), 300);
     } else if (shouldRight) {
       setSwipeDirection("right");
       window.setTimeout(() => onTopCardExited("right"), 300);
     } else {
-      // no swipe — reset peek state (if any) so second card returns to normal
       setPeekSide(null);
     }
   };
@@ -124,12 +116,16 @@ export default function StackedCollage10({
 
             // special tucked peek for the second card when peekSide is active
             const special = i === 1 && peekSide !== null;
-            const animate = swipeDirection && isTop
-              ? swipeDirection === "left"
-                ? { x: -Math.max(dragLimit, 800), rotate: -8, scale: 0.98 }
-                : { x: Math.max(dragLimit, 800), rotate: 8, scale: 0.98 }
-              : special
-                ? peekSide === "left"\                  ? { x: -tuckX, y: 12, scale: 0.92, rotate: -4 }
+
+            // CLEANED-UP animate ternary (no stray chars)
+            const animate =
+              swipeDirection && isTop
+                ? swipeDirection === "left"
+                  ? { x: -Math.max(dragLimit, 800), rotate: -8, scale: 0.98 }
+                  : { x: Math.max(dragLimit, 800), rotate: 8, scale: 0.98 }
+                : special
+                ? peekSide === "left"
+                  ? { x: -tuckX, y: 12, scale: 0.92, rotate: -4 }
                   : { x: tuckX, y: 12, scale: 0.92, rotate: 4 }
                 : { x: baseX, y: baseY, scale: baseScale, rotate: baseRotate };
 
@@ -141,26 +137,20 @@ export default function StackedCollage10({
                 dragElastic={isTop ? 0.12 : 0}
                 whileDrag={isTop ? { scale: 1.02, rotate: 0 } : undefined}
                 onDragEnd={isTop ? onDragEndTop : undefined}
-                className={`absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] h-[450px] rounded-2xl overflow-hidden bg-black/6 ${isTop ? 'cursor-grab active:cursor-grabbing shadow-2xl' : 'shadow-lg'}`}
+                className={`absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] h-[450px] rounded-2xl overflow-hidden bg-black/6 ${
+                  isTop ? "cursor-grab active:cursor-grabbing shadow-2xl" : "shadow-lg"
+                }`}
                 animate={animate}
                 initial={false}
                 transition={{ type: "spring", stiffness: 260, damping: 28 }}
-                style={{ zIndex: 100 + i, pointerEvents: isTop ? 'auto' : 'none' }}
-                // when top-card animates off-screen, the onAnimationComplete will fire and we can cycle
+                style={{ zIndex: 100 + i, pointerEvents: isTop ? "auto" : "none" }}
                 onAnimationComplete={() => {
                   if (swipeDirection && isTop) {
                     onTopCardExited(swipeDirection);
                   }
                 }}
               >
-                <Image
-                  src={img}
-                  alt={`${alt} ${i + 1}`}
-                  fill
-                  className="object-cover select-none"
-                  draggable={false}
-                  unoptimized
-                />
+                <Image src={img} alt={`${alt} ${i + 1}`} fill className="object-cover select-none" draggable={false} unoptimized />
               </motion.div>
             );
           })}

@@ -55,11 +55,11 @@ export default function StackedCollage10({
             zIndex = 0;
 
           if (relative === 0) {
-            // Main card slightly larger
+            // Main card: larger + lowered
             x = 0;
-            y = 0;
+            y = 25; // lowered to cover bottom peeking
             rotate = 0;
-            scale = 1.05; // slightly bigger than left/right
+            scale = 1.12; // bigger main card
             zIndex = 200;
           } else if (relative > 0) {
             // Right side
@@ -84,7 +84,7 @@ export default function StackedCollage10({
               key={i}
               drag={relative === 0 ? "x" : false}
               dragConstraints={{ left: 0, right: 0 }}
-              whileDrag={relative === 0 ? { scale: 1.08, rotate: 0 } : {}}
+              whileDrag={relative === 0 ? { scale: 1.15, rotate: 0 } : {}}
               onDragEnd={(e, info) => {
                 if (info.offset.x < -60) handleSwipe("right");
                 if (info.offset.x > 60) handleSwipe("left");

@@ -43,7 +43,7 @@ export default function StackedCollage10({
           // Only render max 4 left and 4 right cards
           if (Math.abs(relative) > MAX_PEEK) return null;
 
-          const offsetX = 12;
+          const offsetX = 16; // increased for more obvious fan
           const offsetY = 14;
           const rotateOffset = 2;
           const scaleOffset = 0.03;
@@ -55,11 +55,11 @@ export default function StackedCollage10({
             zIndex = 0;
 
           if (relative === 0) {
-            // Main card: slightly larger + lowered
+            // Main card slightly smaller + lowered
             x = 0;
-            y = 20; // slightly lowered
+            y = 18; // lowered to cover peeks
             rotate = 0;
-            scale = 1.09; // slightly smaller than before
+            scale = 1.07; // smaller than before
             zIndex = 200;
           } else if (relative > 0) {
             // Right side
@@ -84,7 +84,7 @@ export default function StackedCollage10({
               key={i}
               drag={relative === 0 ? "x" : false}
               dragConstraints={{ left: 0, right: 0 }}
-              whileDrag={relative === 0 ? { scale: 1.12, rotate: 0 } : {}}
+              whileDrag={relative === 0 ? { scale: 1.10, rotate: 0 } : {}}
               onDragEnd={(e, info) => {
                 if (info.offset.x < -60) handleSwipe("right");
                 if (info.offset.x > 60) handleSwipe("left");

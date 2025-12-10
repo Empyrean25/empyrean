@@ -15,78 +15,103 @@ export default function StackedCollage10({
   alt = "Empyrean gallery image",
   spacingClass = "mt-6",
 }: Props) {
-  const placeholder = "/assets/placeholder.jpg";
+  const [activeIndex, setActiveIndex] = useState(0);
 
-  const initialImgs = Array.from({ length: 10 }).map(
-    (_, i) => images[i] || images[images.length - 1] || placeholder
-  );
+  const next = () => {
+    setActiveIndex((prev) =>
+      prev === images.length - 1 ? prev : prev + 1
+    );
+  };
 
-  const [stack, setStack] = useState(initialImgs);
+  const prev = () => {
+    setActiveIndex((prev) =>
+      prev === 0 ? prev : prev - 1
+    );
+  };
 
-  const cycleStack = () => {
-    setStack((prev) => {
-      const updated = [...prev];
-      const first = updated.shift();
-      if (first) updated.push(first);
-      return updated;
-    });
+  const getFanTransform = (
+    index: number,
+    active: number,
+    side: "left" | "right"
+  ) => {
+    const offset = Math.abs(index - active);
+
+    const baseRotate = 6; // elegant fan
+    const rotate = offset * baseRotate * (side === "left" ? -1 : 1);
+
+    const translateX = side === "left" ? -18 * offset : 18 * offset;
+    const translateY = 8 * offset;
+
+    const zIndex = 20 - offset;
+
+    return { rotate, translateX, translateY, zIndex };
   };
 
   return (
-    <div className={`relative w-full flex justify-center ${spacingClass}`}>
-      <div className="relative w-[350px] h-[550px] overflow-visible">
-        <motion.div
-          className="absolute inset-0 flex items-center justify-center"
-          initial={false}
+    <div className={`relative w-full flex flex-col items-center ${spacingClass}`}>
+      <div className="relative w-[350px] h-[450px]">
+        {images.map((src, i) => {
+          let side: "left" | "right" | "center";
+
+          if (i < activeIndex) side = "left";
+          else if (i > activeIndex) side = "right";
+          else side = "center";
+
+          const transform =
+            side === "center"
+              ? {
+                  rotate: 0,
+                  translateX: 0,
+                  translateY: 0,
+                  zIndex: 50,
+                }
+              : getFanTransform(i, activeIndex, side);
+
+          return (
+            <motion.div
+              key={i}
+              className="absolute top-0 left-0"
+              style={{ zIndex: transform.zIndex }}
+              animate={{
+                rotate: transform.rotate,
+                x: transform.translateX,
+                y: transform.translateY,
+                scale: side === "center" ? 1 : 0.92,
+              }}
+              transition={{
+                type: "spring",
+                stiffness: 130,
+                damping: 16,
+              }}
+            >
+              <Image
+                src={src}
+                alt={alt}
+                width={350}
+                height={450}
+                className="rounded-xl shadow-lg object-cover"
+              />
+            </motion.div>
+          );
+        })}
+      </div>
+
+      {/* Controls (Optional) */}
+      <div className="flex gap-4 mt-4">
+        <button
+          onClick={prev}
+          className="px-4 py-2 rounded-full bg-gray-200 hover:bg-gray-300"
+          disabled={activeIndex === 0}
         >
-          {stack.slice(0, 5).map((img, i) => {
-            // left-side card (previously swiped)
-            const isLeft = i === 0;
-
-            // only the top (current) card is draggable
-            const isDraggable = i === 0;
-
-            // right-side fan (original)
-            const rightX = i * 10;
-            const rightY = i * 14;
-            const rightRotate = (i - 2) * 2;
-
-            // left-side fan (mirrored)
-            const leftX = -40 - i * 10;
-            const leftY = i * 14;
-            const leftRotate = (2 - i) * 2;
-
-            const x = isLeft ? leftX : rightX;
-            const y = isLeft ? leftY : rightY;
-            const rotate = isLeft ? leftRotate : rightRotate;
-            const scale = 1 - i * 0.03;
-
-            return (
-              <motion.div
-                key={i}
-                drag={isDraggable ? "x" : false}
-                dragConstraints={{ left: 0, right: 0 }}
-                whileDrag={isDraggable ? { scale: 1.04, rotate: 0 } : {}}
-                onDragEnd={(e, info) => {
-                  if (isDraggable && info.offset.x < -60) cycleStack();
-                }}
-                style={{ zIndex: 100 - i }}
-                className="absolute w-[300px] h-[450px] rounded-2xl shadow-2xl overflow-hidden bg-black/10 backdrop-blur-sm"
-                animate={{ x, y, scale, rotate }}
-                transition={{ type: "spring", stiffness: 220, damping: 24 }}
-              >
-                <Image
-                  src={img}
-                  alt={`${alt} ${i + 1}`}
-                  fill
-                  className="object-cover select-none"
-                  draggable={false}
-                  unoptimized
-                />
-              </motion.div>
-            );
-          })}
-        </motion.div>
+          Prev
+        </button>
+        <button
+          onClick={next}
+          className="px-4 py-2 rounded-full bg-gray-200 hover:bg-gray-300"
+          disabled={activeIndex === images.length - 1}
+        >
+          Next
+        </button>
       </div>
     </div>
   );

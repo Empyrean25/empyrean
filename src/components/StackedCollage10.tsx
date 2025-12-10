@@ -21,8 +21,8 @@ export default function StackedCollage10({
   );
 
   const [stack, setStack] = useState(initialImgs);
-  // when true the fan goes to the left (negative x offsets)
-  const [alignLeft, setAlignLeft] = useState(false);
+  // when true the peek card will sit on the left of the main image
+  const [peekLeft, setPeekLeft] = useState(false);
   const timeoutRef = useRef<number | null>(null);
 
   useEffect(() => {
@@ -32,7 +32,7 @@ export default function StackedCollage10({
   }, []);
 
   const cycleForward = () => {
-    // move first to end and show fan to the left so the "second" sits left-peeked
+    // rotate stack: first -> end
     setStack((prev) => {
       const updated = [...prev];
       const first = updated.shift();
@@ -40,13 +40,15 @@ export default function StackedCollage10({
       return updated;
     });
 
-    setAlignLeft(true);
+    // after cycling forward, show peek on the LEFT of the new main
+    setPeekLeft(true);
     if (timeoutRef.current) window.clearTimeout(timeoutRef.current);
-    timeoutRef.current = window.setTimeout(() => setAlignLeft(false), 600);
+    // keep the peek state for a short moment so animation reads as "tucked and peeking"
+    timeoutRef.current = window.setTimeout(() => setPeekLeft(false), 700);
   };
 
   const cycleBackward = () => {
-    // move last to front and show fan to the right so it peeks on the right
+    // rotate stack backward: last -> front
     setStack((prev) => {
       const updated = [...prev];
       const last = updated.pop();
@@ -54,81 +56,75 @@ export default function StackedCollage10({
       return updated;
     });
 
-    setAlignLeft(false);
+    // show peek on right briefly
+    setPeekLeft(false);
     if (timeoutRef.current) window.clearTimeout(timeoutRef.current);
-    timeoutRef.current = window.setTimeout(() => setAlignLeft(false), 600);
+    timeoutRef.current = window.setTimeout(() => setPeekLeft(false), 700);
   };
+
+  // Render only the top two cards: main (index 0) and the next (index 1) which will tuck/peek.
+  const main = stack[0];
+  const peek = stack[1];
 
   return (
     <div className={`relative w-full flex justify-center ${spacingClass}`}>
       <div className="relative w-[350px] h-[550px] overflow-visible">
-        <motion.div
-          className="absolute inset-0 flex items-center justify-center"
-          initial={false}
-        >
-          {/* render only the top 5 for performance/visuals */}
-          {stack.slice(0, 5).map((img, i) => {
-            // compute fan offsets. When alignLeft is true we mirror the x/rotate.
-            const sign = alignLeft ? -1 : 1;
-            const x = sign * i * 10; // slight horizontal fan
-            const y = i * 14; // reveal upper portion progressively
-            const rotate = sign * (i - 2) * 2; // symmetric subtle fan
-            const scale = 1 - i * 0.03; // depth scaling
-
-            // top card index (0) is draggable
-            const isTop = i === 0;
-
-            return (
-              <motion.div
-                key={stack[i] + "-" + i}
-                drag={isTop ? "x" : false}
-                dragConstraints={{ left: 0, right: 0 }}
-                whileDrag={isTop ? { scale: 1.04, rotate: 0 } : undefined}
-                onDragEnd={isTop ? (_e, info) => {
-                  // swipe left to go forward
-                  if (info.offset.x < -60) {
-                    cycleForward();
-                  }
-                  // swipe right to go backward
-                  else if (info.offset.x > 60) {
-                    cycleBackward();
-                  }
-                } : undefined}
-                style={{ zIndex: 100 - i }}
-                className="absolute w-[300px] h-[450px] rounded-2xl shadow-2xl overflow-hidden bg-black/10 backdrop-blur-sm cursor-grab"
-                animate={{ x, y, scale, rotate }}
-                transition={{ type: "spring", stiffness: 220, damping: 24 }}
-              >
-                <Image
-                  src={img}
-                  alt={`${alt} ${i + 1}`}
-                  fill
-                  className="object-cover select-none"
-                  draggable={false}
-                  unoptimized
-                />
-              </motion.div>
-            );
-          })}
-        </motion.div>
-
-        {/* simple controls for testing on desktop */}
-        <div className="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-2">
-          <button
-            aria-label="Prev"
-            onClick={cycleBackward}
-            className="px-3 py-1 rounded-full bg-white/90 text-sm shadow"
+        {/* peek card (the tucked one) */}
+        {peek && (
+          <motion.div
+            key={`peek-${peek}`}
+            className="absolute w-[300px] h-[450px] rounded-2xl shadow-lg overflow-hidden bg-black/8 backdrop-blur-sm"
+            initial={false}
+            animate={
+              peekLeft
+                ? { x: -72, y: 12, scale: 0.92, rotate: -4 }
+                : { x: 72, y: 12, scale: 0.92, rotate: 4 }
+            }
+            transition={{ type: "spring", stiffness: 260, damping: 28 }}
+            style={{ zIndex: 90 }}
           >
-            ◀
-          </button>
-          <button
-            aria-label="Next"
-            onClick={cycleForward}
-            className="px-3 py-1 rounded-full bg-white/90 text-sm shadow"
+            <Image
+              src={peek}
+              alt={`${alt} peek`}
+              fill
+              className="object-cover select-none"
+              draggable={false}
+              unoptimized
+            />
+          </motion.div>
+        )}
+
+        {/* main card (draggable) */}
+        {main && (
+          <motion.div
+            key={`main-${main}`}
+            drag="x"
+            dragConstraints={{ left: 0, right: 0 }}
+            whileDrag={{ scale: 1.02, rotate: 0 }}
+            onDragEnd={(e, info) => {
+              // swipe left to show next (forward)
+              if (info.offset.x < -60) cycleForward();
+              // swipe right to show previous
+              else if (info.offset.x > 60) cycleBackward();
+            }}
+            className="absolute w-[300px] h-[450px] rounded-2xl shadow-2xl overflow-hidden bg-white"
+            initial={false}
+            animate={{ x: 0, y: 0, scale: 1, rotate: 0 }}
+            transition={{ type: "spring", stiffness: 220, damping: 24 }}
+            style={{ zIndex: 100 }}
           >
-            ▶
-          </button>
-        </div>
+            <Image
+              src={main}
+              alt={`${alt} main`}
+              fill
+              className="object-cover select-none"
+              draggable={false}
+              unoptimized
+            />
+          </motion.div>
+        )}
+
+        {/* NOTE: removed the decorative stacked "arrows"/cards in the background and removed the prev/next buttons per your request. */}
       </div>
     </div>
   );

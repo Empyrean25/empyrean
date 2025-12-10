@@ -25,11 +25,7 @@ export default function BrokerAgentDeveloperPage() {
         </h1>
 
         <p className="text-[14px] md:text-lg text-center mb-14 max-w-4xl mx-auto">
-          We are glad to have your interests in joining us at Empyrean as a Hospitality Hosting Partner. By having access to this page, you have
-          expressed your interest and you have been invited to form a business partnership with Empyrean.
-          <br />
-          <br />
-          This page shall serve as your <strong>Hospitality Partner Primer</strong> to help you navigate our system at Empyrean better. It contains FAQs, link directories, and everything you need to know about being a Hospitality Partner here at Empyrean.
+          We are glad to have your interests in joining us at Empyrean as a Hospitality Hosting Partner. This page shall serve as your <strong>Hospitality Partner Primer</strong> to help you understand our services, partnership offer, and navigate our system at Empyrean better. It contains FAQs, link directories, and everything you need to know about being a Hospitality Partner here at Empyrean.
         </p>
 
         {/* Your First Steps Section */}
@@ -83,12 +79,12 @@ export default function BrokerAgentDeveloperPage() {
         </div>
 
         <div className="mb-12" aria-label="The Partnership Setups">
-          <ContentCard title="The Setups">
+          <ContentCard title="The Partnership Setups">
             <>
               At Empyrean, we study each property accordingly and offer a business partnership setup according to the propety&apos;s location, potential demographics, among many others.
               <br />
               <br />
-              We offer three setups: subleasing, 70/30 setup (utilities excluded), or 65/35 (utilities excluded). Setup is upon agreement of both business partner and the company.
+              We offer three setups: subleasing, 70/30 setup (utilities excluded), or 65/35 (utilities included). Setup is upon agreement of both business partner and the company.
             </>
           </ContentCard>
         </div>
@@ -109,9 +105,9 @@ export default function BrokerAgentDeveloperPage() {
           <h2 className="text-2xl font-bold text-center mb-6">Frequently Asked Questions</h2>
           <div className="bg-white border border-gray-300 rounded-lg p-8 md:p-12 text-gray-700">
             <p>
-              <strong>I am a freelancer, a broker, an agent under a broker, or a Real Estate firm, isn&apos;t Empyrean a competitor?</strong>
+              <strong>What is Empyrean Hospitality?</strong>
               <br /><br />
-              No. Although Empyrean has in-house sellers to accommodate any influx of leads, we do not aim to compete with our partner professionals and experts in the industry. Instead, we aim to collaborate and partner with them to provide our primary service, which is supporting all key players in the industry, cultivating a centralised real estate system.
+              Empyrean Hospitality is our tradename for accomodation services utilising platforms like Airbnb, Agoda, Booking, among others for short-term leasing.
               <br /><br />
               This is why we incentivise our broker partners with attractive commission-split setups up to 75/25 in favour of the partner to support them in closing the leads our company generates.
               <br /><br />

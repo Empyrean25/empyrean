@@ -29,20 +29,18 @@ export default function StackedCollage10({
     );
   };
 
-  // ⭐ SHOW ONLY 5 CARDS (2 left, 1 center, 2 right)
+  // ⭐ Only show 5 cards: 2 past, 1 active, 2 future
   const VISIBLE_RANGE = 2;
 
   return (
     <div className={`relative w-full flex justify-center ${spacingClass}`}>
       <div className="relative w-[350px] h-[550px] overflow-visible">
-
         {initialImgs.map((img, i) => {
           const relative = i - stackIndex;
 
-          // Skip cards outside the ±2 range
+          // Skip cards outside ±VISIBLE_RANGE
           if (Math.abs(relative) > VISIBLE_RANGE) return null;
 
-          // Your original spacing constants
           const baseX = 10;
           const baseY = 14;
           const baseRotate = 2;
@@ -80,7 +78,7 @@ export default function StackedCollage10({
             );
           }
 
-          // FUTURE CARDS (right side)
+          // FUTURE CARDS (right)
           if (relative > 0) {
             const i2 = relative;
             return (
@@ -112,7 +110,7 @@ export default function StackedCollage10({
             );
           }
 
-          // PAST CARDS (left side, mirrored)
+          // PAST CARDS (left, mirrored)
           if (relative < 0) {
             const i2 = Math.abs(relative);
             return (

@@ -1,9 +1,5 @@
-import Link from "next/link";
-import { ContentCard } from "@/components/content-card";
-import { Button } from "@/components/ui/button";
 import CustomSolutions from "@/components/custom-solutions";
 import { Metadata } from "next";
-import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Philippine Real Estate Inventory | Empyrean Real Estate Solutions",
@@ -26,10 +22,14 @@ export default function PropertyOwnerPage() {
         </h1>
 
         <p className="text-[14px] md:text-lg text-center mb-16 max-w-4xl mx-auto">
-          Access all Property Listings in the Philippines across multiple Real Estate Brokers and Agents.
+          Access all Property Listings in the Philippines across multiple Real
+          Estate Brokers and Agents.
         </p>
 
-        <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSXQFzVVCGUh4KqsGJdes7gaVbOIWAotaOabTXOxLcE3D7rnitcxFbZ3fQlyjpV1WGZyqWAjcUmYthN/pubhtml?widget=true&amp;headers=false"></iframe>
+        <iframe
+          src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSXQFzVVCGUh4KqsGJdes7gaVbOIWAotaOabTXOxLcE3D7rnitcxFbZ3fQlyjpV1WGZyqWAjcUmYthN/pubhtml?widget=true&amp;headers=false"
+          className="w-full h-[600px] border rounded-lg"
+        />
 
         <div className="mt-12">
           <CustomSolutions />

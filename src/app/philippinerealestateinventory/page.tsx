@@ -26,10 +26,22 @@ export default function PropertyOwnerPage() {
           Estate Brokers and Agents.
         </p>
 
-        <iframe
-          src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSXQFzVVCGUh4KqsGJdes7gaVbOIWAotaOabTXOxLcE3D7rnitcxFbZ3fQlyjpV1WGZyqWAjcUmYthN/pubhtml?widget=true&amp;headers=false"
-          className="w-full h-[600px] border rounded-lg"
-        />
+        {/* Scaled Google Sheet Embed */}
+        <div className="w-full overflow-hidden border rounded-lg">
+          <div
+            style={{
+              transform: "scale(0.9)",
+              transformOrigin: "top left",
+              width: "111%",
+            }}
+          >
+            <iframe
+              src="https://docs.google.com/spreadsheets/d/1G0GFhhoLTbLBi5UOjukyDQpvvtPsuUbHzHAAg2NTYdU/edit?rm=minimal"
+              className="w-full h-[600px]"
+              frameBorder="0"
+            />
+          </div>
+        </div>
 
         <div className="mt-12">
           <CustomSolutions />

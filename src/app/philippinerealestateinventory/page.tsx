@@ -27,21 +27,24 @@ export default function PropertyOwnerPage() {
           Estate Brokers and Agents.
         </p>
 
-        {/* Scaled Google Sheet Embed */}
+        {/* Widened & Right-gap Fixed Google Sheet Embed */}
         <div className="w-full border rounded-lg overflow-hidden mb-12">
           <div
             style={{
-              transform: "scale(1.05)", // slightly larger
+              transform: "scale(1.1)", // slightly larger
               transformOrigin: "top left",
-              width: "95%", // fit scaled content
-              marginLeft: "-2.5%", // center after scaling
+              width: "90%",            // fit scaled content, remove right gap
+              marginLeft: "-5%",       // center after scaling
             }}
           >
             <iframe
-              src="https://docs.google.com/spreadsheets/d/1G0GFhhoLTbLBi5UOjukyDQpvvtPsuUbHzHAAg2NTYdU/edit?rm=minimal"
-              className="w-full h-[650px]"
+              src="https://docs.google.com/spreadsheets/d/1G0GFhhoLTbLBi5UOjukyDQpvvtPsuUbHzHAAg2NTYdU/htmlview?rm=minimal"
+              className="w-full h-[700px]"
               frameBorder="0"
-              style={{ display: "block" }} // removes default gap
+              style={{
+                display: "block",       // remove default iframe gap
+                fontSize: "10px",       // smaller font for better data visibility
+              }}
             />
           </div>
         </div>
@@ -54,7 +57,10 @@ export default function PropertyOwnerPage() {
           <ContentCard title="Check Availability and Schedule a Viewing">
             <>
               Join our dedicated channel to check on a property&apos;s
-              availability and schedule a viewing. You may also join us as an official sales partners (for firms, freelancers, and agents) for higher commission shares! Contact us for a partnership.
+              availability and schedule a viewing.
+              <br />
+              <br />
+              You may join our dedicated channel below.
               <div className="flex flex-wrap justify-end gap-2 mt-4">
                 <a
                   href="https://chat.whatsapp.com/C7Pr6gAcFxeH9dM0f6f8lO"
@@ -69,7 +75,7 @@ export default function PropertyOwnerPage() {
                   rel="noopener noreferrer"
                   className="px-4 py-2 rounded-lg bg-gray-200 text-gray-800 text-sm hover:bg-gray-300 transition"
                 >
-                  Join as an Official Sales Partner (Higher Commission Share)
+                  Join as an Official Sales Partner for higher commission share
                 </a>
               </div>
             </>

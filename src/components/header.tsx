@@ -175,6 +175,15 @@ export default function Header() {
                 className="text-[15px] font-normal text-gray-700 hover:text-gray-900 hover:bg-gray-100"
                 asChild
               >
+                <Link href="/philippinerealestateinventory">Philippine Inventory</Link>
+              </Button>
+            </NavigationMenuItem>
+            <NavigationMenuItem>
+              <Button
+                variant="ghost"
+                className="text-[15px] font-normal text-gray-700 hover:text-gray-900 hover:bg-gray-100"
+                asChild
+              >
                 <Link href="/contact-us">Contact Us</Link>
               </Button>
             </NavigationMenuItem>

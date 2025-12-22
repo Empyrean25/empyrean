@@ -43,6 +43,34 @@ export default function PropertyOwnerPage() {
           </div>
         </div>
 
+           <div className="mb-12" aria-label="Check Availability and Schedule a Viewing">
+          <ContentCard title="Check Availability and Schedule a Viewing">
+            <>
+              Join our dedicated channel to check on a property&apos;s availability and schedule a viewing.
+              <br />
+              <br />
+              You may join our dedicated channel below..
+              
+<div className="flex justify-end mt-4">
+                <a
+                  href="https://chat.whatsapp.com/C7Pr6gAcFxeH9dM0f6f8lO"
+                  rel="noopener noreferrer"
+                  className="px-4 py-2 rounded-lg bg-gray-200 text-gray-800 text-sm hover:bg-gray-300 transition"
+                >
+                  Check Availability and Schedule a Viewing.
+                </a>
+  <a
+                  href="https://www.empyrean.ph/contact-us"
+                  rel="noopener noreferrer"
+                  className="px-4 py-2 rounded-lg bg-gray-200 text-gray-800 text-sm hover:bg-gray-300 transition"
+                >
+                  Join as an Official Sales Partner for higher commission share!
+                </a>
+              </div>
+            </>
+          </ContentCard>
+        </div>
+
         <div className="mt-12">
           <CustomSolutions />
         </div>

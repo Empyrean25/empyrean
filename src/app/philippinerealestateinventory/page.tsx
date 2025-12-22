@@ -70,7 +70,7 @@ export default function PropertyOwnerPage() {
           </ContentCard>
         </div>
 
-    <p className="text-[14px] md:text-lg text-center mb-16 max-w-4xl mx-auto">
+    <p className="text-[12px] md:text-lg text-center mb-16 max-w-4xl mx-auto">
           We are continuously improving, expanding, and completing this inventory for all our partners. We appreciate your continued business partnership with us.
         </p>
         

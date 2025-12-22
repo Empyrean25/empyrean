@@ -48,7 +48,7 @@ export default function PropertyOwnerPage() {
           <ContentCard title="Check Availability and Schedule a Viewing">
             <>
               Please take note of the listing code and join our dedicated channel to check on a property&apos;s availability and schedule a viewing. You may also join us as an Official Sales Partner (firms, freelancers, and agents) <strong>for higher commission share!</strong> Contact us for partnership.
-              <div className="flex flex-wrap justify-end gap-2 mt-4">
+              <div className="flex flex-wrap justify-start gap-4 mt-4">
                 <a
                   href="https://chat.whatsapp.com/C7Pr6gAcFxeH9dM0f6f8lO"
                   rel="noopener noreferrer"
@@ -62,7 +62,7 @@ export default function PropertyOwnerPage() {
                   rel="noopener noreferrer"
                   className="px-4 py-2 rounded-lg bg-gray-200 text-gray-800 text-sm hover:bg-gray-300 transition"
                 >
-                  Join as an Official Sales Partner.
+                  Join as an Official Sales Partner
                 </a>
               </div>
             </>

@@ -17,9 +17,9 @@ export const metadata: Metadata = {
 export default function PropertyOwnerPage() {
   return (
     <main className="min-h-screen flex flex-col">
-      <div className="container mx-auto px-4 py-16 max-w-5xl">
+      <div className="container mx-auto px-4 py-16 max-w-6xl">
         <h1 className="text-3xl md:text-4xl font-bold text-center mb-8">
-          The Philippine Real Estate Inventory.
+          The Philippine Real Estate Inventory
         </h1>
 
         <p className="text-[14px] md:text-lg text-center mb-16 max-w-4xl mx-auto">
@@ -27,26 +27,17 @@ export default function PropertyOwnerPage() {
           Estate Brokers and Agents.
         </p>
 
-        {/* Widened & Right-gap Fixed Google Sheet Embed */}
+        {/* 📊 Google Sheet Embed (Published HTML) */}
         <div className="w-full border rounded-lg overflow-hidden mb-12">
-          <div
+          <iframe
+            src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSXQFzVVCGUh4KqsGJdes7gaVbOIWAotaOabTXOxLcE3D7rnitcxFbZ3fQlyjpV1WGZyqWAjcUmYthN/pubhtml?widget=true&amp;headers=false"
+            className="w-full h-[780px]"
+            frameBorder="0"
             style={{
-              transform: "scale(1.1)", // slightly larger
-              transformOrigin: "top left",
-              width: "90%",            // fit scaled content, remove right gap
-              marginLeft: "-5%",       // center after scaling
+              display: "block",
+              zoom: 0.75, /* shrink sheet content including font */
             }}
-          >
-            <iframe
-              src="https://docs.google.com/spreadsheets/d/1G0GFhhoLTbLBi5UOjukyDQpvvtPsuUbHzHAAg2NTYdU/htmlview?rm=minimal"
-              className="w-full h-[700px]"
-              frameBorder="0"
-              style={{
-                display: "block",       // remove default iframe gap
-                fontSize: "10px",       // smaller font for better data visibility
-              }}
-            />
-          </div>
+          />
         </div>
 
         {/* Check Availability / Schedule Viewing CTA */}

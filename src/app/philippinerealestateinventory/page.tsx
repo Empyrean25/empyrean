@@ -35,7 +35,7 @@ export default function PropertyOwnerPage() {
             frameBorder="0"
             style={{
               display: "block",
-              zoom: 0.75, /* shrink sheet content including font */
+              zoom: 0.7, // shrink sheet including font for better readability
             }}
           />
         </div>
@@ -69,7 +69,8 @@ export default function PropertyOwnerPage() {
           </ContentCard>
         </div>
 
-    <p className="text-[12px] md:text-lg text-center mb-16 max-w-4xl mx-auto">
+        {/* Smaller “continuously improving” paragraph */}
+        <p className="text-[12px] sm:text-[14px] md:text-sm text-center mb-16 max-w-4xl mx-auto">
           We are continuously improving, expanding, and completing this inventory for all our partners. We appreciate your continued business partnership with us.
         </p>
         

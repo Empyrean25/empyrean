@@ -26,7 +26,9 @@ export function ContentCard({
             {title}
           </div>
         </div>
-        <div className="text-[14px] md:text-base text-gray-800">
+
+        {/* ONLY CHANGE IS HERE */}
+        <div className="text-[14px] md:text-base text-gray-800 text-justify">
           {children ? children : description}
         </div>
       </div>

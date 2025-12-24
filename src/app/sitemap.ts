@@ -28,6 +28,12 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       changeFrequency: "monthly",
       priority: 0.7,
     },
+      {
+      url: `${baseUrl}/philippinerealestateinventory`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
     // Service pages
     {
       url: `${baseUrl}/services/broker-agent`,

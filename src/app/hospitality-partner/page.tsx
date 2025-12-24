@@ -65,7 +65,7 @@ export default function BrokerAgentDeveloperPage() {
               Your property will be fixed, courtesy of both the owner and Empyrean, according to Empyrean Branding and standards. Empyrean shall also be responsible in securing decorations and essentials for the property should it deem necessary and better.
             <br />
             <br />
-            At Empyrean, we believe that trust is the foundation of every successful property partnership. When a property is placed under our care, it becomes our full professional responsibility. For this reason, we respectfully ask that day-to-day operational control be entrusted to our team, allowing us to manage your property proactively, efficiently, and in your best interest, while keeping you fully informed through our reporting and transparent communication.
+            At Empyrean, we believe that trust is the foundation of every relationship and partnership. When a property is placed under our care, it becomes our full professional responsibility. For this reason, we respectfully ask that day-to-day operational control be entrusted to our team, allowing us to manage your property proactively, efficiently, and in your best interest, while keeping you fully informed through our reporting and transparent communication.
             </>
           </ContentCard>
         </div>
@@ -102,7 +102,7 @@ export default function BrokerAgentDeveloperPage() {
         {/* FAQs Section */}
         <section className="mb-10">
           <h2 className="text-2xl font-bold text-center mb-6">Frequently Asked Questions</h2>
-          <div className="bg-white border border-gray-300 rounded-lg p-8 md:p-12 text-gray-700">
+          <div className="bg-white border border-gray-300 rounded-lg p-8 md:p-12 text-gray-700 text-justify">
             <p>
               <strong>What is Empyrean Property Management and Hospitality?</strong>
               <br /><br />
@@ -115,7 +115,6 @@ export default function BrokerAgentDeveloperPage() {
               <strong>What does Empyrean Hospitality do?</strong>
               <br /><br />
               Empyrean Hospitality is our guest accomodation service where we partner up with clients-turned-business partners to put their properties up for short-term leasing for guest accomodations. Availing of our Property Management Service is a requisite for this and requires a Memorandum of Agreement for Property Management document to be executed.
-              <br /><br />
             </p>
           </div>
         </section>

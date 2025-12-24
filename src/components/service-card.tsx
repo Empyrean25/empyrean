@@ -16,7 +16,9 @@ export function ServiceCard({ title, description }: ServiceCardProps) {
           </div>
         </div>
 
-        <p className="text-gray-700 text-start">{description}</p>
+        <p className="text-gray-700 text-justify">
+          {description}
+        </p>
       </div>
     </div>
   );

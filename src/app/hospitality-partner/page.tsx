@@ -47,7 +47,6 @@ export default function BrokerAgentDeveloperPage() {
                 "/assets/airbnb 6.jpeg",
                 "/assets/airbnb 7.jpeg",
                 "/assets/airbnb 8.jpeg",
-                "/assets/airbnb 9.jpeg",
                 "/assets/airbnb 10.jpeg",
               ]}
             />

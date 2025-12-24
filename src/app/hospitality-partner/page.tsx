@@ -63,6 +63,9 @@ export default function BrokerAgentDeveloperPage() {
             <>
               Empyrean Hospitality will be managing your property as your Official Property Manager. We would be maintaining and taking care of your property while maximising its profitability at the same time.
               Your property will be fixed, courtesy of both the owner and Empyrean, according to Empyrean Branding and standards. Empyrean shall also be responsible in securing decorations and essentials for the property should it deem necessary and better.
+            <br />
+            <br />
+            At Empyrean, we believe that trust is the foundation of every successful property partnership. When a property is placed under our care, it becomes our full professional responsibility. For this reason, we respectfully ask that day-to-day operational control be entrusted to our team, allowing us to manage your property proactively, efficiently, and in your best interest, while keeping you fully informed through our reporting and transparent communication.
             </>
           </ContentCard>
         </div>
@@ -70,7 +73,7 @@ export default function BrokerAgentDeveloperPage() {
         <div className="mb-12" aria-label="Documents Needed">
           <ContentCard title="Documents Needed">
             <>
-              Empyrean Real Estate Corporation and the owner as its business partner shall execute two (2) documents namely: The SPA Document and the Memorandum of Agreement for Property Management
+              Empyrean Real Estate Corporation and the owner as its business partner shall execute two (2) documents namely: <strong>The SPA Document</strong> and the <strong>Memorandum of Agreement for Property Management.</strong>
               <br />
               <br />
               The SPA Document shall serve as our official authorization from the owner that Empyrean Real Estate Corporation
@@ -83,10 +86,7 @@ export default function BrokerAgentDeveloperPage() {
         <div className="mb-12" aria-label="The Partnership Setups">
           <ContentCard title="The Partnership Setups">
             <>
-              At Empyrean, we study each property accordingly and offer a business partnership setup according to the property&apos;s location, potential demographics, among many others.
-              <br />
-              <br />
-              We offer three setups: subleasing, 70/30 setup (utilities excluded), or 65/35 (utilities included). Setup is upon agreement of both business partner and the company.
+              At Empyrean, we study each property accordingly and offer a business partnership setup according to the property&apos;s location, potential demographics, among many others. We offer three setups: subleasing, 70/30 setup (utilities excluded), or 65/35 (utilities included). Association Dues and Real Estate Taxes are not included. Setup is upon agreement of both business partner and the company.
             </>
           </ContentCard>
         </div>
@@ -94,7 +94,7 @@ export default function BrokerAgentDeveloperPage() {
         <div className="mb-12" aria-label="Transparency and Reporting">
           <ContentCard title="Transparency and Reporting">
             <>
-              At Empyrean, we value competency and accountability. In every step of our partnership, we will strive to always display these in all instances. We will be providing a Google Sheet for you to view your bookings and when to expect your next payout!
+              At Empyrean, we value competency and accountability. In every step of our partnership, we will strive to always display these in all instances. We will be providing a Google Sheet for you to view your bookings and when to expect your next payout! We are also developing a central platform for quick review to replace the Google Sheets. Please stay tuned for any announcements.
             </>
           </ContentCard>
         </div>
@@ -104,17 +104,18 @@ export default function BrokerAgentDeveloperPage() {
           <h2 className="text-2xl font-bold text-center mb-6">Frequently Asked Questions</h2>
           <div className="bg-white border border-gray-300 rounded-lg p-8 md:p-12 text-gray-700">
             <p>
-              <strong>What is Empyrean Hospitality?</strong>
+              <strong>What is Empyrean Property Management and Hospitality?</strong>
               <br /><br />
-              Empyrean Hospitality is our tradename for accommodation services utilising platforms like Airbnb, Agoda, Booking, among others for short-term leasing. It is associated with our Property Management Service, only with a separate branding since the service becomes a partnership with our client to accomodate guests.
+              Empyrean Property Management and Hospitality is our arm under Real Estate responsible for property management and guest accomodation services. 
+              <br /><br />
+              <strong>What does Empyrean Property Management do?</strong>
+              <br /><br />
+              Empyrean Property Management is a free-of-charge service we offer to our clients that designates our company to be their Official Property Manager and keyholder for their property and authorise us to manage their properties and market them for long-term or short-term leasing, and/or selling, whichever the property owner prefers; This also includes a quote-based maintenance, repair, and cleaning services for the upkeep of your property. This service requires an Special Power of Attorney (SPA) document to be executed.
               <br /><br />
               <strong>What does Empyrean Hospitality do?</strong>
               <br /><br />
-              We partner up with property owners to put their properties up for short-term leasing for guest accomodations. Availing of our Property Management Service is a requisite for this.
+              Empyrean Hospitality is our guest accomodation service where we partner up with clients-turned-business partners to put their properties up for short-term leasing for guest accomodations. Availing of our Property Management Service is a requisite for this and requires a Memorandum of Agreement for Property Management document to be executed.
               <br /><br />
-              <strong>What is Empyrean Property Management Service?</strong>
-              <br /><br />
-              Our Property Management Service is a free-of-charge service we offer to our clients that designates our company to be their Official Property Manager for their property and authorise us to market their properties for both long-term, short-term leasing, or selling, whichever the property owner prefers.
             </p>
           </div>
         </section>
@@ -123,7 +124,7 @@ export default function BrokerAgentDeveloperPage() {
           Again, we are very glad to have you with us. Should you have any questions or feedback, please contact your Relationship Manager or reach out through our available channels.
           <br />
           <br />
-          Upwards and onwards, flying high to the sky, through the clouds, Empyreans!
+          Upwards and onwards, Empyreans!
         </p>
 
         <div className="mt-12">

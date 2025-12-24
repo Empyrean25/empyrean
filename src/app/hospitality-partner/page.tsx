@@ -119,8 +119,12 @@ export default function BrokerAgentDeveloperPage() {
           </div>
         </section>
 
+<p className="text-[12px] sm:text-[14px] md:text-sm text-center mb-16 max-w-4xl mx-auto">
+          As a startup, we are continuously improving all our systems for all our partners. We appreciate your patience and understanding while we work on fully establishing our systems and the company.
+        </p>
+        
         <p className="text-sm md:text-base text-center mb-16 max-w-4xl mx-auto">
-          Again, we are very glad to have you with us. Should you have any questions or feedback, please contact your Relationship Manager or reach out through our available channels.
+          We are very glad to have you with us. Should you have any questions or feedback, please contact your Relationship Manager or reach out through our available channels.
           <br />
           <br />
           Upwards and onwards, Empyreans!

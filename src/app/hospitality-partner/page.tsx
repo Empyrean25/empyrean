@@ -85,7 +85,7 @@ export default function BrokerAgentDeveloperPage() {
         <div className="mb-12" aria-label="The Partnership Setups">
           <ContentCard title="The Partnership Setups">
             <>
-              At Empyrean, we study each property accordingly and offer a business partnership setup according to the property&apos;s location, potential demographics, among many others. We offer three setups: subleasing, 70/30 setup (utilities excluded), or 65/35 (utilities included). Association Dues and Real Estate Taxes are not included. Setup is upon agreement of both business partner and the company.
+              At Empyrean, we study each property accordingly and offer a business partnership setup according to the property&apos;s location, potential demographics, among many others. We offer three setups: subleasing or 65/35 (utilities included). Association Dues and Real Estate Taxes are not included. Setup is upon agreement of both business partner and the company.
             </>
           </ContentCard>
         </div>
